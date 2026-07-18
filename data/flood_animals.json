@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T18:21:09Z",
+  "lastUpdated": "2026-07-18T18:26:27Z",
   "totals": {
     "total": 297,
     "dogs": 197,
@@ -7,6 +7,7 @@
     "On Property": 185,
     "In Foster (Available for Adoption)": 62,
     "In Foster (Unavailable for Adoption)": 3,
+    "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 14,
     "Transferred Out": 33
   },
@@ -17,6 +18,7 @@
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 4
     },
@@ -26,6 +28,7 @@
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 3
     },
@@ -35,6 +38,7 @@
       "On Property": 7,
       "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1
     },
@@ -44,6 +48,7 @@
       "On Property": 76,
       "In Foster (Available for Adoption)": 41,
       "In Foster (Unavailable for Adoption)": 3,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 25
     },
@@ -53,6 +58,7 @@
       "On Property": 71,
       "In Foster (Available for Adoption)": 6,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 9,
       "Transferred Out": 0
     },
@@ -62,6 +68,7 @@
       "On Property": 31,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -80,6 +87,7 @@
       "On Property": 50,
       "In Foster (Available for Adoption)": 32,
       "In Foster (Unavailable for Adoption)": 3,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 21
     },
@@ -96,6 +104,7 @@
       "On Property": 59,
       "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 0
     },
@@ -112,6 +121,7 @@
       "On Property": 24,
       "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 2
     },
@@ -128,6 +138,7 @@
       "On Property": 4,
       "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 1
     },
@@ -144,6 +155,7 @@
       "On Property": 12,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -160,6 +172,7 @@
       "On Property": 6,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 6
     },
@@ -176,6 +189,7 @@
       "On Property": 10,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -192,6 +206,7 @@
       "On Property": 3,
       "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -208,6 +223,7 @@
       "On Property": 8,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -224,6 +240,7 @@
       "On Property": 3,
       "In Foster (Available for Adoption)": 3,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -240,6 +257,7 @@
       "On Property": 6,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -275,17 +293,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 13,
-      "dogs": 13,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 13,
       "dogs": 0,
       "cats": 13
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 13,
+      "dogs": 13,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -451,6 +469,7 @@
     "On Property",
     "In Foster (Available for Adoption)",
     "In Foster (Unavailable for Adoption)",
+    "Safety Net Foster (Pending RTO)",
     "Adopted / Pending",
     "Transferred Out"
   ]

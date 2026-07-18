@@ -105,6 +105,7 @@ def run():
         "On Property",
         "In Foster (Available for Adoption)",
         "In Foster (Unavailable for Adoption)",
+        "Safety Net Foster (Pending RTO)",
         "Adopted / Pending",
         "Transferred Out",
     ]

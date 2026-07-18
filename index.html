@@ -27,8 +27,9 @@
   --s1: #2a78d6; /* blue    -> On Property */
   --s2: #008300; /* green   -> In Foster, Available */
   --s3: #e87ba4; /* magenta -> In Foster, Unavailable */
-  --s4: #eda100; /* yellow  -> Adopted / Pending */
-  --s5: #1baf7a; /* aqua    -> Transferred Out */
+  --s4: #4a3aa7; /* violet  -> Safety Net Foster (Pending RTO) */
+  --s5: #eda100; /* yellow  -> Adopted / Pending */
+  --s6: #1baf7a; /* aqua    -> Transferred Out */
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
@@ -49,7 +50,7 @@
     --live-dot:    #3fca6a;
     --critical:      #e66767;
     --critical-soft: #3a1f1c;
-    --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #c98500; --s5: #199e70;
+    --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70;
   }
 }
 :root[data-theme="dark"] {
@@ -70,7 +71,7 @@
   --live-dot:    #3fca6a;
   --critical:      #e66767;
   --critical-soft: #3a1f1c;
-  --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #c98500; --s5: #199e70;
+  --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70;
 }
 
 * { box-sizing: border-box; }
@@ -117,7 +118,7 @@ h2 {
 .section-note { color: var(--ink-muted); font-size: 13.5px; margin: 0 0 18px; max-width: 68ch; }
 
 .tiles {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
   background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden;
 }
 .tile { background: var(--surface); padding: 18px 18px 16px; }
@@ -125,6 +126,7 @@ h2 {
 .tile .value { font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 .tile .sub { font-size: 12.5px; color: var(--ink-muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
 .tile.accent .value { color: var(--accent); }
+@media (max-width: 900px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
@@ -226,8 +228,9 @@ const BUCKET_COLORS = {
   "On Property": "var(--s1)",
   "In Foster (Available for Adoption)": "var(--s2)",
   "In Foster (Unavailable for Adoption)": "var(--s3)",
-  "Adopted / Pending": "var(--s4)",
-  "Transferred Out": "var(--s5)",
+  "Safety Net Foster (Pending RTO)": "var(--s4)",
+  "Adopted / Pending": "var(--s5)",
+  "Transferred Out": "var(--s6)",
 };
 
 function fmtRelative(iso) {
@@ -345,6 +348,11 @@ function render(data) {
       <div class="sub">${Math.round(100 * (t["In Foster (Unavailable for Adoption)"]||0) / t.total)}% of total</div>
     </div>
     <div class="tile">
+      <div class="label">Safety Net Foster</div>
+      <div class="value">${t["Safety Net Foster (Pending RTO)"] || 0}</div>
+      <div class="sub">owned pets, pending RTO</div>
+    </div>
+    <div class="tile">
       <div class="label">Adopted / pending</div>
       <div class="value">${t["Adopted / Pending"] || 0}</div>
       <div class="sub">${Math.round(100 * (t["Adopted / Pending"]||0) / t.total)}% of total</div>
@@ -361,7 +369,7 @@ function render(data) {
   // Status detail -- exact ShelterLuv status text within each bucket
   if (data.statusDetail && data.statusDetail.length) {
     const secStatus = el('section');
-    secStatus.innerHTML = `<h2>Status detail</h2><p class="section-note">The exact ShelterLuv status behind each bucket above &mdash; medical holds, plain "unavailable" with no other qualifier, etc. Available/Unavailable for adoption is a rough proxy for Safety Net Foster (owned pets pending RTO, not up for adoption); this table is where to look for the specific reason.</p>`;
+    secStatus.innerHTML = `<h2>Status detail</h2><p class="section-note">The exact ShelterLuv status behind each bucket above &mdash; medical holds, plain "unavailable" with no other qualifier, "Safety Net Foster (NO ADOPT)", etc.</p>`;
     const twStatus = el('div', 'table-wrap');
     const statusRows = data.statusDetail.map(r => `
       <tr>
@@ -415,6 +423,7 @@ function render(data) {
       <td class="num">${s["On Property"]}</td>
       <td class="num">${s["In Foster (Available for Adoption)"]}</td>
       <td class="num">${s["In Foster (Unavailable for Adoption)"]}</td>
+      <td class="num">${s["Safety Net Foster (Pending RTO)"]}</td>
       <td class="num">${s["Adopted / Pending"]}</td>
       <td class="num">${s["Transferred Out"]}</td>
     </tr>
@@ -425,7 +434,8 @@ function render(data) {
         <th>Origin shelter</th><th>City</th><th>County</th><th>NWS zone</th>
         <th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
         <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster, avail.</th>
-        <th class="num">Foster, unavail.</th><th class="num">Adopted/pending</th><th class="num">Transferred</th>
+        <th class="num">Foster, unavail.</th><th class="num">Safety Net</th>
+        <th class="num">Adopted/pending</th><th class="num">Transferred</th>
       </tr></thead>
       <tbody>${rows}
         <tr class="total-row">
@@ -433,6 +443,7 @@ function render(data) {
           <td class="num">${t.dogs}</td><td class="num">${t.cats}</td><td class="num">${t.total}</td>
           <td></td><td class="num">${t["On Property"]||0}</td><td class="num">${t["In Foster (Available for Adoption)"]||0}</td>
           <td class="num">${t["In Foster (Unavailable for Adoption)"]||0}</td>
+          <td class="num">${t["Safety Net Foster (Pending RTO)"]||0}</td>
           <td class="num">${t["Adopted / Pending"]||0}</td><td class="num">${t["Transferred Out"]||0}</td>
         </tr>
       </tbody>

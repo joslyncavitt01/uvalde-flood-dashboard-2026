@@ -44,7 +44,7 @@ def run():
             "area": r.currentLocationTier2,
         })
 
-    buckets = ["On Property", "In Foster", "Adopted / Pending", "Transferred Out"]
+    buckets = ["On Property", "In Foster", "Safety Net Foster (Pending RTO)", "Adopted / Pending", "Transferred Out"]
 
     # Totals
     totals = {

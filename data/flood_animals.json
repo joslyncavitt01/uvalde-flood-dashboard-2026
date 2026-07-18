@@ -1,11 +1,12 @@
 {
-  "lastUpdated": "2026-07-18T17:45:50Z",
+  "lastUpdated": "2026-07-18T17:58:35Z",
   "totals": {
     "total": 293,
     "dogs": 194,
     "cats": 99,
     "On Property": 183,
     "In Foster": 63,
+    "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 14,
     "Transferred Out": 33
   },
@@ -15,6 +16,7 @@
       "total": 4,
       "On Property": 0,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 4
     },
@@ -23,6 +25,7 @@
       "total": 3,
       "On Property": 0,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 3
     },
@@ -31,6 +34,7 @@
       "total": 24,
       "On Property": 7,
       "In Foster": 15,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1
     },
@@ -39,6 +43,7 @@
       "total": 149,
       "On Property": 78,
       "In Foster": 42,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 25
     },
@@ -47,6 +52,7 @@
       "total": 85,
       "On Property": 70,
       "In Foster": 6,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 9,
       "Transferred Out": 0
     },
@@ -55,6 +61,7 @@
       "total": 28,
       "On Property": 28,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -69,6 +76,7 @@
       "lastIntake": "2026-07-16",
       "On Property": 52,
       "In Foster": 33,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 21
     },
@@ -81,6 +89,7 @@
       "lastIntake": "2026-07-18",
       "On Property": 59,
       "In Foster": 2,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 0
     },
@@ -93,6 +102,7 @@
       "lastIntake": "2026-07-17",
       "On Property": 23,
       "In Foster": 5,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 2
     },
@@ -105,6 +115,7 @@
       "lastIntake": "2026-07-17",
       "On Property": 4,
       "In Foster": 15,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 1
     },
@@ -117,6 +128,7 @@
       "lastIntake": "2026-07-18",
       "On Property": 12,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -129,6 +141,7 @@
       "lastIntake": "2026-07-18",
       "On Property": 6,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 6
     },
@@ -141,6 +154,7 @@
       "lastIntake": "2026-07-18",
       "On Property": 10,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -153,6 +167,7 @@
       "lastIntake": "2026-07-15",
       "On Property": 3,
       "In Foster": 5,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -165,6 +180,7 @@
       "lastIntake": "2026-07-16",
       "On Property": 8,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -177,6 +193,7 @@
       "lastIntake": "2026-07-16",
       "On Property": 3,
       "In Foster": 3,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -189,6 +206,7 @@
       "lastIntake": "2026-07-18",
       "On Property": 3,
       "In Foster": 0,
+      "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -310,6 +328,7 @@
   "buckets": [
     "On Property",
     "In Foster",
+    "Safety Net Foster (Pending RTO)",
     "Adopted / Pending",
     "Transferred Out"
   ]

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T17:33:02Z",
+  "lastUpdated": "2026-07-18T17:38:29Z",
   "totals": {
     "total": 293,
     "dogs": 194,
@@ -191,6 +191,106 @@
       "In Foster": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
+    }
+  ],
+  "byLocation": [
+    {
+      "property": "Shady Acres",
+      "area": "Shady Acres - Dog",
+      "total": 63,
+      "dogs": 63,
+      "cats": 0
+    },
+    {
+      "property": "Shady Acres",
+      "area": "Shady Acres (Cat)",
+      "total": 6,
+      "dogs": 0,
+      "cats": 6
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 25,
+      "dogs": 25,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 23,
+      "dogs": 0,
+      "cats": 23
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "TLAC Cattery",
+      "total": 13,
+      "dogs": 0,
+      "cats": 13
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 12,
+      "dogs": 0,
+      "cats": 12
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 3 - Dog",
+      "total": 6,
+      "dogs": 6,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 4,
+      "dogs": 4,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "property": "Tarrytown",
+      "area": "Tarrytown Cattery",
+      "total": 3,
+      "dogs": 0,
+      "cats": 3
+    },
+    {
+      "property": "Tarrytown",
+      "area": "Neonatal Nursery",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     }
   ],
   "transferDestinations": [

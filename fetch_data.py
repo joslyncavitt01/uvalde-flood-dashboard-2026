@@ -16,7 +16,9 @@ SELECT
   currentStatus,
   dispositionBucket,
   lastOutcomeType,
-  transferredTo
+  transferredTo,
+  currentLocationTier1,
+  currentLocationTier2
 FROM `{PROJECT}.shelterluv.flood_animals`
 """
 
@@ -38,6 +40,8 @@ def run():
             "bucket": r.dispositionBucket,
             "outcomeType": r.lastOutcomeType,
             "transferredTo": r.transferredTo,
+            "property": r.currentLocationTier1,
+            "area": r.currentLocationTier2,
         })
 
     buckets = ["On Property", "In Foster", "Adopted / Pending", "Transferred Out"]
@@ -80,6 +84,22 @@ def run():
         rec[a["bucket"]] += 1
     shelters_out = sorted(by_shelter.values(), key=lambda r: -r["total"])
 
+    # On-property animals, by location
+    by_location = {}
+    for a in animals:
+        if a["bucket"] != "On Property":
+            continue
+        prop = a["property"] or "Unspecified"
+        area = (a["area"] or "Unspecified").strip()
+        key = (prop, area)
+        if key not in by_location:
+            by_location[key] = {"property": prop, "area": area, "total": 0, "dogs": 0, "cats": 0}
+        rec = by_location[key]
+        rec["total"] += 1
+        rec["dogs"] += 1 if a["species"] == "Dog" else 0
+        rec["cats"] += 1 if a["species"] == "Cat" else 0
+    locations_out = sorted(by_location.values(), key=lambda r: (r["property"], -r["total"]))
+
     # Transfer destinations
     dest = {}
     for a in animals:
@@ -95,6 +115,7 @@ def run():
         "totals": totals,
         "byDay": days_out,
         "byShelter": shelters_out,
+        "byLocation": locations_out,
         "transferDestinations": destinations_out,
         "buckets": buckets,
     }

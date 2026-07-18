@@ -358,6 +358,45 @@ function render(data) {
   sec3.appendChild(tw);
   content.appendChild(sec3);
 
+  // On-property, by location
+  if (data.byLocation && data.byLocation.length) {
+    const secLoc = el('section');
+    secLoc.innerHTML = `<h2>On-property animals, by location</h2><p class="section-note">Where the ${t["On Property"] || 0} animals still on APA property actually are right now, by campus and building/room.</p>`;
+    const twLoc = el('div', 'table-wrap');
+
+    // Group rows by property, computing rowspans and property subtotals
+    const groups = [];
+    data.byLocation.forEach(r => {
+      let g = groups.find(g => g.property === r.property);
+      if (!g) { g = { property: r.property, rows: [], dogs: 0, cats: 0, total: 0 }; groups.push(g); }
+      g.rows.push(r);
+      g.dogs += r.dogs; g.cats += r.cats; g.total += r.total;
+    });
+    groups.sort((a, b) => b.total - a.total);
+
+    let locRows = '';
+    groups.forEach(g => {
+      g.rows.forEach((r, i) => {
+        locRows += '<tr>';
+        if (i === 0) {
+          locRows += `<td class="shelter" rowspan="${g.rows.length}">${g.property}<div class="mini-note">${g.total} total</div></td>`;
+        }
+        locRows += `<td>${r.area}</td><td class="num">${r.dogs}</td><td class="num">${r.cats}</td><td class="num">${r.total}</td></tr>`;
+      });
+    });
+
+    twLoc.innerHTML = `
+      <table>
+        <thead><tr><th>Property</th><th>Building / area</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th></tr></thead>
+        <tbody>${locRows}
+          <tr class="total-row"><td>Total on property</td><td></td><td class="num">${t["On Property"] ? data.byLocation.reduce((s,r)=>s+r.dogs,0) : 0}</td><td class="num">${data.byLocation.reduce((s,r)=>s+r.cats,0)}</td><td class="num">${t["On Property"] || 0}</td></tr>
+        </tbody>
+      </table>
+    `;
+    secLoc.appendChild(twLoc);
+    content.appendChild(secLoc);
+  }
+
   // Transfer destinations
   if (data.transferDestinations && data.transferDestinations.length) {
     const sec4 = el('section');

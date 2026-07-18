@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uvalde-Area Flood: Live Animal Intake Dashboard</title>
+<style>
+:root {
+  color-scheme: light;
+  --page:        #f6f7f6;
+  --surface:     #fcfcfb;
+  --surface-2:   #eff1f0;
+  --ink:         #0d1210;
+  --ink-2:       #4a5450;
+  --ink-muted:   #7c8682;
+  --line:        #dfe3e0;
+  --line-strong: #c5cbc7;
+  --accent:      #184f95;
+  --accent-soft: #e7edf5;
+  --amber:       #9a6400;
+  --amber-soft:  #fbf1de;
+  --good:        #0ca30c;
+  --live-dot:    #0ca30c;
+
+  --s1: #2a78d6; /* blue   -> On Property */
+  --s2: #008300; /* green  -> In Foster */
+  --s4: #4a3aa7; /* violet -> Adopted / Pending */
+  --s6: #e34948; /* red    -> Transferred Out */
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page:        #101312;
+    --surface:     #181b1a;
+    --surface-2:   #202423;
+    --ink:         #f3f5f4;
+    --ink-2:       #c3c9c6;
+    --ink-muted:   #8b938f;
+    --line:        #2c322f;
+    --line-strong: #3a413d;
+    --accent:      #6ea6e8;
+    --accent-soft: #1c2a3a;
+    --amber:       #e0b13d;
+    --amber-soft:  #322a15;
+    --good:        #3fca6a;
+    --live-dot:    #3fca6a;
+    --s1: #3987e5; --s2: #2fae2f; --s4: #9085e9; --s6: #e66767;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:        #101312;
+  --surface:     #181b1a;
+  --surface-2:   #202423;
+  --ink:         #f3f5f4;
+  --ink-2:       #c3c9c6;
+  --ink-muted:   #8b938f;
+  --line:        #2c322f;
+  --line-strong: #3a413d;
+  --accent:      #6ea6e8;
+  --accent-soft: #1c2a3a;
+  --amber:       #e0b13d;
+  --amber-soft:  #322a15;
+  --good:        #3fca6a;
+  --live-dot:    #3fca6a;
+  --s1: #3987e5; --s2: #2fae2f; --s4: #9085e9; --s6: #e66767;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--page); }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; line-height: 1.5; }
+
+.eyebrow-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.eyebrow { font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+.live-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12px; font-weight: 600; color: var(--ink-2);
+  background: var(--surface-2); border: 1px solid var(--line);
+  padding: 5px 12px 5px 10px; border-radius: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--live-dot); flex-shrink: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .live-dot { animation: pulse 2s ease-in-out infinite; }
+}
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+h1 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-size: clamp(28px, 4vw, 38px); font-weight: 600; margin: 0 0 10px;
+  text-wrap: balance; letter-spacing: -0.01em;
+}
+.dek { color: var(--ink-2); font-size: 16px; max-width: 62ch; margin: 0 0 4px; }
+.meta-line {
+  color: var(--ink-muted); font-size: 13px; margin: 18px 0 0; padding-top: 18px;
+  border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 18px;
+}
+.meta-line b { color: var(--ink-2); font-weight: 600; }
+
+section { margin-top: 48px; }
+h2 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-size: 21px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em;
+}
+.section-note { color: var(--ink-muted); font-size: 13.5px; margin: 0 0 18px; max-width: 68ch; }
+
+.tiles {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden;
+}
+.tile { background: var(--surface); padding: 18px 18px 16px; }
+.tile .label { font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; margin-bottom: 8px; }
+.tile .value { font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.tile .sub { font-size: 12.5px; color: var(--ink-muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
+.tile.accent .value { color: var(--accent); }
+@media (max-width: 700px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+
+.chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 14px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
+.bars { display: flex; align-items: flex-end; gap: 18px; height: 220px; padding: 0 4px; border-bottom: 1px solid var(--line-strong); }
+.barcol { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
+.stack { width: 100%; max-width: 64px; display: flex; flex-direction: column-reverse; border-radius: 4px 4px 0 0; overflow: hidden; }
+.seg { width: 100%; }
+.barcol .total { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+.barcol .daylabel { font-size: 11.5px; color: var(--ink-muted); margin-top: 8px; text-align: center; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 640px; }
+thead th {
+  text-align: left; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-muted);
+  font-weight: 600; padding: 10px 14px; border-bottom: 1px solid var(--line-strong); background: var(--surface-2); white-space: nowrap;
+}
+tbody td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.shelter { font-weight: 600; }
+tr.total-row td { font-weight: 700; background: var(--surface-2); }
+.flag { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 20px; background: var(--amber-soft); color: var(--amber); font-weight: 600; white-space: nowrap; }
+.mini-note { color: var(--ink-muted); font-size: 12px; }
+
+.panel { border: 1px solid var(--line); border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 14px 18px; margin-bottom: 14px; }
+.panel.warn { border-left-color: var(--amber); background: var(--amber-soft); }
+.panel h3 { margin: 0 0 6px; font-size: 14px; font-weight: 700; }
+.panel p { margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); }
+.panel p:last-child { margin-bottom: 0; }
+.panel ul { margin: 6px 0 0; padding-left: 20px; font-size: 13.5px; color: var(--ink-2); }
+.panel li { margin-bottom: 5px; }
+
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 12px; }
+.loading { color: var(--ink-muted); font-size: 14px; padding: 40px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow-row">
+    <p class="eyebrow">APA! &middot; Disaster Response</p>
+    <span class="live-badge"><i class="live-dot"></i><span id="live-label">Loading…</span></span>
+  </div>
+  <h1>Uvalde-Area Flood: Live Animal Intake</h1>
+  <p class="dek">Refreshes automatically from ShelterLuv/BigQuery every 15 minutes. Every flood-attributable animal, where they came from, and where they stand right now.</p>
+  <div class="meta-line">
+    <span><b>Data source:</b> apa-grants-manager.shelterluv.flood_animals (BigQuery)</span>
+    <span><b>Scope:</b> 10 flood-affected partner shelters, intake from Jul 14, 2026 on</span>
+  </div>
+
+  <section id="content">
+    <div class="loading">Loading live data…</div>
+  </section>
+
+  <section>
+    <h2>Known gaps &amp; exclusions</h2>
+    <p class="section-note">This context doesn't come from BigQuery and won't auto-update &mdash; it's carried over from the internal ops timeline and needs a manual re-check as the response evolves.</p>
+    <div class="panel warn">
+      <h3>Not yet in ShelterLuv</h3>
+      <ul>
+        <li><b>The Crystal City neighborhood water rescue</b> &mdash; "dozens and dozens" of owned dogs/cats pulled directly from flooded homes. The team explicitly held off building ShelterLuv shells for these until disposition (reunification vs. surrender) is sorted, so they won't appear in this dashboard until that happens.</li>
+        <li><b>Asherton's animals</b>, flagged for intake but not logged as of the dashboard's initial build (7/18). Check back once they clear intake.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Deliberately excluded</h3>
+      <ul>
+        <li><b>City of Hondo Animal Shelter (7 dogs)</b> &mdash; the Medina County euthanasia-list pull, confirmed non-flood-caused per the internal ops doc. Excluded from every total on this page.</li>
+        <li><b>Raymondville Animal Shelter</b> &mdash; explicitly non-flood, excluded throughout.</li>
+        <li><b>Pre-flood routine pulls</b> from Dilley and Del Rio (7/13&ndash;14, before the flood escalated) &mdash; only their 7/15-onward flood-activated pulls count here.</li>
+        <li>The ~20-cat managed TNR colony in Uvalde (deliberately left in place) and the 4 Uvalde animals going directly to Footbridge Foundation (not part of APA's intake) are correctly absent.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="footer-note">
+    Built from <code>apa-grants-manager.shelterluv.flood_animals</code>, which joins live ShelterLuv intake data to a manually-curated flood-shelter reference table (with per-shelter start dates to exclude routine pre-flood transport). Add a newly-activated shelter by updating <code>apa-grants-manager.shelterluv.flood_shelters</code>, no code changes needed.
+  </footer>
+
+</div>
+
+<script>
+const BUCKET_COLORS = {
+  "On Property": "var(--s1)",
+  "In Foster": "var(--s2)",
+  "Adopted / Pending": "var(--s4)",
+  "Transferred Out": "var(--s6)",
+};
+
+function fmtRelative(iso) {
+  const then = new Date(iso);
+  const now = new Date();
+  const mins = Math.round((now - then) / 60000);
+  if (mins < 1) return "updated just now";
+  if (mins === 1) return "updated 1 min ago";
+  if (mins < 60) return `updated ${mins} min ago`;
+  const hrs = Math.round(mins / 60);
+  if (hrs === 1) return "updated 1 hour ago";
+  if (hrs < 24) return `updated ${hrs} hours ago`;
+  return `updated ${then.toLocaleString()}`;
+}
+
+function el(tag, cls, html) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (html !== undefined) e.innerHTML = html;
+  return e;
+}
+
+function renderChart(byDay, buckets) {
+  const maxTotal = Math.max(...byDay.map(d => d.total), 1);
+  const bars = el('div', 'bars');
+  byDay.forEach(day => {
+    const col = el('div', 'barcol');
+    col.appendChild(el('div', 'total', day.total));
+
+    const stackWrap = el('div');
+    stackWrap.style.height = (170 * day.total / maxTotal) + 'px';
+    stackWrap.style.width = '100%';
+    stackWrap.style.display = 'flex';
+    stackWrap.style.justifyContent = 'center';
+
+    const stack = el('div', 'stack');
+    stack.style.height = '100%';
+    buckets.forEach(b => {
+      const v = day[b] || 0;
+      if (v <= 0) return;
+      const seg = el('div', 'seg');
+      seg.style.background = BUCKET_COLORS[b];
+      seg.style.height = (100 * v / day.total) + '%';
+      seg.title = `${b}: ${v}`;
+      stack.appendChild(seg);
+    });
+    stackWrap.appendChild(stack);
+    col.appendChild(stackWrap);
+
+    const d = new Date(day.date + 'T00:00:00');
+    const label = el('div', 'daylabel', d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }));
+    col.appendChild(label);
+    bars.appendChild(col);
+  });
+  return bars;
+}
+
+function render(data) {
+  document.getElementById('live-label').textContent = fmtRelative(data.lastUpdated);
+
+  const t = data.totals;
+  const placed = (t["Adopted / Pending"] || 0) + (t["Transferred Out"] || 0);
+
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  // Totals section
+  const sec1 = el('section');
+  sec1.innerHTML = `
+    <h2>The flood-attributable total</h2>
+    <p class="section-note">Every animal here is traceable to a flood-affected shelter, intaken on or after the shelter's flood-activation date. Live as of the timestamp above.</p>
+  `;
+  const tiles = el('div', 'tiles');
+  tiles.innerHTML = `
+    <div class="tile accent">
+      <div class="label">Flood-attributable intake</div>
+      <div class="value">${t.total}</div>
+      <div class="sub">${t.dogs} dogs &middot; ${t.cats} cats</div>
+    </div>
+    <div class="tile">
+      <div class="label">Still on APA property</div>
+      <div class="value">${t["On Property"] || 0}</div>
+      <div class="sub">${Math.round(100 * (t["On Property"]||0) / t.total)}% of total</div>
+    </div>
+    <div class="tile">
+      <div class="label">In foster</div>
+      <div class="value">${t["In Foster"] || 0}</div>
+      <div class="sub">${Math.round(100 * (t["In Foster"]||0) / t.total)}% of total</div>
+    </div>
+    <div class="tile">
+      <div class="label">Adopted / transferred</div>
+      <div class="value">${placed}</div>
+      <div class="sub">${t["Transferred Out"]||0} transferred &middot; ${t["Adopted / Pending"]||0} adopted/pending</div>
+    </div>
+  `;
+  sec1.appendChild(tiles);
+  content.appendChild(sec1);
+
+  // Chart section
+  const sec2 = el('section');
+  sec2.innerHTML = `<h2>Daily intake, by disposition today</h2><p class="section-note">Each bar is animals whose intake was logged that day, split by where they stand right now.</p>`;
+  const card = el('div', 'chart-card');
+  const legend = el('div', 'legend');
+  legend.innerHTML = data.buckets.map(b => `<span><i class="swatch" style="background:${BUCKET_COLORS[b]}"></i>${b}</span>`).join('');
+  card.appendChild(legend);
+  card.appendChild(renderChart(data.byDay, data.buckets));
+  sec2.appendChild(card);
+  content.appendChild(sec2);
+
+  // Shelter table
+  const sec3 = el('section');
+  sec3.innerHTML = `<h2>By origin shelter</h2><p class="section-note">"Origin" is the immediate transferring shelter in ShelterLuv. Footbridge Foundation is a pass-through partner, not a shelter &mdash; several of its animals are confirmed originally from Castroville.</p>`;
+  const tw = el('div', 'table-wrap');
+  const rows = data.byShelter.map(s => `
+    <tr>
+      <td class="shelter">${s.shelter}${s.shelter === 'Footbridge Foundation' ? ' <span class="flag">pass-through</span>' : ''}</td>
+      <td class="num">${s.dogs}</td>
+      <td class="num">${s.cats}</td>
+      <td class="num">${s.total}</td>
+      <td>${s.firstIntake === s.lastIntake ? s.firstIntake : s.firstIntake + ' to ' + s.lastIntake}</td>
+      <td class="num">${s["On Property"]}</td>
+      <td class="num">${s["In Foster"]}</td>
+      <td class="num">${s["Adopted / Pending"]}</td>
+      <td class="num">${s["Transferred Out"]}</td>
+    </tr>
+  `).join('');
+  tw.innerHTML = `
+    <table>
+      <thead><tr>
+        <th>Origin shelter</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
+        <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster</th>
+        <th class="num">Adopted/pending</th><th class="num">Transferred</th>
+      </tr></thead>
+      <tbody>${rows}
+        <tr class="total-row">
+          <td>Total, flood-attributable</td><td class="num">${t.dogs}</td><td class="num">${t.cats}</td><td class="num">${t.total}</td>
+          <td></td><td class="num">${t["On Property"]||0}</td><td class="num">${t["In Foster"]||0}</td>
+          <td class="num">${t["Adopted / Pending"]||0}</td><td class="num">${t["Transferred Out"]||0}</td>
+        </tr>
+      </tbody>
+    </table>
+  `;
+  sec3.appendChild(tw);
+  content.appendChild(sec3);
+
+  // Transfer destinations
+  if (data.transferDestinations && data.transferDestinations.length) {
+    const sec4 = el('section');
+    sec4.innerHTML = `<h2>Where the transferred-out animals went</h2>`;
+    const tw2 = el('div', 'table-wrap');
+    const drows = data.transferDestinations.map(d => `<tr><td class="shelter">${d.destination}</td><td class="num">${d.count}</td></tr>`).join('');
+    tw2.innerHTML = `<table><thead><tr><th>Destination</th><th class="num">Animals</th></tr></thead><tbody>${drows}</tbody></table>`;
+    sec4.appendChild(tw2);
+    content.appendChild(sec4);
+  }
+}
+
+async function load() {
+  try {
+    const res = await fetch('data/flood_animals.json?t=' + Date.now());
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    document.getElementById('content').innerHTML = `<div class="loading">Couldn't load live data: ${e.message}</div>`;
+  }
+}
+
+load();
+setInterval(load, 60000); // refresh the on-page view every minute; underlying data itself refreshes every 15 min
+</script>
+</body>
+</html>

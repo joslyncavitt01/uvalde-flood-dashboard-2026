@@ -16,6 +16,8 @@ var COLUMN_MAP = {
   "name":                     "AnimalName",
   "species":                  "Species",
   "current status":           "CurrentStatus",
+  "current location":         "CurrentLocation",
+  "location at intake":       "LocationAtIntake",
   "intake date":              "IntakeDate",
   "intake time":              "IntakeTime",
   "intake type":              "IntakeType",
@@ -24,9 +26,14 @@ var COLUMN_MAP = {
   "intake original source":   "IntakeOriginalSource",
   "intake from person name":  "IntakeFromPersonName",
   "intake from city":         "IntakeFromCity",
+  "intake from county":       "IntakeFromCounty",
   "intake from zip":          "IntakeFromZip",
-  "current location":         "CurrentLocation",
-  "location at intake":       "LocationAtIntake"
+  "intake found city":        "IntakeFoundCity",
+  "intake found county":      "IntakeFoundCounty",
+  "outcome date":             "OutcomeDate",
+  "outcome type":             "OutcomeType",
+  "outcome subtype":          "OutcomeSubtype",
+  "transfer to":              "TransferTo"
 };
 
 function syncIntakeSnapshot() {

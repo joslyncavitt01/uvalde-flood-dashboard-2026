@@ -1,9 +1,19 @@
 import json
 import os
+import urllib.request
 from datetime import datetime, timezone
 from google.cloud import bigquery
+from shapely.geometry import shape, Point
 
 PROJECT = "apa-grants-manager"
+
+# Live TAHC NWS zone feed -- same source the tx-flood-radar-shelters map uses.
+# Fetched fresh on every run so zone tags never go stale even if TAHC updates the boundaries.
+TAHC_ZONES_URL = (
+    "https://services1.arcgis.com/9Astik9VqLUMFtxK/arcgis/rest/services/"
+    "NWS_Zones_and_Areas_PUBLIC_VIEW/FeatureServer/33/query"
+    "?where=1%3D1&outFields=*&f=geojson&outSR=4326"
+)
 
 QUERY = f"""
 SELECT
@@ -13,9 +23,14 @@ SELECT
   species,
   intakeDate,
   originShelter,
+  shelterCity,
+  shelterCounty,
+  shelterLat,
+  shelterLon,
   currentStatus,
   dispositionBucket,
   lastOutcomeType,
+  lastOutcomeDate,
   transferredTo,
   currentLocationTier1,
   currentLocationTier2
@@ -23,9 +38,46 @@ FROM `{PROJECT}.shelterluv.flood_animals`
 """
 
 
+def fetch_nws_zones():
+    """Returns (infested_polys, surveillance_polys), or ([], []) if the live feed is unreachable."""
+    try:
+        with urllib.request.urlopen(TAHC_ZONES_URL, timeout=15) as resp:
+            data = json.loads(resp.read())
+    except Exception as e:
+        print(f"WARNING: couldn't fetch live TAHC zones ({e}); shelters will show no zone tag this run.")
+        return [], []
+
+    infested, surveillance = [], []
+    for f in data.get("features", []):
+        try:
+            geom = shape(f["geometry"])
+        except Exception:
+            continue
+        zone = f.get("properties", {}).get("zone_name")
+        if zone == 1:
+            infested.append(geom)
+        elif zone == 2:
+            surveillance.append(geom)
+    return infested, surveillance
+
+
+def zone_for(lat, lon, infested, surveillance):
+    if lat is None or lon is None:
+        return None
+    p = Point(lon, lat)
+    if any(poly.contains(p) for poly in infested):
+        return "Infested Zone"
+    if any(poly.contains(p) for poly in surveillance):
+        return "Surveillance Zone"
+    return None
+
+
 def run():
     client = bigquery.Client(project=PROJECT)
     rows = list(client.query(QUERY).result())
+
+    infested, surveillance = fetch_nws_zones()
+    zone_cache = {}
 
     animals = []
     for r in rows:
@@ -36,15 +88,26 @@ def run():
             "species": r.species,
             "intakeDate": str(r.intakeDate),
             "shelter": r.originShelter,
+            "shelterCity": r.shelterCity,
+            "shelterCounty": r.shelterCounty,
+            "shelterLat": r.shelterLat,
+            "shelterLon": r.shelterLon,
             "status": r.currentStatus,
             "bucket": r.dispositionBucket,
             "outcomeType": r.lastOutcomeType,
+            "outcomeDate": str(r.lastOutcomeDate.date()) if r.lastOutcomeDate else None,
             "transferredTo": r.transferredTo,
             "property": r.currentLocationTier1,
             "area": r.currentLocationTier2,
         })
 
-    buckets = ["On Property", "In Foster", "Safety Net Foster (Pending RTO)", "Adopted / Pending", "Transferred Out"]
+    buckets = [
+        "On Property",
+        "In Foster (Available for Adoption)",
+        "In Foster (Unavailable for Adoption)",
+        "Adopted / Pending",
+        "Transferred Out",
+    ]
 
     # Totals
     totals = {
@@ -65,13 +128,18 @@ def run():
         by_day[d][a["bucket"]] += 1
     days_out = [by_day[d] for d in sorted(by_day.keys())]
 
-    # By shelter
+    # By shelter (with city/county/live NWS zone tag)
     by_shelter = {}
     for a in animals:
         s = a["shelter"]
         if s not in by_shelter:
+            key = (a["shelterLat"], a["shelterLon"])
+            if key not in zone_cache:
+                zone_cache[key] = zone_for(a["shelterLat"], a["shelterLon"], infested, surveillance)
             by_shelter[s] = {
                 "shelter": s, "total": 0, "dogs": 0, "cats": 0,
+                "city": a["shelterCity"], "county": a["shelterCounty"],
+                "nwsZone": zone_cache[key],
                 "firstIntake": a["intakeDate"], "lastIntake": a["intakeDate"],
                 **{b: 0 for b in buckets},
             }
@@ -100,14 +168,15 @@ def run():
         rec["cats"] += 1 if a["species"] == "Cat" else 0
     locations_out = sorted(by_location.values(), key=lambda r: (r["property"], -r["total"]))
 
-    # Transfer destinations
+    # Transfer destinations, by date so waves of transport are visible
     dest = {}
     for a in animals:
         if a["bucket"] == "Transferred Out" and a["transferredTo"]:
-            dest[a["transferredTo"]] = dest.get(a["transferredTo"], 0) + 1
+            key = (a["outcomeDate"], a["transferredTo"])
+            dest[key] = dest.get(key, 0) + 1
     destinations_out = sorted(
-        [{"destination": k, "count": v} for k, v in dest.items()],
-        key=lambda r: -r["count"],
+        [{"date": k[0], "destination": k[1], "count": v} for k, v in dest.items()],
+        key=lambda r: (r["date"] or "", -r["count"]),
     )
 
     output = {

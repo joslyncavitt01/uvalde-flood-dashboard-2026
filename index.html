@@ -21,10 +21,12 @@
   --amber-soft:  #fbf1de;
   --good:        #0ca30c;
   --live-dot:    #0ca30c;
+  --critical:      #d03b3b;
+  --critical-soft: #fbe6e5;
 
   --s1: #2a78d6; /* blue    -> On Property */
-  --s2: #008300; /* green   -> In Foster */
-  --s3: #e87ba4; /* magenta -> Safety Net Foster (Pending RTO) */
+  --s2: #008300; /* green   -> In Foster, Available */
+  --s3: #e87ba4; /* magenta -> In Foster, Unavailable */
   --s4: #eda100; /* yellow  -> Adopted / Pending */
   --s5: #1baf7a; /* aqua    -> Transferred Out */
 }
@@ -45,6 +47,8 @@
     --amber-soft:  #322a15;
     --good:        #3fca6a;
     --live-dot:    #3fca6a;
+    --critical:      #e66767;
+    --critical-soft: #3a1f1c;
     --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #c98500; --s5: #199e70;
   }
 }
@@ -64,6 +68,8 @@
   --amber-soft:  #322a15;
   --good:        #3fca6a;
   --live-dot:    #3fca6a;
+  --critical:      #e66767;
+  --critical-soft: #3a1f1c;
   --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #c98500; --s5: #199e70;
 }
 
@@ -161,6 +167,10 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 td.shelter { font-weight: 600; }
 tr.total-row td { font-weight: 700; background: var(--surface-2); }
 .flag { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 20px; background: var(--amber-soft); color: var(--amber); font-weight: 600; white-space: nowrap; }
+.zone-tag { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 20px; font-weight: 600; white-space: nowrap; }
+.zone-tag.infested { background: var(--critical-soft); color: var(--critical); }
+.zone-tag.surveillance { background: var(--amber-soft); color: var(--amber); }
+.zone-tag.none { color: var(--ink-muted); font-weight: 400; }
 .mini-note { color: var(--ink-muted); font-size: 12px; }
 
 .panel { border: 1px solid var(--line); border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 14px 18px; margin-bottom: 14px; }
@@ -214,8 +224,8 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 <script>
 const BUCKET_COLORS = {
   "On Property": "var(--s1)",
-  "In Foster": "var(--s2)",
-  "Safety Net Foster (Pending RTO)": "var(--s3)",
+  "In Foster (Available for Adoption)": "var(--s2)",
+  "In Foster (Unavailable for Adoption)": "var(--s3)",
   "Adopted / Pending": "var(--s4)",
   "Transferred Out": "var(--s5)",
 };
@@ -325,14 +335,14 @@ function render(data) {
       <div class="sub">${Math.round(100 * (t["On Property"]||0) / t.total)}% of total</div>
     </div>
     <div class="tile">
-      <div class="label">In foster (adoption track)</div>
-      <div class="value">${t["In Foster"] || 0}</div>
-      <div class="sub">${Math.round(100 * (t["In Foster"]||0) / t.total)}% of total</div>
+      <div class="label">In foster, available</div>
+      <div class="value">${t["In Foster (Available for Adoption)"] || 0}</div>
+      <div class="sub">${Math.round(100 * (t["In Foster (Available for Adoption)"]||0) / t.total)}% of total</div>
     </div>
     <div class="tile">
-      <div class="label">Safety Net Foster (pending RTO)</div>
-      <div class="value">${t["Safety Net Foster (Pending RTO)"] || 0}</div>
-      <div class="sub">owned pets, not adoptable</div>
+      <div class="label">In foster, unavailable</div>
+      <div class="value">${t["In Foster (Unavailable for Adoption)"] || 0}</div>
+      <div class="sub">${Math.round(100 * (t["In Foster (Unavailable for Adoption)"]||0) / t.total)}% of total</div>
     </div>
     <div class="tile">
       <div class="label">Adopted / pending</div>
@@ -361,17 +371,26 @@ function render(data) {
 
   // Shelter table
   const sec3 = el('section');
-  sec3.innerHTML = `<h2>By origin shelter</h2><p class="section-note">"Origin" is the immediate transferring shelter in ShelterLuv. Footbridge Foundation is a pass-through partner, not a shelter &mdash; several of its animals are confirmed originally from Castroville.</p>`;
+  sec3.innerHTML = `<h2>By origin shelter</h2><p class="section-note">"Origin" is the immediate transferring shelter in ShelterLuv. Footbridge Foundation is a pass-through partner, not a shelter &mdash; several of its animals are confirmed originally from Castroville. NWS zone is checked live against TAHC's public zone map for each shelter's coordinates, not a hardcoded list &mdash; it reflects the boundary as drawn right now.</p>`;
   const tw = el('div', 'table-wrap');
+  const zoneTag = (z) => {
+    if (z === 'Infested Zone') return '<span class="zone-tag infested">Infested</span>';
+    if (z === 'Surveillance Zone') return '<span class="zone-tag surveillance">Surveillance</span>';
+    return '<span class="zone-tag none">&mdash;</span>';
+  };
   const rows = data.byShelter.map(s => `
     <tr>
       <td class="shelter">${s.shelter}${s.shelter === 'Footbridge Foundation' ? ' <span class="flag">pass-through</span>' : ''}</td>
+      <td>${s.city || ''}</td>
+      <td>${s.county ? s.county + ' Co.' : ''}</td>
+      <td>${zoneTag(s.nwsZone)}</td>
       <td class="num">${s.dogs}</td>
       <td class="num">${s.cats}</td>
       <td class="num">${s.total}</td>
       <td>${s.firstIntake === s.lastIntake ? s.firstIntake : s.firstIntake + ' to ' + s.lastIntake}</td>
       <td class="num">${s["On Property"]}</td>
-      <td class="num">${s["In Foster"]}</td>
+      <td class="num">${s["In Foster (Available for Adoption)"]}</td>
+      <td class="num">${s["In Foster (Unavailable for Adoption)"]}</td>
       <td class="num">${s["Adopted / Pending"]}</td>
       <td class="num">${s["Transferred Out"]}</td>
     </tr>
@@ -379,14 +398,17 @@ function render(data) {
   tw.innerHTML = `
     <table>
       <thead><tr>
-        <th>Origin shelter</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
-        <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster</th>
-        <th class="num">Adopted/pending</th><th class="num">Transferred</th>
+        <th>Origin shelter</th><th>City</th><th>County</th><th>NWS zone</th>
+        <th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
+        <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster, avail.</th>
+        <th class="num">Foster, unavail.</th><th class="num">Adopted/pending</th><th class="num">Transferred</th>
       </tr></thead>
       <tbody>${rows}
         <tr class="total-row">
-          <td>Total, flood-attributable</td><td class="num">${t.dogs}</td><td class="num">${t.cats}</td><td class="num">${t.total}</td>
-          <td></td><td class="num">${t["On Property"]||0}</td><td class="num">${t["In Foster"]||0}</td>
+          <td>Total, flood-attributable</td><td></td><td></td><td></td>
+          <td class="num">${t.dogs}</td><td class="num">${t.cats}</td><td class="num">${t.total}</td>
+          <td></td><td class="num">${t["On Property"]||0}</td><td class="num">${t["In Foster (Available for Adoption)"]||0}</td>
+          <td class="num">${t["In Foster (Unavailable for Adoption)"]||0}</td>
           <td class="num">${t["Adopted / Pending"]||0}</td><td class="num">${t["Transferred Out"]||0}</td>
         </tr>
       </tbody>
@@ -437,10 +459,10 @@ function render(data) {
   // Transfer destinations
   if (data.transferDestinations && data.transferDestinations.length) {
     const sec4 = el('section');
-    sec4.innerHTML = `<h2>Where the transferred-out animals went</h2>`;
+    sec4.innerHTML = `<h2>Where the transferred-out animals went</h2><p class="section-note">Grouped by day so you can see which transport wave went where.</p>`;
     const tw2 = el('div', 'table-wrap');
-    const drows = data.transferDestinations.map(d => `<tr><td class="shelter">${d.destination}</td><td class="num">${d.count}</td></tr>`).join('');
-    tw2.innerHTML = `<table><thead><tr><th>Destination</th><th class="num">Animals</th></tr></thead><tbody>${drows}</tbody></table>`;
+    const drows = data.transferDestinations.map(d => `<tr><td>${d.date || '&mdash;'}</td><td class="shelter">${d.destination}</td><td class="num">${d.count}</td></tr>`).join('');
+    tw2.innerHTML = `<table><thead><tr><th>Date</th><th>Destination</th><th class="num">Animals</th></tr></thead><tbody>${drows}</tbody></table>`;
     sec4.appendChild(tw2);
     content.appendChild(sec4);
   }

@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-18T18:00:54Z",
+  "lastUpdated": "2026-07-18T18:06:23Z",
   "totals": {
-    "total": 293,
-    "dogs": 194,
-    "cats": 99,
-    "On Property": 183,
-    "In Foster": 63,
-    "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 14,
+    "total": 261,
+    "dogs": 176,
+    "cats": 85,
+    "On Property": 164,
+    "In Foster (Available for Adoption)": 50,
+    "In Foster (Unavailable for Adoption)": 2,
+    "Adopted / Pending": 12,
     "Transferred Out": 33
   },
   "byDay": [
@@ -15,8 +15,8 @@
       "date": "2026-07-13",
       "total": 4,
       "On Property": 0,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 4
     },
@@ -24,44 +24,44 @@
       "date": "2026-07-14",
       "total": 3,
       "On Property": 0,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 3
     },
     {
       "date": "2026-07-15",
-      "total": 24,
+      "total": 21,
       "On Property": 7,
-      "In Foster": 15,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 12,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1
     },
     {
       "date": "2026-07-16",
-      "total": 149,
-      "On Property": 78,
-      "In Foster": 42,
-      "Safety Net Foster (Pending RTO)": 0,
+      "total": 140,
+      "On Property": 75,
+      "In Foster (Available for Adoption)": 34,
+      "In Foster (Unavailable for Adoption)": 2,
       "Adopted / Pending": 4,
       "Transferred Out": 25
     },
     {
       "date": "2026-07-17",
-      "total": 85,
-      "On Property": 70,
-      "In Foster": 6,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 9,
+      "total": 66,
+      "On Property": 55,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Adopted / Pending": 7,
       "Transferred Out": 0
     },
     {
       "date": "2026-07-18",
-      "total": 28,
-      "On Property": 28,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "total": 27,
+      "On Property": 27,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -69,53 +69,65 @@
   "byShelter": [
     {
       "shelter": "Kendall County Animal Shelter (TX)",
-      "total": 107,
-      "dogs": 52,
-      "cats": 55,
+      "total": 100,
+      "dogs": 46,
+      "cats": 54,
+      "city": "Boerne",
+      "county": "Kendall",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 52,
-      "In Foster": 33,
-      "Safety Net Foster (Pending RTO)": 0,
+      "On Property": 49,
+      "In Foster (Available for Adoption)": 27,
+      "In Foster (Unavailable for Adoption)": 2,
       "Adopted / Pending": 1,
       "Transferred Out": 21
     },
     {
       "shelter": "Briscoe Animal Resource Center",
-      "total": 65,
-      "dogs": 53,
-      "cats": 12,
+      "total": 51,
+      "dogs": 49,
+      "cats": 2,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-18",
-      "On Property": 59,
-      "In Foster": 2,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
+      "On Property": 47,
+      "In Foster (Available for Adoption)": 2,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Adopted / Pending": 2,
       "Transferred Out": 0
     },
     {
       "shelter": "Kerrville Pets Alive!",
-      "total": 37,
-      "dogs": 14,
-      "cats": 23,
+      "total": 33,
+      "dogs": 13,
+      "cats": 20,
+      "city": "Kerrville",
+      "county": "Kerr",
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-17",
-      "On Property": 23,
-      "In Foster": 5,
-      "Safety Net Foster (Pending RTO)": 0,
+      "On Property": 20,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 2
     },
     {
       "shelter": "Footbridge Foundation",
-      "total": 22,
-      "dogs": 17,
+      "total": 16,
+      "dogs": 11,
       "cats": 5,
+      "city": "San Antonio",
+      "county": "Bexar",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-17",
       "On Property": 4,
-      "In Foster": 15,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 9,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 1
     },
@@ -124,11 +136,14 @@
       "total": 13,
       "dogs": 13,
       "cats": 0,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
       "firstIntake": "2026-07-14",
       "lastIntake": "2026-07-18",
       "On Property": 12,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -137,11 +152,14 @@
       "total": 12,
       "dogs": 12,
       "cats": 0,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 6,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 6
     },
@@ -150,11 +168,14 @@
       "total": 10,
       "dogs": 10,
       "cats": 0,
+      "city": "Crystal City",
+      "county": "Zavala",
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-18",
       "On Property": 10,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -163,11 +184,14 @@
       "total": 9,
       "dogs": 5,
       "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 3,
-      "In Foster": 5,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
@@ -176,11 +200,14 @@
       "total": 8,
       "dogs": 8,
       "cats": 0,
+      "city": "Pearsall",
+      "county": "Frio",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 8,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     },
@@ -189,24 +216,30 @@
       "total": 7,
       "dogs": 7,
       "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 3,
-      "In Foster": 3,
-      "Safety Net Foster (Pending RTO)": 0,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
     },
     {
       "shelter": "Devine Animal Control",
-      "total": 3,
-      "dogs": 3,
+      "total": 2,
+      "dogs": 2,
       "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-18",
-      "On Property": 3,
-      "In Foster": 0,
-      "Safety Net Foster (Pending RTO)": 0,
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }
@@ -215,8 +248,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 63,
-      "dogs": 63,
+      "total": 62,
+      "dogs": 62,
       "cats": 0
     },
     {
@@ -229,37 +262,30 @@
     {
       "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 25,
-      "dogs": 25,
+      "total": 23,
+      "dogs": 23,
       "cats": 0
     },
     {
       "property": "TLAC",
       "area": "Cat Intake Room",
-      "total": 23,
+      "total": 22,
       "dogs": 0,
-      "cats": 23
+      "cats": 22
     },
     {
       "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 14,
-      "dogs": 14,
+      "total": 12,
+      "dogs": 12,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 13,
-      "dogs": 0,
-      "cats": 13
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
-      "total": 12,
+      "total": 9,
       "dogs": 0,
-      "cats": 12
+      "cats": 9
     },
     {
       "property": "TLAC",
@@ -284,10 +310,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 2,
+      "area": "TLAC Cattery",
+      "total": 4,
       "dogs": 0,
-      "cats": 2
+      "cats": 4
     },
     {
       "property": "TLAC",
@@ -295,6 +321,13 @@
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -313,22 +346,25 @@
   ],
   "transferDestinations": [
     {
-      "destination": "Best Friends Animal Society - Salt Lake City, UT",
-      "count": 26
-    },
-    {
+      "date": "2026-07-15",
       "destination": "Shelter From the Storm Animal Rescue",
       "count": 6
     },
     {
+      "date": "2026-07-15",
       "destination": "Chicago Canine Rescue Foundation",
       "count": 1
+    },
+    {
+      "date": "2026-07-17",
+      "destination": "Best Friends Animal Society - Salt Lake City, UT",
+      "count": 26
     }
   ],
   "buckets": [
     "On Property",
-    "In Foster",
-    "Safety Net Foster (Pending RTO)",
+    "In Foster (Available for Adoption)",
+    "In Foster (Unavailable for Adoption)",
     "Adopted / Pending",
     "Transferred Out"
   ]

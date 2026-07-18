@@ -205,18 +205,6 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <div class="loading">Loading live data…</div>
   </section>
 
-  <section>
-    <h2>Known gaps &amp; exclusions</h2>
-    <p class="section-note">This context doesn't come from BigQuery and won't auto-update &mdash; it's carried over from the internal ops timeline and needs a manual re-check as the response evolves.</p>
-    <div class="panel warn">
-      <h3>Not yet in ShelterLuv</h3>
-      <ul>
-        <li><b>The Crystal City neighborhood water rescue</b> &mdash; "dozens and dozens" of owned dogs/cats pulled directly from flooded homes. The team explicitly held off building ShelterLuv shells for these until disposition (reunification vs. surrender) is sorted, so they won't appear in this dashboard until that happens.</li>
-        <li><b>Asherton's animals</b>, flagged for intake but not logged as of the dashboard's initial build (7/18). Check back once they clear intake.</li>
-      </ul>
-    </div>
-  </section>
-
   <footer id="footer-note">
     Built from <code>apa-grants-manager.shelterluv.flood_animals</code>, which joins live ShelterLuv intake data to a manually-curated flood-shelter reference table (with per-shelter start dates to exclude routine pre-flood transport). Add a newly-activated shelter by updating <code>apa-grants-manager.shelterluv.flood_shelters</code>, no code changes needed.
   </footer>

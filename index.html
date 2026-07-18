@@ -358,6 +358,30 @@ function render(data) {
   sec1.appendChild(tiles);
   content.appendChild(sec1);
 
+  // Status detail -- exact ShelterLuv status text within each bucket
+  if (data.statusDetail && data.statusDetail.length) {
+    const secStatus = el('section');
+    secStatus.innerHTML = `<h2>Status detail</h2><p class="section-note">The exact ShelterLuv status behind each bucket above &mdash; medical holds, plain "unavailable" with no other qualifier, etc. Available/Unavailable for adoption is a rough proxy for Safety Net Foster (owned pets pending RTO, not up for adoption); this table is where to look for the specific reason.</p>`;
+    const twStatus = el('div', 'table-wrap');
+    const statusRows = data.statusDetail.map(r => `
+      <tr>
+        <td>${r.bucket}</td>
+        <td class="shelter">${r.status}</td>
+        <td class="num">${r.dogs}</td>
+        <td class="num">${r.cats}</td>
+        <td class="num">${r.total}</td>
+      </tr>
+    `).join('');
+    twStatus.innerHTML = `
+      <table>
+        <thead><tr><th>Bucket</th><th>Exact status</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th></tr></thead>
+        <tbody>${statusRows}</tbody>
+      </table>
+    `;
+    secStatus.appendChild(twStatus);
+    content.appendChild(secStatus);
+  }
+
   // Chart section
   const sec2 = el('section');
   sec2.innerHTML = `<h2>Daily intake, by disposition today</h2><p class="section-note">Each bar is animals whose intake was logged that day, split by where they stand right now.</p>`;

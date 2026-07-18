@@ -168,6 +168,24 @@ def run():
         rec["cats"] += 1 if a["species"] == "Cat" else 0
     locations_out = sorted(by_location.values(), key=lambda r: (r["property"], -r["total"]))
 
+    # Status detail -- exact ShelterLuv status text, grouped under its parent bucket,
+    # so specific reasons (medical hold, too young, plain "unavailable", etc.) are visible
+    # rather than collapsed into the top-level available/unavailable split.
+    by_status = {}
+    for a in animals:
+        key = (a["bucket"], a["status"])
+        if key not in by_status:
+            by_status[key] = {"bucket": a["bucket"], "status": a["status"], "total": 0, "dogs": 0, "cats": 0}
+        rec = by_status[key]
+        rec["total"] += 1
+        rec["dogs"] += 1 if a["species"] == "Dog" else 0
+        rec["cats"] += 1 if a["species"] == "Cat" else 0
+    bucket_order = {b: i for i, b in enumerate(buckets)}
+    status_detail_out = sorted(
+        by_status.values(),
+        key=lambda r: (bucket_order.get(r["bucket"], 99), -r["total"]),
+    )
+
     # Transfer destinations, by date so waves of transport are visible
     dest = {}
     for a in animals:
@@ -185,6 +203,7 @@ def run():
         "byDay": days_out,
         "byShelter": shelters_out,
         "byLocation": locations_out,
+        "statusDetail": status_detail_out,
         "transferDestinations": destinations_out,
         "buckets": buckets,
     }

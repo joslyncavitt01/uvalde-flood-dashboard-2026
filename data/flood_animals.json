@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-18T18:15:59Z",
+  "lastUpdated": "2026-07-18T18:21:09Z",
   "totals": {
-    "total": 261,
-    "dogs": 176,
-    "cats": 85,
-    "On Property": 164,
-    "In Foster (Available for Adoption)": 50,
-    "In Foster (Unavailable for Adoption)": 2,
-    "Adopted / Pending": 12,
+    "total": 297,
+    "dogs": 197,
+    "cats": 100,
+    "On Property": 185,
+    "In Foster (Available for Adoption)": 62,
+    "In Foster (Unavailable for Adoption)": 3,
+    "Adopted / Pending": 14,
     "Transferred Out": 33
   },
   "byDay": [
@@ -31,35 +31,35 @@
     },
     {
       "date": "2026-07-15",
-      "total": 21,
+      "total": 24,
       "On Property": 7,
-      "In Foster (Available for Adoption)": 12,
+      "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1
     },
     {
       "date": "2026-07-16",
-      "total": 140,
-      "On Property": 75,
-      "In Foster (Available for Adoption)": 34,
-      "In Foster (Unavailable for Adoption)": 2,
+      "total": 149,
+      "On Property": 76,
+      "In Foster (Available for Adoption)": 41,
+      "In Foster (Unavailable for Adoption)": 3,
       "Adopted / Pending": 4,
       "Transferred Out": 25
     },
     {
       "date": "2026-07-17",
-      "total": 66,
-      "On Property": 55,
-      "In Foster (Available for Adoption)": 4,
+      "total": 86,
+      "On Property": 71,
+      "In Foster (Available for Adoption)": 6,
       "In Foster (Unavailable for Adoption)": 0,
-      "Adopted / Pending": 7,
+      "Adopted / Pending": 9,
       "Transferred Out": 0
     },
     {
       "date": "2026-07-18",
-      "total": 27,
-      "On Property": 27,
+      "total": 31,
+      "On Property": 31,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
@@ -69,56 +69,56 @@
   "byShelter": [
     {
       "shelter": "Kendall County Animal Shelter (TX)",
-      "total": 100,
-      "dogs": 46,
-      "cats": 54,
+      "total": 107,
+      "dogs": 52,
+      "cats": 55,
       "city": "Boerne",
       "county": "Kendall",
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 49,
-      "In Foster (Available for Adoption)": 27,
-      "In Foster (Unavailable for Adoption)": 2,
+      "On Property": 50,
+      "In Foster (Available for Adoption)": 32,
+      "In Foster (Unavailable for Adoption)": 3,
       "Adopted / Pending": 1,
       "Transferred Out": 21
     },
     {
       "shelter": "Briscoe Animal Resource Center",
-      "total": 51,
-      "dogs": 49,
-      "cats": 2,
+      "total": 65,
+      "dogs": 53,
+      "cats": 12,
       "city": "Uvalde",
       "county": "Uvalde",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-18",
-      "On Property": 47,
+      "On Property": 59,
       "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
-      "Adopted / Pending": 2,
+      "Adopted / Pending": 4,
       "Transferred Out": 0
     },
     {
       "shelter": "Kerrville Pets Alive!",
-      "total": 33,
-      "dogs": 13,
-      "cats": 20,
+      "total": 38,
+      "dogs": 14,
+      "cats": 24,
       "city": "Kerrville",
       "county": "Kerr",
       "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-17",
-      "On Property": 20,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 24,
+      "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 2
     },
     {
       "shelter": "Footbridge Foundation",
-      "total": 16,
-      "dogs": 11,
+      "total": 22,
+      "dogs": 17,
       "cats": 5,
       "city": "San Antonio",
       "county": "Bexar",
@@ -126,7 +126,7 @@
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-17",
       "On Property": 4,
-      "In Foster (Available for Adoption)": 9,
+      "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 1
@@ -229,15 +229,15 @@
     },
     {
       "shelter": "Devine Animal Control",
-      "total": 2,
-      "dogs": 2,
+      "total": 6,
+      "dogs": 6,
       "cats": 0,
       "city": "Devine",
       "county": "Medina",
       "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-18",
-      "On Property": 2,
+      "On Property": 6,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Adopted / Pending": 0,
@@ -248,8 +248,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 62,
-      "dogs": 62,
+      "total": 64,
+      "dogs": 64,
       "cats": 0
     },
     {
@@ -262,8 +262,8 @@
     {
       "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 23,
-      "dogs": 23,
+      "total": 24,
+      "dogs": 24,
       "cats": 0
     },
     {
@@ -276,16 +276,23 @@
     {
       "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 12,
-      "dogs": 12,
+      "total": 13,
+      "dogs": 13,
       "cats": 0
     },
     {
       "property": "TLAC",
       "area": "Ringworm",
-      "total": 9,
+      "total": 13,
       "dogs": 0,
-      "cats": 9
+      "cats": 13
+    },
+    {
+      "property": "TLAC",
+      "area": "TLAC Cattery",
+      "total": 12,
+      "dogs": 0,
+      "cats": 12
     },
     {
       "property": "TLAC",
@@ -297,8 +304,8 @@
     {
       "property": "TLAC",
       "area": "Building 3 - Dog",
-      "total": 6,
-      "dogs": 6,
+      "total": 7,
+      "dogs": 7,
       "cats": 0
     },
     {
@@ -310,10 +317,10 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 4,
+      "area": "Cat ISO Condos",
+      "total": 2,
       "dogs": 0,
-      "cats": 4
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -324,7 +331,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -342,6 +349,85 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "Transport Hub (Elgin)",
+      "area": "TH (Elgin) Building A",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    }
+  ],
+  "statusDetail": [
+    {
+      "bucket": "On Property",
+      "status": "Available (Shelter)",
+      "total": 159,
+      "dogs": 122,
+      "cats": 37
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable (Shelter)",
+      "total": 24,
+      "dogs": 1,
+      "cats": 23
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable - Transport Hold (Shelter)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Available for Adoption)",
+      "status": "Available - Sleepover Foster",
+      "total": 41,
+      "dogs": 41,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Available for Adoption)",
+      "status": "Available (Foster)",
+      "total": 21,
+      "dogs": 10,
+      "cats": 11
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 2,
+      "dogs": 1,
+      "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "bucket": "Adopted / Pending",
+      "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
+      "total": 9,
+      "dogs": 4,
+      "cats": 5
+    },
+    {
+      "bucket": "Adopted / Pending",
+      "status": "Healthy in Home",
+      "total": 5,
+      "dogs": 2,
+      "cats": 3
+    },
+    {
+      "bucket": "Transferred Out",
+      "status": "Transferred Out",
+      "total": 33,
+      "dogs": 14,
+      "cats": 19
     }
   ],
   "transferDestinations": [

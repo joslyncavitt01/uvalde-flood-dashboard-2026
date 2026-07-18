@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-18T20:49:22Z",
+  "lastUpdated": "2026-07-18T21:02:04Z",
   "totals": {
-    "total": 304,
-    "dogs": 204,
+    "total": 306,
+    "dogs": 206,
     "cats": 100,
-    "On Property": 171,
+    "On Property": 173,
     "In Foster (Available for Adoption)": 72,
     "In Foster (Unavailable for Adoption)": 5,
     "Safety Net Foster (Pending RTO)": 7,
@@ -64,8 +64,8 @@
     },
     {
       "date": "2026-07-18",
-      "total": 38,
-      "On Property": 31,
+      "total": 40,
+      "On Property": 33,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 7,
@@ -143,6 +143,23 @@
       "Transferred Out": 1
     },
     {
+      "shelter": "City of Dilley",
+      "total": 13,
+      "dogs": 13,
+      "cats": 0,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 6
+    },
+    {
       "shelter": "Del Rio Animal Control",
       "total": 13,
       "dogs": 13,
@@ -158,23 +175,6 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
-    },
-    {
-      "shelter": "City of Dilley",
-      "total": 12,
-      "dogs": 12,
-      "cats": 0,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 6,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 6
     },
     {
       "shelter": "Crystal City Animal Control",
@@ -228,6 +228,23 @@
       "Transferred Out": 0
     },
     {
+      "shelter": "Devine Animal Control",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 0
+    },
+    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -243,23 +260,6 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
-    },
-    {
-      "shelter": "Devine Animal Control",
-      "total": 6,
-      "dogs": 6,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 6,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0
     }
   ],
   "fieldIntakesByCity": [
@@ -391,6 +391,13 @@
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "Unspecified",
+      "area": "Unspecified",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     }
   ],
   "statusDetail": [
@@ -411,8 +418,8 @@
     {
       "bucket": "On Property",
       "status": "Unavailable - Transport Hold (Shelter)",
-      "total": 21,
-      "dogs": 21,
+      "total": 23,
+      "dogs": 23,
       "cats": 0
     },
     {

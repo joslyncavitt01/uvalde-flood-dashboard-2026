@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-18T21:50:14Z",
+  "lastUpdated": "2026-07-18T22:05:26Z",
   "totals": {
-    "total": 309,
-    "dogs": 210,
-    "cats": 99,
-    "On Property": 165,
+    "total": 322,
+    "dogs": 221,
+    "cats": 101,
+    "On Property": 178,
     "In Foster (Available for Adoption)": 77,
     "In Foster (Unavailable for Adoption)": 7,
     "Safety Net Foster (Pending RTO)": 10,
@@ -64,8 +64,8 @@
     },
     {
       "date": "2026-07-18",
-      "total": 44,
-      "On Property": 33,
+      "total": 57,
+      "On Property": 46,
       "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 10,
@@ -93,15 +93,15 @@
     },
     {
       "shelter": "Briscoe Animal Resource Center",
-      "total": 66,
-      "dogs": 54,
+      "total": 77,
+      "dogs": 65,
       "cats": 12,
       "city": "Uvalde",
       "county": "Uvalde",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-18",
-      "On Property": 43,
+      "On Property": 54,
       "In Foster (Available for Adoption)": 13,
       "In Foster (Unavailable for Adoption)": 4,
       "Safety Net Foster (Pending RTO)": 0,
@@ -144,15 +144,15 @@
     },
     {
       "shelter": "City of Dilley",
-      "total": 13,
+      "total": 15,
       "dogs": 13,
-      "cats": 0,
+      "cats": 2,
       "city": "Dilley",
       "county": "Frio",
       "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
-      "On Property": 7,
+      "On Property": 9,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -228,23 +228,6 @@
       "Transferred Out": 0
     },
     {
-      "shelter": "Devine Animal Control",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 7,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -260,6 +243,23 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1
+    },
+    {
+      "shelter": "Devine Animal Control",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 0
     }
   ],
   "fieldIntakesByCity": [
@@ -281,6 +281,13 @@
   ],
   "byLocation": [
     {
+      "property": "Neonatal Nursery, Hallway",
+      "area": "Unspecified",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
       "total": 45,
@@ -293,6 +300,13 @@
       "total": 6,
       "dogs": 0,
       "cats": 6
+    },
+    {
+      "property": "Shady Acres, Shady Acres - Dog",
+      "area": "Unspecified",
+      "total": 11,
+      "dogs": 11,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -338,17 +352,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "TLAC Cattery",
       "total": 5,
       "dogs": 0,
       "cats": 5
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 5,
+      "dogs": 5,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -359,17 +373,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -418,8 +432,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 118,
-      "dogs": 89,
+      "total": 129,
+      "dogs": 100,
       "cats": 29
     },
     {
@@ -435,6 +449,13 @@
       "total": 23,
       "dogs": 23,
       "cats": 0
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable - Too Young (Shelter)",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Available for Adoption)",

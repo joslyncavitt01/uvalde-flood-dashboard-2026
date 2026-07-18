@@ -1,15 +1,31 @@
 {
-  "lastUpdated": "2026-07-18T17:25:30Z",
+  "lastUpdated": "2026-07-18T17:29:23Z",
   "totals": {
-    "total": 279,
-    "dogs": 180,
+    "total": 286,
+    "dogs": 187,
     "cats": 99,
     "On Property": 180,
     "In Foster": 60,
     "Adopted / Pending": 14,
-    "Transferred Out": 25
+    "Transferred Out": 32
   },
   "byDay": [
+    {
+      "date": "2026-07-13",
+      "total": 4,
+      "On Property": 0,
+      "In Foster": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 4
+    },
+    {
+      "date": "2026-07-14",
+      "total": 3,
+      "On Property": 0,
+      "In Foster": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 3
+    },
     {
       "date": "2026-07-15",
       "total": 24,
@@ -94,15 +110,27 @@
     },
     {
       "shelter": "Del Rio Animal Control",
-      "total": 12,
-      "dogs": 12,
+      "total": 13,
+      "dogs": 13,
       "cats": 0,
-      "firstIntake": "2026-07-18",
+      "firstIntake": "2026-07-14",
       "lastIntake": "2026-07-18",
       "On Property": 12,
       "In Foster": 0,
       "Adopted / Pending": 0,
-      "Transferred Out": 0
+      "Transferred Out": 1
+    },
+    {
+      "shelter": "City of Dilley",
+      "total": 12,
+      "dogs": 12,
+      "cats": 0,
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 6,
+      "In Foster": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 6
     },
     {
       "shelter": "Crystal City Animal Control",
@@ -141,18 +169,6 @@
       "Transferred Out": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 6,
-      "dogs": 6,
-      "cats": 0,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-18",
-      "On Property": 6,
-      "In Foster": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0
-    },
-    {
       "shelter": "Devine Animal Control",
       "total": 3,
       "dogs": 3,
@@ -169,6 +185,14 @@
     {
       "destination": "Best Friends Animal Society - Salt Lake City, UT",
       "count": 25
+    },
+    {
+      "destination": "Shelter From the Storm Animal Rescue",
+      "count": 6
+    },
+    {
+      "destination": "Chicago Canine Rescue Foundation",
+      "count": 1
     }
   ],
   "buckets": [

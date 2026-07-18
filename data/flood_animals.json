@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T20:46:56Z",
+  "lastUpdated": "2026-07-18T20:49:22Z",
   "totals": {
     "total": 304,
     "dogs": 204,
@@ -228,23 +228,6 @@
       "Transferred Out": 0
     },
     {
-      "shelter": "Field intake (no shelter of origin, via emailed snapshot)",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": null,
-      "county": null,
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 7,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -275,6 +258,23 @@
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 0
+    }
+  ],
+  "fieldIntakesByCity": [
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 7,
       "Adopted / Pending": 0,
       "Transferred Out": 0
     }

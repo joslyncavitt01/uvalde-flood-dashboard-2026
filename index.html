@@ -452,6 +452,55 @@ function render(data) {
   sec3.appendChild(tw);
   content.appendChild(sec3);
 
+  // Field intakes (no shelter of origin), by city found
+  if (data.fieldIntakesByCity && data.fieldIntakesByCity.length) {
+    const secField = el('section');
+    const fieldTotal = data.fieldIntakesByCity.reduce((s, r) => s + r.total, 0);
+    secField.innerHTML = `<h2>Field intakes (no shelter of origin)</h2><p class="section-note">Owned/found pets with no shelter of origin &mdash; Safety Net Foster and similar cases, grouped by the city they were found in rather than by shelter. Expect this to grow as more get logged.</p>`;
+    const twField = el('div', 'table-wrap');
+    const fieldRows = data.fieldIntakesByCity.map(r => `
+      <tr>
+        <td class="shelter">${r.city}</td>
+        <td>${r.county ? r.county + ' Co.' : ''}</td>
+        <td class="num">${r.dogs}</td>
+        <td class="num">${r.cats}</td>
+        <td class="num">${r.total}</td>
+        <td>${r.firstIntake === r.lastIntake ? r.firstIntake : r.firstIntake + ' to ' + r.lastIntake}</td>
+        <td class="num">${r["On Property"]}</td>
+        <td class="num">${r["In Foster (Available for Adoption)"]}</td>
+        <td class="num">${r["In Foster (Unavailable for Adoption)"]}</td>
+        <td class="num">${r["Safety Net Foster (Pending RTO)"]}</td>
+        <td class="num">${r["Adopted / Pending"]}</td>
+        <td class="num">${r["Transferred Out"]}</td>
+      </tr>
+    `).join('');
+    twField.innerHTML = `
+      <table>
+        <thead><tr>
+          <th>City found</th><th>County</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
+          <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster, avail.</th>
+          <th class="num">Foster, unavail.</th><th class="num">Safety Net</th>
+          <th class="num">Adopted/pending</th><th class="num">Transferred</th>
+        </tr></thead>
+        <tbody>${fieldRows}
+          <tr class="total-row"><td>Total, field intakes</td><td></td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r.dogs,0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r.cats,0)}</td>
+            <td class="num">${fieldTotal}</td><td></td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["On Property"],0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["In Foster (Available for Adoption)"],0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["In Foster (Unavailable for Adoption)"],0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["Safety Net Foster (Pending RTO)"],0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["Adopted / Pending"],0)}</td>
+            <td class="num">${data.fieldIntakesByCity.reduce((s,r)=>s+r["Transferred Out"],0)}</td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+    secField.appendChild(twField);
+    content.appendChild(secField);
+  }
+
   // On-property, by location
   if (data.byLocation && data.byLocation.length) {
     const secLoc = el('section');

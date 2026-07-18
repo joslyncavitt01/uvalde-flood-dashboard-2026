@@ -33,7 +33,9 @@ SELECT
   lastOutcomeDate,
   transferredTo,
   currentLocationTier1,
-  currentLocationTier2
+  currentLocationTier2,
+  foundCity,
+  foundCounty
 FROM `{PROJECT}.shelterluv.flood_animals`
 """
 
@@ -99,6 +101,8 @@ def run():
             "transferredTo": r.transferredTo,
             "property": r.currentLocationTier1,
             "area": r.currentLocationTier2,
+            "foundCity": r.foundCity,
+            "foundCounty": r.foundCounty,
         })
 
     buckets = [
@@ -129,10 +133,13 @@ def run():
         by_day[d][a["bucket"]] += 1
     days_out = [by_day[d] for d in sorted(by_day.keys())]
 
-    # By shelter (with city/county/live NWS zone tag)
+    # By shelter (with city/county/live NWS zone tag) -- excludes field intakes (no shelter
+    # of origin), which get their own section below grouped by the city they were found in.
     by_shelter = {}
     for a in animals:
         s = a["shelter"]
+        if s.startswith("Field intake"):
+            continue
         if s not in by_shelter:
             key = (a["shelterLat"], a["shelterLon"])
             if key not in zone_cache:
@@ -152,6 +159,31 @@ def run():
         rec["lastIntake"] = max(rec["lastIntake"], a["intakeDate"])
         rec[a["bucket"]] += 1
     shelters_out = sorted(by_shelter.values(), key=lambda r: -r["total"])
+
+    # Field intakes (no shelter of origin) -- owned/found pets, grouped by where they
+    # were found rather than by shelter, since there isn't one. Expected to grow over
+    # time as more of these get logged.
+    by_found_city = {}
+    for a in animals:
+        if not a["shelter"].startswith("Field intake"):
+            continue
+        city = a["foundCity"] or "Unknown"
+        county = a["foundCounty"] or ""
+        key = (city, county)
+        if key not in by_found_city:
+            by_found_city[key] = {
+                "city": city, "county": county, "total": 0, "dogs": 0, "cats": 0,
+                "firstIntake": a["intakeDate"], "lastIntake": a["intakeDate"],
+                **{b: 0 for b in buckets},
+            }
+        rec = by_found_city[key]
+        rec["total"] += 1
+        rec["dogs"] += 1 if a["species"] == "Dog" else 0
+        rec["cats"] += 1 if a["species"] == "Cat" else 0
+        rec["firstIntake"] = min(rec["firstIntake"], a["intakeDate"])
+        rec["lastIntake"] = max(rec["lastIntake"], a["intakeDate"])
+        rec[a["bucket"]] += 1
+    found_cities_out = sorted(by_found_city.values(), key=lambda r: -r["total"])
 
     # On-property animals, by location
     by_location = {}
@@ -203,6 +235,7 @@ def run():
         "totals": totals,
         "byDay": days_out,
         "byShelter": shelters_out,
+        "fieldIntakesByCity": found_cities_out,
         "byLocation": locations_out,
         "statusDetail": status_detail_out,
         "transferDestinations": destinations_out,

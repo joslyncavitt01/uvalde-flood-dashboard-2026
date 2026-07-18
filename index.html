@@ -389,7 +389,7 @@ function render(data) {
       <table>
         <thead><tr><th>Property</th><th>Building / area</th><th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th></tr></thead>
         <tbody>${locRows}
-          <tr class="total-row"><td>Total on property</td><td></td><td class="num">${t["On Property"] ? data.byLocation.reduce((s,r)=>s+r.dogs,0) : 0}</td><td class="num">${data.byLocation.reduce((s,r)=>s+r.cats,0)}</td><td class="num">${t["On Property"] || 0}</td></tr>
+          <tr class="total-row"><td>Total on property</td><td></td><td class="num">${data.byLocation.reduce((s,r)=>s+r.dogs,0)}</td><td class="num">${data.byLocation.reduce((s,r)=>s+r.cats,0)}</td><td class="num">${t["On Property"] || 0}</td></tr>
         </tbody>
       </table>
     `;

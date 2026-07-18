@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T21:17:10Z",
+  "lastUpdated": "2026-07-18T21:50:14Z",
   "totals": {
     "total": 309,
     "dogs": 210,
@@ -143,23 +143,6 @@
       "Transferred Out": 1
     },
     {
-      "shelter": "Del Rio Animal Control",
-      "total": 13,
-      "dogs": 13,
-      "cats": 0,
-      "city": "Del Rio",
-      "county": "Val Verde",
-      "nwsZone": null,
-      "firstIntake": "2026-07-14",
-      "lastIntake": "2026-07-18",
-      "On Property": 12,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 1
-    },
-    {
       "shelter": "City of Dilley",
       "total": 13,
       "dogs": 13,
@@ -175,6 +158,23 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 6
+    },
+    {
+      "shelter": "Del Rio Animal Control",
+      "total": 13,
+      "dogs": 13,
+      "cats": 0,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
+      "firstIntake": "2026-07-14",
+      "lastIntake": "2026-07-18",
+      "On Property": 12,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 1
     },
     {
       "shelter": "Crystal City Animal Control",
@@ -338,17 +338,17 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 5,
-      "dogs": 0,
-      "cats": 5
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 5,
       "dogs": 5,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "TLAC Cattery",
+      "total": 5,
+      "dogs": 0,
+      "cats": 5
     },
     {
       "property": "TLAC",
@@ -359,17 +359,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -401,14 +401,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 5,
       "dogs": 5,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 5,
       "dogs": 5,
       "cats": 0

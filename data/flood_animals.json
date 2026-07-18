@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-18T17:30:47Z",
+  "lastUpdated": "2026-07-18T17:33:02Z",
   "totals": {
-    "total": 286,
-    "dogs": 187,
+    "total": 293,
+    "dogs": 194,
     "cats": 99,
-    "On Property": 180,
-    "In Foster": 60,
+    "On Property": 183,
+    "In Foster": 63,
     "Adopted / Pending": 14,
-    "Transferred Out": 32
+    "Transferred Out": 33
   },
   "byDay": [
     {
@@ -36,11 +36,11 @@
     },
     {
       "date": "2026-07-16",
-      "total": 142,
-      "On Property": 75,
-      "In Foster": 39,
+      "total": 149,
+      "On Property": 78,
+      "In Foster": 42,
       "Adopted / Pending": 4,
-      "Transferred Out": 24
+      "Transferred Out": 25
     },
     {
       "date": "2026-07-17",
@@ -169,6 +169,18 @@
       "Transferred Out": 0
     },
     {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 3,
+      "In Foster": 3,
+      "Adopted / Pending": 0,
+      "Transferred Out": 1
+    },
+    {
       "shelter": "Devine Animal Control",
       "total": 3,
       "dogs": 3,
@@ -184,7 +196,7 @@
   "transferDestinations": [
     {
       "destination": "Best Friends Animal Society - Salt Lake City, UT",
-      "count": 25
+      "count": 26
     },
     {
       "destination": "Shelter From the Storm Animal Rescue",

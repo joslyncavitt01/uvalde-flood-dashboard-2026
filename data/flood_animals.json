@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T12:08:35Z",
+  "lastUpdated": "2026-07-20T12:21:28Z",
   "totals": {
     "total": 420,
     "dogs": 282,
@@ -230,24 +230,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4,
-      "city": "Sabinal",
-      "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-15",
-      "lastIntake": "2026-07-15",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Devine Animal Control",
       "total": 9,
       "dogs": 9,
@@ -263,6 +245,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Sabinal Animal Shelter",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-15",
+      "lastIntake": "2026-07-15",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -416,14 +416,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -530,14 +530,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

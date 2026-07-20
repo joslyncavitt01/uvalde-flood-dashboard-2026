@@ -36,12 +36,19 @@ var COLUMN_MAP = {
   "transfer to":              "TransferTo"
 };
 
+var PROCESSED_LABEL = "FloodSyncProcessed";
+
 function syncIntakeSnapshot() {
-  // Matches all 13 emails regardless of which hour is in the subject
+  // Matches all 13+ emails regardless of which hour is in the subject
   // (Gmail's subject: operator does a substring/phrase match, not exact-equality).
-  var threads = GmailApp.search('from:shelterluv is:unread subject:"Hourly Flood Update"');
+  // Deliberately does NOT filter on is:unread -- relying on read/unread status is fragile
+  // (a preview pane, another device, or anything else touching the inbox can mark a message
+  // read before this ever runs, silently skipping it with no error). Instead, track what's
+  // already been processed with a dedicated Gmail label applied after a successful load.
+  var label = getOrCreateLabel_(PROCESSED_LABEL);
+  var threads = GmailApp.search('from:shelterluv subject:"Hourly Flood Update" -label:' + PROCESSED_LABEL);
   if (threads.length === 0) {
-    Logger.log("No unread Hourly Flood Update emails found.");
+    Logger.log("No new Hourly Flood Update emails found.");
     return;
   }
   Logger.log("Found " + threads.length + " thread(s).");
@@ -49,8 +56,10 @@ function syncIntakeSnapshot() {
   var ingestedAt = Utilities.formatDate(new Date(), "UTC", "yyyy-MM-dd'T'HH:mm:ss'Z'");
 
   threads.forEach(function(thread) {
+    var threadLabels = thread.getLabels().map(function(l) { return l.getName(); });
+    if (threadLabels.indexOf(PROCESSED_LABEL) !== -1) return;
+
     thread.getMessages().forEach(function(message) {
-      if (!message.isUnread()) return;
       Logger.log("Processing: " + message.getSubject());
 
       var url = extractDownloadUrl(message.getBody());
@@ -65,11 +74,16 @@ function syncIntakeSnapshot() {
       if (rows.length > 0) {
         totalLoaded += loadToBigQuery(rows);
       }
-      message.markRead();
     });
+    thread.addLabel(label);
   });
 
   Logger.log("Done. " + totalLoaded + " total rows written to BigQuery.");
+}
+
+function getOrCreateLabel_(name) {
+  var label = GmailApp.getUserLabelByName(name);
+  return label || GmailApp.createLabel(name);
 }
 
 function extractDownloadUrl(body) {

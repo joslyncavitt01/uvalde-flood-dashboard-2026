@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uvalde-Area Flood: Animal Profiles</title>
+<style>
+:root {
+  color-scheme: light;
+  --page:        #f6f7f6;
+  --surface:     #fcfcfb;
+  --surface-2:   #eff1f0;
+  --ink:         #0d1210;
+  --ink-2:       #4a5450;
+  --ink-muted:   #7c8682;
+  --line:        #dfe3e0;
+  --line-strong: #c5cbc7;
+  --accent:      #184f95;
+  --accent-soft: #e7edf5;
+  --amber:       #9a6400;
+  --amber-soft:  #fbf1de;
+  --good:        #0ca30c;
+  --live-dot:    #0ca30c;
+  --critical:      #d03b3b;
+  --critical-soft: #fbe6e5;
+
+  --s1: #2a78d6; /* blue    -> On Property */
+  --s2: #008300; /* green   -> In Foster, Available */
+  --s3: #e87ba4; /* magenta -> In Foster, Unavailable */
+  --s4: #4a3aa7; /* violet  -> Safety Net Foster (Pending RTO) */
+  --s5: #eda100; /* yellow  -> Adopted / Pending */
+  --s6: #1baf7a; /* aqua    -> Transferred Out */
+  --s7: #898781; /* muted gray -> Deceased */
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page:        #101312;
+    --surface:     #181b1a;
+    --surface-2:   #202423;
+    --ink:         #f3f5f4;
+    --ink-2:       #c3c9c6;
+    --ink-muted:   #8b938f;
+    --line:        #2c322f;
+    --line-strong: #3a413d;
+    --accent:      #6ea6e8;
+    --accent-soft: #1c2a3a;
+    --amber:       #e0b13d;
+    --amber-soft:  #322a15;
+    --good:        #3fca6a;
+    --live-dot:    #3fca6a;
+    --critical:      #e66767;
+    --critical-soft: #3a1f1c;
+    --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70; --s7: #8b938f;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:        #101312;
+  --surface:     #181b1a;
+  --surface-2:   #202423;
+  --ink:         #f3f5f4;
+  --ink-2:       #c3c9c6;
+  --ink-muted:   #8b938f;
+  --line:        #2c322f;
+  --line-strong: #3a413d;
+  --accent:      #6ea6e8;
+  --accent-soft: #1c2a3a;
+  --amber:       #e0b13d;
+  --amber-soft:  #322a15;
+  --good:        #3fca6a;
+  --live-dot:    #3fca6a;
+  --critical:      #e66767;
+  --critical-soft: #3a1f1c;
+  --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70; --s7: #8b938f;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--page); }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); }
+
+.wrap { max-width: 1140px; margin: 0 auto; padding: 40px 24px 80px; line-height: 1.5; }
+
+.eyebrow-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.eyebrow { font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+.back-link { font-size: 13px; color: var(--ink-2); text-decoration: none; font-weight: 600; }
+.back-link:hover { color: var(--accent); }
+.live-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12px; font-weight: 600; color: var(--ink-2);
+  background: var(--surface-2); border: 1px solid var(--line);
+  padding: 5px 12px 5px 10px; border-radius: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--live-dot); flex-shrink: 0; }
+@media (prefers-reduced-motion: no-preference) { .live-dot { animation: pulse 2s ease-in-out infinite; } }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+h1 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-size: clamp(26px, 4vw, 36px); font-weight: 600; margin: 0 0 10px;
+  text-wrap: balance; letter-spacing: -0.01em;
+}
+.dek { color: var(--ink-2); font-size: 16px; max-width: 66ch; margin: 0 0 4px; }
+
+.filter-bar {
+  position: sticky; top: 0; z-index: 20; background: var(--page);
+  padding: 18px 0 14px; margin-top: 22px; border-bottom: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+}
+.filter-bar input[type="search"], .filter-bar select {
+  font: inherit; font-size: 13.5px; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line-strong);
+  border-radius: 8px; padding: 8px 12px;
+}
+.filter-bar input[type="search"] { min-width: 200px; flex: 1 1 200px; }
+.filter-bar select { flex: 0 0 auto; }
+.filter-bar input:focus, .filter-bar select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.results-count { font-size: 13px; color: var(--ink-muted); margin-left: auto; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.clear-btn {
+  font-size: 13px; font-weight: 600; color: var(--accent); background: none; border: none;
+  cursor: pointer; padding: 8px 4px;
+}
+.clear-btn:hover { text-decoration: underline; }
+
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 14px; margin-top: 20px;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  overflow: hidden; cursor: pointer; text-align: left; display: flex; flex-direction: column;
+  padding: 0; font: inherit; color: inherit;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+.card:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card-photo {
+  width: 100%; aspect-ratio: 1 / 1; background: var(--surface-2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-muted); font-size: 28px; font-weight: 700; overflow: hidden;
+}
+.card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.card-name { font-weight: 700; font-size: 14.5px; }
+.card-sub { font-size: 12px; color: var(--ink-muted); line-height: 1.35; }
+.pill {
+  align-self: flex-start; font-size: 10.5px; font-weight: 600; padding: 2px 8px;
+  border-radius: 20px; color: #fff; margin-top: 2px;
+}
+.no-results { padding: 48px 0; text-align: center; color: var(--ink-muted); font-size: 14px; }
+
+/* Modal */
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(10,12,11,0.55); z-index: 100;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 40px 20px; overflow-y: auto;
+}
+.modal {
+  background: var(--surface); border-radius: 14px; max-width: 640px; width: 100%;
+  border: 1px solid var(--line); box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+.modal-header { display: flex; gap: 16px; padding: 20px 22px 16px; border-bottom: 1px solid var(--line); }
+.modal-photo {
+  width: 96px; height: 96px; border-radius: 10px; background: var(--surface-2); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; color: var(--ink-muted);
+  font-size: 26px; font-weight: 700; overflow: hidden;
+}
+.modal-photo img { width: 100%; height: 100%; object-fit: cover; }
+.modal-title-wrap { flex: 1; min-width: 0; }
+.modal-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.modal-name { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif; font-size: 22px; font-weight: 600; margin: 0; }
+.modal-close {
+  background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-2);
+  border-radius: 50%; width: 30px; height: 30px; font-size: 16px; line-height: 1; cursor: pointer;
+  flex-shrink: 0;
+}
+.modal-close:hover { background: var(--line); }
+.modal-meta { font-size: 13px; color: var(--ink-muted); margin-top: 4px; }
+.modal-body { padding: 18px 22px 22px; }
+.fact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 20px; margin-bottom: 18px; }
+.fact { font-size: 13.5px; }
+.fact .k { color: var(--ink-muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; margin-bottom: 2px; }
+.fact .v { color: var(--ink); }
+.no-profile-note {
+  font-size: 13px; color: var(--ink-muted); background: var(--surface-2); border-radius: 8px;
+  padding: 12px 14px; margin-bottom: 4px;
+}
+.memo-section { margin-top: 6px; }
+.memo-section h3 { font-size: 13px; font-weight: 700; margin: 0 0 8px; color: var(--ink-2); }
+details.memo {
+  border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; background: var(--surface-2);
+}
+details.memo summary {
+  padding: 9px 12px; cursor: pointer; font-size: 13px; font-weight: 600; list-style: none;
+  display: flex; align-items: center; justify-content: space-between;
+}
+details.memo summary::-webkit-details-marker { display: none; }
+details.memo summary::after { content: '+'; color: var(--ink-muted); font-weight: 700; }
+details.memo[open] summary::after { content: '\2212'; }
+details.memo p { margin: 0; padding: 0 12px 12px; font-size: 13px; color: var(--ink-2); white-space: pre-wrap; }
+
+.loading { color: var(--ink-muted); font-size: 14px; padding: 40px 0; text-align: center; }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow-row">
+    <p class="eyebrow">APA! &middot; Disaster Response</p>
+    <span class="live-badge"><i class="live-dot"></i><span id="live-label">Loading…</span></span>
+  </div>
+  <a class="back-link" href="index.html">&larr; Back to full dashboard</a>
+  <h1 style="margin-top:10px;">Animal Profiles</h1>
+  <p class="dek">Every flood-attributable animal, filterable and searchable. Click any animal for their full profile, photo, and notes.</p>
+
+  <div class="filter-bar">
+    <input type="search" id="f-search" placeholder="Search by name or ID…">
+    <select id="f-species"><option value="">All species</option></select>
+    <select id="f-bucket"><option value="">All statuses</option></select>
+    <select id="f-shelter"><option value="">All shelters</option></select>
+    <button class="clear-btn" id="f-clear">Clear filters</button>
+    <span class="results-count" id="results-count"></span>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <div id="no-results" class="no-results" style="display:none;">No animals match these filters.</div>
+
+  <footer>
+    Photo, breed, and note detail come from a manually-uploaded ShelterLuv export (<code>apa-data-410213.shelterluv.AnimalProfileSnapshotJoslyn</code>), refreshed periodically rather than every 15 minutes &mdash; some newer or older animals may not have a matching profile yet. Status and location always reflect the live 15-minute feed.
+  </footer>
+
+</div>
+
+<script>
+const BUCKET_COLORS = {
+  "On Property": "var(--s1)",
+  "In Foster (Available for Adoption)": "var(--s2)",
+  "In Foster (Unavailable for Adoption)": "var(--s3)",
+  "Safety Net Foster (Pending RTO)": "var(--s4)",
+  "Adopted / Pending": "var(--s5)",
+  "Transferred Out": "var(--s6)",
+  "Deceased": "var(--s7)",
+};
+
+let ALL = [];
+
+function fmtRelative(iso) {
+  const then = new Date(iso);
+  const now = new Date();
+  const mins = Math.round((now - then) / 60000);
+  if (mins < 1) return "updated just now";
+  if (mins === 1) return "updated 1 min ago";
+  if (mins < 60) return `updated ${mins} min ago`;
+  const hrs = Math.round(mins / 60);
+  if (hrs === 1) return "updated 1 hour ago";
+  if (hrs < 24) return `updated ${hrs} hours ago`;
+  return `updated ${then.toLocaleString()}`;
+}
+
+function el(tag, cls, html) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (html !== undefined) e.innerHTML = html;
+  return e;
+}
+
+function initial(name) {
+  return (name || '?').trim().charAt(0).toUpperCase() || '?';
+}
+
+function populateSelect(sel, values, placeholder) {
+  values.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v; opt.textContent = v;
+    sel.appendChild(opt);
+  });
+}
+
+function currentFilters() {
+  return {
+    search: document.getElementById('f-search').value.trim().toLowerCase(),
+    species: document.getElementById('f-species').value,
+    bucket: document.getElementById('f-bucket').value,
+    shelter: document.getElementById('f-shelter').value,
+  };
+}
+
+function applyFilters() {
+  const f = currentFilters();
+  return ALL.filter(a => {
+    if (f.species && a.species !== f.species) return false;
+    if (f.bucket && a.bucket !== f.bucket) return false;
+    if (f.shelter && a.shelter !== f.shelter) return false;
+    if (f.search) {
+      const hay = `${a.name || ''} ${a.aid || ''}`.toLowerCase();
+      if (!hay.includes(f.search)) return false;
+    }
+    return true;
+  });
+}
+
+function renderGrid() {
+  const filtered = applyFilters();
+  const grid = document.getElementById('grid');
+  const noResults = document.getElementById('no-results');
+  document.getElementById('results-count').textContent = `${filtered.length} of ${ALL.length} animals`;
+  grid.innerHTML = '';
+  if (!filtered.length) {
+    noResults.style.display = 'block';
+    return;
+  }
+  noResults.style.display = 'none';
+  const frag = document.createDocumentFragment();
+  filtered.forEach(a => {
+    const card = el('button', 'card');
+    card.type = 'button';
+    card.setAttribute('aria-label', `View profile for ${a.name || 'unnamed animal'}`);
+    const photo = el('div', 'card-photo');
+    if (a.photo) {
+      const img = document.createElement('img');
+      img.src = a.photo; img.alt = ''; img.loading = 'lazy';
+      photo.appendChild(img);
+    } else {
+      photo.textContent = initial(a.name);
+    }
+    card.appendChild(photo);
+    const body = el('div', 'card-body');
+    body.innerHTML = `
+      <div class="card-name">${a.name || 'Unnamed'}</div>
+      <div class="card-sub">${a.breed || a.species}${a.shelter ? ' &middot; ' + a.shelter : ''}</div>
+      <span class="pill" style="background:${BUCKET_COLORS[a.bucket] || 'var(--ink-muted)'}">${a.bucket}</span>
+    `;
+    card.appendChild(body);
+    card.addEventListener('click', () => openModal(a));
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+}
+
+function fact(label, value) {
+  if (value === null || value === undefined || value === '') return '';
+  return `<div class="fact"><div class="k">${label}</div><div class="v">${value}</div></div>`;
+}
+
+function openModal(a) {
+  const backdrop = el('div', 'modal-backdrop');
+  const modal = el('div', 'modal');
+
+  const header = el('div', 'modal-header');
+  const photo = el('div', 'modal-photo');
+  if (a.photo) {
+    const img = document.createElement('img');
+    img.src = a.photo; img.alt = '';
+    photo.appendChild(img);
+  } else {
+    photo.textContent = initial(a.name);
+  }
+  header.appendChild(photo);
+
+  const titleWrap = el('div', 'modal-title-wrap');
+  titleWrap.innerHTML = `
+    <div class="modal-title-row">
+      <h2 class="modal-name">${a.name || 'Unnamed'}</h2>
+    </div>
+    <div class="modal-meta">${a.species}${a.breed ? ' &middot; ' + a.breed : ''} &middot; ID ${a.aid}</div>
+    <span class="pill" style="background:${BUCKET_COLORS[a.bucket] || 'var(--ink-muted)'}; margin-top:6px;">${a.bucket}</span>
+  `;
+  const closeBtn = el('button', 'modal-close', '&times;');
+  closeBtn.setAttribute('aria-label', 'Close');
+  closeBtn.addEventListener('click', close);
+  header.appendChild(titleWrap);
+  header.appendChild(closeBtn);
+  modal.appendChild(header);
+
+  const body = el('div', 'modal-body');
+
+  if (!a.hasProfile) {
+    body.appendChild(el('div', 'no-profile-note',
+      'No detailed profile (breed, photo, notes) on file yet for this animal &mdash; the profile export is refreshed periodically and scoped to recently created animals, so newer or older intakes may not have a match yet. Status and location below are still fully live.'
+    ));
+  }
+
+  const facts = el('div', 'fact-grid');
+  facts.innerHTML = [
+    fact('Status', a.status),
+    fact('Current location', [a.property, a.area].filter(Boolean).join(' — ')),
+    fact('Origin shelter', a.shelter),
+    fact('Shelter city/county', [a.shelterCity, a.shelterCounty ? a.shelterCounty + ' Co.' : ''].filter(Boolean).join(', ')),
+    fact('Found city/county', [a.foundCity, a.foundCounty ? a.foundCounty + ' Co.' : ''].filter(Boolean).join(', ')),
+    fact('Intake date', a.intakeDate),
+    fact('Sex', a.sex),
+    fact('Age', a.age || a.ageGroup),
+    fact('Color', [a.color, a.secondaryColor].filter(Boolean).join(' / ')),
+    fact('Pattern', a.pattern),
+    fact('Weight', a.weight),
+    fact('Altered in care', a.alteredInCare),
+    fact('Altered before arrival', a.alteredBeforeArrival),
+    fact('Adoption category', a.adoptionCategory),
+    fact('Behavior category', a.behaviorCategory),
+    fact('Medical category', a.medicalCategory),
+    fact('Volunteer category', a.volunteerCategory),
+    fact('Foster', a.fosterName ? `${a.fosterName}${a.fosterCity ? ' (' + a.fosterCity + (a.fosterState ? ', ' + a.fosterState : '') + ')' : ''}` : ''),
+    fact('Outcome', a.outcomeType ? `${a.outcomeType}${a.outcomeDate ? ' on ' + a.outcomeDate : ''}` : ''),
+    fact('Transferred to', a.transferredTo),
+  ].join('');
+  body.appendChild(facts);
+
+  const memoEntries = Object.entries(a.memos || {});
+  if (a.kennelCardMemo) memoEntries.unshift(['Kennel Card / Website Memo', a.kennelCardMemo]);
+  if (memoEntries.length) {
+    const memoSection = el('div', 'memo-section');
+    memoSection.appendChild(el('h3', null, 'Notes & memos'));
+    memoEntries.forEach(([key, val]) => {
+      const d = document.createElement('details');
+      d.className = 'memo';
+      const s = document.createElement('summary');
+      s.textContent = key;
+      d.appendChild(s);
+      const p = document.createElement('p');
+      p.textContent = val;
+      d.appendChild(p);
+      memoSection.appendChild(d);
+    });
+    body.appendChild(memoSection);
+  }
+
+  modal.appendChild(body);
+  backdrop.appendChild(modal);
+  document.body.appendChild(backdrop);
+
+  function close() {
+    backdrop.remove();
+    document.removeEventListener('keydown', onKey);
+  }
+  function onKey(e) { if (e.key === 'Escape') close(); }
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) close(); });
+  document.addEventListener('keydown', onKey);
+  closeBtn.focus();
+}
+
+async function load() {
+  try {
+    const res = await fetch('data/animal_profiles.json?t=' + Date.now());
+    const data = await res.json();
+    ALL = data.animals;
+    document.getElementById('live-label').textContent = fmtRelative(data.lastUpdated);
+
+    const species = [...new Set(ALL.map(a => a.species).filter(Boolean))].sort();
+    const shelters = [...new Set(ALL.map(a => a.shelter).filter(Boolean))].sort();
+    populateSelect(document.getElementById('f-species'), species);
+    populateSelect(document.getElementById('f-bucket'), data.buckets);
+    populateSelect(document.getElementById('f-shelter'), shelters);
+
+    renderGrid();
+  } catch (e) {
+    document.getElementById('grid').innerHTML = '';
+    document.getElementById('no-results').style.display = 'block';
+    document.getElementById('no-results').textContent = `Couldn't load live data: ${e.message}`;
+  }
+}
+
+['f-search', 'f-species', 'f-bucket', 'f-shelter'].forEach(id => {
+  document.getElementById(id).addEventListener('input', renderGrid);
+});
+document.getElementById('f-clear').addEventListener('click', () => {
+  document.getElementById('f-search').value = '';
+  document.getElementById('f-species').value = '';
+  document.getElementById('f-bucket').value = '';
+  document.getElementById('f-shelter').value = '';
+  renderGrid();
+});
+
+load();
+</script>
+</body>
+</html>

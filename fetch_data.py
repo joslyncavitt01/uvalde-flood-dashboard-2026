@@ -39,6 +39,21 @@ SELECT
 FROM `{PROJECT}.shelterluv.flood_animals`
 """
 
+# Profile snapshot lives in the data team's project (apa-data-410213), loaded manually
+# and periodically via appsscript/backfill_animal_profiles.py from a rich ShelterLuv
+# export -- not every flood animal has a match, since that export is scoped to recently
+# created animals, not an org-wide snapshot. Missing profile fields just render as blank
+# on the animal detail page.
+PROFILE_QUERY = """
+SELECT
+  AnimalID, Name, Species, PrimaryBreed, SecondaryBreed, Sex, AgeYMD, AgeGroup,
+  PrimaryColor, SecondaryColor, Pattern, CurrentWeight, AdoptionCategory,
+  BehaviorCategory, MedicalCategory, VolunteerCategory, AlteredInCare,
+  AlteredBeforeArrival, FosterPersonName, FosterPersonCity, FosterPersonState,
+  Photo, Video, KennelCardMemo, MemosJSON
+FROM `apa-data-410213.shelterluv.AnimalProfileSnapshotJoslyn`
+"""
+
 
 def fetch_nws_zones():
     """Returns (infested_polys, surveillance_polys), or ([], []) if the live feed is unreachable."""
@@ -77,6 +92,8 @@ def zone_for(lat, lon, infested, surveillance):
 def run():
     client = bigquery.Client(project=PROJECT)
     rows = list(client.query(QUERY).result())
+    profile_rows = list(client.query(PROFILE_QUERY).result())
+    profiles = {r.AnimalID: r for r in profile_rows}
 
     infested, surveillance = fetch_nws_zones()
     zone_cache = {}
@@ -103,6 +120,61 @@ def run():
             "area": r.currentLocationTier2,
             "foundCity": r.foundCity,
             "foundCounty": r.foundCounty,
+        })
+
+    # Per-animal profile detail (breed, photo, memos, etc.) for the filterable Animals
+    # page -- joined in Python rather than SQL since the profile table lives in a
+    # different project and only ~80% of flood animals have a matching row.
+    animal_profiles_out = []
+    for a in animals:
+        p = profiles.get(a["aid"])
+        memos = {}
+        if p and p.MemosJSON:
+            try:
+                memos = json.loads(p.MemosJSON)
+            except (json.JSONDecodeError, TypeError):
+                memos = {}
+        animal_profiles_out.append({
+            "id": a["id"],
+            "aid": a["aid"],
+            "name": a["name"],
+            "species": a["species"],
+            "intakeDate": a["intakeDate"],
+            "shelter": a["shelter"],
+            "shelterCity": a["shelterCity"],
+            "shelterCounty": a["shelterCounty"],
+            "status": a["status"],
+            "bucket": a["bucket"],
+            "outcomeType": a["outcomeType"],
+            "outcomeDate": a["outcomeDate"],
+            "transferredTo": a["transferredTo"],
+            "property": a["property"],
+            "area": a["area"],
+            "foundCity": a["foundCity"],
+            "foundCounty": a["foundCounty"],
+            "breed": p.PrimaryBreed if p else None,
+            "secondaryBreed": p.SecondaryBreed if p else None,
+            "sex": p.Sex if p else None,
+            "age": p.AgeYMD if p else None,
+            "ageGroup": p.AgeGroup if p else None,
+            "color": p.PrimaryColor if p else None,
+            "secondaryColor": p.SecondaryColor if p else None,
+            "pattern": p.Pattern if p else None,
+            "weight": p.CurrentWeight if p else None,
+            "adoptionCategory": p.AdoptionCategory if p else None,
+            "behaviorCategory": p.BehaviorCategory if p else None,
+            "medicalCategory": p.MedicalCategory if p else None,
+            "volunteerCategory": p.VolunteerCategory if p else None,
+            "alteredInCare": p.AlteredInCare if p else None,
+            "alteredBeforeArrival": p.AlteredBeforeArrival if p else None,
+            "fosterName": p.FosterPersonName if p else None,
+            "fosterCity": p.FosterPersonCity if p else None,
+            "fosterState": p.FosterPersonState if p else None,
+            "photo": p.Photo if p else None,
+            "video": p.Video if p else None,
+            "kennelCardMemo": p.KennelCardMemo if p else None,
+            "memos": memos,
+            "hasProfile": p is not None,
         })
 
     buckets = [
@@ -247,7 +319,15 @@ def run():
     with open("data/flood_animals.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Done. Total flood-attributable animals: {totals['total']}")
+    with open("data/animal_profiles.json", "w") as f:
+        json.dump({
+            "lastUpdated": output["lastUpdated"],
+            "buckets": buckets,
+            "animals": animal_profiles_out,
+        }, f, indent=2)
+
+    profiled = sum(1 for a in animal_profiles_out if a["hasProfile"])
+    print(f"Done. Total flood-attributable animals: {totals['total']} ({profiled} with profile detail)")
 
 
 if __name__ == "__main__":

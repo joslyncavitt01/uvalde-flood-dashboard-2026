@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T13:08:47Z",
+  "lastUpdated": "2026-07-20T13:16:11Z",
   "totals": {
     "total": 399,
     "dogs": 268,
@@ -11,7 +11,8 @@
     "Adopted / Pending": 22,
     "Transferred Out": 32,
     "Deceased": 1,
-    "Return to Owner": 0
+    "Return to Owner": 0,
+    "Adopted / Pending (tile)": 22
   },
   "byDay": [
     {

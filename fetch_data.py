@@ -214,13 +214,18 @@ def run():
     }
     for b in buckets:
         totals[b] = sum(1 for a in animals if a["bucket"] == b)
-    # Shown in place of the Deceased tile specifically (chart/shelter table still use the
-    # unsplit "Adopted / Pending" bucket) -- a Return to Owner outcome reads differently
-    # from an actual adoption for the top-line stat tiles.
+    # dispositionBucket classifies "Adopted / Pending" off ShelterLuv's currentStatus text
+    # (e.g. "Healthy in Home"), which doesn't distinguish a true adoption from an owned pet
+    # being returned to its owner -- but the true outcomeType does (Outcome.ReturnToOwner is
+    # its own top-level outcome, a sibling of Outcome.Adoption, not a subtype of it). Split
+    # these two apart for the top-line tiles only (chart/shelter table keep the unsplit
+    # "Adopted / Pending" bucket, per explicit scope) so the tiles don't double-count the
+    # same animal under both "Adopted / Pending" and "Return to Owner."
     totals["Return to Owner"] = sum(
         1 for a in animals
         if a["bucket"] == "Adopted / Pending" and a["outcomeType"] == "Outcome.ReturnToOwner"
     )
+    totals["Adopted / Pending (tile)"] = totals["Adopted / Pending"] - totals["Return to Owner"]
 
     # By day
     by_day = {}

@@ -355,8 +355,8 @@ function render(data) {
     </a>
     <a class="tile" href="${tileHref('Adopted / Pending')}">
       <div class="label">Adopted / pending</div>
-      <div class="value">${t["Adopted / Pending"] || 0}</div>
-      <div class="sub">${Math.round(100 * (t["Adopted / Pending"]||0) / t.total)}% of total</div>
+      <div class="value">${t["Adopted / Pending (tile)"] || 0}</div>
+      <div class="sub">${Math.round(100 * (t["Adopted / Pending (tile)"]||0) / t.total)}% of total</div>
     </a>
     <a class="tile" href="${tileHref('Transferred Out')}">
       <div class="label">Transferred out</div>
@@ -366,7 +366,7 @@ function render(data) {
     <a class="tile" href="${tileHref('Return to Owner')}">
       <div class="label">Return to owner</div>
       <div class="value">${t["Return to Owner"] || 0}</div>
-      <div class="sub">of the Adopted/Pending total</div>
+      <div class="sub">${Math.round(100 * (t["Return to Owner"]||0) / t.total)}% of total</div>
     </a>
   `;
   sec1.appendChild(tiles);

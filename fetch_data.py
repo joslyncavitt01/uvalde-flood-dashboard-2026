@@ -125,8 +125,24 @@ def run():
     # Per-animal profile detail (breed, photo, memos, etc.) for the filterable Animals
     # page -- joined in Python rather than SQL since the profile table lives in a
     # different project and only ~80% of flood animals have a matching row.
+    # Deceased animals are excluded from this page entirely (not appropriate for a
+    # public browsing/adoption-facing view). Return-to-Owner is split out of the
+    # generic "Adopted / Pending" bucket here (using the true outcome type) so an
+    # owned pet going home reads differently from an adoption.
+    PROFILE_BUCKETS = [
+        "On Property",
+        "In Foster (Available for Adoption)",
+        "In Foster (Unavailable for Adoption)",
+        "Safety Net Foster (Pending RTO)",
+        "Adopted / Pending",
+        "Return to Owner",
+        "Transferred Out",
+    ]
+
     animal_profiles_out = []
     for a in animals:
+        if a["bucket"] == "Deceased":
+            continue
         p = profiles.get(a["aid"])
         memos = {}
         if p and p.MemosJSON:
@@ -134,6 +150,9 @@ def run():
                 memos = json.loads(p.MemosJSON)
             except (json.JSONDecodeError, TypeError):
                 memos = {}
+        display_bucket = a["bucket"]
+        if display_bucket == "Adopted / Pending" and a["outcomeType"] == "Outcome.ReturnToOwner":
+            display_bucket = "Return to Owner"
         animal_profiles_out.append({
             "id": a["id"],
             "aid": a["aid"],
@@ -144,7 +163,7 @@ def run():
             "shelterCity": a["shelterCity"],
             "shelterCounty": a["shelterCounty"],
             "status": a["status"],
-            "bucket": a["bucket"],
+            "bucket": display_bucket,
             "outcomeType": a["outcomeType"],
             "outcomeDate": a["outcomeDate"],
             "transferredTo": a["transferredTo"],
@@ -236,20 +255,25 @@ def run():
     # Field intakes (no shelter of origin) -- owned/found pets, grouped by where they
     # were found rather than by shelter, since there isn't one. Expected to grow over
     # time as more of these get logged.
+    # Keyed on city alone -- county is informational only. Different intake batches
+    # (core sync vs. emailed snapshot) don't always carry county for the same city, and
+    # keying on (city, county) was splitting one city into multiple rows whenever a
+    # later batch came in with a blank county.
     by_found_city = {}
     for a in animals:
         if not a["shelter"].startswith("Field intake"):
             continue
         city = a["foundCity"] or "Unknown"
         county = a["foundCounty"] or ""
-        key = (city, county)
-        if key not in by_found_city:
-            by_found_city[key] = {
+        if city not in by_found_city:
+            by_found_city[city] = {
                 "city": city, "county": county, "total": 0, "dogs": 0, "cats": 0,
                 "firstIntake": a["intakeDate"], "lastIntake": a["intakeDate"],
                 **{b: 0 for b in buckets},
             }
-        rec = by_found_city[key]
+        rec = by_found_city[city]
+        if not rec["county"] and county:
+            rec["county"] = county
         rec["total"] += 1
         rec["dogs"] += 1 if a["species"] == "Dog" else 0
         rec["cats"] += 1 if a["species"] == "Cat" else 0
@@ -322,7 +346,7 @@ def run():
     with open("data/animal_profiles.json", "w") as f:
         json.dump({
             "lastUpdated": output["lastUpdated"],
-            "buckets": buckets,
+            "buckets": PROFILE_BUCKETS,
             "animals": animal_profiles_out,
         }, f, indent=2)
 

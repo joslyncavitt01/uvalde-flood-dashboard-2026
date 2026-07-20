@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T12:36:37Z",
+  "lastUpdated": "2026-07-20T12:41:12Z",
   "totals": {
     "total": 420,
     "dogs": 282,
@@ -306,31 +306,15 @@
     {
       "city": "Crystal City",
       "county": "Zavala",
-      "total": 10,
-      "dogs": 10,
-      "cats": 0,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 10,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
-      "city": "Crystal City",
-      "county": "",
-      "total": 10,
-      "dogs": 9,
+      "total": 20,
+      "dogs": 19,
       "cats": 1,
-      "firstIntake": "2026-07-19",
+      "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-19",
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 10,
+      "Safety Net Foster (Pending RTO)": 20,
       "Adopted / Pending": 0,
       "Transferred Out": 0,
       "Deceased": 0

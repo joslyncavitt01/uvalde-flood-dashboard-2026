@@ -214,6 +214,13 @@ def run():
     }
     for b in buckets:
         totals[b] = sum(1 for a in animals if a["bucket"] == b)
+    # Shown in place of the Deceased tile specifically (chart/shelter table still use the
+    # unsplit "Adopted / Pending" bucket) -- a Return to Owner outcome reads differently
+    # from an actual adoption for the top-line stat tiles.
+    totals["Return to Owner"] = sum(
+        1 for a in animals
+        if a["bucket"] == "Adopted / Pending" and a["outcomeType"] == "Outcome.ReturnToOwner"
+    )
 
     # By day
     by_day = {}

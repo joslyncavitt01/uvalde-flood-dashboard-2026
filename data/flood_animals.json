@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T13:07:00Z",
+  "lastUpdated": "2026-07-20T13:08:47Z",
   "totals": {
     "total": 399,
     "dogs": 268,
@@ -10,7 +10,8 @@
     "Safety Net Foster (Pending RTO)": 26,
     "Adopted / Pending": 22,
     "Transferred Out": 32,
-    "Deceased": 1
+    "Deceased": 1,
+    "Return to Owner": 0
   },
   "byDay": [
     {

@@ -442,6 +442,21 @@ function openModal(a) {
   closeBtn.focus();
 }
 
+function applyFiltersFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const setIfValid = (id, param) => {
+    const value = params.get(param);
+    if (!value) return;
+    const el = document.getElementById(id);
+    if ([...el.options].some(o => o.value === value)) el.value = value;
+  };
+  setIfValid('f-bucket', 'bucket');
+  setIfValid('f-species', 'species');
+  setIfValid('f-shelter', 'shelter');
+  const search = params.get('search');
+  if (search) document.getElementById('f-search').value = search;
+}
+
 async function load() {
   try {
     const res = await fetch('data/animal_profiles.json?t=' + Date.now());
@@ -455,6 +470,7 @@ async function load() {
     populateSelect(document.getElementById('f-bucket'), data.buckets);
     populateSelect(document.getElementById('f-shelter'), shelters);
 
+    applyFiltersFromUrl();
     renderGrid();
   } catch (e) {
     document.getElementById('grid').innerHTML = '';

@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-20T23:14:21Z",
+  "lastUpdated": "2026-07-20T23:18:26Z",
   "totals": {
-    "total": 399,
-    "dogs": 268,
+    "total": 410,
+    "dogs": 279,
     "cats": 131,
-    "On Property": 189,
+    "On Property": 200,
     "In Foster (Available for Adoption)": 92,
     "In Foster (Unavailable for Adoption)": 22,
     "Safety Net Foster (Pending RTO)": 30,
@@ -94,8 +94,8 @@
     },
     {
       "date": "2026-07-20",
-      "total": 15,
-      "On Property": 15,
+      "total": 26,
+      "On Property": 26,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -214,6 +214,24 @@
       "Deceased": 0
     },
     {
+      "shelter": "Cotulla City Animal Control",
+      "total": 11,
+      "dogs": 11,
+      "cats": 0,
+      "city": "Cotulla",
+      "county": "La Salle",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-20",
+      "lastIntake": "2026-07-20",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
       "shelter": "Devine Animal Control",
       "total": 9,
       "dogs": 9,
@@ -308,8 +326,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 58,
-      "dogs": 58,
+      "total": 69,
+      "dogs": 69,
       "cats": 0
     },
     {
@@ -429,8 +447,8 @@
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 67,
-      "dogs": 39,
+      "total": 78,
+      "dogs": 50,
       "cats": 28
     },
     {

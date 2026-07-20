@@ -125,10 +125,12 @@ def run():
     # Per-animal profile detail (breed, photo, memos, etc.) for the filterable Animals
     # page -- joined in Python rather than SQL since the profile table lives in a
     # different project and only ~80% of flood animals have a matching row.
-    # Deceased animals are excluded from this page entirely (not appropriate for a
-    # public browsing/adoption-facing view). Return-to-Owner is split out of the
-    # generic "Adopted / Pending" bucket here (using the true outcome type) so an
-    # owned pet going home reads differently from an adoption.
+    # Deceased animals stay in this list (so the total count here still matches the
+    # flood-attributable total everywhere else) but the page itself never renders a
+    # card for them -- that's handled client-side in animals.html, not by dropping
+    # them from the data. Return-to-Owner is split out of the generic "Adopted /
+    # Pending" bucket here (using the true outcome type) so an owned pet going home
+    # reads differently from an adoption.
     PROFILE_BUCKETS = [
         "On Property",
         "In Foster (Available for Adoption)",
@@ -141,8 +143,6 @@ def run():
 
     animal_profiles_out = []
     for a in animals:
-        if a["bucket"] == "Deceased":
-            continue
         p = profiles.get(a["aid"])
         memos = {}
         if p and p.MemosJSON:

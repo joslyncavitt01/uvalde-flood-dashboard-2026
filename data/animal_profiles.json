@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T12:41:12Z",
+  "lastUpdated": "2026-07-20T12:45:06Z",
   "buckets": [
     "On Property",
     "In Foster (Available for Adoption)",
@@ -14344,6 +14344,51 @@
       "kennelCardMemo": null,
       "memos": {
         "Disclaimer": "Animal intaked during 2026 Central Texas flood"
+      },
+      "hasProfile": true
+    },
+    {
+      "id": "214116004",
+      "aid": "195770",
+      "name": "Just a Pumpkin 22",
+      "species": "Cat",
+      "intakeDate": "2026-07-16",
+      "shelter": "Kendall County Animal Shelter (TX)",
+      "shelterCity": "Boerne",
+      "shelterCounty": "Kendall",
+      "status": "Deceased",
+      "bucket": "Deceased",
+      "outcomeType": "Outcome.UnassistedDeathInCustody",
+      "outcomeDate": "2026-07-19",
+      "transferredTo": null,
+      "property": null,
+      "area": null,
+      "foundCity": null,
+      "foundCounty": null,
+      "breed": "Domestic Shorthair",
+      "secondaryBreed": null,
+      "sex": "Male",
+      "age": "0Y/1M/28D",
+      "ageGroup": "Kitten",
+      "color": "Orange",
+      "secondaryColor": "Buff",
+      "pattern": "Tabby",
+      "weight": "1.42 lbs",
+      "adoptionCategory": null,
+      "behaviorCategory": null,
+      "medicalCategory": null,
+      "volunteerCategory": null,
+      "alteredInCare": "To be determined",
+      "alteredBeforeArrival": "No",
+      "fosterName": null,
+      "fosterCity": null,
+      "fosterState": null,
+      "photo": "https://new-s3.shelterluv.com/profile-pictures/81079b21fe1a99f7a1c968e6b689e908/d4ca427c67af6306a3c06ec13cac7b3a.jpeg",
+      "video": null,
+      "kennelCardMemo": "If Just a Pumpkin\u2019s picture is telling you 1,000 words, and some of those words are \u201cI already love him,\u201d then please reach out to adopt@austinpetsalive.org!<br />\n<br />\nAll APA! cats are fully vetted, spayed or neutered, and have updated vaccines and a microchip. Lifetime support is offered by our Cat Behavior Team.",
+      "memos": {
+        "Disclaimer": "Animal intaked during 2026 Central Texas floods",
+        "Prior Shelter/Rescue Notes": "FKA Stormy"
       },
       "hasProfile": true
     },

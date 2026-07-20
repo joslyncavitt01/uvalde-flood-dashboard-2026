@@ -290,6 +290,8 @@ function currentFilters() {
 function applyFilters() {
   const f = currentFilters();
   return ALL.filter(a => {
+    // Deceased animals stay in the total count but never render a card here.
+    if (a.bucket === 'Deceased') return false;
     if (f.species && a.species !== f.species) return false;
     if (f.bucket && a.bucket !== f.bucket) return false;
     if (f.shelter && a.shelter !== f.shelter) return false;

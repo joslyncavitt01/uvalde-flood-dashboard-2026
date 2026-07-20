@@ -186,8 +186,21 @@ h1 {
   font-size: 13px; color: var(--ink-muted); background: var(--surface-2); border-radius: 8px;
   padding: 12px 14px; margin-bottom: 4px;
 }
-.memo-section { margin-top: 6px; }
+.memo-section { margin-top: 6px; margin-bottom: 18px; }
 .memo-section h3 { font-size: 13px; font-weight: 700; margin: 0 0 8px; color: var(--ink-2); }
+.attr-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.attr-chip {
+  font-size: 12px; font-weight: 600; color: var(--ink-2); background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: 20px; padding: 4px 10px;
+}
+.history-entry {
+  padding: 9px 12px; border-bottom: 1px solid var(--line); font-size: 13px;
+}
+.history-entry:last-child { border-bottom: none; }
+.history-entry .h-top { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 2px; }
+.history-entry .h-date { color: var(--ink-muted); font-weight: 400; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.history-entry .h-detail { color: var(--ink-2); margin-top: 3px; white-space: pre-wrap; }
+.history-entry .h-detail .h-field { color: var(--ink-muted); font-weight: 600; }
 details.memo {
   border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; background: var(--surface-2);
 }
@@ -408,6 +421,79 @@ function openModal(a) {
     fact('Transferred to', a.transferredTo),
   ].join('');
   body.appendChild(facts);
+
+  if (a.attributes && a.attributes.length) {
+    const attrSection = el('div', 'memo-section');
+    attrSection.appendChild(el('h3', null, 'Attributes'));
+    const chips = el('div', 'attr-chips');
+    a.attributes.forEach(attr => {
+      chips.appendChild(el('span', 'attr-chip', attr));
+    });
+    attrSection.appendChild(chips);
+    body.appendChild(attrSection);
+  }
+
+  function byDateDesc(list) {
+    return [...list].sort((x, y) => (y.date || '').localeCompare(x.date || ''));
+  }
+
+  function historyDetails(label, entries, renderEntry) {
+    if (!entries || !entries.length) return;
+    const section = el('div', 'memo-section');
+    const d = document.createElement('details');
+    d.className = 'memo';
+    const s = document.createElement('summary');
+    s.textContent = `${label} (${entries.length})`;
+    d.appendChild(s);
+    const list = el('div');
+    byDateDesc(entries).forEach(e => list.appendChild(renderEntry(e)));
+    d.appendChild(list);
+    section.appendChild(d);
+    body.appendChild(section);
+  }
+
+  historyDetails('Physical exam notes', a.physicalExams, e => {
+    const entry = el('div', 'history-entry');
+    const detail = [e.reason, e.subjective, e.objective, e.assessment, e.plan, e.newDiagnoses]
+      .filter(Boolean).join('\n');
+    entry.innerHTML = `
+      <div class="h-top"><span>${e.examType || 'Exam'}${e.vetOrTech ? ' — ' + e.vetOrTech : ''}</span><span class="h-date">${e.date || ''}</span></div>
+      ${detail ? `<div class="h-detail">${detail.replace(/</g, '&lt;')}</div>` : ''}
+      ${e.performedBy ? `<div class="h-detail"><span class="h-field">By:</span> ${e.performedBy}</div>` : ''}
+    `;
+    return entry;
+  });
+
+  historyDetails('Vaccines', a.vaccines, e => {
+    const entry = el('div', 'history-entry');
+    entry.innerHTML = `
+      <div class="h-top"><span>${e.product || 'Vaccine'}</span><span class="h-date">${e.date || ''}</span></div>
+      ${e.by ? `<div class="h-detail"><span class="h-field">By:</span> ${e.by}${e.vet ? ' (supervising: ' + e.vet + ')' : ''}</div>` : ''}
+      ${e.rabiesTag ? `<div class="h-detail"><span class="h-field">Rabies tag:</span> ${e.rabiesTag}</div>` : ''}
+    `;
+    return entry;
+  });
+
+  historyDetails('Diagnostic tests', a.diagnosticTests, e => {
+    const entry = el('div', 'history-entry');
+    entry.innerHTML = `
+      <div class="h-top"><span>${e.name || 'Test'}${e.status ? ' — ' + e.status : ''}</span><span class="h-date">${e.date || ''}</span></div>
+      ${e.result ? `<div class="h-detail"><span class="h-field">Result:</span> ${e.resultName ? e.resultName + ': ' : ''}${e.result}</div>` : ''}
+      ${e.notes ? `<div class="h-detail">${e.notes.replace(/</g, '&lt;')}</div>` : ''}
+      ${e.by ? `<div class="h-detail"><span class="h-field">By:</span> ${e.by}</div>` : ''}
+    `;
+    return entry;
+  });
+
+  historyDetails('Surgeries', a.surgeries, e => {
+    const entry = el('div', 'history-entry');
+    entry.innerHTML = `
+      <div class="h-top"><span>${e.surgeryType || 'Surgery'}</span><span class="h-date">${e.date || ''}</span></div>
+      ${e.surgeon ? `<div class="h-detail"><span class="h-field">Surgeon:</span> ${e.surgeon}${e.clinic ? ' (' + e.clinic + ')' : ''}</div>` : ''}
+      ${e.memo ? `<div class="h-detail">${e.memo.replace(/</g, '&lt;')}</div>` : ''}
+    `;
+    return entry;
+  });
 
   const memoEntries = Object.entries(a.memos || {});
   if (a.kennelCardMemo) memoEntries.unshift(['Kennel Card / Website Memo', a.kennelCardMemo]);

@@ -54,6 +54,40 @@ SELECT
 FROM `apa-data-410213.shelterluv.AnimalProfileSnapshotJoslyn`
 """
 
+# Three more manually-loaded "flood week" reports (see backfill_animal_medical.py) --
+# event-level logs (multiple rows per animal), org-wide rather than flood-scoped, joined
+# down to just flood animals here. Attributes shows up in all three and is consistent
+# wherever an animal appears in more than one, so it's read from whichever has it.
+DIAGNOSTICS_QUERY = """
+SELECT CAST(AnimalID AS STRING) AS AnimalID, TestDate, TestStatus, TestName, TestProduct,
+  TestBy, TestNotes, ResultName, Result, Attributes
+FROM `apa-data-410213.shelterluv.DiagnosticTestsJoslyn`
+"""
+VACCINES_QUERY = """
+SELECT CAST(AnimalID AS STRING) AS AnimalID, DateCompleted, VaccineProduct, LotNumber,
+  VaccinatedBy, RabiesTagNumber, SupervisingVeterinarian, Attributes
+FROM `apa-data-410213.shelterluv.VaccinesJoslyn`
+"""
+EXAMS_QUERY = """
+SELECT CAST(AnimalID AS STRING) AS AnimalID, DateCompleted, VetOrTechExam, Type, ExamReason,
+  Subjective, Objective, Assessment, Plan, NewDiagnoses, PerformedBy, Attributes
+FROM `apa-data-410213.shelterluv.PhysicalExamsJoslyn`
+"""
+SURGERIES_QUERY = """
+SELECT CAST(AnimalID AS STRING) AS AnimalID, DateCompleted, SurgeryType, Surgeon, Clinic,
+  Memo, Attributes
+FROM `apa-data-410213.shelterluv.SurgeriesJoslyn`
+"""
+# Capstar dosing comes from the data team's own AnimalTreatments table (a live, org-wide
+# treatment log), not one of Joslyn's manually-backfilled flood-week reports -- unlike
+# CompletedSurgeries, this one IS current through the flood window.
+CAPSTAR_QUERY = """
+SELECT CAST(`Animal ID` AS STRING) AS AnimalID, COUNT(*) AS doses
+FROM `apa-data-410213.shelterluv.AnimalTreatments`
+WHERE LOWER(Product) LIKE '%capstar%'
+GROUP BY 1
+"""
+
 
 def fetch_nws_zones():
     """Returns (infested_polys, surveillance_polys), or ([], []) if the live feed is unreachable."""
@@ -94,6 +128,25 @@ def run():
     rows = list(client.query(QUERY).result())
     profile_rows = list(client.query(PROFILE_QUERY).result())
     profiles = {r.AnimalID: r for r in profile_rows}
+
+    def group_by_animal(query):
+        grouped = {}
+        for r in client.query(query).result():
+            grouped.setdefault(r.AnimalID, []).append(r)
+        return grouped
+
+    diagnostics_by_animal = group_by_animal(DIAGNOSTICS_QUERY)
+    vaccines_by_animal = group_by_animal(VACCINES_QUERY)
+    exams_by_animal = group_by_animal(EXAMS_QUERY)
+    surgeries_by_animal = group_by_animal(SURGERIES_QUERY)
+    capstar_doses_by_animal = {r.AnimalID: r.doses for r in client.query(CAPSTAR_QUERY).result()}
+
+    def attributes_for(aid):
+        for source in (diagnostics_by_animal, vaccines_by_animal, exams_by_animal, surgeries_by_animal):
+            for r in source.get(aid, []):
+                if r.Attributes:
+                    return sorted(set(t.strip() for t in r.Attributes.split(",") if t.strip()))
+        return []
 
     infested, surveillance = fetch_nws_zones()
     zone_cache = {}
@@ -194,7 +247,78 @@ def run():
             "kennelCardMemo": p.KennelCardMemo if p else None,
             "memos": memos,
             "hasProfile": p is not None,
+            "attributes": attributes_for(a["aid"]),
+            "diagnosticTests": [
+                {
+                    "date": str(r.TestDate) if r.TestDate else None,
+                    "status": r.TestStatus,
+                    "name": r.TestName,
+                    "product": r.TestProduct,
+                    "by": r.TestBy,
+                    "notes": r.TestNotes,
+                    "resultName": r.ResultName,
+                    "result": r.Result,
+                }
+                for r in diagnostics_by_animal.get(a["aid"], [])
+            ],
+            "vaccines": [
+                {
+                    "date": str(r.DateCompleted) if r.DateCompleted else None,
+                    "product": r.VaccineProduct,
+                    "lotNumber": r.LotNumber,
+                    "by": r.VaccinatedBy,
+                    "rabiesTag": r.RabiesTagNumber,
+                    "vet": r.SupervisingVeterinarian,
+                }
+                for r in vaccines_by_animal.get(a["aid"], [])
+            ],
+            "physicalExams": [
+                {
+                    "date": str(r.DateCompleted) if r.DateCompleted else None,
+                    "examType": r.Type,
+                    "vetOrTech": r.VetOrTechExam,
+                    "reason": r.ExamReason,
+                    "subjective": r.Subjective,
+                    "objective": r.Objective,
+                    "assessment": r.Assessment,
+                    "plan": r.Plan,
+                    "newDiagnoses": r.NewDiagnoses,
+                    "performedBy": r.PerformedBy,
+                }
+                for r in exams_by_animal.get(a["aid"], [])
+            ],
+            "surgeries": [
+                {
+                    "date": str(r.DateCompleted) if r.DateCompleted else None,
+                    "surgeryType": r.SurgeryType,
+                    "surgeon": r.Surgeon,
+                    "clinic": r.Clinic,
+                    "memo": r.Memo,
+                }
+                for r in surgeries_by_animal.get(a["aid"], [])
+            ],
         })
+
+    # Medical/preventive-care metrics for the homepage grid -- all scoped to flood
+    # animals only (animal_profiles_out is already that list), summed from the same
+    # per-animal event lists attached above rather than re-querying.
+    def is_positive_heartworm(test):
+        return "heartworm" in (test["name"] or "").lower() and (test["result"] or "").lower() == "positive"
+
+    def is_spay_neuter(surgery):
+        t = (surgery["surgeryType"] or "").lower()
+        return "spay" in t or "neuter" in t
+
+    medical_metrics = {
+        "vaccinesAdministered": sum(len(a["vaccines"]) for a in animal_profiles_out),
+        "heartwormPositive": sum(
+            1 for a in animal_profiles_out if any(is_positive_heartworm(t) for t in a["diagnosticTests"])
+        ),
+        "capstarDoses": sum(capstar_doses_by_animal.get(a["aid"], 0) for a in animal_profiles_out),
+        "spayNeuterSurgeries": sum(
+            1 for a in animal_profiles_out for s in a["surgeries"] if is_spay_neuter(s)
+        ),
+    }
 
     buckets = [
         "On Property",
@@ -349,6 +473,7 @@ def run():
         "statusDetail": status_detail_out,
         "transferDestinations": destinations_out,
         "buckets": buckets,
+        "medicalMetrics": medical_metrics,
     }
 
     os.makedirs("data", exist_ok=True)

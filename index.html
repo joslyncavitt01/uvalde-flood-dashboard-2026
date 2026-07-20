@@ -372,6 +372,41 @@ function render(data) {
   sec1.appendChild(tiles);
   content.appendChild(sec1);
 
+  // Medical & preventive care -- separate metric grid, not part of the disposition
+  // breakdown above. Sourced from manually-backfilled flood-week ShelterLuv reports
+  // (vaccines, diagnostics, surgeries) plus the data team's live AnimalTreatments
+  // table for Capstar (CompletedSurgeries itself is stale pre-flood, hence the
+  // separate surgeries report instead).
+  if (data.medicalMetrics) {
+    const m = data.medicalMetrics;
+    const sec1b = el('section');
+    sec1b.innerHTML = `
+      <h2>Medical &amp; preventive care</h2>
+      <p class="section-note">Vaccines, testing, and surgeries performed on flood-attributable animals so far.</p>
+    `;
+    const medTiles = el('div', 'tiles');
+    medTiles.innerHTML = `
+      <div class="tile">
+        <div class="label">Vaccines administered</div>
+        <div class="value">${m.vaccinesAdministered}</div>
+      </div>
+      <div class="tile">
+        <div class="label">Spay/neuter surgeries</div>
+        <div class="value">${m.spayNeuterSurgeries}</div>
+      </div>
+      <div class="tile">
+        <div class="label">Capstar doses given</div>
+        <div class="value">${m.capstarDoses}</div>
+      </div>
+      <div class="tile">
+        <div class="label">Positive heartworm cases</div>
+        <div class="value">${m.heartwormPositive}</div>
+      </div>
+    `;
+    sec1b.appendChild(medTiles);
+    content.appendChild(sec1b);
+  }
+
   // Status detail -- exact ShelterLuv status text within each bucket
   if (data.statusDetail && data.statusDetail.length) {
     const secStatus = el('section');

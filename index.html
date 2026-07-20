@@ -30,6 +30,7 @@
   --s4: #4a3aa7; /* violet  -> Safety Net Foster (Pending RTO) */
   --s5: #eda100; /* yellow  -> Adopted / Pending */
   --s6: #1baf7a; /* aqua    -> Transferred Out */
+  --s7: #898781; /* muted gray -> Deceased */
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
@@ -50,7 +51,7 @@
     --live-dot:    #3fca6a;
     --critical:      #e66767;
     --critical-soft: #3a1f1c;
-    --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70;
+    --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70; --s7: #8b938f;
   }
 }
 :root[data-theme="dark"] {
@@ -71,7 +72,7 @@
   --live-dot:    #3fca6a;
   --critical:      #e66767;
   --critical-soft: #3a1f1c;
-  --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70;
+  --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70; --s7: #8b938f;
 }
 
 * { box-sizing: border-box; }
@@ -219,6 +220,7 @@ const BUCKET_COLORS = {
   "Safety Net Foster (Pending RTO)": "var(--s4)",
   "Adopted / Pending": "var(--s5)",
   "Transferred Out": "var(--s6)",
+  "Deceased": "var(--s7)",
 };
 
 function fmtRelative(iso) {
@@ -350,6 +352,12 @@ function render(data) {
       <div class="value">${t["Transferred Out"] || 0}</div>
       <div class="sub">${Math.round(100 * (t["Transferred Out"]||0) / t.total)}% of total</div>
     </div>
+    ${(t["Deceased"] || 0) > 0 ? `
+    <div class="tile">
+      <div class="label">Deceased</div>
+      <div class="value">${t["Deceased"]}</div>
+      <div class="sub">${Math.round(100 * t["Deceased"] / t.total)}% of total</div>
+    </div>` : ''}
   `;
   sec1.appendChild(tiles);
   content.appendChild(sec1);
@@ -414,6 +422,7 @@ function render(data) {
       <td class="num">${s["Safety Net Foster (Pending RTO)"]}</td>
       <td class="num">${s["Adopted / Pending"]}</td>
       <td class="num">${s["Transferred Out"]}</td>
+      <td class="num">${s["Deceased"] || 0}</td>
     </tr>
   `).join('');
   tw.innerHTML = `
@@ -423,7 +432,7 @@ function render(data) {
         <th class="num">Dogs</th><th class="num">Cats</th><th class="num">Total</th>
         <th>Intake date(s)</th><th class="num">On property</th><th class="num">Foster, avail.</th>
         <th class="num">Foster, unavail.</th><th class="num">Safety Net</th>
-        <th class="num">Adopted/pending</th><th class="num">Transferred</th>
+        <th class="num">Adopted/pending</th><th class="num">Transferred</th><th class="num">Deceased</th>
       </tr></thead>
       <tbody>${rows}
         <tr class="total-row">
@@ -433,6 +442,7 @@ function render(data) {
           <td class="num">${t["In Foster (Unavailable for Adoption)"]||0}</td>
           <td class="num">${t["Safety Net Foster (Pending RTO)"]||0}</td>
           <td class="num">${t["Adopted / Pending"]||0}</td><td class="num">${t["Transferred Out"]||0}</td>
+          <td class="num">${t["Deceased"]||0}</td>
         </tr>
       </tbody>
     </table>

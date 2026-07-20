@@ -112,6 +112,7 @@ def run():
         "Safety Net Foster (Pending RTO)",
         "Adopted / Pending",
         "Transferred Out",
+        "Deceased",
     ]
 
     # Totals
@@ -130,7 +131,7 @@ def run():
         if d not in by_day:
             by_day[d] = {"date": d, "total": 0, **{b: 0 for b in buckets}}
         by_day[d]["total"] += 1
-        by_day[d][a["bucket"]] += 1
+        by_day[d][a["bucket"]] = by_day[d].get(a["bucket"], 0) + 1
     days_out = [by_day[d] for d in sorted(by_day.keys())]
 
     # By shelter (with city/county/live NWS zone tag) -- excludes field intakes (no shelter
@@ -157,7 +158,7 @@ def run():
         rec["cats"] += 1 if a["species"] == "Cat" else 0
         rec["firstIntake"] = min(rec["firstIntake"], a["intakeDate"])
         rec["lastIntake"] = max(rec["lastIntake"], a["intakeDate"])
-        rec[a["bucket"]] += 1
+        rec[a["bucket"]] = rec.get(a["bucket"], 0) + 1
     shelters_out = sorted(by_shelter.values(), key=lambda r: -r["total"])
 
     # Field intakes (no shelter of origin) -- owned/found pets, grouped by where they
@@ -182,7 +183,7 @@ def run():
         rec["cats"] += 1 if a["species"] == "Cat" else 0
         rec["firstIntake"] = min(rec["firstIntake"], a["intakeDate"])
         rec["lastIntake"] = max(rec["lastIntake"], a["intakeDate"])
-        rec[a["bucket"]] += 1
+        rec[a["bucket"]] = rec.get(a["bucket"], 0) + 1
     found_cities_out = sorted(by_found_city.values(), key=lambda r: -r["total"])
 
     # On-property animals, by location

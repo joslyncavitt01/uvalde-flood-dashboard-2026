@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T21:14:30Z",
+  "lastUpdated": "2026-07-20T23:14:21Z",
   "totals": {
     "total": 399,
     "dogs": 268,
@@ -214,24 +214,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4,
-      "city": "Sabinal",
-      "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-15",
-      "lastIntake": "2026-07-15",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Devine Animal Control",
       "total": 9,
       "dogs": 9,
@@ -247,6 +229,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 5,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Sabinal Animal Shelter",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-15",
+      "lastIntake": "2026-07-15",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -328,14 +328,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
       "cats": 24
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
+      "area": "Davenport",
       "total": 24,
       "dogs": 0,
       "cats": 24
@@ -384,14 +384,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Barn - Large",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat Barn - Large",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -477,14 +477,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

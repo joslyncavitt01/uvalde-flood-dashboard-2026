@@ -1,14 +1,19 @@
-"""One-off/periodic manual load of four ShelterLuv "flood week" custom reports --
-diagnostic tests, vaccines, physical exams, and surgeries -- each an event-level log
-(multiple rows per animal), unlike the single-row-per-animal profile snapshot. NOT
-scoped to flood-attributable animals specifically; these are org-wide reports for the
-date window, filtered down to flood animals later in fetch_data.py via a join.
+"""One-off/periodic manual load of five ShelterLuv "flood week" custom reports --
+diagnostic tests, vaccines, physical exams, surgeries, and general treatments -- each
+an event-level log (multiple rows per animal), unlike the single-row-per-animal
+profile snapshot. NOT scoped to flood-attributable animals specifically; these are
+org-wide reports for the date window, filtered down to flood animals later in
+fetch_data.py via a join.
 
 The surgeries report exists separately from the data team's own CompletedSurgeries
 table because that table's sync stopped updating before 2026-06-17 -- well before the
-flood -- so it can't be relied on for anything in the flood window.
+flood -- so it can't be relied on for anything in the flood window. The treatments
+report is the structured counterpart to the data team's live AnimalTreatments table
+(same shape/columns) -- unlike CompletedSurgeries that one IS current, so this report
+mainly exists to double-check it and to have a matching per-animal treatments history
+on the Animals page, not because the live table was broken.
 
-Each animal's "Attributes" tag list shows up in all four reports and is confirmed
+Each animal's "Attributes" tag list shows up in all five reports and is confirmed
 consistent wherever it appears (checked directly), so it's read here but not stored
 separately -- fetch_data.py pulls it live from whichever table has it for a given
 animal.
@@ -20,7 +25,7 @@ not incremental logs -- there's no stable per-row key to dedupe against across r
 
 Usage: python3 backfill_animal_medical.py /path/to/floodweekdiagnostictests.xlsx \
     /path/to/floodweekvaccines.xlsx /path/to/floodweekphysicalexams.xlsx \
-    /path/to/floodweeksurgeries.xlsx
+    /path/to/floodweeksurgeries.xlsx /path/to/floodweektreatments.xlsx
 """
 import sys
 import openpyxl
@@ -80,6 +85,24 @@ SURGERIES_MAP = {
     "Memo": "Memo",
 }
 
+TREATMENTS_MAP = {
+    "Animal ID": "AnimalID",
+    "Name": "Name",
+    "Species": "Species",
+    "Primary Breed": "PrimaryBreed",
+    "Current Location": "CurrentLocation",
+    "Attributes": "Attributes",
+    "Current Weight": "CurrentWeight",
+    "Date Given": "DateGiven",
+    "Time Given": "TimeGiven",
+    "Given By": "GivenBy",
+    "Product": "Product",
+    "Amount": "Amount",
+    "Dose Notes": "DoseNotes",
+    "Treatment Notes": "TreatmentNotes",
+    "Supervising Veterinarian": "SupervisingVeterinarian",
+}
+
 EXAMS_MAP = {
     "Animal ID": "AnimalID",
     "Name": "Name",
@@ -108,6 +131,7 @@ TARGETS = {
     "vaccine": ("VaccinesJoslyn", VACCINES_MAP),
     "exam": ("PhysicalExamsJoslyn", EXAMS_MAP),
     "surgery": ("SurgeriesJoslyn", SURGERIES_MAP),
+    "treatment": ("TreatmentsJoslyn", TREATMENTS_MAP),
 }
 
 
@@ -129,6 +153,8 @@ def detect_kind(headers):
         return "exam"
     if "Procedure/Surgery Type" in headers:
         return "surgery"
+    if "Time Given" in headers:
+        return "treatment"
     raise ValueError(f"Couldn't identify report type from headers: {headers[:5]}...")
 
 

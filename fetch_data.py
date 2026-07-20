@@ -78,14 +78,10 @@ SELECT CAST(AnimalID AS STRING) AS AnimalID, DateCompleted, SurgeryType, Surgeon
   Memo, Attributes
 FROM `apa-data-410213.shelterluv.SurgeriesJoslyn`
 """
-# Capstar dosing comes from the data team's own AnimalTreatments table (a live, org-wide
-# treatment log), not one of Joslyn's manually-backfilled flood-week reports -- unlike
-# CompletedSurgeries, this one IS current through the flood window.
-CAPSTAR_QUERY = """
-SELECT CAST(`Animal ID` AS STRING) AS AnimalID, COUNT(*) AS doses
-FROM `apa-data-410213.shelterluv.AnimalTreatments`
-WHERE LOWER(Product) LIKE '%capstar%'
-GROUP BY 1
+TREATMENTS_QUERY = """
+SELECT CAST(AnimalID AS STRING) AS AnimalID, DateGiven, TimeGiven, GivenBy, Product,
+  Amount, DoseNotes, TreatmentNotes, SupervisingVeterinarian, Attributes
+FROM `apa-data-410213.shelterluv.TreatmentsJoslyn`
 """
 
 
@@ -139,10 +135,10 @@ def run():
     vaccines_by_animal = group_by_animal(VACCINES_QUERY)
     exams_by_animal = group_by_animal(EXAMS_QUERY)
     surgeries_by_animal = group_by_animal(SURGERIES_QUERY)
-    capstar_doses_by_animal = {r.AnimalID: r.doses for r in client.query(CAPSTAR_QUERY).result()}
+    treatments_by_animal = group_by_animal(TREATMENTS_QUERY)
 
     def attributes_for(aid):
-        for source in (diagnostics_by_animal, vaccines_by_animal, exams_by_animal, surgeries_by_animal):
+        for source in (diagnostics_by_animal, vaccines_by_animal, exams_by_animal, surgeries_by_animal, treatments_by_animal):
             for r in source.get(aid, []):
                 if r.Attributes:
                     return sorted(set(t.strip() for t in r.Attributes.split(",") if t.strip()))
@@ -297,6 +293,19 @@ def run():
                 }
                 for r in surgeries_by_animal.get(a["aid"], [])
             ],
+            "treatments": [
+                {
+                    "date": str(r.DateGiven) if r.DateGiven else None,
+                    "time": r.TimeGiven,
+                    "by": r.GivenBy,
+                    "product": r.Product,
+                    "amount": r.Amount,
+                    "doseNotes": r.DoseNotes,
+                    "treatmentNotes": r.TreatmentNotes,
+                    "vet": r.SupervisingVeterinarian,
+                }
+                for r in treatments_by_animal.get(a["aid"], [])
+            ],
         })
 
     # Medical/preventive-care metrics for the homepage grid -- all scoped to flood
@@ -314,7 +323,10 @@ def run():
         "heartwormPositive": sum(
             1 for a in animal_profiles_out if any(is_positive_heartworm(t) for t in a["diagnosticTests"])
         ),
-        "capstarDoses": sum(capstar_doses_by_animal.get(a["aid"], 0) for a in animal_profiles_out),
+        "capstarDoses": sum(
+            1 for a in animal_profiles_out for t in a["treatments"]
+            if "capstar" in (t["product"] or "").lower()
+        ),
         "spayNeuterSurgeries": sum(
             1 for a in animal_profiles_out for s in a["surgeries"] if is_spay_neuter(s)
         ),

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T13:37:22Z",
+  "lastUpdated": "2026-07-20T13:48:51Z",
   "totals": {
     "total": 399,
     "dogs": 268,
@@ -570,7 +570,7 @@
   "medicalMetrics": {
     "vaccinesAdministered": 322,
     "heartwormPositive": 5,
-    "capstarDoses": 84,
+    "capstarDoses": 148,
     "spayNeuterSurgeries": 25
   }
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T05:48:18Z",
+  "lastUpdated": "2026-07-21T14:01:26Z",
   "totals": {
     "total": 414,
     "dogs": 280,
@@ -366,17 +366,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 26,
-      "dogs": 26,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
       "cats": 24
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 23,
+      "dogs": 23,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -429,6 +429,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Building B",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -440,6 +447,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -565,23 +579,16 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 17,
-      "dogs": 8,
-      "cats": 9
+      "total": 15,
+      "dogs": 7,
+      "cats": 8
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 10,
-      "dogs": 4,
-      "cats": 6
-    },
-    {
-      "bucket": "Adopted / Pending",
-      "status": "Ready to Outcome Pre-Adopt (Adopter)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "total": 13,
+      "dogs": 5,
+      "cats": 8
     },
     {
       "bucket": "Transferred Out",

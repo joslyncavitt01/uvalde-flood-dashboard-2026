@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-21T00:57:35Z",
+  "lastUpdated": "2026-07-21T01:12:52Z",
   "totals": {
-    "total": 411,
+    "total": 414,
     "dogs": 280,
-    "cats": 131,
-    "On Property": 197,
+    "cats": 134,
+    "On Property": 200,
     "In Foster (Available for Adoption)": 92,
     "In Foster (Unavailable for Adoption)": 21,
     "Safety Net Foster (Pending RTO)": 31,
@@ -94,8 +94,8 @@
     },
     {
       "date": "2026-07-20",
-      "total": 26,
-      "On Property": 24,
+      "total": 29,
+      "On Property": 27,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -215,38 +215,20 @@
     },
     {
       "shelter": "Cotulla City Animal Control",
-      "total": 11,
+      "total": 14,
       "dogs": 11,
-      "cats": 0,
+      "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-20",
-      "On Property": 11,
+      "On Property": 14,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
-      "shelter": "Devine Animal Control",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -265,6 +247,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Devine Animal Control",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -339,6 +339,13 @@
     }
   ],
   "byLocation": [
+    {
+      "property": "Neonatal Nursery, Hallway",
+      "area": "Unspecified",
+      "total": 3,
+      "dogs": 0,
+      "cats": 3
+    },
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
@@ -446,14 +453,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -463,16 +470,16 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 115,
-      "dogs": 74,
+      "total": 118,
+      "dogs": 77,
       "cats": 41
     },
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
       "total": 78,
-      "dogs": 50,
-      "cats": 28
+      "dogs": 47,
+      "cats": 31
     },
     {
       "bucket": "On Property",
@@ -511,7 +518,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -525,7 +532,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

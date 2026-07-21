@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T01:58:51Z",
+  "lastUpdated": "2026-07-21T02:14:08Z",
   "totals": {
     "total": 414,
     "dogs": 280,
@@ -232,24 +232,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Devine Animal Control",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 5,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Sabinal Animal Shelter",
       "total": 9,
       "dogs": 5,
@@ -265,6 +247,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Devine Animal Control",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -453,14 +453,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -518,7 +518,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -532,7 +532,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

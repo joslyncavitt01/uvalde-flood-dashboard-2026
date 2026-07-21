@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T14:16:58Z",
+  "lastUpdated": "2026-07-21T14:32:22Z",
   "totals": {
     "total": 414,
     "dogs": 280,
@@ -408,14 +408,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Building D - Kennels & Offices",
       "total": 4,
       "dogs": 4,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Building 4 - Dog",
       "total": 4,
       "dogs": 4,
       "cats": 0
@@ -436,10 +436,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "C-ISO",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -450,10 +450,10 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Cat Overflow Doubles",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -478,14 +478,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -529,17 +529,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Too Young (Foster)",
       "total": 9,
       "dogs": 7,
       "cats": 2
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -550,14 +550,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

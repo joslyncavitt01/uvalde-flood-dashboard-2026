@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T14:47:41Z",
+  "lastUpdated": "2026-07-21T15:03:05Z",
   "totals": {
     "total": 414,
     "dogs": 280,
@@ -365,6 +365,13 @@
       "cats": 6
     },
     {
+      "property": "Sunset Valley",
+      "area": "Cat Clinic - Sunset Valley",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
       "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
@@ -401,17 +408,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 6,
-      "dogs": 1,
-      "cats": 5
-    },
-    {
-      "property": "TLAC",
       "area": "Building D - Kennels & Offices",
       "total": 4,
       "dogs": 4,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 4,
+      "dogs": 1,
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -436,13 +443,6 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Barn - Large",
       "total": 1,
       "dogs": 0,
@@ -454,6 +454,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -478,14 +485,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -565,15 +572,15 @@
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net  (NO ADOPT)",
-      "total": 24,
-      "dogs": 23,
+      "total": 23,
+      "dogs": 22,
       "cats": 1
     },
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net Foster (NO ADOPT)",
-      "total": 7,
-      "dogs": 7,
+      "total": 8,
+      "dogs": 8,
       "cats": 0
     },
     {

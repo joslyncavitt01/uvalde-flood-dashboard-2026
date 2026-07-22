@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-07-22T16:51:19Z",
+  "lastUpdated": "2026-07-22T17:06:40Z",
   "totals": {
     "total": 425,
     "dogs": 284,
     "cats": 141,
-    "On Property": 189,
+    "On Property": 191,
     "In Foster (Available for Adoption)": 99,
     "In Foster (Unavailable for Adoption)": 24,
     "Safety Net Foster (Pending RTO)": 39,
-    "Adopted / Pending": 32,
+    "Adopted / Pending": 30,
     "Transferred Out": 41,
     "Deceased": 1,
     "Return to Owner": 0,
-    "Adopted / Pending (tile)": 32
+    "Adopted / Pending (tile)": 30
   },
   "byDay": [
     {
@@ -62,11 +62,11 @@
     {
       "date": "2026-07-17",
       "total": 85,
-      "On Property": 35,
+      "On Property": 37,
       "In Foster (Available for Adoption)": 21,
       "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 18,
+      "Adopted / Pending": 16,
       "Transferred Out": 4,
       "Deceased": 0
     },
@@ -155,11 +155,11 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
-      "On Property": 35,
+      "On Property": 37,
       "In Foster (Available for Adoption)": 20,
       "In Foster (Unavailable for Adoption)": 14,
       "Safety Net Foster (Pending RTO)": 1,
-      "Adopted / Pending": 14,
+      "Adopted / Pending": 12,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -378,6 +378,13 @@
   ],
   "byLocation": [
     {
+      "property": "Pre Adopt at Adopter",
+      "area": "Unspecified",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
       "total": 61,
@@ -536,8 +543,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 106,
-      "dogs": 74,
+      "total": 108,
+      "dogs": 76,
       "cats": 32
     },
     {
@@ -627,8 +634,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 18,
-      "dogs": 7,
+      "total": 16,
+      "dogs": 5,
       "cats": 11
     },
     {

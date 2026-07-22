@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-22T18:59:33Z",
+  "lastUpdated": "2026-07-22T19:14:56Z",
   "totals": {
     "total": 425,
     "dogs": 284,
     "cats": 141,
-    "On Property": 191,
+    "On Property": 190,
     "In Foster (Available for Adoption)": 98,
-    "In Foster (Unavailable for Adoption)": 24,
+    "In Foster (Unavailable for Adoption)": 25,
     "Safety Net Foster (Pending RTO)": 39,
     "Adopted / Pending": 31,
     "Transferred Out": 41,
@@ -62,9 +62,9 @@
     {
       "date": "2026-07-17",
       "total": 85,
-      "On Property": 37,
+      "On Property": 36,
       "In Foster (Available for Adoption)": 21,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Unavailable for Adoption)": 8,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 16,
       "Transferred Out": 4,
@@ -155,9 +155,9 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
-      "On Property": 37,
+      "On Property": 36,
       "In Foster (Available for Adoption)": 20,
-      "In Foster (Unavailable for Adoption)": 14,
+      "In Foster (Unavailable for Adoption)": 15,
       "Safety Net Foster (Pending RTO)": 1,
       "Adopted / Pending": 12,
       "Transferred Out": 0,
@@ -436,8 +436,8 @@
     {
       "property": "TLAC",
       "area": "Davenport",
-      "total": 6,
-      "dogs": 3,
+      "total": 5,
+      "dogs": 2,
       "cats": 3
     },
     {
@@ -536,8 +536,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 106,
-      "dogs": 76,
+      "total": 105,
+      "dogs": 75,
       "cats": 30
     },
     {
@@ -585,8 +585,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 10,
-      "dogs": 4,
+      "total": 11,
+      "dogs": 5,
       "cats": 6
     },
     {

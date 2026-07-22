@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T22:18:50Z",
+  "lastUpdated": "2026-07-22T22:34:27Z",
   "totals": {
     "total": 431,
     "dogs": 290,
@@ -152,7 +152,7 @@
       "cats": 12,
       "city": "Uvalde",
       "county": "Uvalde",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 36,
@@ -170,7 +170,7 @@
       "cats": 51,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 41,
@@ -188,7 +188,7 @@
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-21",
       "On Property": 41,
@@ -224,7 +224,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 2,
@@ -242,7 +242,7 @@
       "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
       "On Property": 12,
@@ -278,7 +278,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 2,
@@ -314,7 +314,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 1,
@@ -400,17 +400,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 24,
-      "dogs": 24,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
       "cats": 24
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 24,
+      "dogs": 24,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -435,17 +435,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 4,
-      "dogs": 1,
-      "cats": 3
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 4,
       "dogs": 4,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 4,
+      "dogs": 1,
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -456,6 +456,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Cat Overflow Doubles",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
       "area": "Building B",
       "total": 1,
       "dogs": 1,
@@ -463,7 +470,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -477,14 +484,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -605,14 +605,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

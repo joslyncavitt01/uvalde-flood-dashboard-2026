@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T18:23:17Z",
+  "lastUpdated": "2026-07-22T18:44:11Z",
   "totals": {
     "total": 425,
     "dogs": 284,
@@ -470,6 +470,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Cat Barn - Large",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
@@ -481,13 +488,6 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Barn - Large",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
     },
     {
       "property": "Tarrytown",

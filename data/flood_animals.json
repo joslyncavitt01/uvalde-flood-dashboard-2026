@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T17:22:02Z",
+  "lastUpdated": "2026-07-22T17:37:23Z",
   "totals": {
     "total": 425,
     "dogs": 284,
@@ -428,13 +428,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 9,
       "dogs": 0,
@@ -442,10 +435,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 4,
-      "dogs": 1,
-      "cats": 3
+      "area": "Building 3 - Dog",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -453,6 +446,13 @@
       "total": 4,
       "dogs": 4,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 4,
+      "dogs": 1,
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -470,10 +470,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Cat Overflow Doubles",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "TLAC",
@@ -484,14 +484,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "C-ISO",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -605,14 +605,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

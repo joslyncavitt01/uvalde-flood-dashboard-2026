@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-07-22T20:47:14Z",
+  "lastUpdated": "2026-07-22T22:03:28Z",
   "totals": {
-    "total": 428,
-    "dogs": 287,
+    "total": 431,
+    "dogs": 290,
     "cats": 141,
-    "On Property": 190,
-    "In Foster (Available for Adoption)": 98,
-    "In Foster (Unavailable for Adoption)": 25,
+    "On Property": 193,
+    "In Foster (Available for Adoption)": 96,
+    "In Foster (Unavailable for Adoption)": 26,
     "Safety Net Foster (Pending RTO)": 42,
-    "Adopted / Pending": 31,
+    "Adopted / Pending": 32,
     "Transferred Out": 41,
     "Deceased": 1,
     "Return to Owner": 0,
-    "Adopted / Pending (tile)": 31
+    "Adopted / Pending (tile)": 32
   },
   "byDay": [
     {
@@ -39,8 +39,8 @@
     },
     {
       "date": "2026-07-15",
-      "total": 24,
-      "On Property": 5,
+      "total": 27,
+      "On Property": 8,
       "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -51,8 +51,8 @@
     {
       "date": "2026-07-16",
       "total": 149,
-      "On Property": 64,
-      "In Foster (Available for Adoption)": 46,
+      "On Property": 66,
+      "In Foster (Available for Adoption)": 44,
       "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 8,
@@ -84,11 +84,11 @@
     {
       "date": "2026-07-19",
       "total": 74,
-      "On Property": 45,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 43,
+      "In Foster (Available for Adoption)": 3,
       "In Foster (Unavailable for Adoption)": 8,
       "Safety Net Foster (Pending RTO)": 18,
-      "Adopted / Pending": 1,
+      "Adopted / Pending": 2,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -96,8 +96,8 @@
       "date": "2026-07-20",
       "total": 26,
       "On Property": 18,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 1,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 3,
       "Transferred Out": 0,
@@ -137,8 +137,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 40,
-      "In Foster (Available for Adoption)": 35,
+      "On Property": 41,
+      "In Foster (Available for Adoption)": 34,
       "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -174,10 +174,10 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 41,
-      "In Foster (Available for Adoption)": 10,
+      "In Foster (Available for Adoption)": 9,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 9,
+      "Adopted / Pending": 10,
       "Transferred Out": 2,
       "Deceased": 0
     },
@@ -191,8 +191,8 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-21",
-      "On Property": 42,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 41,
+      "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 10,
       "Adopted / Pending": 1,
@@ -201,15 +201,15 @@
     },
     {
       "shelter": "Footbridge Foundation",
-      "total": 22,
-      "dogs": 17,
+      "total": 25,
+      "dogs": 20,
       "cats": 5,
       "city": "San Antonio",
       "county": "Bexar",
       "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-17",
-      "On Property": 3,
+      "On Property": 6,
       "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -246,29 +246,11 @@
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
       "On Property": 12,
-      "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
-      "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4,
-      "city": "Sabinal",
-      "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-15",
-      "lastIntake": "2026-07-15",
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 1,
-      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -287,6 +269,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 5,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Sabinal Animal Shelter",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-15",
+      "lastIntake": "2026-07-15",
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 1,
+      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -380,8 +380,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 61,
-      "dogs": 61,
+      "total": 63,
+      "dogs": 63,
       "cats": 0
     },
     {
@@ -400,6 +400,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 24,
+      "dogs": 24,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
@@ -407,16 +414,16 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 23,
-      "dogs": 23,
+      "area": "Building 1 - Dog",
+      "total": 15,
+      "dogs": 15,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 14,
-      "dogs": 14,
+      "area": "Building 3 - Dog",
+      "total": 10,
+      "dogs": 10,
       "cats": 0
     },
     {
@@ -428,16 +435,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Davenport",
-      "total": 5,
-      "dogs": 2,
+      "total": 4,
+      "dogs": 1,
       "cats": 3
     },
     {
@@ -449,17 +449,24 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "TLAC Cattery",
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -483,18 +490,11 @@
       "cats": 0
     },
     {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
       "property": "Tarrytown",
       "area": "Tarrytown Cattery",
-      "total": 12,
+      "total": 11,
       "dogs": 0,
-      "cats": 12
+      "cats": 11
     },
     {
       "property": "Tarrytown",
@@ -506,8 +506,8 @@
     {
       "property": "Tarrytown",
       "area": "Tarrytown Dog",
-      "total": 2,
-      "dogs": 2,
+      "total": 3,
+      "dogs": 3,
       "cats": 0
     },
     {
@@ -519,7 +519,7 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -537,14 +537,14 @@
       "bucket": "On Property",
       "status": "Available (Shelter)",
       "total": 105,
-      "dogs": 75,
-      "cats": 30
+      "dogs": 76,
+      "cats": 29
     },
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 78,
-      "dogs": 44,
+      "total": 81,
+      "dogs": 47,
       "cats": 34
     },
     {
@@ -571,15 +571,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 59,
-      "dogs": 59,
+      "total": 58,
+      "dogs": 58,
       "cats": 0
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 39,
-      "dogs": 17,
+      "total": 38,
+      "dogs": 16,
       "cats": 22
     },
     {
@@ -599,8 +599,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 3,
-      "dogs": 2,
+      "total": 4,
+      "dogs": 3,
       "cats": 1
     },
     {
@@ -641,9 +641,9 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 13,
+      "total": 14,
       "dogs": 5,
-      "cats": 8
+      "cats": 9
     },
     {
       "bucket": "Transferred Out",

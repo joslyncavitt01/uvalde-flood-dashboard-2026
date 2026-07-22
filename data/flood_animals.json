@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T14:18:01Z",
+  "lastUpdated": "2026-07-22T14:33:20Z",
   "totals": {
     "total": 425,
     "dogs": 284,
@@ -470,7 +470,7 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -484,7 +484,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0

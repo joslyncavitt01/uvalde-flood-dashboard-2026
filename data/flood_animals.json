@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T15:03:59Z",
+  "lastUpdated": "2026-07-22T15:19:22Z",
   "totals": {
     "total": 425,
     "dogs": 284,
@@ -598,14 +598,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

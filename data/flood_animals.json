@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T12:00:05Z",
+  "lastUpdated": "2026-07-22T12:15:25Z",
   "totals": {
     "total": 425,
     "dogs": 284,
@@ -254,24 +254,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4,
-      "city": "Sabinal",
-      "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-15",
-      "lastIntake": "2026-07-15",
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 1,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Devine Animal Control",
       "total": 9,
       "dogs": 9,
@@ -287,6 +269,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 5,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Sabinal Animal Shelter",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-15",
+      "lastIntake": "2026-07-15",
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 1,
+      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -421,17 +421,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 9,
       "dogs": 0,
       "cats": 9
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 3 - Dog",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -463,13 +463,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Barn - Large",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -477,14 +470,21 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Cat Barn - Large",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -519,14 +519,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -598,14 +598,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

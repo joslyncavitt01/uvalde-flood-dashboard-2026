@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-23T05:58:17Z",
+  "lastUpdated": "2026-07-23T06:13:31Z",
   "totals": {
     "total": 431,
     "dogs": 290,
     "cats": 141,
-    "On Property": 189,
+    "On Property": 187,
     "In Foster (Available for Adoption)": 96,
-    "In Foster (Unavailable for Adoption)": 26,
+    "In Foster (Unavailable for Adoption)": 28,
     "Safety Net Foster (Pending RTO)": 42,
     "Adopted / Pending": 36,
     "Transferred Out": 41,
@@ -84,9 +84,9 @@
     {
       "date": "2026-07-19",
       "total": 74,
-      "On Property": 43,
+      "On Property": 41,
       "In Foster (Available for Adoption)": 3,
-      "In Foster (Unavailable for Adoption)": 8,
+      "In Foster (Unavailable for Adoption)": 10,
       "Safety Net Foster (Pending RTO)": 18,
       "Adopted / Pending": 2,
       "Transferred Out": 0,
@@ -191,9 +191,9 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-21",
-      "On Property": 41,
+      "On Property": 39,
       "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 10,
       "Adopted / Pending": 1,
       "Transferred Out": 0,
@@ -254,24 +254,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Devine Animal Control",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 5,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Sabinal Animal Shelter",
       "total": 9,
       "dogs": 5,
@@ -287,6 +269,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Devine Animal Control",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -435,13 +435,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 4,
-      "dogs": 1,
-      "cats": 3
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 4,
       "dogs": 4,
@@ -449,24 +442,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 1,
+      "area": "Davenport",
+      "total": 4,
       "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Barn - Large",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -481,6 +460,27 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Barn - Large",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -499,9 +499,9 @@
     {
       "property": "Tarrytown",
       "area": "Neonatal Nursery",
-      "total": 7,
+      "total": 5,
       "dogs": 0,
-      "cats": 7
+      "cats": 5
     },
     {
       "property": "Tarrytown",
@@ -519,14 +519,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -556,13 +556,6 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable - Too Young (Shelter)",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "bucket": "On Property",
       "status": "Available - Barn (Shelter)",
       "total": 1,
       "dogs": 0,
@@ -584,17 +577,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Too Young (Foster)",
+      "total": 11,
+      "dogs": 7,
+      "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 11,
       "dogs": 5,
       "cats": 6
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Too Young (Foster)",
-      "total": 9,
-      "dogs": 7,
-      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

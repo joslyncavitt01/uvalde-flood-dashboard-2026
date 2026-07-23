@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T03:10:29Z",
+  "lastUpdated": "2026-07-23T03:25:51Z",
   "totals": {
     "total": 431,
     "dogs": 290,
@@ -400,17 +400,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 24,
-      "dogs": 24,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
       "cats": 24
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 24,
+      "dogs": 24,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -435,13 +435,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 4,
-      "dogs": 1,
-      "cats": 3
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 4,
       "dogs": 4,
@@ -449,24 +442,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
+      "area": "Davenport",
+      "total": 4,
       "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Barn - Large",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -477,6 +456,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
@@ -484,7 +470,21 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
+      "area": "TLAC Cattery",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Barn - Large",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -605,14 +605,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

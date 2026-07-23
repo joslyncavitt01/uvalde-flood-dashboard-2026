@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T02:24:36Z",
+  "lastUpdated": "2026-07-23T02:39:53Z",
   "totals": {
     "total": 431,
     "dogs": 290,
@@ -456,14 +456,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Barn - Large",
+      "area": "TLAC Cattery",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -477,10 +470,17 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
+      "area": "Cat Barn - Large",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",

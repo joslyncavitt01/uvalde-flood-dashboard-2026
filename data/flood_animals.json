@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T01:53:51Z",
+  "lastUpdated": "2026-07-23T02:09:16Z",
   "totals": {
     "total": 431,
     "dogs": 290,
@@ -254,24 +254,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
-      "cats": 4,
-      "city": "Sabinal",
-      "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-15",
-      "lastIntake": "2026-07-15",
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 1,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Devine Animal Control",
       "total": 9,
       "dogs": 9,
@@ -287,6 +269,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 5,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Sabinal Animal Shelter",
+      "total": 9,
+      "dogs": 5,
+      "cats": 4,
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-15",
+      "lastIntake": "2026-07-15",
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 1,
+      "Transferred Out": 1,
       "Deceased": 0
     },
     {
@@ -400,17 +400,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 24,
-      "dogs": 24,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 24,
       "dogs": 0,
       "cats": 24
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 24,
+      "dogs": 24,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -435,13 +435,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 4,
-      "dogs": 1,
-      "cats": 3
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 4,
       "dogs": 4,
@@ -449,10 +442,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
+      "area": "Davenport",
+      "total": 4,
       "dogs": 1,
-      "cats": 0
+      "cats": 3
     },
     {
       "property": "TLAC",
@@ -460,13 +453,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "TLAC",
@@ -484,10 +470,24 @@
     },
     {
       "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "TLAC Cattery",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -519,14 +519,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building D",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building D",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -605,14 +605,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

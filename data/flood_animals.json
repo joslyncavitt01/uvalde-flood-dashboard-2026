@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T00:21:55Z",
+  "lastUpdated": "2026-07-23T00:37:13Z",
   "totals": {
     "total": 431,
     "dogs": 290,
@@ -400,17 +400,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 24,
-      "dogs": 0,
-      "cats": 24
-    },
-    {
-      "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 24,
       "dogs": 24,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 24,
+      "dogs": 0,
+      "cats": 24
     },
     {
       "property": "TLAC",
@@ -449,6 +449,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -481,13 +488,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",

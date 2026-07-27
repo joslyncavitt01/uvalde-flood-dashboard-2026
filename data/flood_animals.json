@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-27T18:51:48Z",
+  "lastUpdated": "2026-07-27T19:07:17Z",
   "totals": {
-    "total": 348,
-    "dogs": 235,
+    "total": 349,
+    "dogs": 236,
     "cats": 113,
     "On Property": 83,
-    "In Foster (Available for Adoption)": 90,
+    "In Foster (Available for Adoption)": 91,
     "In Foster (Unavailable for Adoption)": 38,
     "Safety Net Foster (Pending RTO)": 26,
     "Adopted / Pending": 69,
@@ -124,6 +124,17 @@
       "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
+    },
+    {
+      "date": "2026-07-27",
+      "total": 1,
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 0,
+      "Deceased": 0
     }
   ],
   "byShelter": [
@@ -183,16 +194,16 @@
     },
     {
       "shelter": "Crystal City Animal Control",
-      "total": 34,
-      "dogs": 29,
+      "total": 35,
+      "dogs": 30,
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-21",
+      "lastIntake": "2026-07-27",
       "On Property": 10,
-      "In Foster (Available for Adoption)": 5,
+      "In Foster (Available for Adoption)": 6,
       "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 9,
       "Adopted / Pending": 3,
@@ -442,10 +453,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Davenport",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -456,17 +467,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Cat ISO Condos",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -522,8 +533,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 42,
-      "dogs": 42,
+      "total": 43,
+      "dogs": 43,
       "cats": 0
     },
     {
@@ -549,14 +560,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

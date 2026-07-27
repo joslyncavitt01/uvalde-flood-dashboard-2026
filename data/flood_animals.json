@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-27T13:46:41Z",
+  "lastUpdated": "2026-07-27T13:56:28Z",
   "totals": {
-    "total": 389,
-    "dogs": 254,
+    "total": 386,
+    "dogs": 251,
     "cats": 135,
-    "On Property": 119,
+    "On Property": 116,
     "In Foster (Available for Adoption)": 89,
     "In Foster (Unavailable for Adoption)": 39,
     "Safety Net Foster (Pending RTO)": 32,
@@ -94,8 +94,8 @@
     },
     {
       "date": "2026-07-20",
-      "total": 26,
-      "On Property": 7,
+      "total": 23,
+      "On Property": 4,
       "In Foster (Available for Adoption)": 7,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -237,38 +237,20 @@
     },
     {
       "shelter": "Cotulla City Animal Control",
-      "total": 14,
-      "dogs": 11,
+      "total": 11,
+      "dogs": 8,
       "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
-      "On Property": 5,
+      "On Property": 2,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
-      "shelter": "Devine Animal Control",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0,
-      "city": "Devine",
-      "county": "Medina",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 1,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -287,6 +269,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Devine Animal Control",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0,
+      "city": "Devine",
+      "county": "Medina",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-18",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 1,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 5,
       "Deceased": 0
     },
     {
@@ -387,8 +387,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 27,
-      "dogs": 27,
+      "total": 24,
+      "dogs": 24,
       "cats": 0
     },
     {
@@ -435,14 +435,21 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -456,24 +463,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Davenport",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -508,8 +508,8 @@
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 37,
-      "dogs": 14,
+      "total": 34,
+      "dogs": 11,
       "cats": 23
     },
     {
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

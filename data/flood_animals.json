@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T21:41:09Z",
+  "lastUpdated": "2026-07-27T21:56:28Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -418,17 +418,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 9,
-      "dogs": 0,
-      "cats": 9
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 9,
       "dogs": 9,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 9,
+      "dogs": 0,
+      "cats": 9
     },
     {
       "property": "TLAC",
@@ -453,13 +453,6 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
@@ -471,6 +464,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -553,14 +553,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -581,17 +581,17 @@
     },
     {
       "bucket": "Adopted / Pending",
-      "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 35,
-      "dogs": 13,
-      "cats": 22
-    },
-    {
-      "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
       "total": 35,
       "dogs": 18,
       "cats": 17
+    },
+    {
+      "bucket": "Adopted / Pending",
+      "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
+      "total": 35,
+      "dogs": 13,
+      "cats": 22
     },
     {
       "bucket": "Adopted / Pending",

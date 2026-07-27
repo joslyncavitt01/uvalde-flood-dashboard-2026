@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-27T14:28:39Z",
+  "lastUpdated": "2026-07-27T14:40:55Z",
   "totals": {
-    "total": 374,
-    "dogs": 239,
-    "cats": 135,
-    "On Property": 112,
-    "In Foster (Available for Adoption)": 87,
+    "total": 348,
+    "dogs": 235,
+    "cats": 113,
+    "On Property": 85,
+    "In Foster (Available for Adoption)": 88,
     "In Foster (Unavailable for Adoption)": 39,
     "Safety Net Foster (Pending RTO)": 26,
     "Adopted / Pending": 68,
@@ -39,9 +39,9 @@
     },
     {
       "date": "2026-07-15",
-      "total": 26,
-      "On Property": 7,
-      "In Foster (Available for Adoption)": 13,
+      "total": 24,
+      "On Property": 4,
+      "In Foster (Available for Adoption)": 14,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -50,8 +50,8 @@
     },
     {
       "date": "2026-07-16",
-      "total": 129,
-      "On Property": 47,
+      "total": 105,
+      "On Property": 23,
       "In Foster (Available for Adoption)": 35,
       "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
@@ -129,15 +129,15 @@
   "byShelter": [
     {
       "shelter": "Kendall County Animal Shelter (TX)",
-      "total": 107,
-      "dogs": 52,
-      "cats": 55,
+      "total": 84,
+      "dogs": 51,
+      "cats": 33,
       "city": "Boerne",
       "county": "Kendall",
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 41,
+      "On Property": 18,
       "In Foster (Available for Adoption)": 29,
       "In Foster (Unavailable for Adoption)": 4,
       "Safety Net Foster (Pending RTO)": 0,
@@ -165,15 +165,15 @@
     },
     {
       "shelter": "Kerrville Pets Alive!",
-      "total": 54,
-      "dogs": 9,
+      "total": 53,
+      "dogs": 8,
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
       "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
-      "On Property": 16,
+      "On Property": 15,
       "In Foster (Available for Adoption)": 9,
       "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 0,
@@ -201,16 +201,16 @@
     },
     {
       "shelter": "Footbridge Foundation",
-      "total": 23,
-      "dogs": 18,
+      "total": 21,
+      "dogs": 16,
       "cats": 5,
       "city": "San Antonio",
       "county": "Bexar",
       "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-17",
-      "On Property": 5,
-      "In Foster (Available for Adoption)": 11,
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 12,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -387,22 +387,15 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 22,
-      "dogs": 22,
+      "total": 18,
+      "dogs": 18,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 24,
-      "dogs": 0,
-      "cats": 24
-    },
-    {
-      "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 18,
-      "dogs": 18,
+      "total": 17,
+      "dogs": 17,
       "cats": 0
     },
     {
@@ -435,10 +428,10 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -449,17 +442,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -470,7 +463,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -501,16 +501,16 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 77,
-      "dogs": 63,
+      "total": 75,
+      "dogs": 61,
       "cats": 14
     },
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 32,
-      "dogs": 9,
-      "cats": 23
+      "total": 7,
+      "dogs": 6,
+      "cats": 1
     },
     {
       "bucket": "On Property",
@@ -522,8 +522,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 44,
-      "dogs": 22,
+      "total": 45,
+      "dogs": 23,
       "cats": 22
     },
     {
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -645,7 +645,7 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 486,
+    "vaccinesAdministered": 487,
     "heartwormPositive": 5,
     "capstarDoses": 148,
     "spayNeuterSurgeries": 40

@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-27T13:56:28Z",
+  "lastUpdated": "2026-07-27T13:57:54Z",
   "totals": {
-    "total": 386,
-    "dogs": 251,
+    "total": 385,
+    "dogs": 250,
     "cats": 135,
-    "On Property": 116,
+    "On Property": 115,
     "In Foster (Available for Adoption)": 89,
     "In Foster (Unavailable for Adoption)": 39,
     "Safety Net Foster (Pending RTO)": 32,
@@ -72,8 +72,8 @@
     },
     {
       "date": "2026-07-18",
-      "total": 41,
-      "On Property": 12,
+      "total": 40,
+      "On Property": 11,
       "In Foster (Available for Adoption)": 6,
       "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 10,
@@ -147,15 +147,15 @@
     },
     {
       "shelter": "Briscoe Animal Resource Center",
-      "total": 81,
-      "dogs": 69,
+      "total": 80,
+      "dogs": 68,
       "cats": 12,
       "city": "Uvalde",
       "county": "Uvalde",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
-      "On Property": 28,
+      "On Property": 27,
       "In Foster (Available for Adoption)": 22,
       "In Foster (Unavailable for Adoption)": 15,
       "Safety Net Foster (Pending RTO)": 1,
@@ -387,8 +387,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 24,
-      "dogs": 24,
+      "total": 23,
+      "dogs": 23,
       "cats": 0
     },
     {
@@ -442,7 +442,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -456,21 +456,21 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -508,8 +508,8 @@
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 34,
-      "dogs": 11,
+      "total": 33,
+      "dogs": 10,
       "cats": 23
     },
     {

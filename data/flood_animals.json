@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T15:23:16Z",
+  "lastUpdated": "2026-07-27T15:29:58Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -328,22 +328,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 11,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -356,6 +340,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
       "Adopted / Pending": 8,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 11,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -435,10 +435,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Building B",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -449,17 +449,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Cat Overflow Doubles",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "TLAC",
@@ -470,7 +470,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0

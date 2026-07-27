@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-07-27T13:42:38Z",
+  "lastUpdated": "2026-07-27T13:46:41Z",
   "totals": {
-    "total": 380,
-    "dogs": 248,
-    "cats": 132,
+    "total": 389,
+    "dogs": 254,
+    "cats": 135,
     "On Property": 119,
     "In Foster (Available for Adoption)": 89,
     "In Foster (Unavailable for Adoption)": 39,
     "Safety Net Foster (Pending RTO)": 32,
-    "Adopted / Pending": 59,
+    "Adopted / Pending": 68,
     "Transferred Out": 41,
     "Deceased": 1,
-    "Return to Owner": 1,
+    "Return to Owner": 10,
     "Adopted / Pending (tile)": 58
   },
   "byDay": [
@@ -83,12 +83,12 @@
     },
     {
       "date": "2026-07-19",
-      "total": 52,
+      "total": 53,
       "On Property": 11,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 13,
       "Safety Net Foster (Pending RTO)": 16,
-      "Adopted / Pending": 8,
+      "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -116,12 +116,12 @@
     },
     {
       "date": "2026-07-22",
-      "total": 4,
+      "total": 12,
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
-      "Adopted / Pending": 0,
+      "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
     }
@@ -330,8 +330,8 @@
     {
       "city": "Crystal City",
       "county": "Zavala",
-      "total": 17,
-      "dogs": 16,
+      "total": 18,
+      "dogs": 17,
       "cats": 1,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
@@ -339,23 +339,23 @@
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 17,
-      "Adopted / Pending": 0,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
     {
       "city": "Cotulla",
       "county": "La Salle",
-      "total": 4,
-      "dogs": 4,
-      "cats": 0,
+      "total": 12,
+      "dogs": 9,
+      "cats": 3,
       "firstIntake": "2026-07-22",
       "lastIntake": "2026-07-22",
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
-      "Adopted / Pending": 0,
+      "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -435,14 +435,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Cat ISO Condos",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "TLAC",
-      "area": "Building B",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -456,10 +456,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Building B",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -467,13 +474,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -584,17 +584,17 @@
     },
     {
       "bucket": "Adopted / Pending",
+      "status": "Healthy in Home",
+      "total": 34,
+      "dogs": 18,
+      "cats": 16
+    },
+    {
+      "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
       "total": 33,
       "dogs": 12,
       "cats": 21
-    },
-    {
-      "bucket": "Adopted / Pending",
-      "status": "Healthy in Home",
-      "total": 25,
-      "dogs": 12,
-      "cats": 13
     },
     {
       "bucket": "Adopted / Pending",
@@ -645,7 +645,7 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 319,
+    "vaccinesAdministered": 322,
     "heartwormPositive": 5,
     "capstarDoses": 148,
     "spayNeuterSurgeries": 25

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T19:53:33Z",
+  "lastUpdated": "2026-07-27T20:08:56Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -339,22 +339,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 11,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -367,6 +351,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
       "Adopted / Pending": 8,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 11,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -453,20 +453,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
@@ -475,6 +461,20 @@
     {
       "property": "TLAC",
       "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0

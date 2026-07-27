@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T19:38:11Z",
+  "lastUpdated": "2026-07-27T19:53:33Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -453,13 +453,6 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -467,7 +460,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -478,6 +471,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -560,14 +560,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

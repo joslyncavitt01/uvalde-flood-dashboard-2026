@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T19:22:51Z",
+  "lastUpdated": "2026-07-27T19:38:11Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -163,7 +163,7 @@
       "cats": 12,
       "city": "Uvalde",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 27,
@@ -181,7 +181,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 15,
@@ -199,7 +199,7 @@
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
-      "nwsZone": null,
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-27",
       "On Property": 10,
@@ -235,7 +235,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 2,
@@ -253,7 +253,7 @@
       "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
-      "nwsZone": null,
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
       "On Property": 2,
@@ -289,7 +289,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 2,
@@ -307,7 +307,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": null,
+      "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 2,
@@ -453,14 +453,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "Davenport",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -474,10 +467,17 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -560,14 +560,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T16:06:15Z",
+  "lastUpdated": "2026-07-27T16:08:57Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -435,14 +435,7 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building B",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -456,14 +449,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -471,6 +457,20 @@
     {
       "property": "TLAC",
       "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -646,7 +646,7 @@
   ],
   "medicalMetrics": {
     "vaccinesAdministered": 487,
-    "heartwormPositive": 5,
+    "heartwormPositive": 7,
     "capstarDoses": 219,
     "spayNeuterSurgeries": 40
   }

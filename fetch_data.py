@@ -314,6 +314,9 @@ def run():
     def is_positive_heartworm(test):
         return "heartworm" in (test["name"] or "").lower() and (test["result"] or "").lower() == "positive"
 
+    def is_positive_ringworm(test):
+        return "ringworm" in (test["name"] or "").lower() and (test["result"] or "").lower() == "positive"
+
     def is_spay_neuter(surgery):
         t = (surgery["surgeryType"] or "").lower()
         return "spay" in t or "neuter" in t
@@ -322,6 +325,9 @@ def run():
         "vaccinesAdministered": sum(len(a["vaccines"]) for a in animal_profiles_out),
         "heartwormPositive": sum(
             1 for a in animal_profiles_out if any(is_positive_heartworm(t) for t in a["diagnosticTests"])
+        ),
+        "ringwormPositive": sum(
+            1 for a in animal_profiles_out if any(is_positive_ringworm(t) for t in a["diagnosticTests"])
         ),
         "capstarDoses": sum(
             1 for a in animal_profiles_out for t in a["treatments"]

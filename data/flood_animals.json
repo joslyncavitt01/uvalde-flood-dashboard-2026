@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T16:35:34Z",
+  "lastUpdated": "2026-07-27T16:37:06Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -435,10 +435,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Davenport",
       "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -449,14 +449,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -474,6 +467,13 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -647,6 +647,7 @@
   "medicalMetrics": {
     "vaccinesAdministered": 487,
     "heartwormPositive": 7,
+    "ringwormPositive": 18,
     "capstarDoses": 219,
     "spayNeuterSurgeries": 40
   }

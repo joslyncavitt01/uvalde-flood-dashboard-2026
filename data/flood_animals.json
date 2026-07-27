@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T14:07:49Z",
+  "lastUpdated": "2026-07-27T14:13:12Z",
   "totals": {
-    "total": 383,
-    "dogs": 248,
+    "total": 381,
+    "dogs": 246,
     "cats": 135,
-    "On Property": 113,
+    "On Property": 112,
     "In Foster (Available for Adoption)": 89,
     "In Foster (Unavailable for Adoption)": 39,
-    "Safety Net Foster (Pending RTO)": 32,
+    "Safety Net Foster (Pending RTO)": 31,
     "Adopted / Pending": 68,
     "Transferred Out": 41,
     "Deceased": 1,
@@ -39,8 +39,8 @@
     },
     {
       "date": "2026-07-15",
-      "total": 29,
-      "On Property": 8,
+      "total": 28,
+      "On Property": 7,
       "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
@@ -83,11 +83,11 @@
     },
     {
       "date": "2026-07-19",
-      "total": 53,
+      "total": 52,
       "On Property": 11,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 13,
-      "Safety Net Foster (Pending RTO)": 16,
+      "Safety Net Foster (Pending RTO)": 15,
       "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
@@ -273,15 +273,15 @@
     },
     {
       "shelter": "City of Sabinal Animal Shelter",
-      "total": 9,
-      "dogs": 5,
+      "total": 8,
+      "dogs": 4,
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
       "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
-      "On Property": 3,
+      "On Property": 2,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -330,15 +330,15 @@
     {
       "city": "Crystal City",
       "county": "Zavala",
-      "total": 18,
-      "dogs": 17,
+      "total": 17,
+      "dogs": 16,
       "cats": 1,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 17,
+      "Safety Net Foster (Pending RTO)": 16,
       "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
@@ -387,8 +387,8 @@
     {
       "property": "Shady Acres",
       "area": "Shady Acres - Dog",
-      "total": 23,
-      "dogs": 23,
+      "total": 22,
+      "dogs": 22,
       "cats": 0
     },
     {
@@ -442,14 +442,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -463,6 +456,13 @@
     },
     {
       "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Building B",
       "total": 1,
       "dogs": 1,
@@ -470,10 +470,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Cat Overflow Doubles",
       "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -508,8 +508,8 @@
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 33,
-      "dogs": 10,
+      "total": 32,
+      "dogs": 9,
       "cats": 23
     },
     {
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -571,8 +571,8 @@
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net  (NO ADOPT)",
-      "total": 21,
-      "dogs": 20,
+      "total": 20,
+      "dogs": 19,
       "cats": 1
     },
     {

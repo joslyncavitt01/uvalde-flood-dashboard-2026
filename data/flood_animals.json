@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T16:04:44Z",
+  "lastUpdated": "2026-07-27T16:06:15Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -328,22 +328,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Cotulla",
-      "county": "La Salle",
-      "total": 12,
-      "dogs": 9,
-      "cats": 3,
-      "firstIntake": "2026-07-22",
-      "lastIntake": "2026-07-22",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 4,
-      "Adopted / Pending": 8,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Crystal City",
       "county": "Zavala",
       "total": 12,
@@ -356,6 +340,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 11,
       "Adopted / Pending": 1,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Cotulla",
+      "county": "La Salle",
+      "total": 12,
+      "dogs": 9,
+      "cats": 3,
+      "firstIntake": "2026-07-22",
+      "lastIntake": "2026-07-22",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 4,
+      "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -435,6 +435,13 @@
     },
     {
       "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Building B",
       "total": 1,
       "dogs": 1,
@@ -449,24 +456,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -647,7 +647,7 @@
   "medicalMetrics": {
     "vaccinesAdministered": 487,
     "heartwormPositive": 5,
-    "capstarDoses": 148,
+    "capstarDoses": 219,
     "spayNeuterSurgeries": 40
   }
 }

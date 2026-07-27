@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T22:27:09Z",
+  "lastUpdated": "2026-07-27T22:42:30Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -339,22 +339,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 11,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -367,6 +351,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
       "Adopted / Pending": 8,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 11,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -453,6 +453,13 @@
     },
     {
       "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -464,13 +471,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -581,17 +581,17 @@
     },
     {
       "bucket": "Adopted / Pending",
-      "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 35,
-      "dogs": 13,
-      "cats": 22
-    },
-    {
-      "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
       "total": 35,
       "dogs": 18,
       "cats": 17
+    },
+    {
+      "bucket": "Adopted / Pending",
+      "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
+      "total": 35,
+      "dogs": 13,
+      "cats": 22
     },
     {
       "bucket": "Adopted / Pending",

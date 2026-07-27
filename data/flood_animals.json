@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T21:25:44Z",
+  "lastUpdated": "2026-07-27T21:41:09Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -418,17 +418,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 9,
       "dogs": 0,
       "cats": 9
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 3 - Dog",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -453,13 +453,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
@@ -468,6 +461,13 @@
     {
       "property": "TLAC",
       "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1

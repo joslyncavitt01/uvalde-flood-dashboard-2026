@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T14:27:14Z",
+  "lastUpdated": "2026-07-27T14:28:26Z",
   "totals": {
     "total": 375,
     "dogs": 240,
@@ -328,22 +328,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 11,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -356,6 +340,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
       "Adopted / Pending": 8,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 11,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -435,14 +435,7 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -456,14 +449,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Davenport",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -474,6 +460,20 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",

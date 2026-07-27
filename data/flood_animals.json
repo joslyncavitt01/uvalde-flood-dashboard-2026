@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T14:13:34Z",
+  "lastUpdated": "2026-07-27T14:27:14Z",
   "totals": {
-    "total": 377,
-    "dogs": 242,
+    "total": 375,
+    "dogs": 240,
     "cats": 135,
     "On Property": 112,
-    "In Foster (Available for Adoption)": 89,
+    "In Foster (Available for Adoption)": 88,
     "In Foster (Unavailable for Adoption)": 39,
-    "Safety Net Foster (Pending RTO)": 27,
+    "Safety Net Foster (Pending RTO)": 26,
     "Adopted / Pending": 68,
     "Transferred Out": 41,
     "Deceased": 1,
@@ -39,9 +39,9 @@
     },
     {
       "date": "2026-07-15",
-      "total": 28,
+      "total": 27,
       "On Property": 7,
-      "In Foster (Available for Adoption)": 15,
+      "In Foster (Available for Adoption)": 14,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -83,11 +83,11 @@
     },
     {
       "date": "2026-07-19",
-      "total": 48,
+      "total": 47,
       "On Property": 11,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 13,
-      "Safety Net Foster (Pending RTO)": 11,
+      "Safety Net Foster (Pending RTO)": 10,
       "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
@@ -201,8 +201,8 @@
     },
     {
       "shelter": "Footbridge Foundation",
-      "total": 25,
-      "dogs": 20,
+      "total": 24,
+      "dogs": 19,
       "cats": 5,
       "city": "San Antonio",
       "county": "Bexar",
@@ -210,7 +210,7 @@
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-17",
       "On Property": 5,
-      "In Foster (Available for Adoption)": 13,
+      "In Foster (Available for Adoption)": 12,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -330,15 +330,15 @@
     {
       "city": "Crystal City",
       "county": "Zavala",
-      "total": 13,
-      "dogs": 12,
+      "total": 12,
+      "dogs": 11,
       "cats": 1,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 12,
+      "Safety Net Foster (Pending RTO)": 11,
       "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
@@ -435,6 +435,20 @@
     },
     {
       "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
@@ -443,13 +457,6 @@
     {
       "property": "TLAC",
       "area": "Building B",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -467,13 +474,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -522,8 +522,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 46,
-      "dogs": 24,
+      "total": 45,
+      "dogs": 23,
       "cats": 22
     },
     {
@@ -556,14 +556,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -571,8 +571,8 @@
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net  (NO ADOPT)",
-      "total": 17,
-      "dogs": 16,
+      "total": 16,
+      "dogs": 15,
       "cats": 1
     },
     {
@@ -645,7 +645,7 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 489,
+    "vaccinesAdministered": 488,
     "heartwormPositive": 5,
     "capstarDoses": 148,
     "spayNeuterSurgeries": 40

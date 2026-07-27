@@ -136,13 +136,23 @@ def run(path):
         id_list = ", ".join(f"'{i}'" for i in ids)
         client.query(f"DELETE FROM `{table_ref}` WHERE AnimalID IN ({id_list})").result()
 
-    errors = client.insert_rows_json(table_ref, rows_out, row_ids=[None] * len(rows_out))
-    if errors:
-        print("Errors during insert:")
-        for e in errors[:5]:
-            print(" ", e)
+    chunk_size = 500
+    loaded = 0
+    had_errors = False
+    for i in range(0, len(rows_out), chunk_size):
+        chunk = rows_out[i:i + chunk_size]
+        errors = client.insert_rows_json(table_ref, chunk, row_ids=[None] * len(chunk))
+        if errors:
+            had_errors = True
+            print(f"Errors during insert (rows {i}-{i+len(chunk)}):")
+            for e in errors[:5]:
+                print(" ", e)
+        else:
+            loaded += len(chunk)
+    if not had_errors:
+        print(f"Loaded {loaded} animal profiles into {table_ref}.")
     else:
-        print(f"Loaded {len(rows_out)} animal profiles into {table_ref}.")
+        print(f"Loaded {loaded} of {len(rows_out)} animal profiles into {table_ref} (some chunks had errors).")
 
 
 if __name__ == "__main__":

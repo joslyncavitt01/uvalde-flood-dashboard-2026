@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T15:14:16Z",
+  "lastUpdated": "2026-07-27T15:23:16Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -435,7 +435,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
+      "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -449,7 +449,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1

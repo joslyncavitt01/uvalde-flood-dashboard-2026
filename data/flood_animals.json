@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T14:13:12Z",
+  "lastUpdated": "2026-07-27T14:13:34Z",
   "totals": {
-    "total": 381,
-    "dogs": 246,
+    "total": 377,
+    "dogs": 242,
     "cats": 135,
     "On Property": 112,
     "In Foster (Available for Adoption)": 89,
     "In Foster (Unavailable for Adoption)": 39,
-    "Safety Net Foster (Pending RTO)": 31,
+    "Safety Net Foster (Pending RTO)": 27,
     "Adopted / Pending": 68,
     "Transferred Out": 41,
     "Deceased": 1,
@@ -83,11 +83,11 @@
     },
     {
       "date": "2026-07-19",
-      "total": 52,
+      "total": 48,
       "On Property": 11,
       "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 13,
-      "Safety Net Foster (Pending RTO)": 15,
+      "Safety Net Foster (Pending RTO)": 11,
       "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
@@ -330,15 +330,15 @@
     {
       "city": "Crystal City",
       "county": "Zavala",
-      "total": 17,
-      "dogs": 16,
+      "total": 13,
+      "dogs": 12,
       "cats": 1,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 16,
+      "Safety Net Foster (Pending RTO)": 12,
       "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
@@ -435,7 +435,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -449,21 +456,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building B",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -474,6 +467,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -571,15 +571,15 @@
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net  (NO ADOPT)",
-      "total": 20,
-      "dogs": 19,
+      "total": 17,
+      "dogs": 16,
       "cats": 1
     },
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net Foster (NO ADOPT)",
-      "total": 11,
-      "dogs": 11,
+      "total": 10,
+      "dogs": 10,
       "cats": 0
     },
     {

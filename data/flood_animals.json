@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T20:39:41Z",
+  "lastUpdated": "2026-07-27T20:55:01Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -453,20 +453,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "Davenport",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -475,6 +461,20 @@
     {
       "property": "TLAC",
       "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -560,14 +560,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -588,17 +588,17 @@
     },
     {
       "bucket": "Adopted / Pending",
-      "status": "Healthy in Home",
-      "total": 34,
-      "dogs": 18,
-      "cats": 16
-    },
-    {
-      "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
       "total": 34,
       "dogs": 13,
       "cats": 21
+    },
+    {
+      "bucket": "Adopted / Pending",
+      "status": "Healthy in Home",
+      "total": 34,
+      "dogs": 18,
+      "cats": 16
     },
     {
       "bucket": "Adopted / Pending",

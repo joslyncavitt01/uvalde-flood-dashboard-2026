@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-28T14:58:25Z",
+  "lastUpdated": "2026-07-28T15:13:53Z",
   "totals": {
-    "total": 349,
-    "dogs": 236,
+    "total": 348,
+    "dogs": 235,
     "cats": 113,
     "On Property": 80,
     "In Foster (Available for Adoption)": 92,
     "In Foster (Unavailable for Adoption)": 37,
-    "Safety Net Foster (Pending RTO)": 24,
+    "Safety Net Foster (Pending RTO)": 23,
     "Adopted / Pending": 74,
     "Transferred Out": 41,
     "Deceased": 1,
@@ -72,11 +72,11 @@
     },
     {
       "date": "2026-07-18",
-      "total": 40,
+      "total": 39,
       "On Property": 11,
       "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 7,
-      "Safety Net Foster (Pending RTO)": 10,
+      "Safety Net Foster (Pending RTO)": 9,
       "Adopted / Pending": 2,
       "Transferred Out": 5,
       "Deceased": 0
@@ -369,22 +369,6 @@
       "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
-    },
-    {
-      "city": "Unknown",
-      "county": "",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 1,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0,
-      "Deceased": 0
     }
   ],
   "byLocation": [
@@ -432,6 +416,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
+      "property": "TLAC",
       "area": "Building D - Kennels & Offices",
       "total": 2,
       "dogs": 2,
@@ -446,10 +437,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
+      "area": "Cat Overflow Doubles",
+      "total": 1,
       "dogs": 0,
-      "cats": 2
+      "cats": 1
     },
     {
       "property": "TLAC",
@@ -464,13 +455,6 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -519,15 +503,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 47,
-      "dogs": 27,
+      "total": 49,
+      "dogs": 29,
       "cats": 20
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 45,
-      "dogs": 45,
+      "total": 43,
+      "dogs": 43,
       "cats": 0
     },
     {
@@ -568,8 +552,8 @@
     {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net  (NO ADOPT)",
-      "total": 14,
-      "dogs": 13,
+      "total": 13,
+      "dogs": 12,
       "cats": 1
     },
     {

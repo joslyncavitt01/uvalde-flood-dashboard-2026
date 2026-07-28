@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T19:35:22Z",
+  "lastUpdated": "2026-07-28T19:50:46Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -423,17 +423,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -537,6 +537,13 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
@@ -550,10 +557,10 @@
       "cats": 0
     },
     {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
-      "total": 1,
-      "dogs": 1,
+      "bucket": "Safety Net Foster (Pending RTO)",
+      "status": "Safety Net Foster (NO ADOPT)",
+      "total": 9,
+      "dogs": 9,
       "cats": 0
     },
     {
@@ -562,13 +569,6 @@
       "total": 9,
       "dogs": 8,
       "cats": 1
-    },
-    {
-      "bucket": "Safety Net Foster (Pending RTO)",
-      "status": "Safety Net Foster (NO ADOPT)",
-      "total": 9,
-      "dogs": 9,
-      "cats": 0
     },
     {
       "bucket": "Adopted / Pending",

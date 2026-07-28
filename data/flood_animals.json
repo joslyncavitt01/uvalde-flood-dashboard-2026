@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T12:40:09Z",
+  "lastUpdated": "2026-07-28T12:55:29Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -339,22 +339,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Cotulla",
-      "county": "La Salle",
-      "total": 12,
-      "dogs": 9,
-      "cats": 3,
-      "firstIntake": "2026-07-22",
-      "lastIntake": "2026-07-22",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 4,
-      "Adopted / Pending": 8,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Crystal City",
       "county": "Zavala",
       "total": 12,
@@ -367,6 +351,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 9,
       "Adopted / Pending": 1,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Cotulla",
+      "county": "La Salle",
+      "total": 12,
+      "dogs": 9,
+      "cats": 3,
+      "firstIntake": "2026-07-22",
+      "lastIntake": "2026-07-22",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 4,
+      "Adopted / Pending": 8,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -439,6 +439,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
+      "property": "TLAC",
       "area": "Building D - Kennels & Offices",
       "total": 2,
       "dogs": 2,
@@ -446,10 +453,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -464,13 +471,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -553,14 +553,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

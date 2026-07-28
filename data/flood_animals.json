@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T14:12:19Z",
+  "lastUpdated": "2026-07-28T14:27:40Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -411,14 +411,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
@@ -432,10 +432,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "Cat Intake Room",
       "total": 2,
-      "dogs": 2,
-      "cats": 0
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -446,17 +446,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
+      "area": "Building D - Kennels & Offices",
       "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -464,6 +457,13 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "TLAC",

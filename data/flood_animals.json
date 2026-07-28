@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T01:02:45Z",
+  "lastUpdated": "2026-07-28T01:13:35Z",
   "totals": {
     "total": 349,
     "dogs": 236,
@@ -339,22 +339,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 9,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -367,6 +351,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 4,
       "Adopted / Pending": 8,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 9,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -411,14 +411,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
@@ -429,6 +429,13 @@
       "total": 9,
       "dogs": 0,
       "cats": 9
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -446,10 +453,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -464,13 +471,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Tarrytown",

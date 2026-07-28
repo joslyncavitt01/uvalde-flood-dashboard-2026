@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T19:19:58Z",
+  "lastUpdated": "2026-07-28T19:35:22Z",
   "totals": {
     "total": 348,
     "dogs": 235,
@@ -339,22 +339,6 @@
   ],
   "fieldIntakesByCity": [
     {
-      "city": "Crystal City",
-      "county": "Zavala",
-      "total": 12,
-      "dogs": 11,
-      "cats": 1,
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-07-19",
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 9,
-      "Adopted / Pending": 1,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "city": "Cotulla",
       "county": "La Salle",
       "total": 12,
@@ -367,6 +351,22 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 1,
       "Adopted / Pending": 11,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "total": 12,
+      "dogs": 11,
+      "cats": 1,
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-07-19",
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 9,
+      "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 0
     }
@@ -544,23 +544,16 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
-      "bucket": "Safety Net Foster (Pending RTO)",
-      "status": "Safety Net Foster (NO ADOPT)",
-      "total": 9,
-      "dogs": 9,
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "total": 1,
+      "dogs": 1,
       "cats": 0
     },
     {
@@ -569,6 +562,13 @@
       "total": 9,
       "dogs": 8,
       "cats": 1
+    },
+    {
+      "bucket": "Safety Net Foster (Pending RTO)",
+      "status": "Safety Net Foster (NO ADOPT)",
+      "total": 9,
+      "dogs": 9,
+      "cats": 0
     },
     {
       "bucket": "Adopted / Pending",

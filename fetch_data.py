@@ -333,6 +333,10 @@ def run():
             1 for a in animal_profiles_out for t in a["treatments"]
             if "capstar" in (t["product"] or "").lower()
         ),
+        "nexgardDoses": sum(
+            1 for a in animal_profiles_out for t in a["treatments"]
+            if "nexgard" in (t["product"] or "").lower()
+        ),
         "spayNeuterSurgeries": sum(
             1 for a in animal_profiles_out for s in a["surgeries"] if is_spay_neuter(s)
         ),

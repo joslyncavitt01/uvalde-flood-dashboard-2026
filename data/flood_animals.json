@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T23:04:33Z",
+  "lastUpdated": "2026-07-30T23:07:24Z",
   "totals": {
     "total": 342,
     "dogs": 215,
@@ -402,6 +402,13 @@
     },
     {
       "property": "TLAC",
+      "area": "TLAC Cattery",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
+      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
@@ -412,20 +419,6 @@
       "area": "Building 4 - Dog",
       "total": 2,
       "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
-      "total": 1,
-      "dogs": 1,
       "cats": 0
     },
     {
@@ -441,6 +434,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -544,7 +544,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -558,7 +558,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -640,6 +640,7 @@
     "nexgardDoses": 54,
     "fleaPreventionTotal": 558,
     "dewormed": 380,
-    "spayNeuterSurgeries": 52
+    "spayNeuterSurgeries": 52,
+    "otherSurgeries": 3
   }
 }

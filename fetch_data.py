@@ -357,6 +357,9 @@ def run():
         "spayNeuterSurgeries": sum(
             1 for a in animal_profiles_out for s in a["surgeries"] if is_spay_neuter(s)
         ),
+        "otherSurgeries": sum(
+            1 for a in animal_profiles_out for s in a["surgeries"] if not is_spay_neuter(s)
+        ),
     }
 
     buckets = [

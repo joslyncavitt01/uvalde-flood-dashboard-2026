@@ -321,6 +321,23 @@ def run():
         t = (surgery["surgeryType"] or "").lower()
         return "spay" in t or "neuter" in t
 
+    def is_dewormer(treatment):
+        t = (treatment["product"] or "").lower()
+        return any(k in t for k in ("strongid", "panacur", "praziquantel", "pyrantel", "fenbendazole"))
+
+    def is_flea_product(treatment):
+        t = (treatment["product"] or "").lower()
+        return "flea" in t or "capstar" in t or "nexgard" in t
+
+    capstar_doses = sum(
+        1 for a in animal_profiles_out for t in a["treatments"]
+        if "capstar" in (t["product"] or "").lower()
+    )
+    nexgard_doses = sum(
+        1 for a in animal_profiles_out for t in a["treatments"]
+        if "nexgard" in (t["product"] or "").lower()
+    )
+
     medical_metrics = {
         "vaccinesAdministered": sum(len(a["vaccines"]) for a in animal_profiles_out),
         "heartwormPositive": sum(
@@ -329,13 +346,13 @@ def run():
         "ringwormPositive": sum(
             1 for a in animal_profiles_out if any(is_positive_ringworm(t) for t in a["diagnosticTests"])
         ),
-        "capstarDoses": sum(
-            1 for a in animal_profiles_out for t in a["treatments"]
-            if "capstar" in (t["product"] or "").lower()
+        "capstarDoses": capstar_doses,
+        "nexgardDoses": nexgard_doses,
+        "fleaPreventionTotal": sum(
+            1 for a in animal_profiles_out for t in a["treatments"] if is_flea_product(t)
         ),
-        "nexgardDoses": sum(
-            1 for a in animal_profiles_out for t in a["treatments"]
-            if "nexgard" in (t["product"] or "").lower()
+        "dewormed": sum(
+            1 for a in animal_profiles_out for t in a["treatments"] if is_dewormer(t)
         ),
         "spayNeuterSurgeries": sum(
             1 for a in animal_profiles_out for s in a["surgeries"] if is_spay_neuter(s)

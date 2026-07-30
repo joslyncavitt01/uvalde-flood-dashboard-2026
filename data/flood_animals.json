@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T22:16:05Z",
+  "lastUpdated": "2026-07-30T22:55:34Z",
   "totals": {
     "total": 342,
     "dogs": 215,
@@ -381,14 +381,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 11,
       "dogs": 11,
       "cats": 0
@@ -402,7 +402,7 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
+      "area": "TLAC Cattery",
       "total": 2,
       "dogs": 0,
       "cats": 2
@@ -416,17 +416,10 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
+      "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
       "cats": 2
-    },
-    {
-      "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "TLAC",
@@ -434,6 +427,13 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -551,14 +551,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -633,10 +633,10 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 484,
-    "heartwormPositive": 6,
-    "ringwormPositive": 18,
-    "capstarDoses": 219,
-    "spayNeuterSurgeries": 40
+    "vaccinesAdministered": 670,
+    "heartwormPositive": 8,
+    "ringwormPositive": 25,
+    "capstarDoses": 299,
+    "spayNeuterSurgeries": 52
   }
 }

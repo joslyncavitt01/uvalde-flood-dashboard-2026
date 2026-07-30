@@ -37,6 +37,7 @@ FIELD_MAP = {
     "Pattern": "Pattern",
     "Microchip Number": "MicrochipNumber",
     "Microchip Issuer": "MicrochipIssuer",
+    "Attributes": "Attributes",
     "Adoption Category": "AdoptionCategory",
     "Behavior Category": "BehaviorCategory",
     "Medical Category": "MedicalCategory",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30T23:07:24Z",
+  "lastUpdated": "2026-07-30T23:17:00Z",
   "totals": {
     "total": 342,
     "dogs": 215,
@@ -366,6 +366,13 @@
   ],
   "byLocation": [
     {
+      "property": "Building 3 - Dog",
+      "area": "Kennel 217",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
       "property": "Off Site",
       "area": "Round Rock PetSmart",
       "total": 1,
@@ -402,14 +409,14 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
+      "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
       "cats": 2
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
+      "area": "TLAC Cattery",
       "total": 2,
       "dogs": 0,
       "cats": 2
@@ -423,13 +430,6 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
@@ -438,6 +438,13 @@
     {
       "property": "TLAC",
       "area": "Building D - Kennels & Offices",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -466,13 +473,6 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building D",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Unspecified",
-      "area": "Unspecified",
       "total": 1,
       "dogs": 1,
       "cats": 0

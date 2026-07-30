@@ -123,7 +123,16 @@ def run(path):
         if row.get("AnimalID"):
             rows_out.append(row)
 
-    print(f"Parsed {len(rows_out)} animal profiles ({len(memo_cols)} candidate memo columns scanned).")
+    # ShelterLuv's own report export can contain duplicate rows for the same animal (seen
+    # directly in a 2026-07-30 export) -- dedupe here so a single load never writes more
+    # than one row per AnimalID, regardless of what the source file contains.
+    deduped = {}
+    for row in rows_out:
+        deduped[row["AnimalID"]] = row
+    dupes_dropped = len(rows_out) - len(deduped)
+    rows_out = list(deduped.values())
+
+    print(f"Parsed {len(rows_out)} animal profiles ({len(memo_cols)} candidate memo columns scanned, {dupes_dropped} duplicate rows dropped).")
 
     client = bigquery.Client(project=PROJECT)
     table_ref = f"{PROJECT}.{DATASET}.{TABLE}"

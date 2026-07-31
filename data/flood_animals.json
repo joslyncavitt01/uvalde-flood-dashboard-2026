@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-07-31T20:12:55Z",
+  "lastUpdated": "2026-07-31T20:23:35Z",
   "totals": {
-    "total": 343,
-    "dogs": 216,
+    "total": 357,
+    "dogs": 230,
     "cats": 127,
-    "On Property": 61,
-    "In Foster (Available for Adoption)": 97,
+    "On Property": 73,
+    "In Foster (Available for Adoption)": 98,
     "In Foster (Unavailable for Adoption)": 49,
     "Safety Net Foster (Pending RTO)": 3,
-    "Adopted / Pending": 89,
+    "Adopted / Pending": 90,
     "Transferred Out": 41,
     "Deceased": 3,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 73
+    "Adopted / Pending (tile)": 74
   },
   "byDay": [
     {
@@ -72,12 +72,12 @@
     },
     {
       "date": "2026-07-18",
-      "total": 37,
-      "On Property": 10,
+      "total": 43,
+      "On Property": 15,
       "In Foster (Available for Adoption)": 10,
       "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 1,
-      "Adopted / Pending": 5,
+      "Adopted / Pending": 6,
       "Transferred Out": 5,
       "Deceased": 0
     },
@@ -105,9 +105,9 @@
     },
     {
       "date": "2026-07-21",
-      "total": 7,
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
+      "total": 10,
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 4,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 3,
@@ -116,8 +116,8 @@
     },
     {
       "date": "2026-07-22",
-      "total": 9,
-      "On Property": 0,
+      "total": 14,
+      "On Property": 5,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
@@ -237,6 +237,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 12,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 1,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -375,15 +393,22 @@
     {
       "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 15,
-      "dogs": 15,
+      "total": 21,
+      "dogs": 21,
       "cats": 0
     },
     {
       "property": "TLAC",
       "area": "Building 3 - Dog",
-      "total": 12,
-      "dogs": 12,
+      "total": 17,
+      "dogs": 17,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 11,
+      "dogs": 11,
       "cats": 0
     },
     {
@@ -395,9 +420,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 10,
-      "dogs": 10,
+      "area": "Building 4 - Dog",
+      "total": 2,
+      "dogs": 2,
       "cats": 0
     },
     {
@@ -406,13 +431,6 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
-    },
-    {
-      "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
     },
     {
       "property": "TLAC",
@@ -444,17 +462,17 @@
     },
     {
       "property": "Tarrytown",
-      "area": "Neonatal Nursery",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "Tarrytown",
       "area": "Tarrytown Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "Tarrytown",
+      "area": "Neonatal Nursery",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Transport Hub (Elgin)",
@@ -475,8 +493,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 56,
-      "dogs": 42,
+      "total": 68,
+      "dogs": 54,
       "cats": 14
     },
     {
@@ -496,8 +514,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 58,
-      "dogs": 41,
+      "total": 59,
+      "dogs": 42,
       "cats": 17
     },
     {
@@ -573,8 +591,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 37,
-      "dogs": 14,
+      "total": 38,
+      "dogs": 15,
       "cats": 23
     },
     {
@@ -619,14 +637,14 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 672,
+    "vaccinesAdministered": 703,
     "heartwormPositive": 8,
     "ringwormPositive": 25,
-    "capstarDoses": 300,
+    "capstarDoses": 308,
     "nexgardDoses": 54,
-    "fleaPreventionTotal": 559,
-    "dewormed": 381,
-    "spayNeuterSurgeries": 52,
+    "fleaPreventionTotal": 576,
+    "dewormed": 389,
+    "spayNeuterSurgeries": 53,
     "otherSurgeries": 3
   }
 }

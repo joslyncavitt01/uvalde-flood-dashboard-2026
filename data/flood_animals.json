@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T05:59:51Z",
+  "lastUpdated": "2026-08-02T15:56:04Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -246,8 +246,8 @@
       "total": 15,
       "dogs": 14,
       "cats": 1,
-      "city": null,
-      "county": null,
+      "city": "Del Rio",
+      "county": "Val Verde",
       "nwsZone": null,
       "firstIntake": "2026-07-19",
       "lastIntake": "2026-07-20",
@@ -472,13 +472,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Overflow Doubles",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
@@ -492,8 +485,8 @@
       "cats": 0
     },
     {
-      "property": "Tarrytown",
-      "area": "Neonatal Nursery",
+      "property": "TLAC",
+      "area": "Cat Overflow Doubles",
       "total": 1,
       "dogs": 0,
       "cats": 1
@@ -504,6 +497,13 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "Tarrytown",
+      "area": "Neonatal Nursery",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Transport Hub (Elgin)",
@@ -593,14 +593,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

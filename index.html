@@ -161,6 +161,17 @@ h2 {
 .barlist-value { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .barlist-value .pct { color: var(--ink-muted); font-weight: 400; }
 .barlist-legend { margin-bottom: 4px; }
+
+.view-toggle {
+  display: inline-flex; gap: 3px; background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 9px; padding: 3px; margin-bottom: 16px;
+}
+.view-toggle button {
+  border: none; background: transparent; padding: 6px 14px; border-radius: 6px;
+  font-family: inherit; font-size: 13px; font-weight: 600; color: var(--ink-muted); cursor: pointer;
+}
+.view-toggle button:hover:not(.active) { color: var(--ink-2); }
+.view-toggle button.active { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
 @media (max-width: 640px) { .barlist-row { grid-template-columns: 110px 1fr auto; } }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
@@ -773,10 +784,39 @@ function render(data) {
     });
   }
   shelterBars.sort((a, b) => b.value - a.value);
+
+  // Same animals, grouped by county instead of by the specific shelter -- shelters without
+  // a geocoded county (e.g. Border Animal Mission Rescue, a transport partner rather than a
+  // physical shelter) fall into "Unknown county" rather than being dropped.
+  const countyMap = {};
+  const addToCounty = (county, dogs, cats) => {
+    const key = county || 'Unknown';
+    if (!countyMap[key]) countyMap[key] = { label: key === 'Unknown' ? 'Unknown county' : `${key} Co.`, value: 0, dogs: 0, cats: 0 };
+    countyMap[key].value += dogs + cats;
+    countyMap[key].dogs += dogs;
+    countyMap[key].cats += cats;
+  };
+  data.byShelter.forEach(s => addToCounty(s.county, s.dogs, s.cats));
+  fieldIntakes.forEach(r => addToCounty(r.county, r.dogs, r.cats));
+  const countyBars = Object.values(countyMap).sort((a, b) => b.value - a.value);
+
   const secShelterBars = el('section');
-  secShelterBars.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter, plus field intakes with no shelter of origin.</p>`;
+  secShelterBars.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, plus field intakes with no shelter of origin.</p>`;
+  const originViews = { shelter: shelterBars, county: countyBars };
+  const toggle = el('div', 'view-toggle');
+  toggle.innerHTML = `<button class="active" data-view="shelter" type="button">By shelter</button><button data-view="county" type="button">By county</button>`;
   const barCard = el('div', 'barlist-card');
   barCard.appendChild(renderBarList(shelterBars, t.total));
+  toggle.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('active')) return;
+      toggle.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      barCard.innerHTML = '';
+      barCard.appendChild(renderBarList(originViews[btn.dataset.view], t.total));
+    });
+  });
+  secShelterBars.appendChild(toggle);
   secShelterBars.appendChild(barCard);
   content.appendChild(secShelterBars);
 

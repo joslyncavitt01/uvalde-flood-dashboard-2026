@@ -288,9 +288,19 @@ function declutterLabels(items, minGap) {
   return items;
 }
 
-function renderPieCard(totals) {
-  const total = totals.total || 0;
-  const raw = PIE_SLICES.map(s => ({ ...s, value: totals[s.key] || 0 })).filter(s => s.value > 0);
+// rawSlices: [{ label, value, color }]. opts: R (pie radius), inlineThresholdDeg (slices at
+// least this wide get their label drawn inside instead of as an outside callout -- pass
+// Infinity to disable), textRoom (horizontal space reserved for callout text on each side,
+// widen this for longer labels like shelter names), minGap (vertical spacing between
+// decluttered callouts on the same side).
+function renderPieCard(rawSlices, opts = {}) {
+  const R = opts.R || 125;
+  const inlineThresholdDeg = opts.inlineThresholdDeg ?? 60;
+  const textRoom = opts.textRoom || 150;
+  const minGap = opts.minGap || 30;
+
+  const raw = rawSlices.filter(s => s.value > 0);
+  const total = raw.reduce((sum, s) => sum + s.value, 0);
 
   const card = el('div', 'pie-card');
   if (!total || !raw.length) {
@@ -298,10 +308,11 @@ function renderPieCard(totals) {
     return card;
   }
 
-  const cx = 290, cy = 210, R = 125;           // pie itself
   const ELBOW_R = R + 6;                       // leader line bend point, just outside the slice
   const LABEL_X_OFFSET = R + 25;                // distance from center to each callout's text anchor -- kept tight to the pie so lines stay short
-  const INLINE_THRESHOLD_DEG = 60;             // slices at least this wide get their label drawn inside
+  const halfWidth = LABEL_X_OFFSET + textRoom;
+  const cx = halfWidth, cy = R + 85;
+  const width = halfWidth * 2, height = cy * 2;
 
   let cumDeg = 0;
   const slices = raw.map(s => {
@@ -313,7 +324,7 @@ function renderPieCard(totals) {
 
   const svgNS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(svgNS, 'svg');
-  svg.setAttribute('viewBox', '0 0 580 420');
+  svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
   svg.setAttribute('class', 'pie-svg');
   function addEl(tag, attrs) {
     const e = document.createElementNS(svgNS, tag);
@@ -339,7 +350,7 @@ function renderPieCard(totals) {
 
   // Big-enough slices: label centered inside, white with a soft shadow for contrast
   // against any slice color.
-  slices.filter(s => s.spanDeg >= INLINE_THRESHOLD_DEG).forEach(s => {
+  slices.filter(s => s.spanDeg >= inlineThresholdDeg).forEach(s => {
     const pt = polarPoint(cx, cy, R * 0.6, s.midDeg);
     addEl('text', { x: pt.x, y: pt.y - 3, 'text-anchor': 'middle', class: 'pie-inline-label' }).textContent = s.label;
     addEl('text', { x: pt.x, y: pt.y + 12, 'text-anchor': 'middle', class: 'pie-inline-sub' })
@@ -350,12 +361,12 @@ function renderPieCard(totals) {
   // labels on the same side are decluttered so thin, tightly packed slices don't overlap.
   // Name and count/% are the same color (not tied to the slice fill) so a label always
   // reads as one unit.
-  const external = slices.filter(s => s.spanDeg < INLINE_THRESHOLD_DEG).map(s => {
+  const external = slices.filter(s => s.spanDeg < inlineThresholdDeg).map(s => {
     const rawY = polarPoint(cx, cy, ELBOW_R, s.midDeg).y;
     return { ...s, rawY, y: rawY, side: Math.sin(s.midDeg * Math.PI / 180) >= 0 ? 'right' : 'left' };
   });
   ['left', 'right'].forEach(side => {
-    const group = declutterLabels(external.filter(s => s.side === side), 30);
+    const group = declutterLabels(external.filter(s => s.side === side), minGap);
     const labelX = cx + (side === 'right' ? LABEL_X_OFFSET : -LABEL_X_OFFSET);
     const anchor = side === 'right' ? 'start' : 'end';
     group.forEach(s => {
@@ -473,7 +484,8 @@ function render(data) {
   // adoptions with Return to Owner pulled into its own slice).
   const sec0 = el('section');
   sec0.innerHTML = `<h2>Where every animal stands right now</h2><p class="section-note">All ${t.total} flood-attributable animals, split by current outcome.</p>`;
-  sec0.appendChild(renderPieCard(t));
+  const outcomeSlices = PIE_SLICES.map(s => ({ label: s.label, color: s.color, value: t[s.key] || 0 }));
+  sec0.appendChild(renderPieCard(outcomeSlices));
   content.appendChild(sec0);
 
   // Totals section
@@ -663,6 +675,35 @@ function render(data) {
   `;
   sec3.appendChild(tw);
   content.appendChild(sec3);
+
+  // Origin breakdown pie chart -- same component as the outcome chart up top, fed from
+  // the same byShelter data as the table just above. Long-tail shelters (each under 3% of
+  // the flood-attributable total) are folded into one "Other" slice along with field
+  // intakes so the chart stays as readable as the outcome one instead of drawing 13+ thin
+  // slices; the table above still has every shelter individually if that detail is needed.
+  const shelterPalette = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)','var(--s6)','var(--s7)','var(--s8)'];
+  const fieldTotalForPie = (data.fieldIntakesByCity || []).reduce((s, r) => s + r.total, 0);
+  let otherTotal = fieldTotalForPie, otherCount = 0;
+  const shelterSlices = [];
+  data.byShelter.forEach(s => {
+    if (t.total && s.total / t.total >= 0.03) {
+      shelterSlices.push({ label: s.shelter, value: s.total });
+    } else {
+      otherTotal += s.total;
+      otherCount += 1;
+    }
+  });
+  shelterSlices.forEach((s, i) => { s.color = shelterPalette[i % shelterPalette.length]; });
+  if (otherTotal > 0) {
+    const otherBits = [];
+    if (otherCount) otherBits.push(`${otherCount} smaller shelter${otherCount === 1 ? '' : 's'}`);
+    if (fieldTotalForPie) otherBits.push('field intakes');
+    shelterSlices.push({ label: `Other (${otherBits.join(' + ')})`, value: otherTotal, color: 'var(--s9)' });
+  }
+  const secShelterPie = el('section');
+  secShelterPie.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter. Shelters under 3% of the total are grouped into "Other" here for readability &mdash; see the table for each one individually.</p>`;
+  secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, inlineThresholdDeg: 361 }));
+  content.appendChild(secShelterPie);
 
   // Field intakes (no shelter of origin), by city found
   if (data.fieldIntakesByCity && data.fieldIntakesByCity.length) {

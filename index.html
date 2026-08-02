@@ -156,8 +156,8 @@ h2 {
 .barlist-label { font-size: 13.5px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .barlist-track { display: flex; background: var(--surface-2); border-radius: 4px; height: 13px; overflow: hidden; }
 .barlist-fill { height: 100%; }
-.barlist-fill.dogs { background: var(--accent); }
-.barlist-fill.cats { background: var(--amber); }
+.barlist-fill.dogs { background: var(--s1); }
+.barlist-fill.cats { background: var(--s3); }
 .barlist-value { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .barlist-value .pct { color: var(--ink-muted); font-weight: 400; }
 .barlist-legend { margin-bottom: 4px; }
@@ -439,7 +439,7 @@ function renderBarList(items, total) {
   const wrap = el('div', 'barlist');
   const max = Math.max(...items.map(i => i.value), 1);
   const legend = el('div', 'legend barlist-legend');
-  legend.innerHTML = `<span><i class="swatch" style="background:var(--accent)"></i>Dogs</span><span><i class="swatch" style="background:var(--amber)"></i>Cats</span>`;
+  legend.innerHTML = `<span><i class="swatch" style="background:var(--s1)"></i>Dogs</span><span><i class="swatch" style="background:var(--s3)"></i>Cats</span>`;
   wrap.appendChild(legend);
   items.forEach(item => {
     const pct = total ? Math.round(1000 * item.value / total) / 10 : 0;

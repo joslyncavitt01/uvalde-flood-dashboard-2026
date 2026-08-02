@@ -145,10 +145,8 @@ h2 {
 }
 .pie-svg { width: 100%; max-width: 640px; height: auto; }
 .pie-svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
-.pie-inline-label { font-size: 12px; font-weight: 700; fill: #fff; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.55)); }
-.pie-inline-sub { font-size: 10.5px; font-weight: 600; fill: #fff; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.55)); }
-.pie-ext-label { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
-.pie-ext-sub { font-size: 11.5px; fill: var(--ink-muted); }
+.pie-ext-label { font-size: 12.5px; font-weight: 700; }
+.pie-ext-sub { font-size: 11.5px; font-weight: 600; }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
 .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 14px; }
@@ -298,10 +296,9 @@ function renderPieCard(totals) {
     return card;
   }
 
-  const cx = 305, cy = 200, R = 100;          // pie itself
+  const cx = 340, cy = 220, R = 140;           // pie itself -- as large as the layout allows
   const ELBOW_R = R + 8;                       // leader line bend point, just outside the slice
-  const LABEL_X_OFFSET = 138;                  // distance from center to each callout's text anchor
-  const INLINE_THRESHOLD_DEG = 60;             // slices at least this wide get their label drawn inside
+  const LABEL_X_OFFSET = R + 40;                // distance from center to each callout's text anchor -- kept tight to the pie so lines stay short
 
   let cumDeg = 0;
   const slices = raw.map(s => {
@@ -313,7 +310,7 @@ function renderPieCard(totals) {
 
   const svgNS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(svgNS, 'svg');
-  svg.setAttribute('viewBox', '0 0 600 400');
+  svg.setAttribute('viewBox', '0 0 680 440');
   svg.setAttribute('class', 'pie-svg');
   function addEl(tag, attrs) {
     const e = document.createElementNS(svgNS, tag);
@@ -337,36 +334,29 @@ function renderPieCard(totals) {
 
   const pctOf = v => Math.round(1000 * v / total) / 10;
 
-  // Big-enough slices: label centered inside, white with a soft dark outline for contrast
-  // against any slice color.
-  slices.filter(s => s.spanDeg >= INLINE_THRESHOLD_DEG).forEach(s => {
-    const pt = polarPoint(cx, cy, R * 0.6, s.midDeg);
-    addEl('text', { x: pt.x, y: pt.y - 3, 'text-anchor': 'middle', class: 'pie-inline-label' }).textContent = s.label;
-    addEl('text', { x: pt.x, y: pt.y + 12, 'text-anchor': 'middle', class: 'pie-inline-sub' })
-      .textContent = `${s.value} (${pctOf(s.value)}%)`;
-  });
-
-  // Everything else: a callout label outside the pie, connected by a leader line, with
-  // labels on the same side decluttered so tightly-packed thin slices don't overlap.
-  const external = slices.filter(s => s.spanDeg < INLINE_THRESHOLD_DEG).map(s => {
+  // Every slice gets a callout label outside the pie, in that slice's own color, connected
+  // by a short leader line -- labels on the same side are decluttered so thin, tightly
+  // packed slices don't overlap.
+  const external = slices.map(s => {
     const rawY = polarPoint(cx, cy, ELBOW_R, s.midDeg).y;
     return { ...s, rawY, y: rawY, side: Math.sin(s.midDeg * Math.PI / 180) >= 0 ? 'right' : 'left' };
   });
   ['left', 'right'].forEach(side => {
-    const group = declutterLabels(external.filter(s => s.side === side), 34);
+    const group = declutterLabels(external.filter(s => s.side === side), 30);
     const labelX = cx + (side === 'right' ? LABEL_X_OFFSET : -LABEL_X_OFFSET);
     const anchor = side === 'right' ? 'start' : 'end';
     group.forEach(s => {
       const edge = polarPoint(cx, cy, R, s.midDeg);
       const elbow = polarPoint(cx, cy, ELBOW_R, s.midDeg);
-      const lineEndX = labelX + (side === 'right' ? -8 : 8);
+      const lineEndX = labelX + (side === 'right' ? -6 : 6);
       addEl('polyline', {
         points: `${edge.x},${edge.y} ${elbow.x},${elbow.y} ${lineEndX},${s.y}`,
         fill: 'none', stroke: s.color, 'stroke-width': 1.5,
       });
       addEl('circle', { cx: edge.x, cy: edge.y, r: 3, fill: s.color });
-      addEl('text', { x: labelX, y: s.y - 3, 'text-anchor': anchor, class: 'pie-ext-label' }).textContent = s.label;
-      addEl('text', { x: labelX, y: s.y + 12, 'text-anchor': anchor, class: 'pie-ext-sub' })
+      addEl('text', { x: labelX, y: s.y - 3, 'text-anchor': anchor, class: 'pie-ext-label', fill: s.color })
+        .textContent = s.label;
+      addEl('text', { x: labelX, y: s.y + 12, 'text-anchor': anchor, class: 'pie-ext-sub', fill: s.color })
         .textContent = `${s.value} (${pctOf(s.value)}%)`;
     });
   });

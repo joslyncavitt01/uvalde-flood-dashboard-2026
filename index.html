@@ -154,10 +154,13 @@ h2 {
 .barlist { display: flex; flex-direction: column; gap: 11px; }
 .barlist-row { display: grid; grid-template-columns: minmax(120px, 230px) 1fr auto; align-items: center; gap: 14px; }
 .barlist-label { font-size: 13.5px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.barlist-track { background: var(--surface-2); border-radius: 4px; height: 13px; overflow: hidden; }
-.barlist-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+.barlist-track { display: flex; background: var(--surface-2); border-radius: 4px; height: 13px; overflow: hidden; }
+.barlist-fill { height: 100%; }
+.barlist-fill.dogs { background: var(--accent); }
+.barlist-fill.cats { background: var(--amber); }
 .barlist-value { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .barlist-value .pct { color: var(--ink-muted); font-weight: 400; }
+.barlist-legend { margin-bottom: 4px; }
 @media (max-width: 640px) { .barlist-row { grid-template-columns: 110px 1fr auto; } }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
@@ -427,19 +430,26 @@ function renderPieCard(rawSlices, opts = {}) {
   return card;
 }
 
-// items: [{ label, value }], sorted however the caller wants them drawn top-to-bottom.
-// Bar length is relative to the largest value in the list; the number shown alongside
-// each bar is that item's % of `total` (the grand total across everything, not just this
-// list, so e.g. a shelter's bar reads "84 (22.2% of all flood animals)").
+// items: [{ label, value, dogs, cats }], sorted however the caller wants them drawn
+// top-to-bottom. Bar length is relative to the largest value in the list; each bar is
+// itself split into a dogs segment and a cats segment (dogs+cats is expected to equal
+// value). The number shown alongside is that item's % of `total` (the grand total across
+// everything, not just this list, so e.g. a shelter's bar reads "84 (22.2%)").
 function renderBarList(items, total) {
   const wrap = el('div', 'barlist');
   const max = Math.max(...items.map(i => i.value), 1);
+  const legend = el('div', 'legend barlist-legend');
+  legend.innerHTML = `<span><i class="swatch" style="background:var(--accent)"></i>Dogs</span><span><i class="swatch" style="background:var(--amber)"></i>Cats</span>`;
+  wrap.appendChild(legend);
   items.forEach(item => {
     const pct = total ? Math.round(1000 * item.value / total) / 10 : 0;
     const row = el('div', 'barlist-row');
     row.innerHTML = `
       <div class="barlist-label" title="${item.label}">${item.label}</div>
-      <div class="barlist-track"><div class="barlist-fill" style="width:${100 * item.value / max}%"></div></div>
+      <div class="barlist-track">
+        <div class="barlist-fill dogs" style="width:${100 * item.dogs / max}%" title="${item.dogs} dogs"></div>
+        <div class="barlist-fill cats" style="width:${100 * item.cats / max}%" title="${item.cats} cats"></div>
+      </div>
       <div class="barlist-value">${item.value} <span class="pct">(${pct}%)</span></div>
     `;
     wrap.appendChild(row);
@@ -751,10 +761,16 @@ function render(data) {
   // above, plus field intakes. A pie got busy fast with 14 categories and several long
   // shelter names; a sorted bar list reads all of them at a glance without any grouping,
   // truncation, or label-collision juggling.
-  const fieldTotalForBars = (data.fieldIntakesByCity || []).reduce((s, r) => s + r.total, 0);
-  const shelterBars = data.byShelter.map(s => ({ label: s.shelter, value: s.total }));
+  const fieldIntakes = data.fieldIntakesByCity || [];
+  const shelterBars = data.byShelter.map(s => ({ label: s.shelter, value: s.total, dogs: s.dogs, cats: s.cats }));
+  const fieldTotalForBars = fieldIntakes.reduce((s, r) => s + r.total, 0);
   if (fieldTotalForBars > 0) {
-    shelterBars.push({ label: 'Field intakes (no shelter of origin)', value: fieldTotalForBars });
+    shelterBars.push({
+      label: 'Field intakes (no shelter of origin)',
+      value: fieldTotalForBars,
+      dogs: fieldIntakes.reduce((s, r) => s + r.dogs, 0),
+      cats: fieldIntakes.reduce((s, r) => s + r.cats, 0),
+    });
   }
   shelterBars.sort((a, b) => b.value - a.value);
   const secShelterBars = el('section');

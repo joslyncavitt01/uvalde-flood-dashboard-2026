@@ -677,32 +677,19 @@ function render(data) {
   content.appendChild(sec3);
 
   // Origin breakdown pie chart -- same component as the outcome chart up top, fed from
-  // the same byShelter data as the table just above. Long-tail shelters (each under 3% of
-  // the flood-attributable total) are folded into one "Other" slice along with field
-  // intakes so the chart stays as readable as the outcome one instead of drawing 13+ thin
-  // slices; the table above still has every shelter individually if that detail is needed.
-  const shelterPalette = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)','var(--s6)','var(--s7)','var(--s8)'];
+  // the same byShelter data as the table just above, one slice per shelter with no
+  // grouping (the palette just cycles past 9 shelters -- distinguished by the label on
+  // each callout regardless of color reuse).
+  const shelterPalette = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)','var(--s6)','var(--s7)','var(--s8)','var(--s9)'];
   const fieldTotalForPie = (data.fieldIntakesByCity || []).reduce((s, r) => s + r.total, 0);
-  let otherTotal = fieldTotalForPie, otherCount = 0;
-  const shelterSlices = [];
-  data.byShelter.forEach(s => {
-    if (t.total && s.total / t.total >= 0.03) {
-      shelterSlices.push({ label: s.shelter, value: s.total });
-    } else {
-      otherTotal += s.total;
-      otherCount += 1;
-    }
-  });
-  shelterSlices.forEach((s, i) => { s.color = shelterPalette[i % shelterPalette.length]; });
-  if (otherTotal > 0) {
-    const otherBits = [];
-    if (otherCount) otherBits.push(`${otherCount} smaller shelter${otherCount === 1 ? '' : 's'}`);
-    if (fieldTotalForPie) otherBits.push('field intakes');
-    shelterSlices.push({ label: `Other (${otherBits.join(' + ')})`, value: otherTotal, color: 'var(--s9)' });
+  const shelterSlices = data.byShelter.map(s => ({ label: s.shelter, value: s.total }));
+  if (fieldTotalForPie > 0) {
+    shelterSlices.push({ label: 'Field intakes (no shelter of origin)', value: fieldTotalForPie });
   }
+  shelterSlices.forEach((s, i) => { s.color = shelterPalette[i % shelterPalette.length]; });
   const secShelterPie = el('section');
-  secShelterPie.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter. Shelters under 3% of the total are grouped into "Other" here for readability &mdash; see the table for each one individually.</p>`;
-  secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, inlineThresholdDeg: 361 }));
+  secShelterPie.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter, plus field intakes with no shelter of origin.</p>`;
+  secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, inlineThresholdDeg: 361, minGap: 26 }));
   content.appendChild(secShelterPie);
 
   // Field intakes (no shelter of origin), by city found

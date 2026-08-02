@@ -140,17 +140,15 @@ h2 {
 @media (max-width: 700px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
 
 .pie-card {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px;
-  display: flex; align-items: center; gap: 36px; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px;
+  display: flex; justify-content: center;
 }
-.pie { width: 210px; height: 210px; border-radius: 50%; flex-shrink: 0; }
-.pie-legend { display: flex; flex-direction: column; gap: 9px; font-size: 13.5px; flex: 1; min-width: 260px; }
-.pie-legend-row { display: flex; align-items: center; gap: 9px; }
-.pie-legend-row .swatch { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
-.pie-legend-row .plabel { color: var(--ink-2); }
-.pie-legend-row .pnums { margin-left: auto; padding-left: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.pie-legend-row .pnums b { color: var(--ink); font-weight: 700; }
-.pie-legend-row .pnums span { color: var(--ink-muted); }
+.pie-svg { width: 100%; max-width: 640px; height: auto; }
+.pie-svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+.pie-inline-label { font-size: 12px; font-weight: 700; fill: #fff; paint-order: stroke; stroke: rgba(0,0,0,0.45); stroke-width: 3px; stroke-linejoin: round; }
+.pie-inline-sub { font-size: 10.5px; font-weight: 600; fill: #fff; paint-order: stroke; stroke: rgba(0,0,0,0.45); stroke-width: 3px; stroke-linejoin: round; }
+.pie-ext-label { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
+.pie-ext-sub { font-size: 11.5px; fill: var(--ink-muted); }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
 .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 14px; }
@@ -261,34 +259,122 @@ const PIE_SLICES = [
   { key: "Deceased",                            label: "Deceased",                color: "var(--s7)" },
 ];
 
+function polarPoint(cx, cy, r, angleDeg) {
+  const rad = angleDeg * Math.PI / 180;
+  return { x: cx + r * Math.sin(rad), y: cy - r * Math.cos(rad) };
+}
+
+function pieSlicePath(cx, cy, r, startDeg, endDeg) {
+  const start = polarPoint(cx, cy, r, startDeg);
+  const end = polarPoint(cx, cy, r, endDeg);
+  const largeArc = (endDeg - startDeg) > 180 ? 1 : 0;
+  return `M ${cx} ${cy} L ${start.x} ${start.y} A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y} Z`;
+}
+
+// Pushes down any labels stacked too close together on the same side, then re-centers
+// the whole stack on its original average position so a lone crowded cluster doesn't
+// drift toward the bottom of the chart.
+function declutterLabels(items, minGap) {
+  items.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < items.length; i++) {
+    if (items[i].y - items[i - 1].y < minGap) items[i].y = items[i - 1].y + minGap;
+  }
+  if (items.length) {
+    const rawAvg = items.reduce((s, it) => s + it.rawY, 0) / items.length;
+    const newAvg = items.reduce((s, it) => s + it.y, 0) / items.length;
+    const shift = rawAvg - newAvg;
+    items.forEach(it => { it.y += shift; });
+  }
+  return items;
+}
+
 function renderPieCard(totals) {
   const total = totals.total || 0;
-  const slices = PIE_SLICES.map(s => ({ ...s, value: totals[s.key] || 0 })).filter(s => s.value > 0);
+  const raw = PIE_SLICES.map(s => ({ ...s, value: totals[s.key] || 0 })).filter(s => s.value > 0);
 
   const card = el('div', 'pie-card');
-  let cumulative = 0;
-  const stops = slices.map(s => {
-    const start = total ? (cumulative / total) * 100 : 0;
-    cumulative += s.value;
-    const end = total ? (cumulative / total) * 100 : 0;
-    return `${s.color} ${start}% ${end}%`;
-  });
-  const pie = el('div', 'pie');
-  pie.style.background = stops.length ? `conic-gradient(${stops.join(', ')})` : 'var(--surface-2)';
-  card.appendChild(pie);
+  if (!total || !raw.length) {
+    card.textContent = 'No data yet.';
+    return card;
+  }
 
-  const legend = el('div', 'pie-legend');
-  slices.forEach(s => {
-    const pct = total ? Math.round(1000 * s.value / total) / 10 : 0;
-    const row = el('div', 'pie-legend-row');
-    row.innerHTML = `
-      <i class="swatch" style="background:${s.color}"></i>
-      <span class="plabel">${s.label}</span>
-      <span class="pnums"><b>${s.value}</b> <span>(${pct}%)</span></span>
-    `;
-    legend.appendChild(row);
+  const cx = 380, cy = 230, R = 105;          // pie itself
+  const ELBOW_R = R + 18;                      // leader line bend point, just outside the slice
+  const LABEL_X_OFFSET = 195;                  // distance from center to each callout's text anchor
+  const INLINE_THRESHOLD_DEG = 60;             // slices at least this wide get their label drawn inside
+
+  let cumDeg = 0;
+  const slices = raw.map(s => {
+    const startDeg = (cumDeg / total) * 360;
+    cumDeg += s.value;
+    const endDeg = (cumDeg / total) * 360;
+    return { ...s, startDeg, endDeg, spanDeg: endDeg - startDeg, midDeg: (startDeg + endDeg) / 2 };
   });
-  card.appendChild(legend);
+
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('viewBox', '0 0 760 460');
+  svg.setAttribute('class', 'pie-svg');
+  function addEl(tag, attrs) {
+    const e = document.createElementNS(svgNS, tag);
+    Object.entries(attrs).forEach(([k, v]) => {
+      // fill/stroke can be a var(...) reference -- CSS custom properties only resolve
+      // through the style property, not the SVG presentation attribute, and setting it
+      // this way keeps the chart's colors live if the OS theme changes after render.
+      if ((k === 'fill' || k === 'stroke') && typeof v === 'string' && v.startsWith('var(')) {
+        e.style[k] = v;
+      } else {
+        e.setAttribute(k, v);
+      }
+    });
+    svg.appendChild(e);
+    return e;
+  }
+
+  slices.forEach(s => {
+    addEl('path', {
+      d: pieSlicePath(cx, cy, R, s.startDeg, s.endDeg),
+      fill: s.color, stroke: 'var(--surface)', 'stroke-width': 2,
+    });
+  });
+
+  const pctOf = v => Math.round(1000 * v / total) / 10;
+
+  // Big-enough slices: label centered inside, white with a soft dark outline for contrast
+  // against any slice color.
+  slices.filter(s => s.spanDeg >= INLINE_THRESHOLD_DEG).forEach(s => {
+    const pt = polarPoint(cx, cy, R * 0.6, s.midDeg);
+    addEl('text', { x: pt.x, y: pt.y - 3, 'text-anchor': 'middle', class: 'pie-inline-label' }).textContent = s.label;
+    addEl('text', { x: pt.x, y: pt.y + 12, 'text-anchor': 'middle', class: 'pie-inline-sub' })
+      .textContent = `${s.value} (${pctOf(s.value)}%)`;
+  });
+
+  // Everything else: a callout label outside the pie, connected by a leader line, with
+  // labels on the same side decluttered so tightly-packed thin slices don't overlap.
+  const external = slices.filter(s => s.spanDeg < INLINE_THRESHOLD_DEG).map(s => {
+    const rawY = polarPoint(cx, cy, ELBOW_R, s.midDeg).y;
+    return { ...s, rawY, y: rawY, side: Math.sin(s.midDeg * Math.PI / 180) >= 0 ? 'right' : 'left' };
+  });
+  ['left', 'right'].forEach(side => {
+    const group = declutterLabels(external.filter(s => s.side === side), 34);
+    const labelX = cx + (side === 'right' ? LABEL_X_OFFSET : -LABEL_X_OFFSET);
+    const anchor = side === 'right' ? 'start' : 'end';
+    group.forEach(s => {
+      const edge = polarPoint(cx, cy, R, s.midDeg);
+      const elbow = polarPoint(cx, cy, ELBOW_R, s.midDeg);
+      const lineEndX = labelX + (side === 'right' ? -8 : 8);
+      addEl('polyline', {
+        points: `${edge.x},${edge.y} ${elbow.x},${elbow.y} ${lineEndX},${s.y}`,
+        fill: 'none', stroke: s.color, 'stroke-width': 1.5,
+      });
+      addEl('circle', { cx: edge.x, cy: edge.y, r: 3, fill: s.color });
+      addEl('text', { x: labelX, y: s.y - 3, 'text-anchor': anchor, class: 'pie-ext-label' }).textContent = s.label;
+      addEl('text', { x: labelX, y: s.y + 12, 'text-anchor': anchor, class: 'pie-ext-sub' })
+        .textContent = `${s.value} (${pctOf(s.value)}%)`;
+    });
+  });
+
+  card.appendChild(svg);
   return card;
 }
 

@@ -288,18 +288,45 @@ function declutterLabels(items, minGap) {
   return items;
 }
 
+// Drawing slices strictly biggest-to-smallest packs every small tail slice into the same
+// half of the circle (all their callouts pile onto one side) and puts the two or three
+// biggest slices directly next to each other (their inline labels collide). A zigzag --
+// alternately taking the largest and smallest remaining slice -- fixes both: big slices
+// always land with a small one on each side, and since big/small alternate all the way
+// around, each half of the circle ends up with a comparable mix of sizes instead of one
+// half getting the whole long tail.
+function balanceSliceOrder(slices) {
+  const sorted = [...slices].sort((a, b) => b.value - a.value);
+  const ordered = [];
+  let lo = 0, hi = sorted.length - 1, takeSmallest = false;
+  while (lo <= hi) {
+    if (takeSmallest) { ordered.push(sorted[hi]); hi--; }
+    else { ordered.push(sorted[lo]); lo++; }
+    takeSmallest = !takeSmallest;
+  }
+  return ordered;
+}
+
+function truncateForInline(label, maxChars) {
+  return label.length <= maxChars ? label : label.slice(0, maxChars - 1).trimEnd() + '…';
+}
+
 // rawSlices: [{ label, value, color }]. opts: R (pie radius), inlineThresholdDeg (slices at
 // least this wide get their label drawn inside instead of as an outside callout -- pass
 // Infinity to disable), textRoom (horizontal space reserved for callout text on each side,
 // widen this for longer labels like shelter names), minGap (vertical spacing between
-// decluttered callouts on the same side).
+// decluttered callouts on the same side), balanceOrder (reorder slices so both halves of
+// the circle get roughly equal total value, instead of drawing strictly biggest-to-smallest
+// and packing every small slice into the same half).
 function renderPieCard(rawSlices, opts = {}) {
   const R = opts.R || 125;
   const inlineThresholdDeg = opts.inlineThresholdDeg ?? 60;
   const textRoom = opts.textRoom || 150;
   const minGap = opts.minGap || 30;
+  const inlineMaxChars = opts.inlineMaxChars || 26;
 
-  const raw = rawSlices.filter(s => s.value > 0);
+  let raw = rawSlices.filter(s => s.value > 0);
+  if (opts.balanceOrder) raw = balanceSliceOrder(raw);
   const total = raw.reduce((sum, s) => sum + s.value, 0);
 
   const card = el('div', 'pie-card');
@@ -352,7 +379,8 @@ function renderPieCard(rawSlices, opts = {}) {
   // against any slice color.
   slices.filter(s => s.spanDeg >= inlineThresholdDeg).forEach(s => {
     const pt = polarPoint(cx, cy, R * 0.6, s.midDeg);
-    addEl('text', { x: pt.x, y: pt.y - 3, 'text-anchor': 'middle', class: 'pie-inline-label' }).textContent = s.label;
+    addEl('text', { x: pt.x, y: pt.y - 3, 'text-anchor': 'middle', class: 'pie-inline-label' })
+      .textContent = truncateForInline(s.label, inlineMaxChars);
     addEl('text', { x: pt.x, y: pt.y + 12, 'text-anchor': 'middle', class: 'pie-inline-sub' })
       .textContent = `${s.value} (${pctOf(s.value)}%)`;
   });
@@ -702,7 +730,7 @@ function render(data) {
   shelterSlices.forEach((s, i) => { s.color = shelterPalette[i % shelterPalette.length]; });
   const secShelterPie = el('section');
   secShelterPie.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter, plus field intakes with no shelter of origin.</p>`;
-  secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, inlineThresholdDeg: 361, minGap: 26 }));
+  secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, minGap: 26, balanceOrder: true, inlineMaxChars: 20 }));
   content.appendChild(secShelterPie);
   fitPieViewBox(secShelterPie.querySelector('.pie-svg'));
 

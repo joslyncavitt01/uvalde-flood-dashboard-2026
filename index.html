@@ -389,6 +389,18 @@ function renderPieCard(rawSlices, opts = {}) {
   return card;
 }
 
+// The viewBox passed to renderPieCard is sized generously so labels never clip, which
+// means the actual drawing (pie + callouts) rarely fills that whole box -- most charts
+// have empty margin above/below where no label happened to land. Once the svg is attached
+// to the live document (getBBox needs real layout, so this must run after that, not
+// inside renderPieCard itself), shrink the viewBox down to the drawing's real bounding box
+// so it fills its card instead of floating in extra whitespace.
+function fitPieViewBox(svg, pad = 12) {
+  if (!svg) return;
+  const box = svg.getBBox();
+  svg.setAttribute('viewBox', `${box.x - pad} ${box.y - pad} ${box.width + pad * 2} ${box.height + pad * 2}`);
+}
+
 function fmtRelative(iso) {
   const then = new Date(iso);
   const now = new Date();
@@ -487,6 +499,7 @@ function render(data) {
   const outcomeSlices = PIE_SLICES.map(s => ({ label: s.label, color: s.color, value: t[s.key] || 0 }));
   sec0.appendChild(renderPieCard(outcomeSlices));
   content.appendChild(sec0);
+  fitPieViewBox(sec0.querySelector('.pie-svg'));
 
   // Totals section
   const sec1 = el('section');
@@ -691,6 +704,7 @@ function render(data) {
   secShelterPie.innerHTML = `<h2>Where every animal came from</h2><p class="section-note">Same ${t.total} animals as the table above, by origin shelter, plus field intakes with no shelter of origin.</p>`;
   secShelterPie.appendChild(renderPieCard(shelterSlices, { textRoom: 270, inlineThresholdDeg: 361, minGap: 26 }));
   content.appendChild(secShelterPie);
+  fitPieViewBox(secShelterPie.querySelector('.pie-svg'));
 
   // Field intakes (no shelter of origin), by city found
   if (data.fieldIntakesByCity && data.fieldIntakesByCity.length) {

@@ -393,6 +393,16 @@ def run():
     )
     totals["Adopted / Pending (tile)"] = totals["Adopted / Pending"] - totals["Return to Owner"]
 
+    # Available/unavailable split for On Property, same status-text convention already
+    # used for the Foster split above (a plain "Available (...)" prefix vs. anything else,
+    # e.g. "Unavailable - Transport Hold (Shelter)"). Only needed for the top-line
+    # disposition pie chart -- the shelter table and daily chart keep "On Property" whole.
+    totals["On Property (Available)"] = sum(
+        1 for a in animals
+        if a["bucket"] == "On Property" and (a["status"] or "").startswith("Available")
+    )
+    totals["On Property (Unavailable)"] = totals["On Property"] - totals["On Property (Available)"]
+
     # By day
     by_day = {}
     for a in animals:

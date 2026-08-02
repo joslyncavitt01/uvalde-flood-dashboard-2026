@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T04:12:52Z",
+  "lastUpdated": "2026-08-02T05:59:51Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -12,7 +12,9 @@
     "Transferred Out": 62,
     "Deceased": 3,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 86
+    "Adopted / Pending (tile)": 86,
+    "On Property (Available)": 66,
+    "On Property (Unavailable)": 6
   },
   "byDay": [
     {
@@ -477,14 +479,14 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0

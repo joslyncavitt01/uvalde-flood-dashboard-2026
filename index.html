@@ -31,6 +31,8 @@
   --s5: #eda100; /* yellow  -> Adopted / Pending */
   --s6: #1baf7a; /* aqua    -> Transferred Out */
   --s7: #898781; /* muted gray -> Deceased */
+  --s8: #5aa9c9; /* teal-blue -> On-site, Unavailable (pie chart only) */
+  --s9: #c2540f; /* burnt orange -> Returned to Owner (pie chart only) */
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
@@ -52,6 +54,7 @@
     --critical:      #e66767;
     --critical-soft: #3a1f1c;
     --s1: #3987e5; --s2: #2fae2f; --s3: #d55181; --s4: #9085e9; --s5: #c98500; --s6: #199e70; --s7: #8b938f;
+    --s8: #7cc3e0; --s9: #e0824a;
   }
 }
 :root[data-theme="dark"] {
@@ -135,6 +138,19 @@ h2 {
 .tile.accent .value { color: var(--accent); }
 @media (max-width: 900px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+
+.pie-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px;
+  display: flex; align-items: center; gap: 36px; flex-wrap: wrap;
+}
+.pie { width: 210px; height: 210px; border-radius: 50%; flex-shrink: 0; }
+.pie-legend { display: flex; flex-direction: column; gap: 9px; font-size: 13.5px; flex: 1; min-width: 260px; }
+.pie-legend-row { display: flex; align-items: center; gap: 9px; }
+.pie-legend-row .swatch { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+.pie-legend-row .plabel { color: var(--ink-2); }
+.pie-legend-row .pnums { margin-left: auto; padding-left: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pie-legend-row .pnums b { color: var(--ink); font-weight: 700; }
+.pie-legend-row .pnums span { color: var(--ink-muted); }
 
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 8px; }
 .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 14px; }
@@ -230,6 +246,52 @@ const BUCKET_COLORS = {
   "Deceased": "var(--s7)",
 };
 
+// Distinct from BUCKET_COLORS/the daily bar chart above -- this splits "On Property" into
+// available/unavailable and "Adopted / Pending" down to just adoptions (Return to Owner
+// gets pulled out into its own slice), so the totals key names differ from a raw bucket.
+const PIE_SLICES = [
+  { key: "On Property (Available)",             label: "On-site (available)",     color: "var(--s1)" },
+  { key: "On Property (Unavailable)",           label: "On-site (unavailable)",   color: "var(--s8)" },
+  { key: "In Foster (Available for Adoption)",  label: "In foster (available)",   color: "var(--s2)" },
+  { key: "In Foster (Unavailable for Adoption)",label: "In foster (unavailable)", color: "var(--s3)" },
+  { key: "Safety Net Foster (Pending RTO)",     label: "Safety Net foster",       color: "var(--s4)" },
+  { key: "Adopted / Pending (tile)",            label: "Adopted",                 color: "var(--s5)" },
+  { key: "Transferred Out",                     label: "Transported",             color: "var(--s6)" },
+  { key: "Return to Owner",                     label: "Returned to owner",       color: "var(--s9)" },
+  { key: "Deceased",                            label: "Deceased",                color: "var(--s7)" },
+];
+
+function renderPieCard(totals) {
+  const total = totals.total || 0;
+  const slices = PIE_SLICES.map(s => ({ ...s, value: totals[s.key] || 0 })).filter(s => s.value > 0);
+
+  const card = el('div', 'pie-card');
+  let cumulative = 0;
+  const stops = slices.map(s => {
+    const start = total ? (cumulative / total) * 100 : 0;
+    cumulative += s.value;
+    const end = total ? (cumulative / total) * 100 : 0;
+    return `${s.color} ${start}% ${end}%`;
+  });
+  const pie = el('div', 'pie');
+  pie.style.background = stops.length ? `conic-gradient(${stops.join(', ')})` : 'var(--surface-2)';
+  card.appendChild(pie);
+
+  const legend = el('div', 'pie-legend');
+  slices.forEach(s => {
+    const pct = total ? Math.round(1000 * s.value / total) / 10 : 0;
+    const row = el('div', 'pie-legend-row');
+    row.innerHTML = `
+      <i class="swatch" style="background:${s.color}"></i>
+      <span class="plabel">${s.label}</span>
+      <span class="pnums"><b>${s.value}</b> <span>(${pct}%)</span></span>
+    `;
+    legend.appendChild(row);
+  });
+  card.appendChild(legend);
+  return card;
+}
+
 function fmtRelative(iso) {
   const then = new Date(iso);
   const now = new Date();
@@ -319,6 +381,14 @@ function render(data) {
 
   const content = document.getElementById('content');
   content.innerHTML = '';
+
+  // Outcome breakdown pie chart -- one slice per animal, split further than the tiles
+  // below (On Property by available/unavailable, Adopted / Pending down to just
+  // adoptions with Return to Owner pulled into its own slice).
+  const sec0 = el('section');
+  sec0.innerHTML = `<h2>Where every animal stands right now</h2><p class="section-note">All ${t.total} flood-attributable animals, split by current outcome.</p>`;
+  sec0.appendChild(renderPieCard(t));
+  content.appendChild(sec0);
 
   // Totals section
   const sec1 = el('section');

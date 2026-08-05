@@ -664,7 +664,7 @@ function render(data) {
         <div class="sub">incl. ${m.nexgardDoses} NexGard, ${m.capstarDoses} Capstar</div>
       </div>
       <div class="tile">
-        <div class="label">Dewormed</div>
+        <div class="label">Deworming doses given</div>
         <div class="value">${m.dewormed}</div>
       </div>
       <div class="tile">
@@ -674,6 +674,10 @@ function render(data) {
       <div class="tile">
         <div class="label">Positive ringworm cases</div>
         <div class="value">${m.ringwormPositive}</div>
+      </div>
+      <div class="tile">
+        <div class="label">Positive FeLV cases</div>
+        <div class="value">${m.felvPositive}</div>
       </div>
     `;
     sec1b.appendChild(medTiles);

@@ -317,6 +317,12 @@ def run():
     def is_positive_ringworm(test):
         return "ringworm" in (test["name"] or "").lower() and (test["result"] or "").lower() == "positive"
 
+    def is_positive_felv(test):
+        # FeLV/FIV combo tests log one row per analyte with resultName distinguishing them
+        # ("FeLV" vs "FIV") -- match on resultName, not name, so an FIV-positive result on a
+        # combo test never gets counted as a FeLV case.
+        return "felv" in (test["resultName"] or "").lower() and (test["result"] or "").lower() == "positive"
+
     def is_spay_neuter(surgery):
         t = (surgery["surgeryType"] or "").lower()
         return "spay" in t or "neuter" in t
@@ -345,6 +351,9 @@ def run():
         ),
         "ringwormPositive": sum(
             1 for a in animal_profiles_out if any(is_positive_ringworm(t) for t in a["diagnosticTests"])
+        ),
+        "felvPositive": sum(
+            1 for a in animal_profiles_out if any(is_positive_felv(t) for t in a["diagnosticTests"])
         ),
         "capstarDoses": capstar_doses,
         "nexgardDoses": nexgard_doses,

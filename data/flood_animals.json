@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T16:46:20Z",
+  "lastUpdated": "2026-08-05T16:54:21Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -674,6 +674,7 @@
     "vaccinesAdministered": 907,
     "heartwormPositive": 9,
     "ringwormPositive": 26,
+    "felvPositive": 4,
     "capstarDoses": 336,
     "nexgardDoses": 56,
     "fleaPreventionTotal": 620,

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-08T15:55:13Z",
+  "lastUpdated": "2026-08-08T16:10:32Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Kendall County Animal Shelter (TX)",
-      "total": 84,
-      "dogs": 51,
-      "cats": 33,
-      "city": "Boerne",
-      "county": "Kendall",
-      "nwsZone": null,
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 12,
-      "In Foster (Available for Adoption)": 25,
-      "In Foster (Unavailable for Adoption)": 8,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 17,
-      "Transferred Out": 21,
-      "Deceased": 1
-    },
-    {
       "shelter": "Briscoe Animal Resource Center",
       "total": 84,
       "dogs": 58,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 33,
       "Transferred Out": 0,
       "Deceased": 2
+    },
+    {
+      "shelter": "Kendall County Animal Shelter (TX)",
+      "total": 84,
+      "dogs": 51,
+      "cats": 33,
+      "city": "Boerne",
+      "county": "Kendall",
+      "nwsZone": null,
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 12,
+      "In Foster (Available for Adoption)": 25,
+      "In Foster (Unavailable for Adoption)": 8,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 17,
+      "Transferred Out": 21,
+      "Deceased": 1
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -271,24 +271,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 2,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 11,
-      "Deceased": 0
-    },
-    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -304,6 +286,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 2,
       "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 2,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 11,
       "Deceased": 0
     },
     {
@@ -504,14 +504,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -534,6 +534,13 @@
     },
     {
       "bucket": "On Property",
+      "status": "Unavailable (Shelter)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "bucket": "On Property",
       "status": "Available - Barn (Shelter)",
       "total": 1,
       "dogs": 0,
@@ -545,13 +552,6 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
-    },
-    {
-      "bucket": "On Property",
-      "status": "Unavailable (Shelter)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -576,17 +576,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 13,
-      "dogs": 10,
-      "cats": 3
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 13,
       "dogs": 7,
       "cats": 6
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 13,
+      "dogs": 10,
+      "cats": 3
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -604,14 +604,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

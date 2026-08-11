@@ -17,7 +17,7 @@ echo "Fetching flood animal data from BigQuery..."
 .venv/bin/python fetch_data.py
 
 echo "Pushing to GitHub..."
-git add data/flood_animals.json
+git add data/flood_animals.json data/animal_profiles.json
 git diff --staged --quiet && echo "No new data." && exit 0
 git commit -m "Update flood animal data $(date +'%Y-%m-%d %H:%M')"
 git push origin main

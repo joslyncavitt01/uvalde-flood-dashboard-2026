@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T18:00:27Z",
+  "lastUpdated": "2026-08-12T18:15:08Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -271,24 +271,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 2,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 11,
-      "Deceased": 0
-    },
-    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -304,6 +286,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 3,
       "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": "Surveillance Zone",
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 2,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 11,
       "Deceased": 0
     },
     {
@@ -440,10 +440,17 @@
       "cats": 1
     },
     {
+      "property": "Sunset Valley",
+      "area": "Dog Clinic - Sunset Valley",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
       "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 14,
-      "dogs": 14,
+      "total": 13,
+      "dogs": 13,
       "cats": 0
     },
     {
@@ -569,13 +576,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
@@ -584,6 +584,13 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Reported Lost/Stolen (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -674,8 +681,8 @@
     "felvPositive": 4,
     "capstarDoses": 338,
     "nexgardDoses": 60,
-    "fleaPreventionTotal": 664,
-    "dewormed": 431,
+    "fleaPreventionTotal": 665,
+    "dewormed": 433,
     "spayNeuterSurgeries": 77,
     "otherSurgeries": 6
   }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T18:15:54Z",
+  "lastUpdated": "2026-08-12T18:31:22Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -497,14 +497,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -555,17 +555,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 11,
-      "dogs": 9,
-      "cats": 2
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 11,
       "dogs": 6,
       "cats": 5
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 11,
+      "dogs": 9,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -583,14 +583,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

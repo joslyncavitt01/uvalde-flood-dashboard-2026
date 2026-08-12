@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T23:41:00Z",
+  "lastUpdated": "2026-08-12T23:56:26Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
-      "cats": 26,
-      "city": "Uvalde",
-      "county": "Uvalde",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 10,
-      "In Foster (Unavailable for Adoption)": 23,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
-      "Transferred Out": 0,
-      "Deceased": 2
-    },
-    {
       "shelter": "Kendall County Animal Shelter (TX)",
       "total": 84,
       "dogs": 51,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 21,
       "Transferred Out": 21,
       "Deceased": 1
+    },
+    {
+      "shelter": "Briscoe Animal Resource Center",
+      "total": 84,
+      "dogs": 58,
+      "cats": 26,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-08-05",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 10,
+      "In Foster (Unavailable for Adoption)": 23,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 38,
+      "Transferred Out": 0,
+      "Deceased": 2
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -361,24 +361,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Del Rio Animal Control",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7,
-      "city": "Del Rio",
-      "county": "Val Verde",
-      "nwsZone": null,
-      "firstIntake": "2026-07-19",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -394,6 +376,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 3,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Del Rio Animal Control",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
+      "firstIntake": "2026-07-19",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 7,
       "Deceased": 0
     }
   ],
@@ -497,14 +497,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -555,17 +555,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 11,
-      "dogs": 9,
-      "cats": 2
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 11,
       "dogs": 6,
       "cats": 5
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 11,
+      "dogs": 9,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -576,14 +576,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

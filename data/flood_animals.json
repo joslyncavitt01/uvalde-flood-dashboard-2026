@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T17:29:32Z",
+  "lastUpdated": "2026-08-12T17:33:30Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -271,24 +271,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 9,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 1,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 3,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -304,6 +286,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 9,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 1,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 3,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -569,13 +569,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
@@ -584,6 +577,13 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Reported Lost/Stolen (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -668,15 +668,15 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 850,
+    "vaccinesAdministered": 858,
     "heartwormPositive": 14,
-    "ringwormPositive": 31,
+    "ringwormPositive": 32,
     "felvPositive": 4,
     "capstarDoses": 338,
     "nexgardDoses": 60,
     "fleaPreventionTotal": 664,
     "dewormed": 431,
-    "spayNeuterSurgeries": 67,
+    "spayNeuterSurgeries": 77,
     "otherSurgeries": 6
   }
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T14:54:54Z",
+  "lastUpdated": "2026-08-12T15:10:23Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -54,8 +54,8 @@
       "date": "2026-07-16",
       "total": 104,
       "On Property": 14,
-      "In Foster (Available for Adoption)": 25,
-      "In Foster (Unavailable for Adoption)": 9,
+      "In Foster (Available for Adoption)": 26,
+      "In Foster (Unavailable for Adoption)": 8,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 30,
       "Transferred Out": 25,
@@ -142,8 +142,8 @@
       "date": "2026-07-29",
       "total": 11,
       "On Property": 0,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 8,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 0,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
-      "cats": 26,
-      "city": "Uvalde",
-      "county": "Uvalde",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 11,
-      "In Foster (Unavailable for Adoption)": 22,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
-      "Transferred Out": 0,
-      "Deceased": 2
-    },
-    {
       "shelter": "Kendall County Animal Shelter (TX)",
       "total": 84,
       "dogs": 51,
@@ -191,12 +173,30 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 11,
-      "In Foster (Available for Adoption)": 21,
-      "In Foster (Unavailable for Adoption)": 9,
+      "In Foster (Available for Adoption)": 22,
+      "In Foster (Unavailable for Adoption)": 8,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 21,
       "Transferred Out": 21,
       "Deceased": 1
+    },
+    {
+      "shelter": "Briscoe Animal Resource Center",
+      "total": 84,
+      "dogs": 58,
+      "cats": 26,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-08-05",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 10,
+      "In Foster (Unavailable for Adoption)": 23,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 38,
+      "Transferred Out": 0,
+      "Deceased": 2
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -529,8 +529,8 @@
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
       "total": 42,
-      "dogs": 29,
-      "cats": 13
+      "dogs": 30,
+      "cats": 12
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -548,17 +548,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 11,
+      "dogs": 9,
+      "cats": 2
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 11,
       "dogs": 6,
       "cats": 5
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 11,
-      "dogs": 10,
-      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -569,14 +569,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

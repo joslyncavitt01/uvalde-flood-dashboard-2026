@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T15:25:51Z",
+  "lastUpdated": "2026-08-12T15:41:18Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
-      "cats": 26,
-      "city": "Uvalde",
-      "county": "Uvalde",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 10,
-      "In Foster (Unavailable for Adoption)": 23,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
-      "Transferred Out": 0,
-      "Deceased": 2
-    },
-    {
       "shelter": "Kendall County Animal Shelter (TX)",
       "total": 84,
       "dogs": 51,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 21,
       "Transferred Out": 21,
       "Deceased": 1
+    },
+    {
+      "shelter": "Briscoe Animal Resource Center",
+      "total": 84,
+      "dogs": 58,
+      "cats": 26,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-08-05",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 10,
+      "In Foster (Unavailable for Adoption)": 23,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 38,
+      "Transferred Out": 0,
+      "Deceased": 2
     },
     {
       "shelter": "Kerrville Pets Alive!",

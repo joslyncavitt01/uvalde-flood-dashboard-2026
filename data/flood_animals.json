@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T17:33:30Z",
+  "lastUpdated": "2026-08-12T17:44:59Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Kendall County Animal Shelter (TX)",
-      "total": 84,
-      "dogs": 51,
-      "cats": 33,
-      "city": "Boerne",
-      "county": "Kendall",
-      "nwsZone": null,
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 22,
-      "In Foster (Unavailable for Adoption)": 8,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 21,
-      "Transferred Out": 21,
-      "Deceased": 1
-    },
-    {
       "shelter": "Briscoe Animal Resource Center",
       "total": 84,
       "dogs": 58,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 38,
       "Transferred Out": 0,
       "Deceased": 2
+    },
+    {
+      "shelter": "Kendall County Animal Shelter (TX)",
+      "total": 84,
+      "dogs": 51,
+      "cats": 33,
+      "city": "Boerne",
+      "county": "Kendall",
+      "nwsZone": null,
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 22,
+      "In Foster (Unavailable for Adoption)": 8,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 21,
+      "Transferred Out": 21,
+      "Deceased": 1
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -490,14 +490,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -569,7 +569,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -583,7 +583,7 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

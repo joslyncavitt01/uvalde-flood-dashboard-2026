@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T06:53:51Z",
+  "lastUpdated": "2026-08-13T08:56:17Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
-      "cats": 26,
-      "city": "Uvalde",
-      "county": "Uvalde",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 11,
-      "In Foster (Unavailable for Adoption)": 22,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
-      "Transferred Out": 0,
-      "Deceased": 2
-    },
-    {
       "shelter": "Kendall County Animal Shelter (TX)",
       "total": 84,
       "dogs": 51,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 22,
       "Transferred Out": 21,
       "Deceased": 1
+    },
+    {
+      "shelter": "Briscoe Animal Resource Center",
+      "total": 84,
+      "dogs": 58,
+      "cats": 26,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-08-05",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 11,
+      "In Foster (Unavailable for Adoption)": 22,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 38,
+      "Transferred Out": 0,
+      "Deceased": 2
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -462,17 +462,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 8,
-      "dogs": 8,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 8,
       "dogs": 0,
       "cats": 8
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 8,
+      "dogs": 8,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -511,14 +511,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building C",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -604,14 +604,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

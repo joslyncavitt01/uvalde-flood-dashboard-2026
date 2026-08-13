@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-13T14:21:01Z",
+  "lastUpdated": "2026-08-13T14:23:34Z",
   "totals": {
-    "total": 383,
-    "dogs": 248,
+    "total": 379,
+    "dogs": 244,
     "cats": 135,
-    "On Property": 50,
+    "On Property": 46,
     "In Foster (Available for Adoption)": 63,
     "In Foster (Unavailable for Adoption)": 48,
     "Safety Net Foster (Pending RTO)": 3,
@@ -13,8 +13,8 @@
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 134,
-    "On Property (Available)": 47,
-    "On Property (Unavailable)": 3
+    "On Property (Available)": 44,
+    "On Property (Unavailable)": 2
   },
   "byDay": [
     {
@@ -148,17 +148,6 @@
       "Adopted / Pending": 1,
       "Transferred Out": 0,
       "Deceased": 2
-    },
-    {
-      "date": "2026-08-05",
-      "total": 4,
-      "On Property": 4,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 0,
-      "Deceased": 0
     }
   ],
   "byShelter": [
@@ -182,15 +171,15 @@
     },
     {
       "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
+      "total": 80,
+      "dogs": 54,
       "cats": 26,
       "city": "Uvalde",
       "county": "Uvalde",
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
+      "lastIntake": "2026-07-29",
+      "On Property": 7,
       "In Foster (Available for Adoption)": 11,
       "In Foster (Unavailable for Adoption)": 22,
       "Safety Net Foster (Pending RTO)": 0,
@@ -271,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 7,
-      "In Foster (Available for Adoption)": 3,
-      "In Foster (Unavailable for Adoption)": 1,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 3,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -304,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 1,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 3,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -449,8 +438,8 @@
     {
       "property": "TLAC",
       "area": "Building 2 - Dog",
-      "total": 13,
-      "dogs": 13,
+      "total": 12,
+      "dogs": 12,
       "cats": 0
     },
     {
@@ -470,8 +459,8 @@
     {
       "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 8,
-      "dogs": 8,
+      "total": 6,
+      "dogs": 6,
       "cats": 0
     },
     {
@@ -490,17 +479,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -508,13 +497,6 @@
       "total": 1,
       "dogs": 0,
       "cats": 1
-    },
-    {
-      "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building C",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
@@ -528,15 +510,15 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 47,
-      "dogs": 35,
+      "total": 44,
+      "dogs": 32,
       "cats": 12
     },
     {
       "bucket": "On Property",
       "status": "Unavailable - Transport Hold (Shelter)",
-      "total": 2,
-      "dogs": 2,
+      "total": 1,
+      "dogs": 1,
       "cats": 0
     },
     {
@@ -583,13 +565,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 2,
       "dogs": 1,
@@ -597,14 +572,21 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -696,14 +678,14 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 858,
-    "heartwormPositive": 14,
+    "vaccinesAdministered": 847,
+    "heartwormPositive": 12,
     "ringwormPositive": 32,
     "felvPositive": 4,
-    "capstarDoses": 338,
-    "nexgardDoses": 60,
-    "fleaPreventionTotal": 665,
-    "dewormed": 433,
+    "capstarDoses": 337,
+    "nexgardDoses": 57,
+    "fleaPreventionTotal": 658,
+    "dewormed": 427,
     "spayNeuterSurgeries": 77,
     "otherSurgeries": 6
   }

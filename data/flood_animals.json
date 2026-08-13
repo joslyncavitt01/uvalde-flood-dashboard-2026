@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T01:44:48Z",
+  "lastUpdated": "2026-08-13T02:00:18Z",
   "totals": {
     "total": 383,
     "dogs": 248,
@@ -163,24 +163,6 @@
   ],
   "byShelter": [
     {
-      "shelter": "Briscoe Animal Resource Center",
-      "total": 84,
-      "dogs": 58,
-      "cats": 26,
-      "city": "Uvalde",
-      "county": "Uvalde",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-17",
-      "lastIntake": "2026-08-05",
-      "On Property": 11,
-      "In Foster (Available for Adoption)": 11,
-      "In Foster (Unavailable for Adoption)": 22,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
-      "Transferred Out": 0,
-      "Deceased": 2
-    },
-    {
       "shelter": "Kendall County Animal Shelter (TX)",
       "total": 84,
       "dogs": 51,
@@ -197,6 +179,24 @@
       "Adopted / Pending": 22,
       "Transferred Out": 21,
       "Deceased": 1
+    },
+    {
+      "shelter": "Briscoe Animal Resource Center",
+      "total": 84,
+      "dogs": 58,
+      "cats": 26,
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-17",
+      "lastIntake": "2026-08-05",
+      "On Property": 11,
+      "In Foster (Available for Adoption)": 11,
+      "In Foster (Unavailable for Adoption)": 22,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 38,
+      "Transferred Out": 0,
+      "Deceased": 2
     },
     {
       "shelter": "Kerrville Pets Alive!",
@@ -490,17 +490,17 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat ISO Condos",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",
@@ -597,6 +597,13 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
@@ -605,13 +612,6 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Medical Treatment (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

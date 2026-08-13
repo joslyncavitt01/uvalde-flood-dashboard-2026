@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T17:27:13Z",
+  "lastUpdated": "2026-08-13T17:42:45Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -479,17 +479,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -565,13 +565,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 2,
       "dogs": 1,
@@ -579,14 +572,21 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

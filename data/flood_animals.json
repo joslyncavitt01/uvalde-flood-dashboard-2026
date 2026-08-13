@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T16:09:46Z",
+  "lastUpdated": "2026-08-13T16:25:19Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -516,17 +516,17 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable (Shelter)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "bucket": "On Property",
       "status": "Unavailable - Transport Hold (Shelter)",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable (Shelter)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Available for Adoption)",

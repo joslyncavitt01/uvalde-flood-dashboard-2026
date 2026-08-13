@@ -233,6 +233,9 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <select id="f-species"><option value="">All species</option></select>
     <select id="f-bucket"><option value="">All statuses</option></select>
     <select id="f-shelter"><option value="">All shelters</option></select>
+    <label style="display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--ink-2);cursor:pointer;">
+      <input type="checkbox" id="f-available"> Available for adoption only
+    </label>
     <button class="clear-btn" id="f-clear">Clear filters</button>
     <span class="results-count" id="results-count"></span>
   </div>
@@ -297,7 +300,16 @@ function currentFilters() {
     species: document.getElementById('f-species').value,
     bucket: document.getElementById('f-bucket').value,
     shelter: document.getElementById('f-shelter').value,
+    availableOnly: document.getElementById('f-available').checked,
   };
+}
+
+// ShelterLuv's own status text is the source of truth for "available" — this
+// is what lets On Property (on-site) animals be included, since that bucket
+// mixes "Available (Shelter)" with a few unavailable/transport-hold statuses
+// rather than splitting them the way the Foster bucket already does.
+function isAvailableForAdoption(a) {
+  return !!(a.status && /^available/i.test(a.status.trim()));
 }
 
 function applyFilters() {
@@ -308,6 +320,7 @@ function applyFilters() {
     if (f.species && a.species !== f.species) return false;
     if (f.bucket && a.bucket !== f.bucket) return false;
     if (f.shelter && a.shelter !== f.shelter) return false;
+    if (f.availableOnly && !isAvailableForAdoption(a)) return false;
     if (f.search) {
       const hay = `${a.name || ''} ${a.aid || ''}`.toLowerCase();
       if (!hay.includes(f.search)) return false;
@@ -552,6 +565,7 @@ function applyFiltersFromUrl() {
   setIfValid('f-shelter', 'shelter');
   const search = params.get('search');
   if (search) document.getElementById('f-search').value = search;
+  if (params.get('available') === '1') document.getElementById('f-available').checked = true;
 }
 
 async function load() {
@@ -576,7 +590,7 @@ async function load() {
   }
 }
 
-['f-search', 'f-species', 'f-bucket', 'f-shelter'].forEach(id => {
+['f-search', 'f-species', 'f-bucket', 'f-shelter', 'f-available'].forEach(id => {
   document.getElementById(id).addEventListener('input', renderGrid);
 });
 document.getElementById('f-clear').addEventListener('click', () => {
@@ -584,6 +598,7 @@ document.getElementById('f-clear').addEventListener('click', () => {
   document.getElementById('f-species').value = '';
   document.getElementById('f-bucket').value = '';
   document.getElementById('f-shelter').value = '';
+  document.getElementById('f-available').checked = false;
   renderGrid();
 });
 

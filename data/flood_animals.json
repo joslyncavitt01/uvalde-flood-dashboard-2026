@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T16:56:11Z",
+  "lastUpdated": "2026-08-13T17:11:43Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -479,17 +479,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -516,17 +516,17 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable - Transport Hold (Shelter)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "On Property",
       "status": "Unavailable (Shelter)",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable - Transport Hold (Shelter)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -565,13 +565,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
-      "total": 2,
-      "dogs": 1,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Transport Hold (Foster)",
       "total": 2,
       "dogs": 2,
@@ -579,10 +572,10 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
-      "total": 1,
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "total": 2,
       "dogs": 1,
-      "cats": 0
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -594,6 +587,13 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Medical Treatment (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

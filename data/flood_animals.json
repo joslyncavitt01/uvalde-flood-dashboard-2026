@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T20:35:32Z",
+  "lastUpdated": "2026-08-14T20:50:54Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 8,
-      "dogs": 0,
-      "cats": 8
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 8,
       "dogs": 8,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 8,
+      "dogs": 0,
+      "cats": 8
     },
     {
       "property": "TLAC",
@@ -530,6 +530,13 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 8,
+      "dogs": 7,
+      "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 8,
       "dogs": 4,
@@ -537,9 +544,9 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 8,
-      "dogs": 7,
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "total": 2,
+      "dogs": 1,
       "cats": 1
     },
     {
@@ -548,13 +555,6 @@
       "total": 2,
       "dogs": 2,
       "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
-      "total": 2,
-      "dogs": 1,
-      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T15:08:22Z",
+  "lastUpdated": "2026-08-14T15:23:46Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 8,
-      "dogs": 0,
-      "cats": 8
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 8,
       "dogs": 8,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 8,
+      "dogs": 0,
+      "cats": 8
     },
     {
       "property": "TLAC",

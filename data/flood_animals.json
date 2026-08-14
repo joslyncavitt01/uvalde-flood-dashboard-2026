@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T22:07:49Z",
+  "lastUpdated": "2026-08-14T22:23:12Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 8,
@@ -266,7 +266,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 0,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -465,17 +465,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat ISO Condos",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "property": "TLAC",
       "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat ISO Condos",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Transport Hub (Elgin)",
@@ -530,13 +530,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 8,
-      "dogs": 4,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
       "total": 8,
       "dogs": 6,
@@ -544,10 +537,10 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 8,
+      "dogs": 4,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -555,6 +548,13 @@
       "total": 2,
       "dogs": 1,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T22:38:34Z",
+  "lastUpdated": "2026-08-14T22:53:55Z",
   "totals": {
     "total": 379,
     "dogs": 244,
@@ -530,17 +530,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 8,
-      "dogs": 6,
-      "cats": 2
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 8,
       "dogs": 4,
       "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 8,
+      "dogs": 6,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

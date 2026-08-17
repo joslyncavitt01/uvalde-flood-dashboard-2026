@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T16:56:14Z",
+  "lastUpdated": "2026-08-17T17:11:42Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -430,14 +430,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 6,
       "dogs": 6,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 6,
       "dogs": 6,
       "cats": 0
@@ -451,17 +451,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -523,17 +523,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 8,
-      "dogs": 4,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
       "total": 8,
       "dogs": 5,
       "cats": 3
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 8,
+      "dogs": 4,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -551,14 +551,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

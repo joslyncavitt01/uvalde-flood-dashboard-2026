@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T21:22:50Z",
+  "lastUpdated": "2026-08-17T21:38:12Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,13 +458,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
@@ -473,6 +466,13 @@
     {
       "property": "TLAC",
       "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -558,6 +558,13 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable (Foster)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
@@ -569,13 +576,6 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable (Foster)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
     },
     {
       "bucket": "Safety Net Foster (Pending RTO)",

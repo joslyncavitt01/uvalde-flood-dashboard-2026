@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T14:53:10Z",
+  "lastUpdated": "2026-08-17T15:08:34Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Del Rio Animal Control",
       "total": 7,
       "dogs": 0,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 2,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -430,13 +430,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 6,
-      "dogs": 6,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 6,
       "dogs": 0,
@@ -451,10 +444,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
+      "area": "Building 3 - Dog",
+      "total": 6,
+      "dogs": 6,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -462,6 +455,13 @@
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -488,17 +488,17 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable (Shelter)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "bucket": "On Property",
       "status": "Unavailable - Transport Hold (Shelter)",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable (Shelter)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -523,17 +523,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 8,
-      "dogs": 4,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
       "total": 8,
       "dogs": 5,
       "cats": 3
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 8,
+      "dogs": 4,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -551,14 +551,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

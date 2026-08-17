@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T15:08:34Z",
+  "lastUpdated": "2026-08-17T15:23:58Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Del Rio Animal Control",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7,
-      "city": "Del Rio",
-      "county": "Val Verde",
-      "nwsZone": null,
-      "firstIntake": "2026-07-19",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Del Rio Animal Control",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
+      "firstIntake": "2026-07-19",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 7,
       "Deceased": 0
     }
   ],
@@ -437,13 +437,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 6,
-      "dogs": 6,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 6,
       "dogs": 6,
@@ -451,9 +444,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
+      "area": "Building 1 - Dog",
+      "total": 6,
+      "dogs": 6,
       "cats": 0
     },
     {
@@ -462,6 +455,13 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -488,17 +488,17 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable - Transport Hold (Shelter)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "On Property",
       "status": "Unavailable (Shelter)",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable - Transport Hold (Shelter)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -551,14 +551,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

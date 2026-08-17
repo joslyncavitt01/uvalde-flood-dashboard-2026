@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T15:23:58Z",
+  "lastUpdated": "2026-08-17T15:39:21Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 8,
@@ -266,7 +266,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 0,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 6,
-      "dogs": 0,
-      "cats": 6
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 6,
       "dogs": 6,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 6,
+      "dogs": 0,
+      "cats": 6
     },
     {
       "property": "TLAC",
@@ -523,13 +523,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 8,
-      "dogs": 5,
-      "cats": 3
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 8,
       "dogs": 4,
@@ -537,10 +530,10 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
-      "total": 2,
-      "dogs": 1,
-      "cats": 1
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 8,
+      "dogs": 5,
+      "cats": 3
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -551,14 +544,21 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "total": 2,
+      "dogs": 1,
+      "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

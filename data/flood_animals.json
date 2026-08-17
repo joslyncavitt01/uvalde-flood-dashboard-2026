@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T18:33:19Z",
+  "lastUpdated": "2026-08-17T18:48:52Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Del Rio Animal Control",
       "total": 7,
       "dogs": 0,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 2,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -451,17 +451,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",

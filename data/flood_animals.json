@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T12:34:50Z",
+  "lastUpdated": "2026-08-17T12:50:12Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 8,
-      "In Foster (Available for Adoption)": 3,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 3,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -293,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 8,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 3,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -430,13 +430,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 6,
-      "dogs": 0,
-      "cats": 6
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 6,
       "dogs": 6,
@@ -451,10 +444,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
+      "area": "Ringworm",
+      "total": 6,
       "dogs": 0,
-      "cats": 2
+      "cats": 6
     },
     {
       "property": "TLAC",
@@ -462,6 +455,13 @@
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -523,13 +523,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 8,
-      "dogs": 5,
-      "cats": 3
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 8,
       "dogs": 4,
@@ -537,10 +530,10 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 8,
+      "dogs": 5,
+      "cats": 3
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -548,6 +541,13 @@
       "total": 2,
       "dogs": 1,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

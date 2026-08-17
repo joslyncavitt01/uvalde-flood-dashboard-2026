@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T16:25:35Z",
+  "lastUpdated": "2026-08-17T16:40:55Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 8,
@@ -266,7 +266,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 0,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,

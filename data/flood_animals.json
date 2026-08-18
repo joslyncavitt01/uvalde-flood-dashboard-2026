@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T19:49:40Z",
+  "lastUpdated": "2026-08-18T20:05:10Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -430,14 +430,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -544,13 +544,6 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 2,
       "dogs": 1,
@@ -558,14 +551,21 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T14:38:49Z",
+  "lastUpdated": "2026-08-18T14:54:20Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -430,14 +430,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
@@ -458,13 +458,6 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building B",
       "total": 1,
       "dogs": 1,
@@ -473,6 +466,13 @@
     {
       "property": "TLAC",
       "area": "Building 4 - Dog",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -537,17 +537,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 9,
-      "dogs": 6,
-      "cats": 3
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 9,
       "dogs": 5,
       "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 9,
+      "dogs": 6,
+      "cats": 3
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -565,17 +565,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable (Foster)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable (Foster)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T15:25:15Z",
+  "lastUpdated": "2026-08-18T15:40:42Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building B",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -537,17 +537,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 9,
-      "dogs": 6,
-      "cats": 3
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 9,
       "dogs": 5,
       "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 9,
+      "dogs": 6,
+      "cats": 3
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -572,14 +572,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Medical Treatment (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Medical Treatment (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

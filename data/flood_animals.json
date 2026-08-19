@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T21:46:23Z",
+  "lastUpdated": "2026-08-19T22:01:52Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -544,17 +544,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
-      "total": 2,
-      "dogs": 1,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Transport Hold (Foster)",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "total": 2,
+      "dogs": 1,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

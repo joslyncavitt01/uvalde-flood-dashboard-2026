@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T21:53:01Z",
+  "lastUpdated": "2026-08-20T22:08:31Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -437,13 +437,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 5,
       "dogs": 5,
@@ -451,9 +444,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
+      "area": "Building 3 - Dog",
+      "total": 5,
+      "dogs": 5,
       "cats": 0
     },
     {
@@ -462,6 +455,13 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -544,17 +544,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 2,
       "dogs": 1,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Transport Hold (Foster)",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "bucket": "Safety Net Foster (Pending RTO)",

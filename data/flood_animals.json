@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T18:35:35Z",
+  "lastUpdated": "2026-08-21T18:50:57Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -437,13 +437,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 5,
       "dogs": 5,
@@ -451,9 +444,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
+      "area": "Building 1 - Dog",
+      "total": 5,
+      "dogs": 5,
       "cats": 0
     },
     {
@@ -465,14 +458,21 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Building 4 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
+      "area": "C-ISO",
       "total": 1,
       "dogs": 1,
       "cats": 0

@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-21T19:06:24Z",
+  "lastUpdated": "2026-08-22T16:18:43Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
-    "On Property": 33,
-    "In Foster (Available for Adoption)": 66,
-    "In Foster (Unavailable for Adoption)": 26,
+    "On Property": 35,
+    "In Foster (Available for Adoption)": 63,
+    "In Foster (Unavailable for Adoption)": 27,
     "Safety Net Foster (Pending RTO)": 1,
     "Adopted / Pending": 183,
     "Transferred Out": 65,
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 167,
-    "On Property (Available)": 30,
+    "On Property (Available)": 32,
     "On Property (Unavailable)": 3
   },
   "byDay": [
@@ -64,8 +64,8 @@
     {
       "date": "2026-07-17",
       "total": 69,
-      "On Property": 9,
-      "In Foster (Available for Adoption)": 9,
+      "On Property": 8,
+      "In Foster (Available for Adoption)": 10,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 44,
@@ -76,8 +76,8 @@
       "date": "2026-07-18",
       "total": 43,
       "On Property": 5,
-      "In Foster (Available for Adoption)": 8,
-      "In Foster (Unavailable for Adoption)": 3,
+      "In Foster (Available for Adoption)": 7,
+      "In Foster (Unavailable for Adoption)": 4,
       "Safety Net Foster (Pending RTO)": 1,
       "Adopted / Pending": 17,
       "Transferred Out": 8,
@@ -108,8 +108,8 @@
     {
       "date": "2026-07-21",
       "total": 10,
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -119,8 +119,8 @@
     {
       "date": "2026-07-22",
       "total": 14,
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 3,
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 10,
@@ -161,8 +161,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 8,
-      "In Foster (Available for Adoption)": 19,
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 20,
       "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 28,
@@ -179,9 +179,9 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-29",
-      "On Property": 5,
+      "On Property": 4,
       "In Foster (Available for Adoption)": 14,
-      "In Foster (Unavailable for Adoption)": 11,
+      "In Foster (Unavailable for Adoption)": 12,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 48,
       "Transferred Out": 0,
@@ -260,6 +260,24 @@
       "Deceased": 0
     },
     {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 6,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -278,24 +296,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 5,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "Cotulla City Animal Control",
       "total": 11,
       "dogs": 8,
@@ -305,8 +305,8 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -359,8 +359,8 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -423,6 +423,13 @@
   "byLocation": [
     {
       "property": "TLAC",
+      "area": "Ringworm",
+      "total": 8,
+      "dogs": 0,
+      "cats": 8
+    },
+    {
+      "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 7,
       "dogs": 7,
@@ -430,16 +437,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 6,
-      "dogs": 0,
-      "cats": 6
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
+      "total": 6,
+      "dogs": 6,
       "cats": 0
     },
     {
@@ -447,13 +447,6 @@
       "area": "Building 3 - Dog",
       "total": 5,
       "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 2,
-      "dogs": 2,
       "cats": 0
     },
     {
@@ -466,6 +459,13 @@
     {
       "property": "TLAC",
       "area": "C-ISO",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -496,9 +496,9 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 30,
+      "total": 32,
       "dogs": 23,
-      "cats": 7
+      "cats": 9
     },
     {
       "bucket": "On Property",
@@ -517,15 +517,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 54,
+      "total": 52,
       "dogs": 34,
-      "cats": 20
+      "cats": 18
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 12,
-      "dogs": 12,
+      "total": 11,
+      "dogs": 11,
       "cats": 0
     },
     {
@@ -564,6 +564,13 @@
       "cats": 0
     },
     {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net Foster (NO ADOPT)",
       "total": 1,
@@ -573,15 +580,15 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 136,
-      "dogs": 84,
+      "total": 135,
+      "dogs": 83,
       "cats": 52
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 46,
-      "dogs": 31,
+      "total": 47,
+      "dogs": 32,
       "cats": 15
     },
     {

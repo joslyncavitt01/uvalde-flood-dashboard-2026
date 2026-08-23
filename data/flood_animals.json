@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-22T16:34:03Z",
+  "lastUpdated": "2026-08-23T02:14:40Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
-    "On Property": 35,
-    "In Foster (Available for Adoption)": 63,
+    "On Property": 33,
+    "In Foster (Available for Adoption)": 61,
     "In Foster (Unavailable for Adoption)": 27,
     "Safety Net Foster (Pending RTO)": 1,
-    "Adopted / Pending": 183,
+    "Adopted / Pending": 187,
     "Transferred Out": 65,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 167,
-    "On Property (Available)": 32,
+    "Adopted / Pending (tile)": 171,
+    "On Property (Available)": 30,
     "On Property (Unavailable)": 3
   },
   "byDay": [
@@ -54,21 +54,21 @@
       "date": "2026-07-16",
       "total": 104,
       "On Property": 9,
-      "In Foster (Available for Adoption)": 23,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Available for Adoption)": 22,
+      "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 39,
+      "Adopted / Pending": 41,
       "Transferred Out": 25,
       "Deceased": 1
     },
     {
       "date": "2026-07-17",
       "total": 69,
-      "On Property": 8,
-      "In Foster (Available for Adoption)": 10,
+      "On Property": 7,
+      "In Foster (Available for Adoption)": 9,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 44,
+      "Adopted / Pending": 46,
       "Transferred Out": 4,
       "Deceased": 0
     },
@@ -76,8 +76,8 @@
       "date": "2026-07-18",
       "total": 43,
       "On Property": 5,
-      "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Available for Adoption)": 6,
+      "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 1,
       "Adopted / Pending": 17,
       "Transferred Out": 8,
@@ -97,8 +97,8 @@
     {
       "date": "2026-07-20",
       "total": 25,
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 17,
@@ -108,8 +108,8 @@
     {
       "date": "2026-07-21",
       "total": 10,
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 4,
+      "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
@@ -119,8 +119,8 @@
     {
       "date": "2026-07-22",
       "total": 14,
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 3,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 10,
@@ -162,10 +162,10 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 7,
-      "In Foster (Available for Adoption)": 20,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Available for Adoption)": 19,
+      "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 28,
+      "Adopted / Pending": 30,
       "Transferred Out": 21,
       "Deceased": 1
     },
@@ -197,11 +197,11 @@
       "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
-      "On Property": 7,
-      "In Foster (Available for Adoption)": 8,
+      "On Property": 6,
+      "In Foster (Available for Adoption)": 7,
       "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 32,
+      "Adopted / Pending": 34,
       "Transferred Out": 2,
       "Deceased": 0
     },
@@ -269,8 +269,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-22",
-      "On Property": 6,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 5,
+      "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Del Rio Animal Control",
       "total": 7,
       "dogs": 0,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -412,8 +412,8 @@
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
       "On Property": 1,
-      "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 2,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 1,
       "Adopted / Pending": 3,
       "Transferred Out": 0,
@@ -423,13 +423,6 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 8,
-      "dogs": 0,
-      "cats": 8
-    },
-    {
-      "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 7,
       "dogs": 7,
@@ -437,9 +430,16 @@
     },
     {
       "property": "TLAC",
+      "area": "Ringworm",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7
+    },
+    {
+      "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 6,
-      "dogs": 6,
+      "total": 5,
+      "dogs": 5,
       "cats": 0
     },
     {
@@ -458,7 +458,7 @@
     },
     {
       "property": "TLAC",
-      "area": "C-ISO",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -466,13 +466,6 @@
     {
       "property": "TLAC",
       "area": "Building 4 - Dog",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
-      "area": "Building D - Kennels & Offices",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -487,8 +480,8 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building A",
-      "total": 1,
-      "dogs": 1,
+      "total": 2,
+      "dogs": 2,
       "cats": 0
     }
   ],
@@ -496,9 +489,9 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 32,
-      "dogs": 23,
-      "cats": 9
+      "total": 30,
+      "dogs": 22,
+      "cats": 8
     },
     {
       "bucket": "On Property",
@@ -517,15 +510,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 52,
-      "dogs": 34,
-      "cats": 18
+      "total": 49,
+      "dogs": 33,
+      "cats": 16
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 11,
-      "dogs": 11,
+      "total": 12,
+      "dogs": 12,
       "cats": 0
     },
     {
@@ -545,8 +538,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 5,
-      "dogs": 4,
+      "total": 6,
+      "dogs": 5,
       "cats": 1
     },
     {
@@ -564,13 +557,6 @@
       "cats": 0
     },
     {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
       "bucket": "Safety Net Foster (Pending RTO)",
       "status": "Safety Net Foster (NO ADOPT)",
       "total": 1,
@@ -580,15 +566,15 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 135,
-      "dogs": 83,
-      "cats": 52
+      "total": 140,
+      "dogs": 85,
+      "cats": 55
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 47,
-      "dogs": 32,
+      "total": 46,
+      "dogs": 31,
       "cats": 15
     },
     {

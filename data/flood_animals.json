@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T18:49:59Z",
+  "lastUpdated": "2026-08-24T19:05:56Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 6,
@@ -266,7 +266,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 0,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 7,
       "dogs": 0,
       "cats": 7
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -479,6 +479,13 @@
     },
     {
       "property": "Transport Hub (Elgin)",
+      "area": "TH (Elgin) Building A",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
@@ -487,13 +494,6 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "Main House",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -544,17 +544,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 7,
-      "dogs": 5,
-      "cats": 2
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 7,
       "dogs": 3,
       "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 7,
+      "dogs": 5,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

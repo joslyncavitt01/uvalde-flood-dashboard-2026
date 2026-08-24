@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T13:06:03Z",
+  "lastUpdated": "2026-08-24T13:21:51Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -176,7 +176,7 @@
       "cats": 26,
       "city": "Uvalde",
       "county": "Uvalde",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-29",
       "On Property": 4,
@@ -212,7 +212,7 @@
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 4,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": null,
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 3,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 11,
-      "Deceased": 0
-    },
-    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -296,13 +278,31 @@
       "Deceased": 0
     },
     {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": null,
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 3,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
       "shelter": "Cotulla City Animal Control",
       "total": 11,
       "dogs": 8,
       "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
       "On Property": 3,
@@ -356,7 +356,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 1,
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7
-    },
-    {
-      "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7
     },
     {
       "property": "TLAC",

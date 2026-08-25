@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T21:52:02Z",
+  "lastUpdated": "2026-08-25T22:07:29Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 7,
       "dogs": 0,
       "cats": 7
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -479,13 +479,6 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
@@ -494,6 +487,13 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building A",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "Transport Hub (Elgin)",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -565,14 +565,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
+      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Adoption Inquiry Limit (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

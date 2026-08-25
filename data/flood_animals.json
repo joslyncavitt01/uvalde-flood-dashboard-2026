@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-08-25T18:00:17Z",
+  "lastUpdated": "2026-08-25T18:15:44Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
     "On Property": 30,
-    "In Foster (Available for Adoption)": 58,
+    "In Foster (Available for Adoption)": 57,
     "In Foster (Unavailable for Adoption)": 27,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 194,
+    "Adopted / Pending": 195,
     "Transferred Out": 65,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 178,
+    "Adopted / Pending (tile)": 179,
     "On Property (Available)": 26,
     "On Property (Unavailable)": 4
   },
@@ -55,9 +55,9 @@
       "total": 104,
       "On Property": 8,
       "In Foster (Available for Adoption)": 22,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 41,
+      "Adopted / Pending": 42,
       "Transferred Out": 25,
       "Deceased": 1
     },
@@ -87,8 +87,8 @@
       "date": "2026-07-19",
       "total": 67,
       "On Property": 6,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 9,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 10,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 29,
       "Transferred Out": 19,
@@ -163,9 +163,9 @@
       "lastIntake": "2026-07-16",
       "On Property": 6,
       "In Foster (Available for Adoption)": 19,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 30,
+      "Adopted / Pending": 31,
       "Transferred Out": 21,
       "Deceased": 1
     },
@@ -216,8 +216,8 @@
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 4,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 27,
       "Transferred Out": 0,
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7
-    },
-    {
-      "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 7,
       "dogs": 7,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7
     },
     {
       "property": "TLAC",
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -479,6 +479,13 @@
     },
     {
       "property": "Transport Hub (Elgin)",
+      "area": "TH (Elgin) Building B",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
@@ -487,13 +494,6 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "Main House",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -531,8 +531,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 12,
-      "dogs": 12,
+      "total": 11,
+      "dogs": 11,
       "cats": 0
     },
     {
@@ -573,8 +573,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 143,
-      "dogs": 88,
+      "total": 144,
+      "dogs": 89,
       "cats": 55
     },
     {

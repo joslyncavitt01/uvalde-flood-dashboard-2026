@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-08-26T21:01:37Z",
+  "lastUpdated": "2026-08-26T22:12:50Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
     "On Property": 30,
     "In Foster (Available for Adoption)": 54,
-    "In Foster (Unavailable for Adoption)": 29,
+    "In Foster (Unavailable for Adoption)": 28,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 196,
+    "Adopted / Pending": 197,
     "Transferred Out": 65,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 180,
+    "Adopted / Pending (tile)": 181,
     "On Property (Available)": 26,
     "On Property (Unavailable)": 4
   },
@@ -55,9 +55,9 @@
       "total": 104,
       "On Property": 7,
       "In Foster (Available for Adoption)": 21,
-      "In Foster (Unavailable for Adoption)": 8,
+      "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 42,
+      "Adopted / Pending": 43,
       "Transferred Out": 25,
       "Deceased": 1
     },
@@ -163,9 +163,9 @@
       "lastIntake": "2026-07-16",
       "On Property": 5,
       "In Foster (Available for Adoption)": 18,
-      "In Foster (Unavailable for Adoption)": 8,
+      "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 31,
+      "Adopted / Pending": 32,
       "Transferred Out": 21,
       "Deceased": 1
     },
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 7,
       "dogs": 0,
       "cats": 7
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -479,14 +479,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building B",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -552,8 +552,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 6,
-      "dogs": 5,
+      "total": 5,
+      "dogs": 4,
       "cats": 1
     },
     {
@@ -580,8 +580,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 144,
-      "dogs": 89,
+      "total": 146,
+      "dogs": 91,
       "cats": 55
     },
     {
@@ -596,13 +596,6 @@
       "status": "Pre-Adopt - Medical (Adopter)",
       "total": 2,
       "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "Adopted / Pending",
-      "status": "Ready to Outcome Pre-Adopt (Adopter)",
-      "total": 1,
-      "dogs": 1,
       "cats": 0
     },
     {

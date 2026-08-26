@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T06:19:52Z",
+  "lastUpdated": "2026-08-26T17:43:29Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 6,
@@ -260,6 +260,24 @@
       "Deceased": 0
     },
     {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": null,
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 3,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -275,24 +293,6 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
       "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": "Surveillance Zone",
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 3,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 11,
       "Deceased": 0
     },
     {
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -346,6 +346,24 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
+      "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
       "Transferred Out": 1,
       "Deceased": 0
     },
@@ -365,24 +383,6 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -423,17 +423,17 @@
   "byLocation": [
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 7,
       "dogs": 0,
       "cats": 7
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -479,14 +479,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0

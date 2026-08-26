@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T19:31:46Z",
+  "lastUpdated": "2026-08-26T19:56:31Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -176,7 +176,7 @@
       "cats": 26,
       "city": "Uvalde",
       "county": "Uvalde",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-29",
       "On Property": 2,
@@ -212,7 +212,7 @@
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 4,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 5,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 5,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -296,13 +278,31 @@
       "Deceased": 0
     },
     {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 5,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 5,
+      "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
       "shelter": "Cotulla City Animal Control",
       "total": 11,
       "dogs": 8,
       "cats": 3,
       "city": "Cotulla",
       "county": "La Salle",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
       "On Property": 3,
@@ -356,7 +356,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 1,
@@ -479,14 +479,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building B",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0

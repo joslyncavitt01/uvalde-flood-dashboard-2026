@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T15:10:00Z",
+  "lastUpdated": "2026-08-27T15:25:31Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -486,14 +486,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building B",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0

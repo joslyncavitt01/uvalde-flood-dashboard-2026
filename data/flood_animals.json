@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T23:45:50Z",
+  "lastUpdated": "2026-08-27T00:01:18Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -479,13 +479,6 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Transport Hub (Elgin)",
       "area": "TH (Elgin) Building B",
       "total": 1,
       "dogs": 1,
@@ -494,6 +487,13 @@
     {
       "property": "Transport Hub (Elgin)",
       "area": "Main House",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "Transport Hub (Elgin)",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0

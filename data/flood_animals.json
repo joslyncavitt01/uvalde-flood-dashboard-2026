@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-29T17:48:51Z",
+  "lastUpdated": "2026-08-29T18:04:17Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
-    "On Property": 28,
-    "In Foster (Available for Adoption)": 47,
-    "In Foster (Unavailable for Adoption)": 30,
+    "On Property": 29,
+    "In Foster (Available for Adoption)": 45,
+    "In Foster (Unavailable for Adoption)": 31,
     "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 203,
     "Transferred Out": 66,
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 187,
-    "On Property (Available)": 25,
+    "On Property (Available)": 26,
     "On Property (Unavailable)": 3
   },
   "byDay": [
@@ -64,8 +64,8 @@
     {
       "date": "2026-07-17",
       "total": 69,
-      "On Property": 5,
-      "In Foster (Available for Adoption)": 11,
+      "On Property": 6,
+      "In Foster (Available for Adoption)": 10,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 46,
@@ -76,8 +76,8 @@
       "date": "2026-07-18",
       "total": 43,
       "On Property": 4,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 21,
       "Transferred Out": 9,
@@ -216,8 +216,8 @@
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 3,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 28,
       "Transferred Out": 0,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
       "shelter": "Del Rio Animal Control",
       "total": 7,
       "dogs": 0,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -411,8 +411,8 @@
       "cats": 1,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 6,
+      "dogs": 6,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Ringworm",
       "total": 6,
       "dogs": 0,
       "cats": 6
-    },
-    {
-      "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
     },
     {
       "property": "TLAC",
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -496,8 +496,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 25,
-      "dogs": 18,
+      "total": 26,
+      "dogs": 19,
       "cats": 7
     },
     {
@@ -517,15 +517,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 39,
-      "dogs": 27,
+      "total": 38,
+      "dogs": 26,
       "cats": 12
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 8,
-      "dogs": 8,
+      "total": 7,
+      "dogs": 7,
       "cats": 0
     },
     {
@@ -545,8 +545,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 7,
-      "dogs": 6,
+      "total": 8,
+      "dogs": 7,
       "cats": 1
     },
     {

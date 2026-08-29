@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:52:40Z",
+  "lastUpdated": "2026-08-29T01:08:03Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -558,14 +558,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

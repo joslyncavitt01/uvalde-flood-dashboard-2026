@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T19:21:06Z",
+  "lastUpdated": "2026-08-29T19:36:30Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,14 +458,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
+      "area": "Davenport",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Davenport",
+      "area": "Building 4 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -537,17 +537,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 8,
-      "dogs": 7,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 8,
       "dogs": 4,
       "cats": 4
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 8,
+      "dogs": 7,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

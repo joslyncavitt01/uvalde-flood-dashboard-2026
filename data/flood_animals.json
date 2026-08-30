@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T05:20:11Z",
+  "lastUpdated": "2026-08-30T05:35:35Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 5,
-      "dogs": 0,
-      "cats": 5
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 5,
       "dogs": 5,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 5,
+      "dogs": 0,
+      "cats": 5
     },
     {
       "property": "TLAC",
@@ -472,14 +472,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0

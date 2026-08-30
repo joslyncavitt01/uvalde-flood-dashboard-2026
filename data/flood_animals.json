@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T05:50:54Z",
+  "lastUpdated": "2026-08-30T06:06:16Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 5,
       "dogs": 0,
       "cats": 5
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 5,
+      "dogs": 5,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -530,17 +530,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 7,
-      "dogs": 3,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
       "total": 7,
       "dogs": 6,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 7,
+      "dogs": 3,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -551,14 +551,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T21:42:02Z",
+  "lastUpdated": "2026-08-30T22:30:51Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -194,7 +194,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 5,
@@ -266,7 +266,7 @@
       "cats": 2,
       "city": "Dilley",
       "county": "Frio",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-13",
       "lastIntake": "2026-07-18",
       "On Property": 0,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 5,
       "dogs": 0,
       "cats": 5
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 5,
+      "dogs": 5,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -465,14 +465,14 @@
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "TH (Elgin) Building A",
+      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",
-      "area": "Main House",
+      "area": "TH (Elgin) Building A",
       "total": 1,
       "dogs": 1,
       "cats": 0

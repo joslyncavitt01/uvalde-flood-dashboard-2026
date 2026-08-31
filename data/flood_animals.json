@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T19:15:57Z",
+  "lastUpdated": "2026-08-31T19:31:21Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -346,24 +346,6 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
-      "Transferred Out": 1,
-      "Deceased": 0
-    },
-    {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
       "Transferred Out": 1,
       "Deceased": 0
     },
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
+      "Transferred Out": 1,
       "Deceased": 0
     }
   ],

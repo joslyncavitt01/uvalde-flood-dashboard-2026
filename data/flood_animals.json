@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T22:21:16Z",
+  "lastUpdated": "2026-08-31T22:36:40Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 2,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 5,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -293,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 2,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 5,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 5,
       "dogs": 0,
       "cats": 5
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 5,
+      "dogs": 5,
+      "cats": 0
     },
     {
       "property": "TLAC",

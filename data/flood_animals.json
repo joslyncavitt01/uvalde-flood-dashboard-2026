@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-08-30T23:17:00Z",
+  "lastUpdated": "2026-08-31T00:03:53Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
     "On Property": 25,
-    "In Foster (Available for Adoption)": 44,
-    "In Foster (Unavailable for Adoption)": 30,
+    "In Foster (Available for Adoption)": 42,
+    "In Foster (Unavailable for Adoption)": 31,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 209,
+    "Adopted / Pending": 210,
     "Transferred Out": 66,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 193,
+    "Adopted / Pending (tile)": 194,
     "On Property (Available)": 22,
     "On Property (Unavailable)": 3
   },
@@ -54,10 +54,10 @@
       "date": "2026-07-16",
       "total": 104,
       "On Property": 7,
-      "In Foster (Available for Adoption)": 16,
+      "In Foster (Available for Adoption)": 15,
       "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 49,
+      "Adopted / Pending": 50,
       "Transferred Out": 25,
       "Deceased": 1
     },
@@ -65,8 +65,8 @@
       "date": "2026-07-17",
       "total": 69,
       "On Property": 6,
-      "In Foster (Available for Adoption)": 10,
-      "In Foster (Unavailable for Adoption)": 2,
+      "In Foster (Available for Adoption)": 9,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 47,
       "Transferred Out": 4,
@@ -162,10 +162,10 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 5,
-      "In Foster (Available for Adoption)": 13,
+      "In Foster (Available for Adoption)": 12,
       "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 38,
+      "Adopted / Pending": 39,
       "Transferred Out": 21,
       "Deceased": 1
     },
@@ -180,8 +180,8 @@
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-29",
       "On Property": 4,
-      "In Foster (Available for Adoption)": 13,
-      "In Foster (Unavailable for Adoption)": 11,
+      "In Foster (Available for Adoption)": 12,
+      "In Foster (Unavailable for Adoption)": 12,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 50,
       "Transferred Out": 0,
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Ringworm",
       "total": 5,
       "dogs": 0,
       "cats": 5
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 5,
+      "dogs": 5,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -503,15 +503,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 36,
-      "dogs": 26,
+      "total": 35,
+      "dogs": 25,
       "cats": 10
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 8,
-      "dogs": 8,
+      "total": 7,
+      "dogs": 7,
       "cats": 0
     },
     {
@@ -524,8 +524,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 9,
-      "dogs": 8,
+      "total": 10,
+      "dogs": 9,
       "cats": 1
     },
     {
@@ -544,14 +544,14 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Unavailable - Transport Hold (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Transport Hold (Foster)",
+      "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -559,8 +559,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 160,
-      "dogs": 99,
+      "total": 161,
+      "dogs": 100,
       "cats": 61
     },
     {

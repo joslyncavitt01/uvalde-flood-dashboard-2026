@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T15:40:38Z",
+  "lastUpdated": "2026-09-01T15:56:08Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -350,24 +350,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Del Rio Animal Control",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7,
-      "city": "Del Rio",
-      "county": "Val Verde",
-      "nwsZone": null,
-      "firstIntake": "2026-07-19",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -383,6 +365,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Del Rio Animal Control",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
+      "firstIntake": "2026-07-19",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 7,
       "Deceased": 0
     }
   ],
@@ -430,17 +430,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Ringworm",
-      "total": 5,
-      "dogs": 0,
-      "cats": 5
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 5,
       "dogs": 5,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Ringworm",
+      "total": 5,
+      "dogs": 0,
+      "cats": 5
     },
     {
       "property": "TLAC",

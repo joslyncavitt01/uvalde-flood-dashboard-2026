@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T20:49:15Z",
+  "lastUpdated": "2026-09-01T21:04:44Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -53,8 +53,8 @@
     {
       "date": "2026-07-16",
       "total": 104,
-      "On Property": 6,
-      "In Foster (Available for Adoption)": 13,
+      "On Property": 5,
+      "In Foster (Available for Adoption)": 14,
       "In Foster (Unavailable for Adoption)": 7,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 51,
@@ -108,8 +108,8 @@
     {
       "date": "2026-07-21",
       "total": 10,
-      "On Property": 2,
-      "In Foster (Available for Adoption)": 1,
+      "On Property": 3,
+      "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 7,
@@ -287,8 +287,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-22",
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 4,
+      "On Property": 4,
+      "In Foster (Available for Adoption)": 3,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 6,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -359,8 +359,8 @@
       "nwsZone": "Infested Zone",
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
@@ -422,13 +422,6 @@
   ],
   "byLocation": [
     {
-      "property": "Building 4 - Dog",
-      "area": "Kennel 419",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
       "property": "TLAC",
       "area": "Building 2 - Dog",
       "total": 6,
@@ -445,8 +438,8 @@
     {
       "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 5,
-      "dogs": 5,
+      "total": 4,
+      "dogs": 4,
       "cats": 0
     },
     {
@@ -465,10 +458,24 @@
     },
     {
       "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "TLAC Cattery",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "Tarrytown",
+      "area": "Tarrytown Dog",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Transport Hub (Elgin)",

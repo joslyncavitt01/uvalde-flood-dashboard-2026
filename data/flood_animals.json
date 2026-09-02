@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T04:16:09Z",
+  "lastUpdated": "2026-09-02T17:33:21Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -559,16 +559,16 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 162,
-      "dogs": 103,
-      "cats": 59
+      "total": 164,
+      "dogs": 104,
+      "cats": 60
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 52,
-      "dogs": 33,
-      "cats": 19
+      "total": 50,
+      "dogs": 32,
+      "cats": 18
     },
     {
       "bucket": "Adopted / Pending",

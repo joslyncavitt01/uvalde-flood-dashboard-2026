@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-09-02T20:52:54Z",
+  "lastUpdated": "2026-09-02T21:40:12Z",
   "totals": {
     "total": 378,
     "dogs": 243,
     "cats": 135,
-    "On Property": 20,
-    "In Foster (Available for Adoption)": 43,
+    "On Property": 18,
+    "In Foster (Available for Adoption)": 44,
     "In Foster (Unavailable for Adoption)": 27,
     "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 216,
-    "Transferred Out": 68,
+    "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 200,
-    "On Property (Available)": 18,
-    "On Property (Unavailable)": 2
+    "On Property (Available)": 17,
+    "On Property (Unavailable)": 1
   },
   "byDay": [
     {
@@ -86,19 +86,19 @@
     {
       "date": "2026-07-19",
       "total": 67,
-      "On Property": 3,
+      "On Property": 2,
       "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 9,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 31,
-      "Transferred Out": 19,
+      "Transferred Out": 20,
       "Deceased": 0
     },
     {
       "date": "2026-07-20",
       "total": 25,
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 0,
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 1,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 21,
@@ -197,8 +197,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
-      "On Property": 6,
-      "In Foster (Available for Adoption)": 3,
+      "On Property": 5,
+      "In Foster (Available for Adoption)": 4,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 37,
@@ -251,12 +251,12 @@
       "nwsZone": null,
       "firstIntake": "2026-07-19",
       "lastIntake": "2026-07-20",
-      "On Property": 1,
+      "On Property": 0,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
-      "Transferred Out": 14,
+      "Transferred Out": 15,
       "Deceased": 0
     },
     {
@@ -444,17 +444,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -464,22 +464,8 @@
       "cats": 0
     },
     {
-      "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
       "property": "Tarrytown",
       "area": "Tarrytown Dog",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "Transport Hub (Elgin)",
-      "area": "Main House",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -489,16 +475,9 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 18,
+      "total": 17,
       "dogs": 11,
-      "cats": 7
-    },
-    {
-      "bucket": "On Property",
-      "status": "Unavailable - Transport Hold (Shelter)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
+      "cats": 6
     },
     {
       "bucket": "On Property",
@@ -510,9 +489,9 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 32,
+      "total": 33,
       "dogs": 23,
-      "cats": 9
+      "cats": 10
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -566,9 +545,9 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 50,
+      "total": 49,
       "dogs": 32,
-      "cats": 18
+      "cats": 17
     },
     {
       "bucket": "Adopted / Pending",
@@ -578,10 +557,17 @@
       "cats": 0
     },
     {
+      "bucket": "Adopted / Pending",
+      "status": "Ready to Outcome Pre-Adopt (Adopter)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
       "bucket": "Transferred Out",
       "status": "Transferred Out",
-      "total": 68,
-      "dogs": 41,
+      "total": 69,
+      "dogs": 42,
       "cats": 27
     },
     {
@@ -607,6 +593,11 @@
       "date": "2026-07-20",
       "destination": "Brandywine Valley SPCA ",
       "count": 16
+    },
+    {
+      "date": "2026-07-24",
+      "destination": "Border Animal Mission Rescue (BAM)",
+      "count": 1
     },
     {
       "date": "2026-08-04",

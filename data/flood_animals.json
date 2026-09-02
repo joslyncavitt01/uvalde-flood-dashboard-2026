@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T00:55:57Z",
+  "lastUpdated": "2026-09-02T01:11:22Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -458,17 +458,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 4 - Dog",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "TLAC Cattery",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 4 - Dog",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "Tarrytown",

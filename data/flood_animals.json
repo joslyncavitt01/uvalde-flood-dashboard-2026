@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T20:37:29Z",
+  "lastUpdated": "2026-09-02T20:52:54Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -444,13 +444,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
@@ -458,10 +451,10 @@
     },
     {
       "property": "TLAC",
-      "area": "TLAC Cattery",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
+      "area": "Building 3 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -469,6 +462,13 @@
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "TLAC Cattery",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "property": "Tarrytown",
@@ -495,17 +495,17 @@
     },
     {
       "bucket": "On Property",
-      "status": "Unavailable (Shelter)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "bucket": "On Property",
       "status": "Unavailable - Transport Hold (Shelter)",
       "total": 1,
       "dogs": 1,
       "cats": 0
+    },
+    {
+      "bucket": "On Property",
+      "status": "Unavailable (Shelter)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Available for Adoption)",

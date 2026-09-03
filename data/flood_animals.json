@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T04:52:51Z",
+  "lastUpdated": "2026-09-03T14:07:47Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -212,7 +212,7 @@
       "cats": 5,
       "city": "Crystal City",
       "county": "Zavala",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 1,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,

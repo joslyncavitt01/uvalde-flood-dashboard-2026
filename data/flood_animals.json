@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T14:23:14Z",
+  "lastUpdated": "2026-09-03T14:30:22Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -437,14 +437,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
@@ -627,13 +627,13 @@
   "medicalMetrics": {
     "vaccinesAdministered": 843,
     "heartwormPositive": 12,
-    "ringwormPositive": 32,
+    "ringwormPositive": 33,
     "felvPositive": 4,
-    "capstarDoses": 336,
-    "nexgardDoses": 57,
-    "fleaPreventionTotal": 655,
-    "dewormed": 427,
-    "spayNeuterSurgeries": 77,
-    "otherSurgeries": 6
+    "capstarDoses": 338,
+    "nexgardDoses": 64,
+    "fleaPreventionTotal": 698,
+    "dewormed": 451,
+    "spayNeuterSurgeries": 119,
+    "otherSurgeries": 8
   }
 }

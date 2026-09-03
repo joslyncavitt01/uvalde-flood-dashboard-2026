@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T14:30:22Z",
+  "lastUpdated": "2026-09-03T14:34:45Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -625,7 +625,7 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 843,
+    "vaccinesAdministered": 925,
     "heartwormPositive": 12,
     "ringwormPositive": 33,
     "felvPositive": 4,

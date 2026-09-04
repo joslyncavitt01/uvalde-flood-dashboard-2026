@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T18:50:27Z",
+  "lastUpdated": "2026-09-04T19:05:56Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": null,
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 2,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 1,
-      "Transferred Out": 11,
-      "Deceased": 0
-    },
-    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -293,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": null,
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 2,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 1,
+      "Transferred Out": 11,
       "Deceased": 0
     },
     {
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -502,17 +502,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 5,
-      "dogs": 1,
-      "cats": 4
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
       "total": 5,
       "dogs": 4,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 5,
+      "dogs": 1,
+      "cats": 4
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T20:13:01Z",
+  "lastUpdated": "2026-09-04T20:28:28Z",
   "totals": {
     "total": 378,
     "dogs": 243,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,
@@ -346,6 +346,24 @@
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 5,
+      "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Hondo Animal Shelter",
+      "total": 7,
+      "dogs": 7,
+      "cats": 0,
+      "city": "Hondo",
+      "county": "Medina",
+      "nwsZone": "Infested Zone",
+      "firstIntake": "2026-07-16",
+      "lastIntake": "2026-07-16",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 4,
       "Transferred Out": 1,
       "Deceased": 0
     },
@@ -365,24 +383,6 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 0,
       "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
-      "shelter": "City of Hondo Animal Shelter",
-      "total": 7,
-      "dogs": 7,
-      "cats": 0,
-      "city": "Hondo",
-      "county": "Medina",
-      "nwsZone": "Infested Zone",
-      "firstIntake": "2026-07-16",
-      "lastIntake": "2026-07-16",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 1,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 4,
-      "Transferred Out": 1,
       "Deceased": 0
     }
   ],
@@ -430,6 +430,13 @@
     },
     {
       "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 4,
+      "dogs": 4,
+      "cats": 0
+    },
+    {
+      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 4,
       "dogs": 4,
@@ -437,9 +444,9 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 4,
-      "dogs": 4,
+      "area": "Building 3 - Dog",
+      "total": 2,
+      "dogs": 2,
       "cats": 0
     },
     {
@@ -448,13 +455,6 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
-    },
-    {
-      "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
     },
     {
       "property": "TLAC",

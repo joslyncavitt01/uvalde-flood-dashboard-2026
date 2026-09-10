@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T14:55:03Z",
+  "lastUpdated": "2026-09-10T15:10:33Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -437,10 +437,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Cat Intake Room",
       "total": 2,
-      "dogs": 2,
-      "cats": 0
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -451,10 +451,10 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
+      "area": "Building 3 - Dog",
       "total": 2,
-      "dogs": 0,
-      "cats": 2
+      "dogs": 2,
+      "cats": 0
     }
   ],
   "statusDetail": [
@@ -509,17 +509,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Reported Lost/Stolen (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "bucket": "Adopted / Pending",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T00:25:27Z",
+  "lastUpdated": "2026-09-10T14:39:40Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -444,17 +444,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     }
   ],
   "statusDetail": [
@@ -509,42 +509,35 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Pregnant/Nursing (Foster)",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Reported Lost/Stolen (Foster)",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Pregnant/Nursing (Foster)",
+      "total": 1,
+      "dogs": 0,
+      "cats": 1
+    },
+    {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 190,
-      "dogs": 123,
-      "cats": 67
+      "total": 193,
+      "dogs": 125,
+      "cats": 68
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 42,
+      "total": 41,
       "dogs": 27,
-      "cats": 15
+      "cats": 14
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Medical (Adopter)",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "Adopted / Pending",
-      "status": "Ready to Outcome Pre-Adopt (Adopter)",
       "total": 2,
       "dogs": 2,
       "cats": 0

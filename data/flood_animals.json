@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T02:07:29Z",
+  "lastUpdated": "2026-09-11T02:22:55Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -338,7 +338,7 @@
       "cats": 4,
       "city": "Sabinal",
       "county": "Uvalde",
-      "nwsZone": null,
+      "nwsZone": "Surveillance Zone",
       "firstIntake": "2026-07-15",
       "lastIntake": "2026-07-15",
       "On Property": 1,

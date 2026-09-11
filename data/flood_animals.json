@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-09-11T17:55:43Z",
+  "lastUpdated": "2026-09-11T18:11:09Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
     "On Property": 13,
-    "In Foster (Available for Adoption)": 38,
-    "In Foster (Unavailable for Adoption)": 17,
+    "In Foster (Available for Adoption)": 37,
+    "In Foster (Unavailable for Adoption)": 16,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 236,
+    "Adopted / Pending": 238,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 220,
+    "Adopted / Pending (tile)": 222,
     "On Property (Available)": 12,
     "On Property (Unavailable)": 1
   },
@@ -66,9 +66,9 @@
       "total": 69,
       "On Property": 2,
       "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 53,
+      "Adopted / Pending": 54,
       "Transferred Out": 4,
       "Deceased": 0
     },
@@ -87,10 +87,10 @@
       "date": "2026-07-19",
       "total": 67,
       "On Property": 2,
-      "In Foster (Available for Adoption)": 6,
+      "In Foster (Available for Adoption)": 5,
       "In Foster (Unavailable for Adoption)": 6,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 33,
+      "Adopted / Pending": 34,
       "Transferred Out": 20,
       "Deceased": 0
     },
@@ -181,9 +181,9 @@
       "lastIntake": "2026-07-29",
       "On Property": 1,
       "In Foster (Available for Adoption)": 13,
-      "In Foster (Unavailable for Adoption)": 7,
+      "In Foster (Unavailable for Adoption)": 5,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 57,
+      "Adopted / Pending": 59,
       "Transferred Out": 0,
       "Deceased": 2
     },
@@ -198,8 +198,8 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 4,
-      "In Foster (Available for Adoption)": 3,
-      "In Foster (Unavailable for Adoption)": 3,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 39,
       "Transferred Out": 2,
@@ -216,8 +216,8 @@
       "firstIntake": "2026-07-17",
       "lastIntake": "2026-07-21",
       "On Property": 0,
-      "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 31,
       "Transferred Out": 0,
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 1,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 7,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -293,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 1,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 1,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 7,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -360,8 +360,8 @@
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 0,
-      "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 1,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 4,
       "Transferred Out": 1,
@@ -475,15 +475,15 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 31,
-      "dogs": 20,
+      "total": 32,
+      "dogs": 21,
       "cats": 11
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 7,
-      "dogs": 7,
+      "total": 5,
+      "dogs": 5,
       "cats": 0
     },
     {
@@ -496,8 +496,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 5,
-      "dogs": 2,
+      "total": 4,
+      "dogs": 1,
       "cats": 3
     },
     {
@@ -509,30 +509,30 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 0,
       "cats": 1
     },
     {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Reported Lost/Stolen (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 193,
-      "dogs": 125,
+      "total": 194,
+      "dogs": 126,
       "cats": 68
     },
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 41,
-      "dogs": 27,
+      "total": 42,
+      "dogs": 28,
       "cats": 14
     },
     {

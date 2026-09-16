@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-09-15T22:12:43Z",
+  "lastUpdated": "2026-09-16T14:59:21Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
     "On Property": 13,
     "In Foster (Available for Adoption)": 32,
-    "In Foster (Unavailable for Adoption)": 13,
+    "In Foster (Unavailable for Adoption)": 12,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 246,
+    "Adopted / Pending": 247,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 230,
+    "Adopted / Pending (tile)": 231,
     "On Property (Available)": 12,
     "On Property (Unavailable)": 1
   },
@@ -88,9 +88,9 @@
       "total": 67,
       "On Property": 2,
       "In Foster (Available for Adoption)": 4,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 37,
+      "Adopted / Pending": 38,
       "Transferred Out": 20,
       "Deceased": 0
     },
@@ -181,9 +181,9 @@
       "lastIntake": "2026-07-29",
       "On Property": 1,
       "In Foster (Available for Adoption)": 12,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 61,
+      "Adopted / Pending": 62,
       "Transferred Out": 0,
       "Deceased": 2
     },
@@ -260,24 +260,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Asherton Animal Control Center",
-      "total": 14,
-      "dogs": 14,
-      "cats": 0,
-      "city": "Asherton",
-      "county": "Dimmit",
-      "nwsZone": null,
-      "firstIntake": "2026-07-18",
-      "lastIntake": "2026-07-22",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 1,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 7,
-      "Transferred Out": 0,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Dilley",
       "total": 14,
       "dogs": 12,
@@ -293,6 +275,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 3,
       "Transferred Out": 11,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Asherton Animal Control Center",
+      "total": 14,
+      "dogs": 14,
+      "cats": 0,
+      "city": "Asherton",
+      "county": "Dimmit",
+      "nwsZone": null,
+      "firstIntake": "2026-07-18",
+      "lastIntake": "2026-07-22",
+      "On Property": 1,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 1,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 7,
+      "Transferred Out": 0,
       "Deceased": 0
     },
     {
@@ -356,7 +356,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": "Infested Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 0,
@@ -488,17 +488,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 6,
-      "dogs": 5,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 5,
       "dogs": 2,
       "cats": 3
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 5,
+      "dogs": 4,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -524,8 +524,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Pre-Adopt - Awaiting Surgery (Adopter)",
-      "total": 46,
-      "dogs": 31,
+      "total": 47,
+      "dogs": 32,
       "cats": 15
     },
     {

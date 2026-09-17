@@ -22,17 +22,34 @@ Refresh model: same as backfill_animal_profiles.py -- manual, whenever Joslyn wa
 this brought current. Each run fully replaces the destination table's contents
 (WRITE_TRUNCATE load job, not DML), since these are periodic whole-window snapshots,
 not incremental logs -- there's no stable per-row key to dedupe against across runs.
+**This means loading a file is NOT additive: it replaces the whole table, so a file
+that doesn't cover as far back as what's already loaded will delete the older rows.**
+Each load now refuses to run if the incoming file's earliest date is later than the
+existing table's earliest date, to make that failure loud instead of silent (see
+load_file's date-coverage check). Pass --force as an extra CLI arg to skip the check
+and accept the loss on purpose.
 
 Usage: python3 backfill_animal_medical.py /path/to/floodweekdiagnostictests.xlsx \
     /path/to/floodweekvaccines.xlsx /path/to/floodweekphysicalexams.xlsx \
-    /path/to/floodweeksurgeries.xlsx /path/to/floodweektreatments.xlsx
+    /path/to/floodweeksurgeries.xlsx /path/to/floodweektreatments.xlsx [--force]
 """
 import sys
+from datetime import datetime
 import openpyxl
 from google.cloud import bigquery
 
 PROJECT = "apa-data-410213"
 DATASET = "shelterluv"
+
+# The BQ column holding each row's own date, used only for the coverage-shrink guard below
+# (not otherwise special -- each report's real date semantics live in its own field map).
+DATE_COLUMN = {
+    "diagnostic": "TestDate",
+    "vaccine": "DateCompleted",
+    "exam": "DateCompleted",
+    "surgery": "DateCompleted",
+    "treatment": "DateGiven",
+}
 
 DIAGNOSTICS_MAP = {
     "Animal ID": "AnimalID",
@@ -158,7 +175,16 @@ def detect_kind(headers):
     raise ValueError(f"Couldn't identify report type from headers: {headers[:5]}...")
 
 
-def load_file(client, path):
+def parse_date(s):
+    if not s:
+        return None
+    try:
+        return datetime.strptime(s, "%m/%d/%Y").date()
+    except (ValueError, TypeError):
+        return None
+
+
+def load_file(client, path, force=False):
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb.active
     headers = [c.value for c in ws[1]]
@@ -180,6 +206,37 @@ def load_file(client, path):
     print(f"{path.split('/')[-1]}: parsed {len(rows_out)} rows -> {table_name} ({kind})")
 
     table_ref = f"{PROJECT}.{DATASET}.{table_name}"
+
+    # WRITE_TRUNCATE below fully replaces this table -- it is not additive. If the file
+    # being loaded doesn't cover as far back as what's already there, this would silently
+    # delete the older rows instead of adding to them (confirmed to happen for real,
+    # 2026-09-17: a same-day batch of 5 reports that all started 8/1+ wiped every table's
+    # 7/13-7/31 flood-week history at once). Refuse to proceed when that's about to happen.
+    date_col = DATE_COLUMN.get(kind)
+    if date_col and not force:
+        new_dates = [d for d in (parse_date(r.get(date_col)) for r in rows_out) if d]
+        new_min = min(new_dates) if new_dates else None
+        try:
+            existing_rows = list(client.query(
+                f"SELECT {date_col} FROM `{table_ref}`"
+            ).result())
+            existing_dates = [d for d in (parse_date(r[date_col]) for r in existing_rows) if d]
+            existing_min = min(existing_dates) if existing_dates else None
+        except Exception:
+            existing_min = None
+
+        if existing_min and new_min and new_min > existing_min:
+            print(
+                f"  REFUSING TO LOAD: existing {table_name} data goes back to {existing_min}, "
+                f"but this file only starts at {new_min}. Loading it would delete the "
+                f"{existing_min}-to-{new_min} window (full-table replace, not additive)."
+            )
+            print(
+                f"  Pull a report covering back to at least {existing_min} and re-run, or "
+                f"pass --force to load anyway and accept the loss."
+            )
+            return
+
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_TRUNCATE",
         autodetect=True,
@@ -191,9 +248,11 @@ def load_file(client, path):
 
 
 def run(paths):
+    force = "--force" in paths
+    paths = [p for p in paths if p != "--force"]
     client = bigquery.Client(project=PROJECT)
     for path in paths:
-        load_file(client, path)
+        load_file(client, path, force=force)
 
 
 if __name__ == "__main__":

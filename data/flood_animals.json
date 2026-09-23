@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T02:23:52Z",
+  "lastUpdated": "2026-09-23T02:39:25Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -430,13 +430,6 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Building 3 - Dog",
       "total": 2,
       "dogs": 2,
@@ -448,6 +441,13 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 2 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     },
     {
       "property": "TLAC",

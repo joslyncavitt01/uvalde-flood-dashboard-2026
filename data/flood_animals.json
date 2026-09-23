@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-22T23:49:23Z",
+  "lastUpdated": "2026-09-23T00:04:51Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
-    "On Property": 13,
-    "In Foster (Available for Adoption)": 29,
-    "In Foster (Unavailable for Adoption)": 10,
+    "On Property": 12,
+    "In Foster (Available for Adoption)": 28,
+    "In Foster (Unavailable for Adoption)": 11,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 252,
+    "Adopted / Pending": 253,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 236,
-    "On Property (Available)": 12,
+    "Adopted / Pending (tile)": 237,
+    "On Property (Available)": 11,
     "On Property (Unavailable)": 1
   },
   "byDay": [
@@ -76,8 +76,8 @@
       "date": "2026-07-18",
       "total": 42,
       "On Property": 1,
-      "In Foster (Available for Adoption)": 5,
-      "In Foster (Unavailable for Adoption)": 0,
+      "In Foster (Available for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 26,
       "Transferred Out": 9,
@@ -108,11 +108,11 @@
     {
       "date": "2026-07-21",
       "total": 10,
-      "On Property": 2,
+      "On Property": 1,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 8,
+      "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -288,8 +288,8 @@
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-22",
       "On Property": 0,
-      "In Foster (Available for Adoption)": 6,
-      "In Foster (Unavailable for Adoption)": 1,
+      "In Foster (Available for Adoption)": 5,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 7,
       "Transferred Out": 0,
@@ -305,11 +305,11 @@
       "nwsZone": null,
       "firstIntake": "2026-07-20",
       "lastIntake": "2026-07-21",
-      "On Property": 2,
+      "On Property": 1,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 8,
+      "Adopted / Pending": 9,
       "Transferred Out": 1,
       "Deceased": 0
     },
@@ -424,13 +424,13 @@
     {
       "property": "TLAC",
       "area": "Ringworm",
-      "total": 5,
+      "total": 4,
       "dogs": 0,
-      "cats": 5
+      "cats": 4
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
@@ -444,26 +444,26 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 2,
+      "dogs": 2,
+      "cats": 0
     }
   ],
   "statusDetail": [
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 12,
+      "total": 11,
       "dogs": 6,
-      "cats": 6
+      "cats": 5
     },
     {
       "bucket": "On Property",
@@ -475,8 +475,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 27,
-      "dogs": 18,
+      "total": 26,
+      "dogs": 17,
       "cats": 9
     },
     {
@@ -489,8 +489,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 4,
-      "dogs": 3,
+      "total": 5,
+      "dogs": 4,
       "cats": 1
     },
     {
@@ -517,9 +517,9 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 202,
+      "total": 203,
       "dogs": 133,
-      "cats": 69
+      "cats": 70
     },
     {
       "bucket": "Adopted / Pending",

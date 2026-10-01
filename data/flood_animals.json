@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-10-01T14:57:32Z",
+  "lastUpdated": "2026-10-01T15:12:59Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
-    "On Property": 15,
+    "On Property": 14,
     "In Foster (Available for Adoption)": 24,
     "In Foster (Unavailable for Adoption)": 9,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 256,
+    "Adopted / Pending": 257,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 240,
+    "Adopted / Pending (tile)": 241,
     "On Property (Available)": 13,
-    "On Property (Unavailable)": 2
+    "On Property (Unavailable)": 1
   },
   "byDay": [
     {
@@ -108,11 +108,11 @@
     {
       "date": "2026-07-21",
       "total": 10,
-      "On Property": 2,
+      "On Property": 1,
       "In Foster (Available for Adoption)": 0,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 8,
+      "Adopted / Pending": 9,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -226,11 +226,11 @@
       "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-27",
-      "On Property": 3,
+      "On Property": 2,
       "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 0,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 30,
+      "Adopted / Pending": 31,
       "Transferred Out": 0,
       "Deceased": 0
     },
@@ -461,13 +461,6 @@
       "cats": 0
     },
     {
-      "property": "Room A, Cage 3",
-      "area": "Unspecified",
-      "total": 1,
-      "dogs": 0,
-      "cats": 1
-    },
-    {
       "property": "TLAC",
       "area": "Ringworm",
       "total": 4,
@@ -476,17 +469,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",
@@ -514,9 +507,9 @@
     {
       "bucket": "On Property",
       "status": "Unavailable (Shelter)",
-      "total": 2,
+      "total": 1,
       "dogs": 0,
-      "cats": 2
+      "cats": 1
     },
     {
       "bucket": "In Foster (Available for Adoption)",
@@ -534,17 +527,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 3,
-      "dogs": 2,
-      "cats": 1
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Foster to Adopt (Foster)",
       "total": 3,
       "dogs": 0,
       "cats": 3
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 3,
+      "dogs": 2,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -570,9 +563,9 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 213,
+      "total": 214,
       "dogs": 136,
-      "cats": 77
+      "cats": 78
     },
     {
       "bucket": "Adopted / Pending",

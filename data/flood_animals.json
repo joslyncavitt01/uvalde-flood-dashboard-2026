@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T14:15:13Z",
+  "lastUpdated": "2026-10-02T14:30:38Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -469,17 +469,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Cat Intake Room",
-      "total": 2,
-      "dogs": 0,
-      "cats": 2
-    },
-    {
-      "property": "TLAC",
       "area": "Building 1 - Dog",
       "total": 2,
       "dogs": 2,
       "cats": 0
+    },
+    {
+      "property": "TLAC",
+      "area": "Cat Intake Room",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
     },
     {
       "property": "TLAC",

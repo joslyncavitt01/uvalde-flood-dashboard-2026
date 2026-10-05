@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T17:58:04Z",
+  "lastUpdated": "2026-10-05T18:13:34Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -433,13 +433,6 @@
   ],
   "byLocation": [
     {
-      "property": "Building 2 - Dog, Kennel 179",
-      "area": "Unspecified",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
       "property": "Davenport, Social Work Office",
       "area": "Unspecified",
       "total": 1,
@@ -463,8 +456,8 @@
     {
       "property": "TLAC",
       "area": "Building 3 - Dog",
-      "total": 1,
-      "dogs": 1,
+      "total": 2,
+      "dogs": 2,
       "cats": 0
     },
     {
@@ -479,8 +472,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 10,
-      "dogs": 4,
+      "total": 9,
+      "dogs": 3,
       "cats": 6
     },
     {
@@ -491,17 +484,24 @@
       "cats": 1
     },
     {
+      "bucket": "On Property",
+      "status": "Available (Shelter) - Sitter Stay ",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
+    },
+    {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 18,
-      "dogs": 12,
+      "total": 19,
+      "dogs": 13,
       "cats": 6
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 7,
-      "dogs": 7,
+      "total": 6,
+      "dogs": 6,
       "cats": 0
     },
     {
@@ -520,17 +520,17 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
-      "total": 1,
-      "dogs": 1,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Unavailable - Pregnant/Nursing (Foster)",
       "total": 1,
       "dogs": 0,
       "cats": 1
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Reported Lost/Stolen (Foster)",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "bucket": "Adopted / Pending",

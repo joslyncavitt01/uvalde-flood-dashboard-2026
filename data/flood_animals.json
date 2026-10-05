@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:23:20Z",
+  "lastUpdated": "2026-10-05T15:38:51Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -462,14 +462,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
+      "area": "Building 3 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 1 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -615,7 +615,7 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 947,
+    "vaccinesAdministered": 971,
     "heartwormPositive": 12,
     "ringwormPositive": 35,
     "felvPositive": 4,

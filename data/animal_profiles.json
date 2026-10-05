@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:38:51Z",
+  "lastUpdated": "2026-10-05T15:40:12Z",
   "buckets": [
     "On Property",
     "In Foster (Available for Adoption)",
@@ -4624,6 +4624,46 @@
           "doseNotes": "Credelio Quatro",
           "treatmentNotes": "Credelio Quatro",
           "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "09:59 AM",
+          "by": "Stacey Lewis",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": "1 dose(s)",
+          "doseNotes": "simparico trio given",
+          "treatmentNotes": "Credilio Quatro given",
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "09:59 AM",
+          "by": "Stacey Lewis",
+          "product": "Flea Prevention",
+          "amount": "1 dose(s)",
+          "doseNotes": "simparico trio given",
+          "treatmentNotes": "Credelio Quatro",
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "07:22 PM",
+          "by": "Stacey Lewis",
+          "product": "Strongid T (50mg/mL Pyrantel pamoate oral suspension)",
+          "amount": "0.84 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "07:25 PM",
+          "by": "Stacey Lewis",
+          "product": "Simparica Trio for Dogs 5.6-11.0 lb (6mg Sarolaner, .12mg Moxidectin, 25mg Pyrantel chewable tablet)",
+          "amount": null,
+          "doseNotes": "Name of preventative (simparica trio) - Advised foster to give the trio meds on 9/29.",
+          "treatmentNotes": "Name of preventative (simparica trio) - Advised foster to give the trio meds on 9/29.",
+          "vet": null
         }
       ]
     },
@@ -5654,6 +5694,36 @@
           "amount": null,
           "doseNotes": "Name of preventative (Simparica) - Isoxazoline type preventative",
           "treatmentNotes": "Name of preventative (Simparica) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:41 PM",
+          "by": "Eric Gosin",
+          "product": "Carprofen (100mg Carprofen tablets)",
+          "amount": "1 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:42 PM",
+          "by": "Eric Gosin",
+          "product": "Cephalexin (500mg Cephalexin capsules)",
+          "amount": "1 capsule(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:42 PM",
+          "by": "Eric Gosin",
+          "product": "Cephalexin (250mg Cephalexin capsules)",
+          "amount": "1 capsule(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
           "vet": null
         }
       ]
@@ -6926,6 +6996,56 @@
           "doseNotes": null,
           "treatmentNotes": "Will provide 12 months of heartworm prevention from date administered. Please resume heartworm prevention 12 months post treatment.",
           "vet": null
+        },
+        {
+          "date": "2026-10-02",
+          "time": "12:43 PM",
+          "by": "Kaylin Vrabel",
+          "product": "Doxycycline (100mg Doxycycline hyclate capsules)",
+          "amount": "2 tablet(s)",
+          "doseNotes": "Start doxy immediately",
+          "treatmentNotes": "Start doxy immediately",
+          "vet": "Dr. Alexis Bardzinski"
+        },
+        {
+          "date": "2026-10-02",
+          "time": "12:45 PM",
+          "by": "Kaylin Vrabel",
+          "product": "Prednisone (20mg Prednisone tablets)",
+          "amount": "1 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": "Dr. Alexis Bardzinski"
+        },
+        {
+          "date": "2026-10-02",
+          "time": "12:46 PM",
+          "by": "Kaylin Vrabel",
+          "product": "Prednisone (10mg Prednisone tablets)",
+          "amount": "1 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": "Dr. Alexis Bardzinski"
+        },
+        {
+          "date": "2026-10-02",
+          "time": "12:47 PM",
+          "by": "Kaylin Vrabel",
+          "product": "Prednisone (10mg Prednisone tablets)",
+          "amount": "1 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": "Dr. Alexis Bardzinski"
+        },
+        {
+          "date": "2026-10-02",
+          "time": "12:48 PM",
+          "by": "Kaylin Vrabel",
+          "product": "Gabapentin (100mg Gabapentin tablets)",
+          "amount": "2 capsule(s)",
+          "doseNotes": "Start 2 hours prior to first injection, then every 12 hours x 5 days to control pain following injections.",
+          "treatmentNotes": "Start 2 hours prior to first injection, then every 12 hours x 5 days to control pain following injections.",
+          "vet": "Dr. Alexis Bardzinski"
         }
       ]
     },
@@ -7630,16 +7750,6 @@
           "by": "Samuel Yarbrough",
           "product": "Erythromycin ointment (0.5% Erythromycin ophthalmic solution)",
           "amount": "1 application(s)",
-          "doseNotes": null,
-          "treatmentNotes": null,
-          "vet": null
-        },
-        {
-          "date": "2026-07-20",
-          "time": "12:52 PM",
-          "by": "Samuel Yarbrough",
-          "product": "Azithromycin (250mg Azithromycin tablets)",
-          "amount": "0.09 mL",
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": null
@@ -9668,6 +9778,76 @@
           "doseNotes": null,
           "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
           "vet": "Dr. Christianne Hawley"
+        },
+        {
+          "date": "2026-09-17",
+          "time": "11:53 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.3 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": "Dr. Christianne Hawley"
+        },
+        {
+          "date": "2026-09-18",
+          "time": "12:07 PM",
+          "by": "Yojany Antunez",
+          "product": "Flea treatment (topical)",
+          "amount": "0.01 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-18",
+          "time": "12:07 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.3 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": "Dr. Christianne Hawley"
+        },
+        {
+          "date": "2026-09-19",
+          "time": "11:57 AM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.3 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": "Dr. Christianne Hawley"
+        },
+        {
+          "date": "2026-09-19",
+          "time": "11:57 AM",
+          "by": "Yojany Antunez",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": "until 6 months old, then switch to once a month",
+          "vet": null
+        },
+        {
+          "date": "2026-09-20",
+          "time": "12:57 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.3 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": "Dr. Christianne Hawley"
+        },
+        {
+          "date": "2026-09-21",
+          "time": "01:06 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.3 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": "Dr. Christianne Hawley"
         }
       ]
     },
@@ -10551,6 +10731,116 @@
           "date": "2026-09-16",
           "time": "11:47 AM",
           "by": "Yojany Antunez and Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "11:53 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-18",
+          "time": "12:22 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-19",
+          "time": "11:57 AM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-20",
+          "time": "12:57 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-21",
+          "time": "01:06 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "11:46 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "12:46 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "08:00 AM",
+          "by": "Yajaira Gonzalez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.8 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
           "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
           "amount": "0.8 mL",
           "doseNotes": null,
@@ -11920,6 +12210,46 @@
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": "Dr. Rachel Gordon"
+        },
+        {
+          "date": "2026-09-17",
+          "time": "09:39 AM",
+          "by": "APA Tech",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": "1 dose(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "09:41 AM",
+          "by": "APA Tech",
+          "product": "Flea Prevention",
+          "amount": "1 dose(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "09:43 AM",
+          "by": "APA Tech",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": "1 dose(s)",
+          "doseNotes": null,
+          "treatmentNotes": "Given NEXGARD PLUS",
+          "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "09:44 AM",
+          "by": "APA Tech",
+          "product": "Flea Prevention",
+          "amount": "1 dose(s)",
+          "doseNotes": null,
+          "treatmentNotes": "Given NEXGARD PLUS",
+          "vet": null
         }
       ]
     },
@@ -14259,16 +14589,6 @@
           "by": "Samuel Yarbrough",
           "product": "Erythromycin ointment (0.5% Erythromycin ophthalmic solution)",
           "amount": "1 application(s)",
-          "doseNotes": null,
-          "treatmentNotes": null,
-          "vet": null
-        },
-        {
-          "date": "2026-07-20",
-          "time": "12:52 PM",
-          "by": "Samuel Yarbrough",
-          "product": "Azithromycin (250mg Azithromycin tablets)",
-          "amount": "0.09 mL",
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": null
@@ -19720,6 +20040,136 @@
           "doseNotes": null,
           "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
           "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "11:53 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-17",
+          "time": "06:00 PM",
+          "by": "Marlena Magliano",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-18",
+          "time": "12:07 PM",
+          "by": "Yojany Antunez",
+          "product": "Flea treatment (topical)",
+          "amount": "0.01 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-18",
+          "time": "12:07 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-19",
+          "time": "11:57 AM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-20",
+          "time": "12:57 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-21",
+          "time": "01:06 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "11:46 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "12:46 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:48 PM",
+          "by": "Marlena Magliano",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.35 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Recheck at 21 day mark to determine if pulse is necessary.",
+          "vet": null
+        },
+        {
+          "date": "2026-10-01",
+          "time": "11:30 AM",
+          "by": "Yojany Antunez",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
         }
       ]
     },
@@ -20796,6 +21246,76 @@
           "amount": null,
           "doseNotes": null,
           "treatmentNotes": "Dose based on weight",
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.36 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.36 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.36 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "08:00 AM",
+          "by": "Yajaira Gonzalez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.36 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.36 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "10:33 PM",
+          "by": "APA Tech",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
           "vet": null
         }
       ]
@@ -21977,6 +22497,86 @@
           "amount": null,
           "doseNotes": null,
           "treatmentNotes": "Dose based on weight",
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.29 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.29 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.29 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "08:00 AM",
+          "by": "Yajaira Gonzalez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.29 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.29 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "06:19 AM",
+          "by": "surgery tech",
+          "product": "Flea Prevention",
+          "amount": null,
+          "doseNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "treatmentNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "10:28 PM",
+          "by": "APA Tech",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
           "vet": null
         }
       ]
@@ -26396,6 +26996,26 @@
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "06:48 PM",
+          "by": "surgery tech",
+          "product": "Flea Prevention",
+          "amount": null,
+          "doseNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "treatmentNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "06:48 PM",
+          "by": "surgery tech",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": null,
+          "doseNotes": "Give one dose orally Q30 days",
+          "treatmentNotes": "Give one dose orally Q30 days",
+          "vet": null
         }
       ]
     },
@@ -30660,6 +31280,16 @@
           "doseNotes": "Name of preventative (NexGard PLUS) - Isoxazoline type preventative",
           "treatmentNotes": "Name of preventative (NexGard PLUS) - Isoxazoline type preventative",
           "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "11:06 AM",
+          "by": "Chelsea Moore",
+          "product": "Credelio Quattro (Lotilaner, Moxidectin, Praziquantel, Pyrantel chewable tablet)",
+          "amount": "1 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": "Dr. Alexis Bardzinski"
         }
       ]
     },
@@ -30904,6 +31534,86 @@
           "amount": null,
           "doseNotes": null,
           "treatmentNotes": "Dose based on weight",
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.31 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.31 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.31 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "08:00 AM",
+          "by": "Yajaira Gonzalez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.31 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.31 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "06:14 AM",
+          "by": "surgery tech",
+          "product": "Flea Prevention",
+          "amount": null,
+          "doseNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "treatmentNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "10:33 PM",
+          "by": "APA Tech",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
           "vet": null
         }
       ]
@@ -33004,6 +33714,16 @@
           "amount": "0.23 mL",
           "doseNotes": null,
           "treatmentNotes": "revolution plus",
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "11:46 AM",
+          "by": "Marlena Magliano",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": null,
           "vet": null
         }
       ]
@@ -41927,6 +42647,26 @@
           "doseNotes": "Give one dose orally Q30 days",
           "treatmentNotes": "Give one dose orally Q30 days",
           "vet": null
+        },
+        {
+          "date": "2026-09-19",
+          "time": "03:56 PM",
+          "by": "Stacey Lewis",
+          "product": "Heartgard (Ivermectin chewable tablets)",
+          "amount": null,
+          "doseNotes": "Give one dose orally Q30 days",
+          "treatmentNotes": "Give one dose orally Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-19",
+          "time": "03:57 PM",
+          "by": "Stacey Lewis",
+          "product": "Capstar for large dogs 25.1-125 lbs (57mg Nitenpyram tablets)",
+          "amount": null,
+          "doseNotes": "live fleas observed",
+          "treatmentNotes": "live fleas observed",
+          "vet": null
         }
       ]
     },
@@ -42910,16 +43650,6 @@
           "by": "Samuel Yarbrough",
           "product": "Erythromycin ointment (0.5% Erythromycin ophthalmic solution)",
           "amount": "1 application(s)",
-          "doseNotes": null,
-          "treatmentNotes": null,
-          "vet": null
-        },
-        {
-          "date": "2026-07-20",
-          "time": "12:52 PM",
-          "by": "Samuel Yarbrough",
-          "product": "Azithromycin (250mg Azithromycin tablets)",
-          "amount": "0.09 mL",
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": null
@@ -44994,6 +45724,26 @@
           "amount": null,
           "doseNotes": "Name of preventative (Credellio QUATTRO) - Isoxazoline type preventative",
           "treatmentNotes": "Name of preventative (Credellio QUATTRO) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-10-02",
+          "time": "10:08 AM",
+          "by": "Eric Gosin",
+          "product": "Panacur liquid (10% Fenbendazole oral suspension)",
+          "amount": "10.4 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-10-02",
+          "time": "10:08 AM",
+          "by": "Eric Gosin",
+          "product": "Metronidazole (500mg Metronidazole tablets)",
+          "amount": "2.5 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
           "vet": null
         }
       ]
@@ -56091,6 +56841,16 @@
           "doseNotes": null,
           "treatmentNotes": "revolution plus",
           "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "11:46 AM",
+          "by": "Marlena Magliano",
+          "product": "Check Weight/Weigh",
+          "amount": null,
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
         }
       ]
     },
@@ -56802,16 +57562,6 @@
           "vet": null
         },
         {
-          "date": "2026-07-20",
-          "time": "12:52 PM",
-          "by": "Samuel Yarbrough",
-          "product": "Azithromycin (250mg Azithromycin tablets)",
-          "amount": "0.09 mL",
-          "doseNotes": null,
-          "treatmentNotes": null,
-          "vet": null
-        },
-        {
           "date": "2026-07-26",
           "time": "02:43 PM",
           "by": "Avery Gauna",
@@ -57333,6 +58083,16 @@
           "amount": null,
           "doseNotes": null,
           "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-10-01",
+          "time": "08:16 AM",
+          "by": "APA Tech",
+          "product": "Flea Prevention",
+          "amount": "0.14 mL",
+          "doseNotes": null,
+          "treatmentNotes": "bravecto",
           "vet": null
         }
       ]
@@ -59439,6 +60199,86 @@
           "doseNotes": null,
           "treatmentNotes": "Dose based on weight",
           "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.26 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-24",
+          "time": "12:47 PM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.26 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-25",
+          "time": "12:38 PM",
+          "by": "Yojany Antunez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.26 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-26",
+          "time": "08:00 AM",
+          "by": "Yajaira Gonzalez",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.26 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "Terbinafine (166.7mg/mL Terbinafine HCl oral suspension)",
+          "amount": "0.26 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-27",
+          "time": "08:00 AM",
+          "by": "Marlena Magliano",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "06:22 AM",
+          "by": "surgery tech",
+          "product": "Flea Prevention",
+          "amount": null,
+          "doseNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "treatmentNotes": "Name of preventative (enter name here) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "10:28 PM",
+          "by": "APA Tech",
+          "product": "NexGard Combo for Cats (0.8-2.5 kg) (3.6mg Esafoxolaner, 1.2mg Eprinomectin, 24.9mg Praziquantel topical)",
+          "amount": "0.02 mL",
+          "doseNotes": null,
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": null
         }
       ]
     },
@@ -60191,6 +61031,46 @@
           "amount": null,
           "doseNotes": "Name of preventative (NexGard PLUS) - Isoxazoline type preventative",
           "treatmentNotes": "Name of preventative (NexGard PLUS) - Isoxazoline type preventative",
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:51 PM",
+          "by": "Eric Gosin",
+          "product": "Carprofen (100mg Carprofen tablets)",
+          "amount": "1.25 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:52 PM",
+          "by": "Eric Gosin",
+          "product": "Cephalexin (500mg Cephalexin capsules)",
+          "amount": "1 capsule(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-22",
+          "time": "06:52 PM",
+          "by": "Eric Gosin",
+          "product": "Cephalexin (250mg Cephalexin capsules)",
+          "amount": "1 capsule(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": null
+        },
+        {
+          "date": "2026-09-23",
+          "time": "10:45 AM",
+          "by": "Eric Gosin",
+          "product": "Doxycycline (100mg Doxycycline hyclate tablets)",
+          "amount": "3.25 tablet(s)",
+          "doseNotes": null,
+          "treatmentNotes": null,
           "vet": null
         }
       ]
@@ -61186,6 +62066,16 @@
           "doseNotes": "Simparica Trio",
           "treatmentNotes": "Heartworm preventative",
           "vet": null
+        },
+        {
+          "date": "2026-09-28",
+          "time": "10:13 PM",
+          "by": "APA Tech",
+          "product": "Strongid T (50mg/mL Pyrantel pamoate oral suspension)",
+          "amount": "2.5 mL",
+          "doseNotes": null,
+          "treatmentNotes": null,
+          "vet": "Dr. Alexis Bardzinski"
         }
       ]
     },
@@ -65791,6 +66681,26 @@
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": null
+        },
+        {
+          "date": "2026-09-29",
+          "time": "12:06 PM",
+          "by": "Chelsea Moore",
+          "product": "Flea treatment (topical)",
+          "amount": "1 application(s)",
+          "doseNotes": "Give one dose between the shoulder blades Q30 days",
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": "Dr. Anna Nealy Shvil"
+        },
+        {
+          "date": "2026-09-29",
+          "time": "12:07 PM",
+          "by": "Chelsea Moore",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": null,
+          "doseNotes": "Give one dose orally Q30 days",
+          "treatmentNotes": "Give one dose orally Q30 days",
+          "vet": "Dr. Anna Nealy Shvil"
         }
       ]
     },
@@ -66119,6 +67029,26 @@
           "doseNotes": null,
           "treatmentNotes": null,
           "vet": "Dr. Melissa Stansell"
+        },
+        {
+          "date": "2026-09-29",
+          "time": "11:19 AM",
+          "by": "Chelsea Moore",
+          "product": "Flea treatment (topical)",
+          "amount": "1 application(s)",
+          "doseNotes": "Give one dose between the shoulder blades Q30 days",
+          "treatmentNotes": "Give one dose between the shoulder blades Q30 days",
+          "vet": "Dr. Anna Nealy Shvil"
+        },
+        {
+          "date": "2026-09-29",
+          "time": "11:19 AM",
+          "by": "Chelsea Moore",
+          "product": "Heartworm preventative (Ivermectin tablets)",
+          "amount": null,
+          "doseNotes": "Give one dose orally Q30 days",
+          "treatmentNotes": "Give one dose orally Q30 days",
+          "vet": "Dr. Anna Nealy Shvil"
         }
       ]
     },
@@ -66720,16 +67650,6 @@
           "date": "2026-07-21",
           "time": "04:00 PM",
           "by": "APA!",
-          "product": "Gabapentin (100mg Gabapentin capsules)",
-          "amount": "2 capsule(s)",
-          "doseNotes": null,
-          "treatmentNotes": null,
-          "vet": null
-        },
-        {
-          "date": "2026-07-22",
-          "time": "03:26 PM",
-          "by": "Angel Rodrigues APA",
           "product": "Gabapentin (100mg Gabapentin capsules)",
           "amount": "2 capsule(s)",
           "doseNotes": null,

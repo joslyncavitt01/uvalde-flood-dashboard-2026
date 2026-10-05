@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:38:51Z",
+  "lastUpdated": "2026-10-05T15:40:12Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -619,10 +619,10 @@
     "heartwormPositive": 12,
     "ringwormPositive": 35,
     "felvPositive": 4,
-    "capstarDoses": 338,
-    "nexgardDoses": 63,
-    "fleaPreventionTotal": 716,
-    "dewormed": 456,
+    "capstarDoses": 339,
+    "nexgardDoses": 71,
+    "fleaPreventionTotal": 737,
+    "dewormed": 469,
     "spayNeuterSurgeries": 149,
     "otherSurgeries": 12
   }

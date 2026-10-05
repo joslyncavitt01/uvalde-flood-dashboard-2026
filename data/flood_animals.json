@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:07:54Z",
+  "lastUpdated": "2026-10-05T15:13:12Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -615,14 +615,14 @@
     "Deceased"
   ],
   "medicalMetrics": {
-    "vaccinesAdministered": 24,
-    "heartwormPositive": 0,
-    "ringwormPositive": 8,
-    "felvPositive": 0,
-    "capstarDoses": 1,
-    "nexgardDoses": 8,
-    "fleaPreventionTotal": 21,
-    "dewormed": 13,
+    "vaccinesAdministered": 947,
+    "heartwormPositive": 12,
+    "ringwormPositive": 35,
+    "felvPositive": 4,
+    "capstarDoses": 338,
+    "nexgardDoses": 63,
+    "fleaPreventionTotal": 716,
+    "dewormed": 456,
     "spayNeuterSurgeries": 133,
     "otherSurgeries": 9
   }

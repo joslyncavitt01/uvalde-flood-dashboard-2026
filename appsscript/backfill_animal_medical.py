@@ -34,7 +34,7 @@ Usage: python3 backfill_animal_medical.py /path/to/floodweekdiagnostictests.xlsx
     /path/to/floodweeksurgeries.xlsx /path/to/floodweektreatments.xlsx [--force]
 """
 import sys
-from datetime import datetime
+from datetime import date, datetime
 import openpyxl
 from google.cloud import bigquery
 
@@ -176,8 +176,19 @@ def detect_kind(headers):
 
 
 def parse_date(s):
+    # Must handle two different input shapes: a raw "%m/%d/%Y" string when called on rows
+    # freshly read from an xlsx (via clean()), and a native datetime.date/datetime when
+    # called on rows queried back from BigQuery (autodetect=True typed the date columns
+    # as DATE, so they come back as date objects, not strings). Confirmed broken 2026-10-05:
+    # strptime() on a date object raises TypeError, which this used to swallow silently and
+    # return None for every single existing row, making the coverage-shrink guard below a
+    # complete no-op without ever printing a warning.
     if not s:
         return None
+    if isinstance(s, datetime):
+        return s.date()
+    if isinstance(s, date):
+        return s
     try:
         return datetime.strptime(s, "%m/%d/%Y").date()
     except (ValueError, TypeError):
@@ -222,8 +233,18 @@ def load_file(client, path, force=False):
             ).result())
             existing_dates = [d for d in (parse_date(r[date_col]) for r in existing_rows) if d]
             existing_min = min(existing_dates) if existing_dates else None
-        except Exception:
+            if existing_rows and not existing_dates:
+                # Every row failed to parse -- almost certainly a bug in parse_date for
+                # whatever type this column is now coming back as, NOT "no existing data".
+                # Say so loudly instead of silently treating it as nothing-to-protect.
+                print(
+                    f"  WARNING: {len(existing_rows)} existing {table_name} rows found but "
+                    f"none parsed as dates (sample raw value: {existing_rows[0][date_col]!r}) "
+                    f"-- coverage-shrink check could not run, proceeding without it."
+                )
+        except Exception as e:
             existing_min = None
+            print(f"  WARNING: couldn't check existing {table_name} coverage ({e}) -- proceeding without that check.")
 
         if existing_min and new_min and new_min > existing_min:
             print(

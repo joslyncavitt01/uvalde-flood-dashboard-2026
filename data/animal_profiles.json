@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:13:12Z",
+  "lastUpdated": "2026-10-05T15:16:24Z",
   "buckets": [
     "On Property",
     "In Foster (Available for Adoption)",
@@ -2186,7 +2186,15 @@
           "performedBy": "Carri, Sam, Sam"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening.\n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-22",
@@ -4828,7 +4836,36 @@
           "performedBy": "Jackie(EmailBot)"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-30",
+          "surgeryType": "Canine Neuter over 10lbs",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL. \n\nSedated with Ketamine/Acepromazine IV.  IM Butorphanol and SQ Meloxicam given pre-op.  Maintained with Isoflurane via endotracheal tube. Routine neuter performed. Lidocaine/Buvicaine splash applied prior to skin closure.  Absorbable sutures used - no suture removal required. Tattoo line made near the incision line.\n\nTake Home Pain Med - Carprofen PO SID for 7 days.\nGabapentin for 14 days.\nCephalexin BID for 10 days.\n\nDVM notes: Seizure upon induction.\n\nRecovery Tech Name: Layah."
+        },
+        {
+          "date": "2026-09-30",
+          "surgeryType": "Dental",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "Performed dental blocks.\nSurgical Extraction of: 103, 203, 304, 404\nFlushed sockets with chlorhexidine prior to closure with 3-0 vicryl in cruciate pattern.\nDental prophy & polish performed."
+        },
+        {
+          "date": "2026-09-30",
+          "surgeryType": "Enucleation",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "OD (right eye) enucleation.\nTranspalpebral enucleation. Removed globe, held pressure with gauze coated in epinephrine, flushed with dilute gentamicin, splashed with BL. Closed orbit tissue and skin intradermally with 2-0 PDS."
+        },
+        {
+          "date": "2026-09-30",
+          "surgeryType": "Other Surgery",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "Surgery performed under anesthesia\n\nMass biopsy."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-18",
@@ -6906,7 +6943,15 @@
           "performedBy": "Angel Hernandez & Layah Solis"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-17",
+          "surgeryType": "Canine Spay over 10lbs",
+          "surgeon": "Dr. Anna Nealy Shvil",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with Ketamine/Acepromazine IV. IM Butorphanol and SQ Meloxicam given pre-op. Maintained with Isoflurane via endotracheal tube. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Carprofen 4.4mg/kg PO SID x 3 doses. Start tomorrow evening."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-18",
@@ -8049,7 +8094,15 @@
           "performedBy": "Jocelyn Fonseca"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-24",
+          "surgeryType": "Canine Spay over 10lbs",
+          "surgeon": "Dr. Anna Nealy Shvil",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with Ketamine/Acepromazine IV. IM Butorphanol and SQ Meloxicam given pre-op. Maintained with Isoflurane via endotracheal tube. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Carprofen 4.4mg/kg PO SID x 3 doses. Start tomorrow evening."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-24",
@@ -9681,7 +9734,15 @@
           "performedBy": "Carri, Sam, Sam"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening. \n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-22",
@@ -16638,7 +16699,15 @@
           "performedBy": "Carri, Sam, Sam"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening.\n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-22",
@@ -18088,7 +18157,15 @@
           "performedBy": "Jackie(EmailBot)"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-22",
+          "surgeryType": "Feline Neuter",
+          "surgeon": "Dr. Christianne Hawley",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Routine neuter performed. Lidocaine/Buvicaine splash applied to incision. No suture removal needed. Tattoo line made near incision.\n\nExtra RX: Send home a week of gabapentin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-19",
@@ -18217,7 +18294,15 @@
           "performedBy": "APA Tech"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-10-01",
+          "surgeryType": "Canine Neuter over 10lbs",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL. \n\nSedated with Ketamine/Acepromazine IV.  IM Butorphanol and SQ Meloxicam given pre-op.  Maintained with Isoflurane via endotracheal tube. Routine neuter performed. Lidocaine/Buvicaine splash applied prior to skin closure.  Absorbable sutures used - no suture removal required. Tattoo line made near the incision line.\n\nTake Home Pain Med - Carprofen 4.4mg/kg PO SID x 3 doses. Start tomorrow evening.\n\nRecovery Tech Name: Ken."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-21",
@@ -27135,7 +27220,15 @@
           "performedBy": "Kayleigh & Emma"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-21",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Christianne Hawley",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-19",
@@ -29646,7 +29739,15 @@
           "performedBy": "Carri, Sam, Sam"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Feline Neuter",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Routine neuter performed. Lidocaine/Buvicaine splash applied to incision. No suture removal needed. Tattoo line made near incision.\n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-22",
@@ -35730,7 +35831,15 @@
           "performedBy": "Jackie(EmailBot)"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-19",
@@ -38684,7 +38793,15 @@
           "performedBy": "APA! Tech"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Canine Spay over 10lbs",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with Ketamine/Acepromazine IV. IM Butorphanol and SQ Meloxicam given pre-op. Maintained with Isoflurane via endotracheal tube. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Carprofen 4.4mg/kg PO SID x 3 doses. Start tomorrow evening.\n\nDVM notes: No problems seen w/ paw pads.\nExtra RX: Can use udder balm.\n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-17",
@@ -40878,7 +40995,15 @@
           "performedBy": "vet tech"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-21",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Christianne Hawley",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-17",
@@ -51883,7 +52008,15 @@
           "performedBy": "Park n poke"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-28",
+          "surgeryType": "Canine Spay over 10lbs",
+          "surgeon": "Dr. Alexis Bardzinski",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with Ketamine/Acepromazine IV. IM Butorphanol and SQ Meloxicam given pre-op. Maintained with Isoflurane via endotracheal tube. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Carprofen 4.4mg/kg PO SID x 3 doses. Start tomorrow evening.\n\nRecovery Tech Name: Kaylin."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-08-02",
@@ -53604,7 +53737,15 @@
           "performedBy": "Jackie(EmailBot)"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-22",
+          "surgeryType": "Feline Neuter",
+          "surgeon": "Dr. Christianne Hawley",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Routine neuter performed. Lidocaine/Buvicaine splash applied to incision. No suture removal needed. Tattoo line made near incision."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-19",
@@ -64268,7 +64409,15 @@
           "performedBy": "Jackie(EmailBot)"
         }
       ],
-      "surgeries": [],
+      "surgeries": [
+        {
+          "date": "2026-09-29",
+          "surgeryType": "Feline Spay",
+          "surgeon": "Dr. Christianne Hawley",
+          "clinic": "APA! Medical Clinic",
+          "memo": "PE: mmpk, CRT less than 2sec, RR WNL. H/L WNL.\n\nSedated with DKT IM. SQ Metacam given pre-op. Maintained with isoflurane via mask. Routine ovariohysterectomy performed. Lidocaine/Buvicaine splash applied prior to skin closure. Absorbable sutures used - no suture removal required. Tattoo line made near incision.\n\nTake Home Pain Med - Meloxicam 1.5mg/ml PO SID for 72 hours. Start tomorrow evening.\n\nRecovery Tech Name: Kn."
+        }
+      ],
       "treatments": [
         {
           "date": "2026-07-19",

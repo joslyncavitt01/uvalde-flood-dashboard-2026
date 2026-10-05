@@ -195,7 +195,18 @@ def parse_date(s):
         return None
 
 
-def load_file(client, path, force=False):
+def to_json_safe(v):
+    """BigQuery query results can hand back native date/datetime objects (for whichever
+    column autodetect typed as DATE) that load_table_from_json can't serialize -- convert
+    back to the same MM/DD/YYYY string shape rows_out already uses, everything else as-is."""
+    if isinstance(v, datetime):
+        return v.date().strftime("%m/%d/%Y")
+    if isinstance(v, date):
+        return v.strftime("%m/%d/%Y")
+    return v
+
+
+def load_file(client, path, force=False, merge=False):
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb.active
     headers = [c.value for c in ws[1]]
@@ -224,7 +235,7 @@ def load_file(client, path, force=False):
     # 2026-09-17: a same-day batch of 5 reports that all started 8/1+ wiped every table's
     # 7/13-7/31 flood-week history at once). Refuse to proceed when that's about to happen.
     date_col = DATE_COLUMN.get(kind)
-    if date_col and not force:
+    if date_col and not force and not merge:
         new_dates = [d for d in (parse_date(r.get(date_col)) for r in rows_out) if d]
         new_min = min(new_dates) if new_dates else None
         try:
@@ -253,10 +264,37 @@ def load_file(client, path, force=False):
                 f"{existing_min}-to-{new_min} window (full-table replace, not additive)."
             )
             print(
-                f"  Pull a report covering back to at least {existing_min} and re-run, or "
-                f"pass --force to load anyway and accept the loss."
+                f"  Pull a report covering back to at least {existing_min} and re-run, or pass "
+                f"--merge to union this file with what's already in the table (safe when the "
+                f"new file is a non-overlapping continuation window), or --force to load anyway "
+                f"and accept the loss."
             )
             return
+
+    if merge:
+        # Union with whatever's already in the table instead of requiring a fresh full-range
+        # export -- safe as long as the new file doesn't overlap the existing date range (a
+        # same-event row appearing in both would get double-counted; this only dedupes EXACT
+        # duplicate rows, not near-duplicates from genuinely overlapping windows).
+        bq_cols = list(field_map.values())
+        try:
+            existing_rows = list(client.query(
+                f"SELECT {', '.join(bq_cols)} FROM `{table_ref}`"
+            ).result())
+        except Exception as e:
+            print(f"  ERROR: --merge requested but couldn't read existing {table_name} rows ({e}). Aborting, nothing loaded.")
+            return
+        existing_dicts = [{c: to_json_safe(r[c]) for c in bq_cols} for r in existing_rows]
+        seen = set()
+        combined = []
+        for row in existing_dicts + rows_out:
+            key = tuple(row.get(c) for c in bq_cols)
+            if key in seen:
+                continue
+            seen.add(key)
+            combined.append(row)
+        print(f"  Merging {len(existing_dicts)} existing rows + {len(rows_out)} new rows -> {len(combined)} rows after exact-duplicate dedup")
+        rows_out = combined
 
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_TRUNCATE",
@@ -270,10 +308,11 @@ def load_file(client, path, force=False):
 
 def run(paths):
     force = "--force" in paths
-    paths = [p for p in paths if p != "--force"]
+    merge = "--merge" in paths
+    paths = [p for p in paths if p not in ("--force", "--merge")]
     client = bigquery.Client(project=PROJECT)
     for path in paths:
-        load_file(client, path, force=force)
+        load_file(client, path, force=force, merge=merge)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:13:12Z",
+  "lastUpdated": "2026-10-05T15:16:24Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -623,7 +623,7 @@
     "nexgardDoses": 63,
     "fleaPreventionTotal": 716,
     "dewormed": 456,
-    "spayNeuterSurgeries": 133,
-    "otherSurgeries": 9
+    "spayNeuterSurgeries": 149,
+    "otherSurgeries": 12
   }
 }

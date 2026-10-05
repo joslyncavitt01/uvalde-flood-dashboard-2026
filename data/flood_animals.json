@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-10-04T23:01:27Z",
+  "lastUpdated": "2026-10-05T01:21:18Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
-    "On Property": 12,
-    "In Foster (Available for Adoption)": 24,
+    "On Property": 11,
+    "In Foster (Available for Adoption)": 25,
     "In Foster (Unavailable for Adoption)": 11,
     "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 257,
@@ -13,7 +13,7 @@
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 241,
-    "On Property (Available)": 11,
+    "On Property (Available)": 10,
     "On Property (Unavailable)": 1
   },
   "byDay": [
@@ -86,8 +86,8 @@
     {
       "date": "2026-07-19",
       "total": 67,
-      "On Property": 3,
-      "In Foster (Available for Adoption)": 1,
+      "On Property": 2,
+      "In Foster (Available for Adoption)": 2,
       "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 40,
@@ -226,8 +226,8 @@
       "nwsZone": null,
       "firstIntake": "2026-07-18",
       "lastIntake": "2026-07-27",
-      "On Property": 1,
-      "In Foster (Available for Adoption)": 2,
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 3,
       "In Foster (Unavailable for Adoption)": 1,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 31,
@@ -271,24 +271,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "City of Dilley",
-      "total": 14,
-      "dogs": 12,
-      "cats": 2,
-      "city": "Dilley",
-      "county": "Frio",
-      "nwsZone": null,
-      "firstIntake": "2026-07-13",
-      "lastIntake": "2026-07-18",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 3,
-      "Transferred Out": 11,
-      "Deceased": 0
-    },
-    {
       "shelter": "Asherton Animal Control Center",
       "total": 14,
       "dogs": 14,
@@ -304,6 +286,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 8,
       "Transferred Out": 0,
+      "Deceased": 0
+    },
+    {
+      "shelter": "City of Dilley",
+      "total": 14,
+      "dogs": 12,
+      "cats": 2,
+      "city": "Dilley",
+      "county": "Frio",
+      "nwsZone": null,
+      "firstIntake": "2026-07-13",
+      "lastIntake": "2026-07-18",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 3,
+      "Transferred Out": 11,
       "Deceased": 0
     },
     {
@@ -455,17 +455,17 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 1 - Dog",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "property": "TLAC",
       "area": "Cat Intake Room",
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "property": "TLAC",
+      "area": "Building 1 - Dog",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "property": "TLAC",
@@ -479,8 +479,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 11,
-      "dogs": 5,
+      "total": 10,
+      "dogs": 4,
       "cats": 6
     },
     {
@@ -500,8 +500,8 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 6,
-      "dogs": 6,
+      "total": 7,
+      "dogs": 7,
       "cats": 0
     },
     {

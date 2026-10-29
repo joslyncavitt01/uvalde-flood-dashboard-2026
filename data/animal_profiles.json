@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T16:06:59Z",
+  "lastUpdated": "2026-10-29T16:08:45Z",
   "buckets": [
     "On Property",
     "In Foster (Available for Adoption)",
@@ -3946,6 +3946,18 @@
           "plan": "per diarrhea protocol rx metro SID x5d, panacur SID x5d.",
           "newDiagnoses": null,
           "performedBy": "Eric Gosin"
+        },
+        {
+          "date": "2026-10-02",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Pt having #6 in kennel after flooding event on campus, continuing to e/d well, energy levels normal.",
+          "objective": null,
+          "assessment": null,
+          "plan": "per diarrhea protocol rx metro SID x5d, panacur SID x5d.",
+          "newDiagnoses": null,
+          "performedBy": "Eric Gosin"
         }
       ],
       "surgeries": [
@@ -4396,6 +4408,30 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Dr. Shvil"
+        },
+        {
+          "date": "2026-10-26",
+          "examType": "Brief Vet Exam",
+          "vetOrTech": "Vet Exam",
+          "reason": "See Note",
+          "subjective": "Pt here for HW Tx X-rays. \n\nPt e/d well. \nProperly u/d with no blood or mucous in stool. \nPA mentioned pt coughing/hacking 1-2 times a day while resting. \nNo V/S/D.",
+          "objective": "BAR, gums pink, no cough elicited on tracheal palpation, no murmur or harsh lung sounds heard on auscultation.",
+          "assessment": "Mild cough d/t environmental hypersensitivity vs hw vs other",
+          "plan": "Unable to get x-rays, d/t patients condition and mild bouts of coughing elected to not sedate for xrays as it wouldn't change plan and based on exam findings patient most likely does not have radiographic  changes.\n\nTold PA that if they hear any increasing in frequency on coughs/hacking, inappetence, and lethargy that they could contact the clinic and to set up appt for 2 injection immiticide heartworm injection protocol, if so we can premed with 30mg/kg gaba before appt and take radiographs at same appt.",
+          "newDiagnoses": null,
+          "performedBy": "Dr. Bardzinski and Kathryn Guerra"
+        },
+        {
+          "date": "2026-10-07",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Heartworm-positive dog coughing frequently at rest; adopter asked about heartworm.\n10/3: Adopter Cole reported T Shirt Cannon coughing a lot when not exercising and asked about heartworm. Dog Support (Jennifer) looped in medical support.\n10/7: Dog Support asked Cole whether they have spoken with the clinic yet. No reply from Cole.\n\n[medsupport-issue 1a102e84:tshirtcannon-cough]",
+          "objective": "10/4: Medical support advised Cole to call the clinic (512-466-0720) for a vet exam. Gave call-now red flags: trouble breathing, pale/blue gums, collapse, nonstop coughing.\n10/7: Dog Support following up with Cole. No new medical-support action.\nNow: Awaiting Cole's reply and clinic exam.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -11091,6 +11127,18 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-06",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Week 1: His poops added bulk but had a few fully liquid poops\nWeek 2: He varied between normal poops and bulkier, but very smooth/almost mushy poops; additionally he now smells fishy/I assume he's not able to express his anal glands due to all the soft poops for an extended period\n----> He made that weird freak out jump but without walking funny on friday\n-----> 1 full day after he finished his pill probiotics he threw up breakfast and was somewhat lethargic but generally fine/awake, somewhat weak appetite day before though he ate both meals\n\nToday - he's had 1 normal poop; kind of soft but bulky enough to pick up, normal appetite\n\nLet me know what you'd like to do, he still has probiotics and fiber to finish",
+          "objective": null,
+          "assessment": null,
+          "plan": "Continue with current meds, update in another week. Requested adopter send photos of stools that are abnormal in next week to determine if may be normal for him vs true diarrhea",
+          "newDiagnoses": null,
+          "performedBy": "Alexa Borchardt"
         }
       ],
       "surgeries": [],
@@ -12839,6 +12887,18 @@
           "plan": "Intake exam completed.",
           "newDiagnoses": null,
           "performedBy": "APA! Tech"
+        },
+        {
+          "date": "2026-10-08",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Post-spay blood in urine and bright red bloody vulvar discharge; eating, normal energy, not straining.\n10/7: Blood noticed in urine.\n10/8: Bloody vulvar discharge \"like she was in heat.\" Blood is bright red, \"visible but not alarming.\" Not straining. Eating normally, normal energy.\n10/13: Pre-adopter followed up asking for a response.\n\n[medsupport-issue 1a11d8bc:snowwhite-hematuria-vulvar-bleeding]",
+          "objective": "10/8: No APA protocol governs post-spay hematuria/vulvar bleeding. Queued for vet review to decide between recheck exam/UA and monitoring.\n10/12: Still queued for vet review (exam/UA vs monitor).\n10/13: Still queued for vet review. Recommended a recheck exam.\nNow: Awaiting vet decision on recheck exam/UA vs monitoring. Pre-adopter is awaiting a response.",
+          "assessment": null,
+          "plan": "10/15 Can you send a photo of her incision now? I suspect that will heal up on its own!\u00a0\n\nSome bloody discharge is normal post spay. We would expect it to resolve over the next few weeks, and to not worsen. Please let us know if you notice those things.",
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -16244,6 +16304,18 @@
           "plan": "Intake complete.",
           "newDiagnoses": null,
           "performedBy": "Cat Intake Technician"
+        },
+        {
+          "date": "2026-10-23",
+          "examType": "Tech Exam",
+          "vetOrTech": "Tech Exam",
+          "reason": "Other - please describe thoroughly in memo",
+          "subjective": "Pt here for FVRCP and combo preventative. \nF concerned about food intake amount.\nF also concerned about watery eyes and eye boogers. \n\nPt e/d well. \nProperly u/d normally with no blood or mucous in stool. \nNo C/S/V/D.",
+          "objective": "BAR.\nDuring exam pts eyes appeared clear and had no discharge.",
+          "assessment": null,
+          "plan": "Administered FVRCP and Nexgard combo. \n\nFor food intake amount recommended 1 small bowl each of wet and dry food twice a day. Also recommended to keep pt active as well. \nFor eyes advised that it may be seasonal allergies, if they have any concerns such as colored discharge and excessive sneezing they can contact the clinic.",
+          "newDiagnoses": null,
+          "performedBy": "Kathryn Guerra"
         }
       ],
       "surgeries": [],
@@ -22405,6 +22477,18 @@
           "plan": "Rx doxycycline and erythromycin",
           "newDiagnoses": null,
           "performedBy": "Yojany Antunez"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Adopter reports clear, watery eyes in both cats (Your Mom and Favorite Pillow) persisting several days after adoption; asks whether treatment is needed.\n10/01: Adopter reports both cats have had continued clear, watery eyes for several days since adoption; first noticed at the shelter.\n10/01: On follow-up, adopter reports both cats eating and energetic; no open-mouth or difficult breathing, sneezing, congestion, nasal discharge, eye redness/swelling, squinting, or pawing. Eye discharge remains clear.\n\n[medsupport-issue 1a0f9cb3:your-mom-favorite-pillow-watery-eyes]",
+          "objective": "10/01: Asked adopter to report breathing, appetite/energy, nasal signs, eye redness/swelling, squinting/pawing, and whether discharge remains clear. Instructed to call clinic immediately if either cat has open-mouth or difficult breathing.\n10/01: Advised no treatment needed at this time per Feline URI Level Zero. Monitor; contact clinic if discharge becomes opaque, congestion develops, appetite or energy drops, or breathing becomes difficult/open-mouth.\nNow: Resolved. Adopter monitoring at home; no further action pending unless signs above develop.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [],
@@ -23728,6 +23812,18 @@
           "plan": "Rx Doxycycline and erythromycin",
           "newDiagnoses": null,
           "performedBy": "Yojany Antunez"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Adopter reports persistent clear, watery eyes in both Your Mom and Favorite Pillow; asks whether treatment is needed.\n10/01: Adopter reports both cats have had continued clear, watery eyes for several days since adoption; first noticed at the shelter.\n10/01: Adopter reports both cats eating and energetic. No open-mouth or difficult breathing, sneezing, congestion, nasal discharge, eye redness/swelling, squinting, or pawing. Eye discharge remains clear.\n\n[medsupport-issue 1a0f9cb3:your-mom-favorite-pillow-watery-eyes]",
+          "objective": "10/01: Asked adopter to report breathing, appetite/energy, nasal signs, eye redness/swelling, squinting/pawing, and whether discharge remains clear. Instructed to call clinic immediately if either cat has open-mouth or difficult breathing.\n10/01: Advised no treatment needed at this time per Feline URI Level Zero. Monitor at home; contact clinic if discharge becomes opaque, congestion develops, appetite or energy drops, or breathing becomes difficult/open-mouth.\nNow: Resolved. Adopter monitoring at home; no follow-up pending unless signs above develop.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [],
@@ -25576,6 +25672,18 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-15",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "stools persistently soft",
+          "objective": null,
+          "assessment": null,
+          "plan": "rx praziquantel x 1\nrx probiotics sid x 14d",
+          "newDiagnoses": null,
+          "performedBy": "Alexa Borchardt"
         }
       ],
       "surgeries": [],
@@ -27705,6 +27813,18 @@
           "plan": "Per protocol, start diarrhea medications.\n For congestion, advised nebulization for 10\u201315 minutes and continued monitoring.\n F advised to contact On-Call with any changes or additional concerns",
           "newDiagnoses": null,
           "performedBy": "Venancio Oribe"
+        },
+        {
+          "date": "2026-10-01",
+          "examType": "Surgery Note",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": null,
+          "objective": "Already spayed.",
+          "assessment": null,
+          "plan": "Placed tattoo. Sedated with DKT IM. SQ Metacam given pre-op.\n\nRecovery Tech Name: Ken.",
+          "newDiagnoses": null,
+          "performedBy": "Dr. Alexis Bardzinski"
         }
       ],
       "surgeries": [],
@@ -38093,6 +38213,18 @@
           "plan": "Administered FVRCP vaccine. \nRx. Terbinafine 0.3 mL PO SID x7d. \n\nPut pt back on terbinafine pulse and assess in 2w to determine if pt will need another pulse tx.",
           "newDiagnoses": null,
           "performedBy": "Dr. Bardzinski and Kathryn Guerra"
+        },
+        {
+          "date": "2026-10-05",
+          "examType": "Tech Exam",
+          "vetOrTech": "Tech Exam",
+          "reason": "Other - please describe thoroughly in memo",
+          "subjective": "Pt here for RW recheck/clearance. \n\nPt e/d well. \nProperly u/d with no blood or mucous in stool. \nNo C/V/S/D.",
+          "objective": "BAR.",
+          "assessment": "No RW seen/cleared for RW.",
+          "plan": "No further tx. needed.",
+          "newDiagnoses": null,
+          "performedBy": "Kathryn Guerra"
         }
       ],
       "surgeries": [],
@@ -39081,6 +39213,42 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-14",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Bleeding lesion on Juan's tail, reported by adopter with photo.\n10/14: Adopter noticed blood on Juan's tail; when blotted, the skin underneath \"looked unhappy.\" Photo sent. Asks whether this is like his previous skin issues or whether she should take him to her own vet.\n\n[medsupport-issue 1a13b039:juan-tail-lesion]",
+          "objective": "10/14: Queued for vet review (routine) with the photo. By size, mild under the Wound Care Protocol. Vet to decide whether it is related to the TVT or skin history, whether he needs an APA visit, and whether to dispense Capstar/-laner.\nNow: Awaiting vet review.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-07",
+          "examType": "Labwork - No Exam Performed",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "Histo results of preputial mass came back as Transmissible Venereal Tumor",
+          "objective": null,
+          "assessment": "Transmissible Venereal Tumor on prepuce",
+          "plan": "-Ordering Vincristine to start treatment. \n\nTreatment plan will be:\nVincristine 1mg/ml - 0.025mg/kg (0.68ml) IV q7d x 2 weeks past complete resolution of mass.",
+          "newDiagnoses": null,
+          "performedBy": "Alexis Bardzinski"
+        },
+        {
+          "date": "2026-10-06",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Juan bled from his enucleation site (post-op 9/30) after scratching it with a back paw despite wearing a donut collar.\n10/6: Caregiver (logged as both adopter and foster) reports Juan scratched his face at the enucleation site with a back paw past his donut-style collar, and the site is bleeding. Photo sent. Caregiver also phoned the clinic.\n10/6 5:10pm: Second photo sent after a 5-minute cold compress; bleeding looks reduced.\n10/6 6:19pm: Foster acknowledged the monitoring and hard-cone instructions (\"Phew. Will do. Thank you!\").\n\n[medsupport-issue 1a1132cb:juan-enucleation-site-bleeding]",
+          "objective": "10/6: First photo reviewed: incision line looks open/raw with fresh blood. No APA protocol covers enucleation-site wounds. Queued for urgent vet review with photo attached. Decision needed: same-day recheck for possible re-closure vs. wound care plus a hard e-collar. Card flags a seizure-safe sedation alert.\n10/6 5:17pm: Medical Support forwarded the thread and photos to vets@ and clinic@. The agent sent no reply to the foster, to avoid instructions conflicting with the vets' decision.\n10/6: Dr. B (vets@) reviewed the photos: \"looks ok, I think the glue just came off of the incision slightly.\"\n10/6: Alexa (Medical Support) told the foster to monitor and switch Juan to a hard cone so he can't scratch.\n10/6: Margrethe (Reception) noted Juan's meds are filled. Foster will pick them up the morning of 10/7 and monitor until then. No further agent action.\nNow: Foster is monitoring the site with Juan in a hard cone. Meds pickup expected the morning of 10/7. Issue remains open.",
+          "assessment": null,
+          "plan": "Per Dr. Shvil + Dr. Barz have F hold an ice pack and cool compress rag on eye for 5 minutes consistently to see if bleeding stops\nPrescribe doxy 10mg/kg po bid x 14d for possible clotting issues due to ticks",
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -39421,6 +39589,30 @@
           "plan": "Pt is clear for surgery per Dr.Gordon\nContinue to monitor to see if sneezing worsens, if thats the case will start on cetirizine.",
           "newDiagnoses": null,
           "performedBy": "Layah Solis"
+        },
+        {
+          "date": "2026-10-15",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Decreased appetite starting several days after 10/6 spay; still eating chicken and high-value treats.\n10/6: Spayed.\n10/15: Adopter reports she ate normally for several days after the spay. For the past 4-5 days she has eaten about half her regular meals but still eats chicken and high-value treats. She is chewing grass. Adopter is switching her to chicken/rice and asked whether APA wants to see her or she should go to her own vet.\n\n[medsupport-issue 1a141bfe:penelope-decreased-appetite]",
+          "objective": "10/15: Replied per Post-Op Instructions 2025: spay is complete, so ongoing care goes through the adopter's private vet. Advised stopping post-op carprofen if she is still on it and not eating (per SOP). Asked adopter to raise any APA meds with her private vet. Routed to private vet.\nNow: Resolved; care transferred to adopter's private vet.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-13",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Spay incision check at about day 7 post-op; foster asked if recovery suit can come off.\n10/06: Spayed.\n10/13: Foster reported the recovery vest came off overnight around day 7 because it was soiled, and Penelope probably licked the incision overnight. Foster sent a photo and said the incision \"looks pretty closed up (save a little glue)\". Asked whether she can go without the suit or cone, or should wear the suit a few more days.\n\n[medsupport-issue 1a135b2f:penelope-spay-incision]",
+          "objective": "10/13: Med support reviewed the photo by email: incision appears closed, with no gaping, discharge, swelling or redness; only skin glue on the line.\n10/13: Advised foster to put the suit back on, including overnight, until day 10 post-op (about 10/16), and to check the incision twice daily. Email a photo if redness, swelling, warmth, discharge or opening is seen; call the clinic if urgent.\n10/13: Foster confirmed the plan and provided the A#.\nNow: Resolved. Suit on until about 10/16; no further action unless foster reports new concerns.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -41784,6 +41976,54 @@
           "plan": "Drew blood and urine sample (cystocentesis) for SA672 to antech.\n\nContinue previously prescribed medications. May consider adding on UPC (T775) depending on the results. Plan to be updated based on results.",
           "newDiagnoses": null,
           "performedBy": "Rachel Gordon"
+        },
+        {
+          "date": "2026-10-27",
+          "examType": "Tech Exam",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "pt presented for spay surgery and UA.",
+          "objective": "Method of collection: Cysto ( Dr.Hawley)\nLeukocytes- neg\nNitrite- neg\nUrobinogen- 3.4\nProtein- trace\nPLT- 6.5\nBlood- neg\nGravity- 1.030\nAscorbate- 5.7\nKetone- neg\nBilirbin- 17+\nGlucose- 5",
+          "assessment": null,
+          "plan": "Blood drawn (0.5 Red & 1 Purple) for SA600.",
+          "newDiagnoses": null,
+          "performedBy": "Camille Trask"
+        },
+        {
+          "date": "2026-10-14",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Foster-to-adopt asking whether Iced Coffee needs a kidney-support diet until the bloodwork recheck.\n10/13: Foster-to-adopt Suzy asked if Iced Coffee should eat a specific diet to support kidney health until the bloodwork recheck. Suzy also wants to hold off on finalizing the adoption until kidney health is clearer (adoption question sent to matchmaker).\n\n[medsupport-issue 1a13baeb:iced-coffee-kidney-diet]",
+          "objective": "10/14: Queued for vet review: should Iced Coffee be on a kidney-support diet before the 10/27 BW recheck? No renal diagnosis on record.\n10/14: Per reception, BW recheck to be drawn at the 10/27 spay.\nNow: Awaiting vet decision on kidney-support diet; BW recheck planned at 10/27 spay; adoption finalization on hold pending kidney results (with matchmaker).",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-12",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Matchmakers require a bloodwork recheck before Iced Coffee's adoption is finalized; adopter has questions about kidney diet and paperwork timing.\n10/12: Matchmaker team (Macy) reported Iced Coffee needs her bloodwork rechecked before her adoption is finalized. They asked the clinic to help adopter Suzy Wheal schedule it and to answer her medical questions. Suzy asked for the bloodwork results so far.\n10/13: Suzy received the 9/8 lab results. She asked whether to feed a specific diet for kidney health until the recheck, and whether the adoption paperwork can wait until Iced Coffee's kidney health is clearer.\n\n[medsupport-issue 1a131542:iced-coffee-bloodwork-recheck]",
+          "objective": "10/12: Escalated to clinic staff to book the bloodwork recheck and send the existing lab results and medical record to the adopter. Staff to confirm which test is needed with the DVM or case manager, and whether to draw it at the SX drop-off already booked for 10/27 in Waitwhile or at a separate visit. Nothing had been sent to the adopter at that point.\nNote: The specific bloodwork needed is not documented in the record. The only lab result visible in ShelterLuv is a HW SNAP negative on 8/2/26. The 9/8 lab results the adopter received are not visible in ShelterLuv.\n10/13: Reception confirmed the plan: bloodwork recheck at the spay on 10/27. The diet question is queued for vet review (no confirmed renal diagnosis on record). The paperwork-timing question belongs to Matchmakers and goes to matchmaker@ when the vet's answer is relayed.\nNow: Awaiting vet answer on the diet question, to be relayed to Suzy along with the paperwork question to matchmaker@. The bloodwork recheck is planned for the 10/27 spay. Which specific test to run is not yet documented.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Sponsor Kathryn is paying for Iced Coffee's kidney/proteinuria recheck bloodwork.\n9/27: Kathryn offered to sponsor the full bloodwork recheck (approx. $60). Asked to be sent a payment link and notified when the recheck occurs.\n10/1: Kathryn reported submitting the $60 payment for the sponsored full bloodwork.\n\n[medsupport-issue 1a083311:iced-coffee-kidney-proteinuria-recheck]",
+          "objective": "9/29: Existing in-thread vet plan already authorizes the recheck. Escalated to staff to coordinate the shelter-side lab draw and sponsor payment/tracking. No upcoming Iced Coffee appointment confirmed.\n10/1: Clinic Services sent Kathryn the payment link.\n10/2: Payment confirmation received. No email reply needed.\nNow: Sponsored recheck bloodwork paid, not yet drawn. No lab draw date confirmed. Kathryn asked to be notified when it occurs.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -42900,6 +43140,18 @@
           "plan": "OK to complete doxycycline course (completes 28d course for HW+).\n\nRx: Prednisone 20mg 1T PO SID x7d, 0.5T PO SID x7d, 0.5T PO EOD x7d.\n\nRecheck rads (1hr appt) in approximately 2 weeks (before steroid taper ends.",
           "newDiagnoses": null,
           "performedBy": "Rachel Gordon and Olivia Nutter"
+        },
+        {
+          "date": "2026-10-02",
+          "examType": "Brief Vet Exam",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "recheck cough - patients cough has improved to only coughing once every 3 days. Otherwise doing well.",
+          "objective": "bar, sweet, heart/lungs wnl, bcs 6/9\nRads of chest reveal mild airway inflammation, heart is somewhat more prominent (reverse D and left heart a little more prominent) but this could also be positioning.",
+          "assessment": "hw disease causing cough/inflamed airways +/- heart enlargement",
+          "plan": "Go over fast kill heartworm treatment with adopters as I recommend doing 2 inj fast kill protocol to get the worms killed to help with lung inflammation and decrease risk of heart damage.\n-set up hw injections per protocol, if after 28 days of last injection patient is doing well, then can schedule neuter surgery.",
+          "newDiagnoses": null,
+          "performedBy": "Alexis Bardzinski and Kaylin Vrabel"
         },
         {
           "date": "2026-10-02",
@@ -44091,6 +44343,18 @@
           "reason": null,
           "subjective": "Foster requested multiple monthly doses of Roro\u2019s flea/tick and heartworm preventatives.\n9/27: Asked to pick up 2\u20133 doses for early October and requested the pickup location; acknowledged the instructions with thanks.\n\n[medsupport-issue 1a0e5558:roro-preventatives-refill]",
           "objective": "9/27: Confirmed existing monthly flea/tick and heartworm prevention orders. Advised foster to request three monthly doses through the clinic Rx waitlist and provided the APA! Medical Clinic pickup location; pickup is after the clinic confirms medication is ready.\nNow: Resolved; foster has refill-request and pickup instructions.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-04",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Foster reports Roro is extremely fearful and stays in her crate almost constantly; foster asked whether anxiety medication is appropriate.\n10/2: Foster Irina reports Roro is extremely timid and terrified of almost everything. Roro spends essentially all her time in her crate and is too scared to come out or engage. Eating, drinking, and sleeping normally. Foster asked whether anxiety medication or other medical support is appropriate, or whether Roro needs an evaluation first.\n\n[medsupport-issue 1a0ff5af:roro-fear-anxiety]",
+          "objective": "10/4: Queued for routine vet review to decide between starting a behavior med (per Anxiety/Behavior Medication Protocol Canine 2024) and doing behavior modification, a BT consult, or an exam first.\n10/5: Medical support (Alexa) sent a consult to vets@ proposing a 28-day course at 43.4 lb: trazodone 150 mg PO BID, gabapentin 600 mg PO BID, fluoxetine 30 mg PO SID, with a behavior update in 3 weeks.\n10/5: Dr. B approved the plan.\n10/5: Plan relayed to foster. Foster directed to the clinic Rx waitlist for the fill.\nNow: Awaiting Rx fill through the clinic waitlist. Behavior update due ~10/26 for refill and dose decisions.",
           "assessment": null,
           "plan": null,
           "newDiagnoses": null,
@@ -46325,6 +46589,18 @@
           "plan": "Patient received routine vaccinations and rabies vaccine",
           "newDiagnoses": null,
           "performedBy": "Stacey Lewis"
+        },
+        {
+          "date": "2026-10-06",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "F called to report day after neuter pt is overly hyperactive after trying the surgery suit, soft suit and now the hard E collar with no ability to calm him down :( requesting medication",
+          "objective": null,
+          "assessment": null,
+          "plan": "Per Rebecca give gaba + traz bid x5d",
+          "newDiagnoses": null,
+          "performedBy": "Margrethe Johnsen"
         }
       ],
       "surgeries": [
@@ -46609,6 +46885,30 @@
           "plan": "Schedule for recheck radiographs of carpus in 8 weeks - need to get a straight view and stressed view.\nPt is a potential candidate for a carpal arthrodesis depending on how it continues to heal. The procedure would be difficult, and would potentially require a ring fixture.\nHolding off on chip-in/surgery plan pending recheck.\n\nPt chewed on foot while e-collar was off and caused bleeding. Applied SSD cream and wrapped in a soft bandage for transport home. Foster will keep wound clean with betadine wipes and will keep e-collar on with supervised breaks.",
           "newDiagnoses": null,
           "performedBy": "Dr. Key and Elaina Johnson"
+        },
+        {
+          "date": "2026-10-17",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Rebecca reopened and deepened the wound on her front paw; adopter was told meds would be ready but had not heard back.\n10/16: Adopter (Kaitlyn Kennedy / Douglas Bell) called the after-hours emergency line at night about Rebecca reopening and deepening the front paw wound. They were told to expect a call about a medication that would be ready for pickup.\n10/17: Adopter reported no call back yet. Sent 5 photos of the wound, before and after cleaning.\n\n[medsupport-issue 1a14aaa0:rebecca-paw-wound]",
+          "objective": "10/17: Photo review showed an open wound on the front paw, roughly 1-1.5 in, with red surrounding skin. No black tissue or maggots visible. Graded at least Moderate per the Wound Care Protocol (deeper than broken skin). Queued for urgent vet review to decide antibiotic/pain med, closure/bandage, and recheck. Weight unknown; needed for dosing.\n10/17: Dr. Rachel Gordon ordered cephalexin, gabapentin, and carprofen x14d in ShelterLuv. Filled 10/17 (SN).\n10/18: Medical Reception replied to the adopter on the thread that the meds are filled and ready for pickup at the clinic. No reply sent from medsupport because the staff plan covers the adopter's question.\nNow: Meds ready for pickup at the clinic. Issue stays open until the wound is rechecked.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-16",
+          "examType": "After-Hours Emergency Call",
+          "vetOrTech": "Vet Exam",
+          "reason": "See Note",
+          "subjective": "Pre-adopter reports that patient completely destroyed and removed e-collar and has resumed chewing her previously affected left front paw. She stated that wound appears deeper than observed and wanted to know if it was something that required immediate evaluation or schedule appointment tomorrow.",
+          "objective": "Wound reportedly appears deeper per pre-adopter. Requested photos of wound for further assessment.",
+          "assessment": "Recurrent self-trauma to front left paw with concern or worsening wound.",
+          "plan": "-As per Dr. Gordon advised pre-adopter to clean with betadine and apply any available Polysporin, Neosporin, or triple antibiotic ointment. \n-Recommended purchasing a replacement e-collar from emergency clinic tonight.\n-Cephalexin, gabapentin, and carprofen to be filled for pickup tomorrow morning.",
+          "newDiagnoses": null,
+          "performedBy": "Ruth Herrera Franco"
         }
       ],
       "surgeries": [
@@ -49051,6 +49351,18 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-01",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Painful swollen mammary glands with pus-like nipple discharge one week after spay.\n10/1: Foster reported swelling and pain of the mammary glands, pus-like fluid from multiple nipples, incessant licking, whimpering/crying, and mild lethargy. Eating and drinking normally. Spay incision slightly red without visible pus.\n10/2: No new symptoms reported since 10/1.\n\n[medsupport-issue 1a0f81d6:rhonda-mammary-swelling-discharge]",
+          "objective": "10/1: Queued for vet review to determine exam and treatment needs; two photos and an email-thread video were available for review.\n10/2: Medical Support forwarded the case and media for veterinary guidance regarding antibiotics versus an in-person exam.\n10/2: Dr. B authorized doxycycline twice daily for 14 days. Plan was relayed to the foster, who confirmed submitting the clinic prescription waitlist form for Rhonda (APA-A-196070).\nNote: No doxycycline strength or milligram dose was documented in the thread.\nNow: Doxycycline is authorized and the clinic prescription waitlist form has been submitted.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [
@@ -50997,6 +51309,18 @@
           "objective": "9/16/26: Dog Support requested a photo or video.\n9/16/26: Photo received, reviewed, and retained in the email thread. Foster was asked whether the bump had grown quickly, bled, or opened.\n9/16/26: Photo reviewed against Mass Dx and Tx Protocol 2024 (OFFICIAL); the image did not conclusively meet a protocol classification. Photo and need for an exam queued for vet review.\n9/16/26: Medical Support requested another photo with the bump circled.\nNow: Awaiting a photo with the bump circled and vet review.",
           "assessment": null,
           "plan": "mass appears to be part of vulva, requested additional photos \nrx metronidazole sid x 5d for diarrhea",
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-19",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Increased itching with a small round patch of hair loss near the elbow, worsening over several days.\n10/19: Foster reports British Taxi is itching much more than usual, with hair loss near her elbow that has gotten much worse over the last few days. The first photo showed a small round bald patch on the lateral chest/elbow area. Follow-up close-up photos show a single well-defined round patch of hair loss near the elbow.\n10/19: Answers to screening questions: the spot is not red, with no scabs and no odor. The skin feels \"pretty dry.\" She scratches \"a good bit,\" mostly at her neck, not at her ears, paws, or belly. Foster reports flea/HW prevention was last given 9/28.\n\n[medsupport-issue 1a15628b:british-taxi-itching-hairloss]",
+          "objective": "10/19: Triaged under the Dog Hairloss/Itching Protocol 2024; she does not meet the severe-branch criteria. Asked the foster for a close-up photo, any signs of skin infection, whether she is itchy anywhere else, and the date of her last flea/HW prevention.\n10/19: After the foster replied: severe criteria are still not met, and the foster reports no clear signs of secondary infection. Diagnostics (skin scrape/tape test, pinnal-pedal reflex, Wood's lamp) and itch relief require an in-person visit. Advised walk-in clinic Wed 10/21, 11am-4pm, or calling 512-466-0720 to set another time. Gave the call-sooner signs: rapid spread, swollen face/paws, bloody scabs or open sores. Cc'd reception.\nNote: ShelterLuv shows the 8/5 Simparica/ivermectin entries as overdue, but the foster reports prevention was last given 9/28.\nNow: Open. Waiting for her to be seen at walk-in clinic on 10/21, or for the foster to call and schedule another time, for diagnostics and itch relief.",
+          "assessment": null,
+          "plan": null,
           "newDiagnoses": null,
           "performedBy": "Jackie(EmailBot)"
         }
@@ -54914,6 +55238,18 @@
           "objective": "BAR (doing amazing!), mm pink/moist, CRT<2s. No oculonasal discharge. AU wnl. LNs palpate wnl. H/L sounds wnl. Abdomen palpates soft with no pain or mass effect. Fur and skin appear clean and healthy.",
           "assessment": "Juvenile cellulitis (responding well to treatment -- Currently tapering off steroids)",
           "plan": "Administered DAPP (RF SQ) and RV (RH SQ) during appointment. Performed TNT during appointment.\n\nContinue previously prescribed Prednisolone 3mg/mL 0.6mL PO SID x14d, then 0.6mL PO EOD x7d.\n\nRecheck in person in 14d.",
+          "newDiagnoses": null,
+          "performedBy": "Rachel Gordon"
+        },
+        {
+          "date": "2026-10-08",
+          "examType": "Brief Vet Exam",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "Pt present for a recheck due of puppy strangle. F reports of no concerns. pt have been doing well at home with no clinical sign of strangle.",
+          "objective": "BAR (doing amazing!), mm pink/moist, CRT<2s. No oculonasal discharge. AU wnl. LNs palpate wnl. H/L sounds wnl. Abdomen palpates soft with no pain or mass effect. Fur and skin appear clean and healthy.",
+          "assessment": "Juvenile cellulitis (responding well to treatment -- Currently tapering off steroids).",
+          "plan": "Continue previously prescribed Prednisolone 3mg/mL  0.6mL PO EOD x7d, then discontinue.\n\nReaching out to s/n to schedule spay.\n\nOtherwise okay to follow up with private full service veterinarian moving forward.",
           "newDiagnoses": null,
           "performedBy": "Rachel Gordon"
         }
@@ -60784,6 +61120,30 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Nealy   Shvil"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Left eye surgery-site wound (hole) healing well; adopter asking whether to stop cleaning and next steps as cefpodoxime course ends.\n9/20: Hole closed.\n9/23: Mild swelling at site, no rupture; swelling steadily decreasing since.\n10/5: Adopter Harley Walker reports site now barely visible. Last cefpodoxime dose given tonight (10/5). Currently cleaning site once daily. Asks whether to stop cleaning and what next steps are. Sent 4 photos.\n\n[medsupport-issue 1a10dffc:tony-left-eye-wound]",
+          "objective": "10/5: Queued for vet review (routine) with the 4 photos. Questions: whether to stop cleaning, and whether any recheck is needed after antibiotics end. Wound Care Protocol 2024 does not cover this.\nNow: Awaiting vet reply on stopping cleaning and need for post-antibiotic recheck.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-06",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "foster emailed picture of eye that is healed and no discharge has been present since 9/20.",
+          "objective": null,
+          "assessment": null,
+          "plan": "ok to finish out cefpodoxime and stop cleaning the eye.",
+          "newDiagnoses": null,
+          "performedBy": "Alexis Bardzinski"
         }
       ],
       "surgeries": [
@@ -63725,6 +64085,42 @@
           "plan": "Advised F to have pt ingest 3-4 slices of bread to surround the glass and help it pass comfortably through bowel movements. Told F to monitor for any signs of vomiting, lethargy, abdominal pain, and loss of appetite. Have reception call in the AM to check if pt has passed stool yet.",
           "newDiagnoses": null,
           "performedBy": "Kathryn Guerra"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Left hind leg limp, worst after rest and improving with activity.\n10/5: Foster reports a left hind limp, very noticeable after getting up from long naps, sitting, or the sofa; improves on walks. Videos sent as Drive links.\n\n[medsupport-issue 1a10e2c5:basil-lh-limp]",
+          "objective": "10/5: Queued for vet review (first limp eval / Limping Protocol Rx decision).\n10/6: Escalated to staff, who are mid-reply on the thread. Limp not yet classified per Limping Protocol Step 1; foster's Drive videos could not be viewed here. First limp eval is a walk-in item.\nNow: Open. Awaiting staff reply on thread and Limping Protocol Step 1 classification; first limp eval to be done as walk-in.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-09",
+          "examType": "Tech Exam",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "Reported ear issues, no overall itching. limping after sitting in hip area as well, as talked about weightloss goals",
+          "objective": null,
+          "assessment": "BNT, carprofen for ears, and for the hips, email recheck in 10 days for both issues",
+          "plan": "Carprofen \nBNT OU\nWeightloss goal of 5lbs to start this next month",
+          "newDiagnoses": null,
+          "performedBy": "Rebecca"
+        },
+        {
+          "date": "2026-10-06",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Basil: frequent head shaking with foul-smelling yellow ear discharge.\n10/5: Foster (Kaustubh Lad) reports Basil shaking her head frequently; ears have a slimy, wax-like yellow discharge that smells foul. Videos/photos sent via Google Drive links (not viewable by medical support).\n10/10: No new foster message since 10/5.\n\n[medsupport-issue 1a112404:basil-ears]",
+          "objective": "10/6: Medical reception directed foster to Wednesday walk-in clinic (11am-4pm) on 10/7. Ear Problems Protocol 2024 (clean, BNT ear pack, +/- carprofen if painful) is clinic-administered, consistent with this plan. No further action by medical support.\n10/9: Seen at clinic appointment (Waitwhile COMPLETE).\nNote: Record shows no ear-specific medication after the 10/9 visit; staff should confirm the ears were addressed.\n10/10: No email reply sent; thread closed, no action.\nNow: Awaiting staff confirmation that the ears were addressed at the 10/9 visit.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [],
@@ -63908,6 +64304,30 @@
           "plan": null,
           "newDiagnoses": null,
           "performedBy": "Dr. Bardzinski"
+        },
+        {
+          "date": "2026-10-22",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Diarrhea since 10/18 and vomiting since 10/20, with blood in the vomit twice.\n10/18: Diarrhea began. Still ongoing as of 10/22.\n10/20: Vomiting began in the evening. Blood in vomit that evening.\n10/21: Last ate (per report).\n10/22: Blood in vomit again in the morning. Did not eat in the morning. Ate cheeseburger meat in the afternoon. Otherwise BAR. No current meds. Reported to reception.\n\n[medsupport-issue 1a1650ba:snailgirl-vomiting-blood-diarrhea]",
+          "objective": "10/22: Dr. G (vets@) said Jenny has been working this case since the morning of 10/22. Dr. G asked reception to check with Jenny on status.\n10/22: Medical support escalated to a human for a status update and to confirm the plan reached the foster. Medical support sent nothing to the foster.\nNow: Awaiting a status update from Jenny and confirmation that the plan reached the foster.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
+        },
+        {
+          "date": "2026-10-22",
+          "examType": "medsupport email communication",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "Snail Girl: diarrhea since Sunday 10/18, now vomiting blood; foster is in San Antonio.\n10/22: Foster reports diarrhea since Sunday (10/18) and now vomiting blood. Foster is in San Antonio and asked if there is an approved place there to take her. Foster had already called the clinic, left a voicemail, and sent a text.\n10/22: No new information from foster after first report.\n10/26: No new foster message. Med managers report foster was taking Snail Girl to a vet near them in San Antonio.\n\n[medsupport-issue 1a164a26:snailgirl-vomiting-blood-diarrhea]",
+          "objective": "10/22: Emergency criteria met per Foster Dog Medical Needs Handout (vomiting + diarrhea in combination). Foster told to call the clinic now at 512-466-0720 as an emergency, or the after-hours line 737-384-2994 if needed. Foster told APA! has no approved San Antonio partner clinic, outside care needs team approval first, and the clinic team will decide where she is seen. Medical reception cc'd to expect the call.\n10/22 2:17pm: Medical reception (Chelsea) told foster the case was sent to the APA vets and reception will follow up with an update.\n10/26: Alexa (medical support) asked med managers/reception to confirm follow-up and that a PE was added. Jenny (med managers) confirmed they reached out; foster was going to a local vet; Jenny will reach out again.\nNow: Open. Med managers own follow-up; awaiting APA vets' outcome and results of the local San Antonio vet visit.",
+          "assessment": null,
+          "plan": null,
+          "newDiagnoses": null,
+          "performedBy": "Jackie(EmailBot)"
         }
       ],
       "surgeries": [],
@@ -66072,6 +66492,42 @@
           "objective": "*picture uploaded into SL*",
           "assessment": null,
           "plan": "Rx: Doxycycline 100mg 2.5T PO SID x7d.\nRx: Carprofen 100mg 1T PO SID x7d.\nRx: Cetirizine 10mg 3T PO SID x7d.\n\nUpdate in 7d or sooner if worsening.",
+          "newDiagnoses": null,
+          "performedBy": "Rachel Gordon"
+        },
+        {
+          "date": "2026-10-01",
+          "examType": "Email or Phone correspondence (no PE)",
+          "vetOrTech": "Tech Exam",
+          "reason": null,
+          "subjective": "sleepover foster experiencing loose stool since going to new home",
+          "objective": null,
+          "assessment": null,
+          "plan": "Starting diarrhea protocol",
+          "newDiagnoses": null,
+          "performedBy": "Margrethe Johnsen"
+        },
+        {
+          "date": "2026-10-28",
+          "examType": "TLAC VET ROUNDS EXAM",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "Check LH (F states sitting abnormally; no lameness reported).",
+          "objective": "BAR (friendly guy), mm pink/moist, CRT<2s. Ambulatory x4 with no obvious lameness. Good muscling in both hind limbs, no swelling or instability palpated in hind limbs. When patient sits down, he swings his right limb underneath him. ROM of RH stifle stiff compared to other joints, hip and stifle ROMs wnl. LH ROMs wnl.",
+          "assessment": "Suspect previous trauma to RH stifle (stable at this time)",
+          "plan": "No treatment indicated at this time since patient is not symptomatic.",
+          "newDiagnoses": null,
+          "performedBy": "Rachel Gordon"
+        },
+        {
+          "date": "2026-10-22",
+          "examType": "Tech Rounds",
+          "vetOrTech": "Vet Exam",
+          "reason": null,
+          "subjective": "\"Unfortunately no videos of this. \n\nCactus guy just got back from a week long sleepover, and they had relayed some medical concerns to DBFU, who asked that i address these here. I will include an abbreviated version of the direct quote from the sleepover host so i don't miss anything! \n\n\"\" He frequently lifts his back left leg and shifts weight to balance on his other three legs, then while sitting, he oftentimes will sit with his legs to the side, seeming to avoid putting pressure on that back left leg. i have also noticed that he will slip or lose footing and fall over on surfaces that are not slippery at all, even for dogs. Could this be looked into when i return him to the shelter? Thank you! \"\"---sleepover host.\n\nWe have not gotten any reports of limping, pain or difficulty walking before, and i have asked dog care to try and get some videos of him walking while he is on his evening outing, and to see if they can capture any of this on video overall. But i still wanted to put this here per DBFU's request in case there was anything we wanted to do in the meantime, or if this was something you wanted to see over there. \"",
+          "objective": null,
+          "assessment": null,
+          "plan": "Per Dr. Gordon: Can't rule out a previous CCL tear, but if he's not lame I would just monitor. I could try to palpate during a wed TLAC rounds, but otherwise I would not schedule an appt if he's not lame since we have to prioritize other more critical patients for tech/vet time.",
           "newDiagnoses": null,
           "performedBy": "Rachel Gordon"
         },

@@ -1,11 +1,12 @@
 import json
 import os
+import sys
 import urllib.request
 from datetime import datetime, timezone
 from google.cloud import bigquery
 from shapely.geometry import shape, Point
 
-PROJECT = "apa-grants-manager"
+PROJECT = "apa-data-410213"
 
 # Live TAHC NWS zone feed -- same source the tx-flood-radar-shelters map uses.
 # Fetched fresh on every run so zone tags never go stale even if TAHC updates the boundaries.
@@ -15,28 +16,85 @@ TAHC_ZONES_URL = (
     "?where=1%3D1&outFields=*&f=geojson&outSR=4326"
 )
 
-QUERY = f"""
+# apa-grants-manager.shelterluv.flood_animals (the view this used to read) auto-expired
+# ~2026-10-08 under BigQuery sandbox mode's 60-day CREATE-OR-REPLACE fuse, and its SQL was
+# never saved anywhere -- see reference_shelterluv_pipeline_issues.md #11. The flood
+# response is over and the 377-animal set is final (confirmed by Joslyn 2026-10-29), so
+# instead of rebuilding that view's attribution logic from scratch, the static facts it
+# produced (which animals qualify, where/when they came from) are frozen in
+# flood_animal_static.json -- outside BigQuery entirely, so they can't expire again. Only
+# each animal's CURRENT state (status/location/outcome) still needs a live query, and that
+# query now goes straight to apa-data-410213 (the data team's billed project) rather than
+# through any apa-grants-manager object.
+with open("data/flood_animal_static.json") as f:
+    _static_doc = json.load(f)
+FLOOD_ANIMAL_STATIC = _static_doc["animals"]
+
+with open("data/flood_shelter_locations.json") as f:
+    FLOOD_SHELTER_LOCATIONS = json.load(f)["shelters"]
+
+# Maps a live ShelterLuv `Animals.status` to the view's old 7-bucket disposition scheme.
+# Reverse-engineered 2026-10-29 from the 13 statuses actually observed across the 377 known
+# flood animals (cross-checking status->bucket pairs in the last-good animal_profiles.json
+# snapshot) -- "Healthy in Home" collapses to "Adopted / Pending" here because the
+# Adopted-vs-Return-to-Owner split happens later in this file using lastOutcomeType, same as
+# the view's raw output always did. No example of "Safety Net Foster (Pending RTO)" exists
+# among the 377 (0 animals currently in it), so there's no status to reverse-engineer it
+# from -- if a status ever falls outside this map, the pipeline warns loudly and falls back
+# to that animal's last known-good bucket rather than guessing.
+STATUS_TO_BUCKET = {
+    "Available (Foster)": "In Foster (Available for Adoption)",
+    "Available - Sleepover Foster": "In Foster (Available for Adoption)",
+    "Available (Shelter)": "On Property",
+    "Unavailable (Shelter)": "On Property",
+    "Deceased": "Deceased",
+    "Healthy in Home": "Adopted / Pending",
+    "Possible Adoption - No Contract (Foster)": "In Foster (Unavailable for Adoption)",
+    "Pre-Adopt - Awaiting Surgery (Adopter)": "Adopted / Pending",
+    "Pre-Adopt - Medical (Adopter)": "Adopted / Pending",
+    "Reported Lost/Stolen (Foster)": "In Foster (Unavailable for Adoption)",
+    "Transferred Out": "Transferred Out",
+    "Unavailable - Foster to Adopt (Foster)": "In Foster (Unavailable for Adoption)",
+    "Unavailable - Pregnant/Nursing (Foster)": "In Foster (Unavailable for Adoption)",
+}
+
+QUERY = """
+WITH flood_animals AS (
+  SELECT animalInternalID, animalAID, name, species, status, currentLocationTier1, currentLocationTier2
+  FROM `apa-data-410213.shelterluv.Animals`
+  WHERE animalAID IN UNNEST(@animal_ids)
+),
+ranked_outcomes AS (
+  SELECT *, ROW_NUMBER() OVER (PARTITION BY animalInternalID ORDER BY outcomeDate DESC) AS rn
+  FROM `apa-data-410213.shelterluv.Outcomes`
+  WHERE animalInternalID IN (SELECT animalInternalID FROM flood_animals)
+),
+partner_names AS (
+  -- GROUP BY + ANY_VALUE dedupes partnerInternalIDs that appear in both Partners and
+  -- PartnersNewIDs -- a plain UNION ALL join fanned out rows for any animal transferred
+  -- to such a partner (caught 2026-10-29: 377 known animals came back as 387 rows).
+  SELECT partnerInternalID, ANY_VALUE(partnerName) AS partnerName
+  FROM (
+    SELECT partnerInternalID, partnerName FROM `apa-data-410213.shelterluv.Partners`
+    UNION ALL
+    SELECT partnerInternalID, partnerName FROM `apa-data-410213.shelterluv.PartnersNewIDs`
+  )
+  GROUP BY partnerInternalID
+)
 SELECT
-  animalInternalID,
-  animalAID,
-  name,
-  species,
-  intakeDate,
-  originShelter,
-  shelterCity,
-  shelterCounty,
-  shelterLat,
-  shelterLon,
-  currentStatus,
-  dispositionBucket,
-  lastOutcomeType,
-  lastOutcomeDate,
-  transferredTo,
-  currentLocationTier1,
-  currentLocationTier2,
-  foundCity,
-  foundCounty
-FROM `{PROJECT}.shelterluv.flood_animals`
+  fa.animalInternalID,
+  fa.animalAID,
+  fa.name,
+  fa.species,
+  fa.status AS currentStatus,
+  fa.currentLocationTier1,
+  fa.currentLocationTier2,
+  ro.outcomeType AS lastOutcomeType,
+  ro.outcomeDate AS lastOutcomeDate,
+  pn.partnerName AS transferredTo
+FROM flood_animals fa
+LEFT JOIN ranked_outcomes ro ON ro.animalInternalID = fa.animalInternalID AND ro.rn = 1
+LEFT JOIN partner_names pn ON pn.partnerInternalID = ro.partnerInternalID
 """
 
 # Profile snapshot lives in the data team's project (apa-data-410213), loaded manually
@@ -121,7 +179,17 @@ def zone_for(lat, lon, infested, surveillance):
 
 def run():
     client = bigquery.Client(project=PROJECT)
-    rows = list(client.query(QUERY).result())
+    job_config = bigquery.QueryJobConfig(
+        query_parameters=[
+            bigquery.ArrayQueryParameter("animal_ids", "STRING", list(FLOOD_ANIMAL_STATIC.keys())),
+        ]
+    )
+    rows = list(client.query(QUERY, job_config=job_config).result())
+    found_ids = {r.animalAID for r in rows}
+    missing_ids = set(FLOOD_ANIMAL_STATIC.keys()) - found_ids
+    if missing_ids:
+        print(f"  WARNING: {len(missing_ids)} of {len(FLOOD_ANIMAL_STATIC)} known flood "
+              f"animals not found in Animals table: {sorted(missing_ids)}", file=sys.stderr)
     profile_rows = list(client.query(PROFILE_QUERY).result())
     profiles = {r.AnimalID: r for r in profile_rows}
 
@@ -149,26 +217,37 @@ def run():
 
     animals = []
     for r in rows:
+        static = FLOOD_ANIMAL_STATIC[r.animalAID]
+        shelter_loc = FLOOD_SHELTER_LOCATIONS.get(static["originShelter"], {})
+
+        bucket = STATUS_TO_BUCKET.get(r.currentStatus)
+        if bucket is None:
+            bucket = static["fallbackBucket_20261008"]
+            print(f"  WARNING: unrecognized status {r.currentStatus!r} for animal "
+                  f"{r.animalAID} ({static['name']}) -- falling back to last known "
+                  f"bucket {bucket!r} instead of guessing. Add this status to "
+                  f"STATUS_TO_BUCKET once confirmed.", file=sys.stderr)
+
         animals.append({
             "id": r.animalInternalID,
             "aid": r.animalAID,
-            "name": r.name,
-            "species": r.species,
-            "intakeDate": str(r.intakeDate),
-            "shelter": r.originShelter,
-            "shelterCity": r.shelterCity,
-            "shelterCounty": r.shelterCounty,
-            "shelterLat": r.shelterLat,
-            "shelterLon": r.shelterLon,
+            "name": r.name or static["name"],
+            "species": r.species or static["species"],
+            "intakeDate": static["intakeDate"],
+            "shelter": static["originShelter"],
+            "shelterCity": static["shelterCity"],
+            "shelterCounty": static["shelterCounty"],
+            "shelterLat": shelter_loc.get("lat"),
+            "shelterLon": shelter_loc.get("lon"),
             "status": r.currentStatus,
-            "bucket": r.dispositionBucket,
+            "bucket": bucket,
             "outcomeType": r.lastOutcomeType,
             "outcomeDate": str(r.lastOutcomeDate.date()) if r.lastOutcomeDate else None,
             "transferredTo": r.transferredTo,
             "property": r.currentLocationTier1,
             "area": r.currentLocationTier2,
-            "foundCity": r.foundCity,
-            "foundCounty": r.foundCounty,
+            "foundCity": static["foundCity"],
+            "foundCounty": static["foundCounty"],
         })
 
     # Per-animal profile detail (breed, photo, memos, etc.) for the filterable Animals

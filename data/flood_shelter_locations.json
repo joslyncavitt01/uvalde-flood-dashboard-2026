@@ -1,0 +1,78 @@
+{
+  "asOf": "2026-10-13",
+  "note": "Static copy of apa-grants-manager.shelterluv.flood_shelters (itself sandbox-mode and due to expire 2026-11-30) so shelter-level lat/lon for NWS-zone tagging survives independent of that table. Missing 2 shelters seen in dashboard data (Border Animal Mission Rescue (BAM), Del Rio Animal Control) -- not in the original backup, nwsZone stays null for those, same as before.",
+  "shelters": {
+    "Footbridge Foundation": {
+      "city": "San Antonio",
+      "county": "Bexar",
+      "lat": 29.408077,
+      "lon": -98.48707
+    },
+    "Asherton Animal Control Center": {
+      "city": "Asherton",
+      "county": "Dimmit",
+      "lat": 28.440629,
+      "lon": -99.762653
+    },
+    "Pearsall Animal Control": {
+      "city": "Pearsall",
+      "county": "Frio",
+      "lat": 28.890984,
+      "lon": -99.09542
+    },
+    "City of Dilley": {
+      "city": "Dilley",
+      "county": "Frio",
+      "lat": 28.66909,
+      "lon": -99.168862
+    },
+    "Kendall County Animal Shelter (TX)": {
+      "city": "Boerne",
+      "county": "Kendall",
+      "lat": 29.881968,
+      "lon": -98.79906
+    },
+    "Kerrville Pets Alive!": {
+      "city": "Kerrville",
+      "county": "Kerr",
+      "lat": 30.02663,
+      "lon": -99.129921
+    },
+    "Cotulla City Animal Control": {
+      "city": "Cotulla",
+      "county": "La Salle",
+      "lat": 28.436578,
+      "lon": -99.234053
+    },
+    "Devine Animal Control": {
+      "city": "Devine",
+      "county": "Medina",
+      "lat": 29.138165,
+      "lon": -98.907101
+    },
+    "City of Hondo Animal Shelter": {
+      "city": "Hondo",
+      "county": "Medina",
+      "lat": 29.347412,
+      "lon": -99.141203
+    },
+    "City of Sabinal Animal Shelter": {
+      "city": "Sabinal",
+      "county": "Uvalde",
+      "lat": 29.321575,
+      "lon": -99.467374
+    },
+    "Briscoe Animal Resource Center": {
+      "city": "Uvalde",
+      "county": "Uvalde",
+      "lat": 29.221257,
+      "lon": -99.788649
+    },
+    "Crystal City Animal Control": {
+      "city": "Crystal City",
+      "county": "Zavala",
+      "lat": 28.678829,
+      "lon": -99.827825
+    }
+  }
+}

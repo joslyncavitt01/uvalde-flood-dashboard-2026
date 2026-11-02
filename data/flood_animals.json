@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-11-02T21:53:28Z",
+  "lastUpdated": "2026-11-02T22:08:52Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
-    "On Property": 12,
+    "On Property": 11,
     "In Foster (Available for Adoption)": 16,
-    "In Foster (Unavailable for Adoption)": 6,
+    "In Foster (Unavailable for Adoption)": 7,
     "Safety Net Foster (Pending RTO)": 0,
     "Adopted / Pending": 270,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
     "Adopted / Pending (tile)": 254,
-    "On Property (Available)": 11,
+    "On Property (Available)": 10,
     "On Property (Unavailable)": 1
   },
   "byDay": [
@@ -53,9 +53,9 @@
     {
       "date": "2026-07-16",
       "total": 104,
-      "On Property": 5,
+      "On Property": 4,
       "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 2,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 63,
       "Transferred Out": 26,
@@ -172,9 +172,9 @@
       "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
-      "On Property": 5,
+      "On Property": 4,
       "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 2,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 47,
       "Transferred Out": 22,
@@ -361,24 +361,6 @@
       "Deceased": 0
     },
     {
-      "shelter": "Del Rio Animal Control",
-      "total": 7,
-      "dogs": 0,
-      "cats": 7,
-      "city": "Del Rio",
-      "county": "Val Verde",
-      "nwsZone": null,
-      "firstIntake": "2026-07-19",
-      "lastIntake": "2026-07-19",
-      "On Property": 0,
-      "In Foster (Available for Adoption)": 0,
-      "In Foster (Unavailable for Adoption)": 0,
-      "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 0,
-      "Transferred Out": 7,
-      "Deceased": 0
-    },
-    {
       "shelter": "City of Hondo Animal Shelter",
       "total": 7,
       "dogs": 7,
@@ -394,6 +376,24 @@
       "Safety Net Foster (Pending RTO)": 0,
       "Adopted / Pending": 6,
       "Transferred Out": 1,
+      "Deceased": 0
+    },
+    {
+      "shelter": "Del Rio Animal Control",
+      "total": 7,
+      "dogs": 0,
+      "cats": 7,
+      "city": "Del Rio",
+      "county": "Val Verde",
+      "nwsZone": null,
+      "firstIntake": "2026-07-19",
+      "lastIntake": "2026-07-19",
+      "On Property": 0,
+      "In Foster (Available for Adoption)": 0,
+      "In Foster (Unavailable for Adoption)": 0,
+      "Safety Net Foster (Pending RTO)": 0,
+      "Adopted / Pending": 0,
+      "Transferred Out": 7,
       "Deceased": 0
     }
   ],
@@ -435,8 +435,8 @@
     {
       "property": "TLAC",
       "area": "Building 1 - Dog",
-      "total": 6,
-      "dogs": 6,
+      "total": 5,
+      "dogs": 5,
       "cats": 0
     },
     {
@@ -465,8 +465,8 @@
     {
       "bucket": "On Property",
       "status": "Available (Shelter)",
-      "total": 11,
-      "dogs": 7,
+      "total": 10,
+      "dogs": 6,
       "cats": 4
     },
     {
@@ -479,9 +479,16 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 16,
+      "total": 15,
       "dogs": 11,
-      "cats": 5
+      "cats": 4
+    },
+    {
+      "bucket": "In Foster (Available for Adoption)",
+      "status": "Available - Sleepover Foster",
+      "total": 1,
+      "dogs": 1,
+      "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -492,16 +499,16 @@
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Reported Lost/Stolen (Foster)",
+      "status": "Possible Adoption - No Contract (Foster)",
       "total": 2,
-      "dogs": 1,
-      "cats": 1
+      "dogs": 0,
+      "cats": 2
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 1,
-      "dogs": 0,
+      "status": "Reported Lost/Stolen (Foster)",
+      "total": 2,
+      "dogs": 1,
       "cats": 1
     },
     {

@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-11-08T23:49:56Z",
+  "lastUpdated": "2026-11-09T00:05:28Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
     "On Property": 7,
     "In Foster (Available for Adoption)": 17,
-    "In Foster (Unavailable for Adoption)": 8,
+    "In Foster (Unavailable for Adoption)": 7,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 272,
+    "Adopted / Pending": 273,
     "Transferred Out": 69,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 256,
+    "Adopted / Pending (tile)": 257,
     "On Property (Available)": 6,
     "On Property (Unavailable)": 1
   },
@@ -55,9 +55,9 @@
       "total": 104,
       "On Property": 2,
       "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 65,
+      "Adopted / Pending": 66,
       "Transferred Out": 26,
       "Deceased": 1
     },
@@ -174,9 +174,9 @@
       "lastIntake": "2026-07-16",
       "On Property": 2,
       "In Foster (Available for Adoption)": 7,
-      "In Foster (Unavailable for Adoption)": 3,
+      "In Foster (Unavailable for Adoption)": 2,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 49,
+      "Adopted / Pending": 50,
       "Transferred Out": 22,
       "Deceased": 1
     },
@@ -486,15 +486,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 4,
-      "dogs": 2,
-      "cats": 2
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Unavailable - Foster to Adopt (Foster)",
-      "total": 2,
-      "dogs": 0,
+      "total": 3,
+      "dogs": 1,
       "cats": 2
     },
     {
@@ -505,10 +498,17 @@
       "cats": 1
     },
     {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Unavailable - Foster to Adopt (Foster)",
+      "total": 2,
+      "dogs": 0,
+      "cats": 2
+    },
+    {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 245,
-      "dogs": 156,
+      "total": 246,
+      "dogs": 157,
       "cats": 89
     },
     {

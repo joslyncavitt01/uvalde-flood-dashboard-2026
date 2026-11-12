@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T17:25:21Z",
+  "lastUpdated": "2026-11-12T17:40:52Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -205,7 +205,7 @@
       "cats": 45,
       "city": "Kerrville",
       "county": "Kerr",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-20",
       "On Property": 2,
@@ -385,7 +385,7 @@
       "cats": 0,
       "city": "Hondo",
       "county": "Medina",
-      "nwsZone": "Surveillance Zone",
+      "nwsZone": null,
       "firstIntake": "2026-07-16",
       "lastIntake": "2026-07-16",
       "On Property": 0,

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T20:02:03Z",
+  "lastUpdated": "2026-11-19T20:17:28Z",
   "totals": {
     "total": 377,
     "dogs": 242,
@@ -455,14 +455,14 @@
     },
     {
       "property": "TLAC",
-      "area": "Building 2 - Dog",
+      "area": "Building 3 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
     },
     {
       "property": "TLAC",
-      "area": "Building 3 - Dog",
+      "area": "Building 2 - Dog",
       "total": 1,
       "dogs": 1,
       "cats": 0
@@ -486,23 +486,16 @@
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available (Foster)",
-      "total": 7,
-      "dogs": 5,
+      "total": 8,
+      "dogs": 6,
       "cats": 2
     },
     {
       "bucket": "In Foster (Available for Adoption)",
       "status": "Available - Sleepover Foster",
-      "total": 2,
-      "dogs": 2,
-      "cats": 0
-    },
-    {
-      "bucket": "In Foster (Unavailable for Adoption)",
-      "status": "Possible Adoption - No Contract (Foster)",
-      "total": 2,
+      "total": 1,
       "dogs": 1,
-      "cats": 1
+      "cats": 0
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",
@@ -510,6 +503,13 @@
       "total": 2,
       "dogs": 0,
       "cats": 2
+    },
+    {
+      "bucket": "In Foster (Unavailable for Adoption)",
+      "status": "Possible Adoption - No Contract (Foster)",
+      "total": 2,
+      "dogs": 1,
+      "cats": 1
     },
     {
       "bucket": "In Foster (Unavailable for Adoption)",

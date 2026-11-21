@@ -155,6 +155,17 @@ TARGETS = {
 def clean(v):
     if v is None:
         return None
+    # A report downloaded straight from ShelterLuv's web UI "Excel" button encodes dates
+    # as real Excel date cells, which openpyxl parses into datetime objects -- unlike the
+    # emailed custom-report exports, where the same columns arrive as plain "MM/DD/YYYY"
+    # text. str()'ing a datetime gives "2026-11-05 00:00:00", which BigQuery's DATE
+    # columns reject outright (confirmed 2026-11-21: "Failed to parse input string
+    # '2026-11-05 00:00:00'"). Normalize both shapes to the same MM/DD/YYYY text the rest
+    # of this script (and parse_date in the coverage-guard) already expects.
+    if isinstance(v, datetime):
+        return v.strftime("%m/%d/%Y")
+    if isinstance(v, date):
+        return v.strftime("%m/%d/%Y")
     s = str(v).strip()
     if s in ("", "—", "-"):
         return None

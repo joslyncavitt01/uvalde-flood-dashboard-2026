@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-11-23T23:53:06Z",
+  "lastUpdated": "2026-11-24T00:08:35Z",
   "totals": {
     "total": 377,
     "dogs": 242,
     "cats": 135,
     "On Property": 10,
     "In Foster (Available for Adoption)": 8,
-    "In Foster (Unavailable for Adoption)": 6,
+    "In Foster (Unavailable for Adoption)": 5,
     "Safety Net Foster (Pending RTO)": 0,
-    "Adopted / Pending": 279,
+    "Adopted / Pending": 280,
     "Transferred Out": 70,
     "Deceased": 4,
     "Return to Owner": 16,
-    "Adopted / Pending (tile)": 263,
+    "Adopted / Pending (tile)": 264,
     "On Property (Available)": 9,
     "On Property (Unavailable)": 1
   },
@@ -55,9 +55,9 @@
       "total": 104,
       "On Property": 4,
       "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 67,
+      "Adopted / Pending": 68,
       "Transferred Out": 26,
       "Deceased": 1
     },
@@ -174,9 +174,9 @@
       "lastIntake": "2026-07-16",
       "On Property": 4,
       "In Foster (Available for Adoption)": 2,
-      "In Foster (Unavailable for Adoption)": 4,
+      "In Foster (Unavailable for Adoption)": 3,
       "Safety Net Foster (Pending RTO)": 0,
-      "Adopted / Pending": 51,
+      "Adopted / Pending": 52,
       "Transferred Out": 22,
       "Deceased": 1
     },
@@ -500,8 +500,8 @@
     {
       "bucket": "In Foster (Unavailable for Adoption)",
       "status": "Possible Adoption - No Contract (Foster)",
-      "total": 3,
-      "dogs": 2,
+      "total": 2,
+      "dogs": 1,
       "cats": 1
     },
     {
@@ -521,8 +521,8 @@
     {
       "bucket": "Adopted / Pending",
       "status": "Healthy in Home",
-      "total": 254,
-      "dogs": 163,
+      "total": 255,
+      "dogs": 164,
       "cats": 91
     },
     {
